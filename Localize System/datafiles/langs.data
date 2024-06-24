@@ -1,0 +1,6 @@
+language,English,Português,Español
+text_intro,This is an intro text!,Este é um texto introdutório que foi editado em tempo real,¡Este es un texto de introducción!
+text_score,"You have {0} point! [n]Press ""enter"" to earn more","Você tem {0} pontos! [n]Aperte ""enter"" para  ganhar mais","¡Tienes {0} puntos! [n]Presiona ""enter"" para ganar más"
+,Text with a missing key,Texto com uma chave faltando,Texto al que le falta una clave
+key_placeholder,,,
+not_all_langs,This one has a translation,Esse tem tradução ,
