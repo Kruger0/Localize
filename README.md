@@ -1,5 +1,5 @@
 # Localize
- Localization system for GMS2 multilanguage support sync with Google Sheets!
+Localization system for GMS2 multilingual support synchronized with Google Sheets!
 
 ## How to use!
 
