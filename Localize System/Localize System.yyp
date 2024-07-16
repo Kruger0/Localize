@@ -15,6 +15,9 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"langs.data","CopyToMask":-1,"filePath":"datafiles","name":"langs.data","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"NanumGothic-Bold.ttf","CopyToMask":-1,"filePath":"datafiles","name":"NanumGothic-Bold.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"NanumGothic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles","name":"NanumGothic-Regular.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"notosans.ttf","CopyToMask":-1,"filePath":"datafiles","name":"notosans.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

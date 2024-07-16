@@ -32,6 +32,13 @@
 |---------------|-------------------|-------------------|---------------------------|
 */
 
+var _langcode = @"abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Это вступительный текст!
+这是一篇介绍性文字！
+紹介文です！
+"
+
 #macro LOC_SHEET_ID		"19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	// Your Google sheet id here
 
 //=============================================================
