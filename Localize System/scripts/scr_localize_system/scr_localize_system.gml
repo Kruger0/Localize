@@ -23,6 +23,10 @@
 	At your game release, change the LOC_AUTOUPDATE to false if you want your game to be totally offline, otherwise it will try to update
 	the .csv sheet at every start.
 	
+	Also important!
+	In order for the system to work with CJK (Chinese Japanese Korean) languages, the font
+	needs to be added to the game by the font_add() function. This demo has an example for that implementation.
+	
 	
 .csv sheet format example
 |---------------|-------------------|-------------------|---------------------------|
@@ -32,12 +36,6 @@
 |---------------|-------------------|-------------------|---------------------------|
 */
 
-var _langcode = @"abcdefghijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Это вступительный текст!
-这是一篇介绍性文字！
-紹介文です！
-"
 
 #macro LOC_SHEET_ID		"19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	// Your Google sheet id here
 

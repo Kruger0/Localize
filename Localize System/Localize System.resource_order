@@ -4,7 +4,6 @@
     {"name":"Localize System","order":4,"path":"folders/Localize System.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"fnt_game","order":2,"path":"fonts/fnt_game/fnt_game.yy",},
     {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
   ],
 }

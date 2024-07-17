@@ -5,4 +5,4 @@ window_center()
 
 points = 0
 
-global.font_game = font_add("NanumGothic-Bold.ttf", 36, false, false, 0, 1)
+global.font = font_add("NanumGothic-Regular.ttf", 32, false, false, 0, 1)

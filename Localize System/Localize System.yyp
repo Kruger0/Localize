@@ -15,9 +15,7 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"langs.data","CopyToMask":-1,"filePath":"datafiles","name":"langs.data","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"NanumGothic-Bold.ttf","CopyToMask":-1,"filePath":"datafiles","name":"NanumGothic-Bold.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"NanumGothic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles","name":"NanumGothic-Regular.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"notosans.ttf","CopyToMask":-1,"filePath":"datafiles","name":"notosans.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -26,7 +24,6 @@
   },
   "name":"Localize System",
   "resources":[
-    {"id":{"name":"fnt_game","path":"fonts/fnt_game/fnt_game.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"scr_localize_system","path":"scripts/scr_localize_system/scr_localize_system.yy",},},
