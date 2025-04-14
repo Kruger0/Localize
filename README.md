@@ -4,7 +4,7 @@ Localize is a translation/localization system made for GameMaker Studio 2, imple
 ## How to use!
 
 1. Create a Google Sheets file, share it and select any person with the link to be a READER.
-   (You can also use the (demo sheet)[https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0] as a base and just copy it and changing the ID)
+   (You can also use the [demo sheet](https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0) as a base and just copy it and changing the ID)
 2. Copy the unique sheet ID from the URL and paste on the script.
 3. Call the function ```localize_http()``` on the Async HTTP event on your game manager object.
 4. Check if the success message appears on the debug console.
