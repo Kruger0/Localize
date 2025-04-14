@@ -17,7 +17,7 @@ Localize is a localization system made for GameMaker Studio 2, implemented with 
    full_sheet_url = "https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0"
    // Unique Sheet ID                                      |--------------------------------------------|
 
-   #macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	// Your Google sheet id here
+   #macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	// Your Google Sheet id here
    ```
 4. Call the function ```localize_http()``` on the Async HTTP event on your game manager object.
    ```gml
