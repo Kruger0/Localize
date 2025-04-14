@@ -24,6 +24,7 @@ Localize is a localization system made for GameMaker Studio 2, implemented with 
    ```
 5. Use the system by calling ```localize()``` as a string and the localized text will be returned.
    ```gml
+   // Any Draw Event
    draw_text(x, y, localize("text_intro"))
    ```
 
