@@ -7,7 +7,7 @@ Localize is a localization system made for GameMaker Studio 2, implemented with 
    (You can also use the [demo sheet](https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0) as a base and just copy it and changing the ID)
 
    **.csv sheet format example**
-   language   | English           | Portugues         | Español
+   language   | English           | Português         | Español
    ---------- | ----------------- | ----------------- | -------
    text_intro | This is an intro! | Isso é uma intro! | Esta és una introducion!
    
