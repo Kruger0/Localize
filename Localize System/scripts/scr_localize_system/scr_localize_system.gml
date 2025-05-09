@@ -58,15 +58,15 @@ function __loc_cache() {
 		loc_exists	: false,
 		dbgv_ptr	: undefined,
 		trace_msg	: {
-			file_404	: "[error] - Localization file \"{0}\" not found.",
-			key_404		: "Key \"{0}\" not found in ",
-			lang_404	: "Language \"{0}\" not found in ",
-			trns_404	: "Key \"{0}\" doesn't have a translation for {1}!",
-			no_updt		: "Online file update not allowed on this vesion!",
-			updt_good	: "Localize cache successfully updated!",
-			dl_good		: "Localization file successfully downloaded at: {0}.",
-			dl_bad		: "[error] - Localization file download error: {0}",
-			lang_index	: "Language index bigger than language count",
+			file_404	: "[Localize] - Localization file \"{0}\" not found.",
+			key_404		: "[Localize] - Key \"{0}\" not found in ",
+			lang_404	: "[Localize] - Language \"{0}\" not found in ",
+			trns_404	: "[Localize] - Key \"{0}\" doesn't have a translation for {1}!",
+			no_updt		: "[Localize] - Online file update failed!",
+			updt_good	: "[Localize] - Cache successfully updated!",
+			dl_good		: "[Localize] - Localization file successfully downloaded at: {0}.",
+			dl_bad		: "[Localize] - Localization file download error: {0}",
+			lang_index	: "[Localize] - Language index bigger than language count",
 		}
 	}
 	return data;
@@ -83,7 +83,7 @@ function __loc_cache() {
 ///@ignore
 function __localize_init(_startup = false, _forced = true) {
 	
-	if (LOC_AUTOUPDATE || _forced) {
+	if ((LOC_AUTOUPDATE || _forced) && string_count(".",string(network_resolve("www.google.com")))) {
 		//Credits to https://twitter.com/VINE2D for coming up with this
 		var _link = "https://docs.google.com/spreadsheets/d/"+LOC_SHEET_ID+"/export?format=csv&id="+LOC_SHEET_ID+"&gid=0"
 		var _path = __loc_cache().loc_path + LOC_FILENAME
