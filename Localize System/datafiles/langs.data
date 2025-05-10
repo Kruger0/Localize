@@ -1,6 +1,0 @@
-language,English,Portuguese,Spanish,Russian,Chinese,Japanese,Korean,German,Italian
-text_intro,This is an intro text!,Este é um texto introdutório!,¡Este es un texto de introducción!,Это вступительный текст!,这是一篇介绍性文字！,紹介文です！,소개글이에요!,Dies ist ein Einführungstext!,Questo è un testo introduttivo!
-,Text with a missing key,Texto com uma chave faltando,Texto al que le falta una clave,Текст с отсутствующим ключом,缺少键的文本,キーが欠落しているテキスト,키가 누락된 텍스트,Text mit fehlendem Schlüssel,Testo con una chiave mancante
-key_placeholder,,,,,,,,,
-lang_check,This one has a translation,Este tem uma tradução,,У этого есть перевод,这个有翻译的,こちらは訳ありです,이건 번역이 있네,,Questo ha una traduzione
-text_score,"You have {0} points! [n]Press ""Enter"" to earn more","Você tem {0} pontos! [n]Pressione ""Enter"" para ganhar mais","¡Tienes {0} puntos! [n]Presiona ""Entrar"" para ganar más","У вас {0} баллов! [n]Нажмите «Ввод», чтобы заработать больше",您有 {0} 分！ [n]按“Enter”即可赚取更多,あなたは {0} ポイントを持っています! [n]さらに獲得するには「Enter」を押してください,"{0}포인트가 있습니다! [n]더 많은 수익을 얻으려면 ""Enter""를 누르세요.","Du hast {0} Punkte! [n]Drücken Sie die Eingabetaste, um mehr zu verdienen","Hai {0} punti! [n]Premi ""Invio"" per guadagnare di più"

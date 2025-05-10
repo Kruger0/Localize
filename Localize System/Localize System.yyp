@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Localize System",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -13,14 +13,15 @@
     {"$GMFolder":"","%Name":"Demo","folderPath":"folders/Demo.yy","name":"Demo","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Localize System","folderPath":"folders/Localize System.yy","name":"Localize System","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"langs.data","CopyToMask":-1,"filePath":"datafiles","name":"langs.data","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"NanumGothic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles","name":"NanumGothic-Regular.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"localize.dat","CopyToMask":-1,"filePath":"datafiles","name":"localize.dat","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"NotoSansCJK-Regular.ttc","CopyToMask":-1,"filePath":"datafiles","name":"NotoSansCJK-Regular.ttc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Localize System",
   "resources":[
