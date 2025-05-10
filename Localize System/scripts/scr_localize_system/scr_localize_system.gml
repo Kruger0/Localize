@@ -47,7 +47,6 @@
 #macro LOC_ONLINE_MODE	false											// If true, the final executable build will try to update the .csv at every start.
 #macro LOC_AUTO_DETECT	true											// It true, the game will automatically checks for the system language and use it as default.
 #macro LOC_TRACE		true											// Show debug trace messages on the console.
-#macro LOC_ENCRYPT		true											// Encrypr the .csv sheet using a XOR key.
 #macro LOC_MISSING_KEY	"loc_missing_key"								// The default key to use in a language when no key is provided
 
 // If you want to use the LOC_AUTO_DETECT feature, place the languages used here
@@ -58,7 +57,7 @@ languages = [
 	["Português",	"pt"],
 	["Italiano",	"it"],
 	["Русский",		"ru"],
-	["简体中文",	"zh"],
+	["简体中文",		"zh"],
 	["日本語",		"ja"],
 	["한국어",		"ko"],
 	["Deutsch",		"de"],
@@ -89,14 +88,13 @@ function localize_http() {
 		if (_http == 200) {
 			var _path = _async[$ "result"];
 			__loc_trace(__loc_cache().trace_msg.dl_good, _path);
+			__localize_update()
 			if (!GM_is_sandboxed && GM_build_type == "run") {
 				// If its running from the IDE, the file will be automatically copyed to the included files
 				var _path_src = __loc_cache().loc_path + LOC_FILENAME;
 				var _path_dst = filename_dir(GM_project_filename)+"/datafiles/"+LOC_FILENAME;
 				file_copy(_path_src, _path_dst);
-				// TODO Encrypt
-			}
-			__localize_update()
+			}			
 	    } else {
 			__loc_trace(__loc_cache().trace_msg.dl_bad, _async[$ "http_status"]);
 		}
@@ -243,48 +241,6 @@ function __loc_trace(_msg, _value = undefined) {
 }
 
 ///@ignore
-function __loc_encrypt(text, key) {
-	var result = "";
-	var key_length = string_length(key);
-    
-	// Convert the text to an array of bytes and apply XOR encryption
-	for (var i = 1; i <= string_length(text); i++) {
-		var char_code = ord(string_char_at(text, i));
-		var key_char = ord(string_char_at(key, ((i - 1) % key_length) + 1));
-        
-		// XOR the character with the key
-		// This works with all characters including special ones like \n (10), \r (13), \t (9)
-		var encrypted_char = char_code ^ key_char;
-        
-		// Convert to hex representation to make it safer to store
-		result += string_format(encrypted_char, 0, 0) + ":";
-	}
-    
-	return result;
-}
-
-///@ignore
-function __loc_decrypt(text, key) {
-	var result = "";
-	var key_length = string_length(key);
-    
-	// Split the encrypted text by colons to get individual byte values
-	var bytes = string_split(text, ":");
-	var num_bytes = array_length(bytes) - 1; // Subtract 1 because the last split will be empty
-    
-	for (var i = 0; i < num_bytes; i++) {
-		var encrypted_value = real(bytes[i]);
-		var key_char = ord(string_char_at(key, (i % key_length) + 1));
-        
-		// XOR again to decrypt
-		var char_code = encrypted_value ^ key_char;
-        
-		result += chr(char_code);
-	}    
-	return result;
-}
-
-///@ignore
 function __localize_init(_startup = false, _forced = true) {
 	var _is_connected = string_count(".",string(network_resolve("www.google.com")));
 	var _online_at_release = !(GM_build_type == "exe" && !LOC_ONLINE_MODE);
@@ -312,7 +268,6 @@ function __localize_init(_startup = false, _forced = true) {
 function __localize_update() {
 
 	__loc_cache().game_texts = {};
-	// TODO Decrypt
 	var _grid = load_csv(LOC_FILENAME);
 	if (_grid == -1) {
 		__loc_trace(string(__loc_cache().trace_msg.file_404, LOC_FILENAME));
