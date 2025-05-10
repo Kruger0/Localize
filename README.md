@@ -1,9 +1,9 @@
 <h1 align="center">Localize 1.1</h1>
-Localize is a localization system made for GameMaker Studio 2, implemented with real time Google Sheets API syncronization and translation
+Localize is a localization system made for GameMaker, implemented with real time Google Sheets API syncronization and translation
 
 ## How to use!
 
-1. Create a Google Sheets file, share it and select any person with the link to be a **READER**.
+1. Create a Google Sheets file, share it and select "Anyone with the link" to be a **Viewer** (Reader).
    (You can also use the [demo sheet](https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0) as a base and just copy it and changing the ID)
 
    **.csv sheet format example**
@@ -14,10 +14,10 @@ Localize is a localization system made for GameMaker Studio 2, implemented with 
 3. Copy the unique sheet ID from the URL and paste on the **LOC_SHEET_ID** macro. 
    ```gml
    // Example
-   full_sheet_url = "https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0"
-   // Unique Sheet ID                                      |--------------------------------------------|
+   // Full_sheet_url:  https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0"
+   // Unique Sheet ID:                                       |--------------------------------------------|
 
-   #macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	// Your Google Sheet id here
+   #macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	//The Google Sheet ID containing the localization.
    ```
 4. Call the function ```localize_http()``` on the Async HTTP event on your game manager object.
    ```gml
@@ -29,5 +29,6 @@ Localize is a localization system made for GameMaker Studio 2, implemented with 
    // Any Draw Event
    draw_text(x, y, localize("text_intro"))
    ```
+Note that for the language change to appear in real time, the ```localize()``` function must be called in a repeatable event such as a **step**, **draw** or a **time source**.
 
-Note that for the language change to appear in real time, the ```localize()``` function must be called in a repeatable event such as a **step**, **draw** or a **time source**
+The project contains further instructions on how to use it, along with a demo showing how to use the other ```localize_``` functions to get and set the language.
