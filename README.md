@@ -11,7 +11,7 @@ Localize is a localization system made for GameMaker, implemented with real time
    ---------- | ----------------- | ----------------- | -------
    text_intro | This is an intro! | Isso é uma intro! | Esta és una introducion!
    
-3. Copy the unique sheet ID from the URL and paste on the **LOC_SHEET_ID** macro. 
+2. Copy the unique sheet ID from the URL and paste on the **LOC_SHEET_ID** macro. 
    ```gml
    // Example
    // Full_sheet_url:  https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=0"
@@ -19,12 +19,12 @@ Localize is a localization system made for GameMaker, implemented with real time
 
    #macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"	//The Google Sheet ID containing the localization.
    ```
-4. Call the function ```localize_http()``` on the Async HTTP event on your game manager object.
+3. Call the function ```localize_http()``` on the Async HTTP event on your game manager object.
    ```gml
    // Async HTTP Event
    localize_http()
    ```
-5. Use the system by calling ```localize()``` as a string and the localized text will be returned.
+4. Use the system by calling ```localize()``` as a string and the localized text will be returned.
    ```gml
    // Any Draw Event
    draw_text(x, y, localize("text_intro"))
