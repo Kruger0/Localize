@@ -1,4 +1,4 @@
-<h1 align="center">Localize 1.0</h1>
+<h1 align="center">Localize 1.1</h1>
 Localize is a localization system made for GameMaker Studio 2, implemented with real time Google Sheets API syncronization and translation
 
 ## How to use!
