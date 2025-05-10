@@ -1,5 +1,5 @@
 <h1 align="center">Localize 1.1</h1>
-Localize is a localization system made for GameMaker, implemented with real time Google Sheets API syncronization and translation
+Localize is a localization system made for GameMaker, implemented with real time Google Sheets API synchronization and translation
 
 ## How to use!
 
