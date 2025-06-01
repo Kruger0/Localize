@@ -1,3 +1,7 @@
+[![GitHub license](https://img.shields.io/github/license/Kruger0/GMHook)](https://github.com/Kruger0/GMHook/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/Kruger0/GMHook)](https://github.com/Kruger0/GMHook/releases)
+[![GameMaker](https://img.shields.io/badge/GameMaker-2023.11+-blue?logo=gamemaker)](https://gamemaker.io/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Kruger0/GMHook)](https://github.com/Kruger0/GMHook/commits)
 <h1 align="center">Localize 1.1.0</h1>
 Localize is a localization system made for GameMaker, implemented with real time Google Sheets API synchronization and translation
 
