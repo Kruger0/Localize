@@ -1,0 +1,97 @@
+
+/// Decodes an CSV string and outputs a 2D array
+/// @jujuadams 2023-01-02
+/// Modified snap_from_csv
+/// Feather ignore all
+/// @ignore
+function __LocalizeLoadCsv(buffer, cellDelimiter = ",", stringDelimiter = "\"") {
+  
+    buffer_seek(buffer, buffer_seek_start, 0);
+    
+    var _bufferSize            = buffer_get_size(buffer)
+    var _cellDelimiterOrd      = ord(cellDelimiter);
+    var _stringDelimiterOrd    = ord(stringDelimiter);
+    var _stringDelimiterDouble = stringDelimiter + stringDelimiter;
+    
+    var _rootArray  = [];
+    var _rowArray   = undefined;
+    var _newline    = false;
+    var _read       = false;
+    var _wordStart  = 0;
+    var _inString   = false;
+    var _stringCell = false;
+    
+    repeat(_bufferSize) {
+        var _value = buffer_read(buffer, buffer_u8);
+        
+        if (_value == _stringDelimiterOrd) {
+            _inString = !_inString;
+            if (_inString) _stringCell = true;
+        } else {
+            if (_value == 0x00) {
+                if (_inString) _stringCell = true;
+                _inString = false;
+                
+                var _prev_value = buffer_peek(buffer, buffer_tell(buffer)-2, buffer_u8);
+                if ((_prev_value != _cellDelimiterOrd) && (_prev_value != 0x0A) && (_prev_value != 0x0D)) {
+                    _read = true;
+                } else {
+                    break;
+                }
+            }
+            
+            if (!_inString) {
+                if ((_value == 0x0A) || (_value == 0x0D)) {
+                    var _prev_value = buffer_peek(buffer, buffer_tell(buffer)-2, buffer_u8);
+                    if ((_prev_value != 0x0A) && (_prev_value != 0x0D)) {
+                        _newline = true;
+                        if (_prev_value != _cellDelimiterOrd) {
+                            _read = true;
+                        } else {
+                            ++_wordStart;
+                        }
+                    } else {
+                        ++_wordStart;
+                    }
+                }
+            
+                if (_read || (_value == _cellDelimiterOrd)) {
+                    _read = false;
+                    
+                    var _tell = buffer_tell(buffer);
+                    var _old_value = buffer_peek(buffer, _tell-1, buffer_u8);
+                    buffer_poke(buffer, _tell-1, buffer_u8, 0x00);
+                    buffer_seek(buffer, buffer_seek_start, _wordStart);
+                    var _string = buffer_read(buffer, buffer_string);
+                    buffer_poke(buffer, _tell-1, buffer_u8, _old_value);
+                    
+                    if (_stringCell) {
+                        if ((string_byte_at(_string, 1) == _stringDelimiterOrd)
+                        &&  (string_byte_at(_string, string_byte_length(_string)) == _stringDelimiterOrd)) {
+                            _string = string_copy(_string, 2, string_length(_string)-2); //Trim off leading/trailing quote marks
+                        }
+                    }
+                    
+                    _string = string_replace_all(_string, _stringDelimiterDouble, stringDelimiter); //Replace double quotes with single quotes
+                    
+                    if (_rowArray == undefined) {
+                        _rowArray = [];
+                        _rootArray[ array_length(_rootArray)] = _rowArray;
+                    }
+                    
+                    _rowArray[ array_length(_rowArray)] = _string;
+                    _stringCell = false;
+                    _wordStart = _tell;
+                    
+                    if (_value == 0x00) break;
+                }
+            
+                if (_newline) {
+                    _newline = false;
+                    _rowArray = undefined;
+                }
+            }
+        }
+    }    
+    return _rootArray;
+}

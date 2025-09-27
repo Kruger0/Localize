@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_localize_system",
+  "%Name":"__LocSaveLoad",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_localize_system",
+  "name":"__LocSaveLoad",
   "parent":{
-    "name":"Localize System",
-    "path":"folders/Localize System.yy",
+    "name":"Internal",
+    "path":"folders/Localize/Internal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocHttp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocHttp",
+  "parent":{
+    "name":"Internal",
+    "path":"folders/Localize/Internal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

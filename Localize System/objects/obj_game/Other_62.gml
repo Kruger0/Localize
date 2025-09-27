@@ -1,2 +1,2 @@
-localize_http()
+LocalizeHttp()
 
