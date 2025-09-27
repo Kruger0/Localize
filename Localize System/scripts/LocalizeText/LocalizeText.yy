@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeText",
   "parent":{
-    "name":"General",
-    "path":"folders/Localize/General.yy",
+    "name":"Public",
+    "path":"folders/Localize/Public.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeTextExt",
+  "%Name":"__LocalizeDebug",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeTextExt",
+  "name":"__LocalizeDebug",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

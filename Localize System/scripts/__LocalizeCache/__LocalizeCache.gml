@@ -1,6 +1,6 @@
 
 ///@ignore
-function __LocCache() {
+function __LocalizeCache() {
     static data = undefined;
     data ??= {
         gameTexts   : {},

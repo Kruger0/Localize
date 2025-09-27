@@ -4,14 +4,14 @@
 /// Modified snap_from_csv
 /// Feather ignore all
 /// @ignore
-function __LocalizeLoadCsv(buffer, cellDelimiter = ",", stringDelimiter = "\"") {
+function __LocalizeLoadCsv(buffer) {
   
     buffer_seek(buffer, buffer_seek_start, 0);
     
     var _bufferSize            = buffer_get_size(buffer)
-    var _cellDelimiterOrd      = ord(cellDelimiter);
-    var _stringDelimiterOrd    = ord(stringDelimiter);
-    var _stringDelimiterDouble = stringDelimiter + stringDelimiter;
+    var _cellDelimiterOrd      = ord(LOC_CELL_DELIM);
+    var _stringDelimiterOrd    = ord(LOC_STRING_DELIM);
+    var _stringDelimiterDouble = LOC_STRING_DELIM + LOC_STRING_DELIM;
     
     var _rootArray  = [];
     var _rowArray   = undefined;
@@ -72,7 +72,7 @@ function __LocalizeLoadCsv(buffer, cellDelimiter = ",", stringDelimiter = "\"") 
                         }
                     }
                     
-                    _string = string_replace_all(_string, _stringDelimiterDouble, stringDelimiter); //Replace double quotes with single quotes
+                    _string = string_replace_all(_string, _stringDelimiterDouble, LOC_STRING_DELIM); //Replace double quotes with single quotes
                     
                     if (_rowArray == undefined) {
                         _rowArray = [];

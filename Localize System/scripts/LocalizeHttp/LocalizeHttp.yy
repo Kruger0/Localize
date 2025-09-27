@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocDebug",
+  "%Name":"LocalizeHttp",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocDebug",
+  "name":"LocalizeHttp",
   "parent":{
-    "name":"Internal",
-    "path":"folders/Localize/Internal.yy",
+    "name":"Public",
+    "path":"folders/Localize/Public.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

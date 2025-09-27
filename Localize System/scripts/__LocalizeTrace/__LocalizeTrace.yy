@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocUpdate",
+  "%Name":"__LocalizeTrace",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocUpdate",
+  "name":"__LocalizeTrace",
   "parent":{
-    "name":"Internal",
-    "path":"folders/Localize/Internal.yy",
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

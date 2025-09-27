@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocLoadCsv",
+  "%Name":"__LocalizeConstants",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocLoadCsv",
+  "name":"__LocalizeConstants",
   "parent":{
-    "name":"Internal",
-    "path":"folders/Localize/Internal.yy",
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
