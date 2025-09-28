@@ -8,4 +8,4 @@ var _font = "NotoSansCJK-Regular.ttc"
 global.font = font_add(_font, 36, false, false, 32, 255)
 
 
-
+//show_debug_log(true)

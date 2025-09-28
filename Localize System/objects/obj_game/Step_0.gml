@@ -16,5 +16,6 @@ if (_change != 0) {
     if (_lang > LocalizeGetLangCount()-1) {
         _lang = 0
     }
-    localize_set_lang(_lang)
+    LocalizeSetLang(_lang)
 }
+

@@ -1,8 +1,7 @@
 
-
 ///@func LocalizeGetLangId()
-///@desc Returns the current game language in an id.
+///@desc Returns the current game language as an id.
 function LocalizeGetLangId() {
-    return __LocalizeCache().gameLang
+    return __LocalizeCache().gameLang;
 }
 

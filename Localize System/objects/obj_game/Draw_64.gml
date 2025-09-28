@@ -1,7 +1,7 @@
 
 draw_set_font(global.font)
     
-var _text = $"{LocalizeGetLangId()==0?"":"<<"} {LocalizeGetLangId()} - {LocalizeGetLangName()}({LocalizeGetLangCode()}) {LocalizeGetLangId()==LocalizeGetLangCount()-1?"":">>"}\n"+
+var _text = $"{LocalizeGetLangId()==0?"":"<<"} {LocalizeGetLangId()} - {LocalizeGetLangName()} ({LocalizeGetLangCode()}) {LocalizeGetLangId()==LocalizeGetLangCount()-1?"":">>"}\n"+
 LocalizeText("text_intro")+"\n"+
 LocalizeText("text_debugger")+"\n"+
 LocalizeText("text_cycle")+"\n"+

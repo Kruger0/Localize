@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeSaveLoad",
+  "%Name":"LocalizeSaveLoad",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeSaveLoad",
+  "name":"LocalizeSaveLoad",
   "parent":{
-    "name":"Private",
-    "path":"folders/Localize/Private.yy",
+    "name":"Public",
+    "path":"folders/Localize/Public.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

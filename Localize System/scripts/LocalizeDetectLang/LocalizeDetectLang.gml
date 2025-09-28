@@ -2,13 +2,28 @@
 ///@func LocalizeDetectLang()
 ///@desc Automatically detects the users system language and set it as the game language
 function LocalizeDetectLang() {
-    var _os_lang = os_get_language();
-    for (var i = 0; i < array_length(__LocalizeCache().langs); i++) {
-        var _lang = __LocalizeCache().langs[i]
-        if (_os_lang == _lang[1]) {
-            localize_set_lang(_lang[0])
+    var _cache  = __LocalizeCache();
+    var _locale = LocalizeGetLocale();
+
+    // Search for language + region
+    for (var i = 0; i < array_length(_cache.langCodes); i++) {
+        var _langCode = _cache.langCodes[i];
+        if (_locale == _langCode) {
+            LocalizeSetLang(i);
             return;
         }
     }
-    localize_set_lang(__LocalizeCache().langs[0][0]);
+    
+    // Search for language only
+    _locale = string_split(_locale, "-")[0];
+    for (var i = 0; i < array_length(_cache.langCodes); i++) {
+        var _langCode = string_split(_cache.langCodes[i], "-")[0];
+        if (_locale == _langCode) {
+            LocalizeSetLang(i);
+            return;
+        }
+    }
+    
+    // Language fallback
+    LocalizeSetLang(_cache.fallback);
 }

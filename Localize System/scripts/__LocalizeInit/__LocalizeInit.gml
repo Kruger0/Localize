@@ -1,32 +1,36 @@
 
-__LocalizeTrace(__LOC_DEBUG.CRITICAL, $"Running v{LOCALIZE_VERSION}. Created by Krug | github.com/Kruger0/Localize");
-__LocalizeTrace(__LOC_DEBUG.CRITICAL, __LocalizeCache().traceMsg.sandboxed, $"{GM_is_sandboxed ? "Enabled" : "Disabled"}");
+var _cache = __LocalizeCache();
+__LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.startup);
+__LocalizeTrace(LOC_TRACE.VERBOSE, $"{GM_is_sandboxed ? _cache.traceMsg.sandboxOn : _cache.traceMsg.sandboxOff}");
 
-/////@ignore
-//function __LocalizeInit(_startup = false, _forced = true) {
-
-//}
-
-
-//__LocalizeInit(true, false)
-
-
-var _isConnected = string_count(".",string(network_resolve("www.google.com")));
-var _onlineAtRelease = !(GM_build_type == "exe" && !LOC_ONLINE_MODE);
-    
-if ((_onlineAtRelease) && _isConnected) {
-    // Online mode
-    __LocalizeTrace(__LOC_DEBUG.CRITICAL, __LocalizeCache().traceMsg.online);
-    __LocalizeDownload();
-} else {
-    // Offline mode
-    __LocalizeTrace(__LOC_DEBUG.CRITICAL, __LocalizeCache().traceMsg.offline);
-    __LocalizeUpdate();
-    return;
+if (LOC_UPDATE_MODE != LOC_ONLINE.DISABLED && GM_is_sandboxed) {
+    //show_message("[Localize] Disable file system sandbox in order to use Online Mode!")
 }
+
+call_later(1, time_source_units_frames, function() {
     
-//// Try to load a .csv at the game start
-//if (_startup) {
-//    __LocalizeUpdate();
-//}
+    // Force initial local update
+    if (file_exists(LOC_FILENAME)) {
+        __LocalizeUpdate();
+    }
+
+    switch (LOC_UPDATE_MODE) {
+        case LOC_ONLINE.DISABLED: {
+            __LocalizeTrace(LOC_TRACE.VERBOSE, __LocalizeCache().traceMsg.offline);
+            __LocalizeUpdate();
+        } break;
+        case LOC_ONLINE.DEVELOPMENT: {
+            if (GM_build_type == "run") {
+                __LocalizeDownload();
+            }
+        } break;
+        case LOC_ONLINE.PRODUCTION: {
+            if (GM_build_type == "exe") {
+                __LocalizeDownload();
+            }
+        } break;
+    }
+})
+
+
 

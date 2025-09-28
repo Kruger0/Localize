@@ -1,5 +1,7 @@
+
 ///@func LocalizeGetLangCode()
 ///@desc Returns the ISO 639 Code asigned to the curreng lang.
 function LocalizeGetLangCode() {
-    return __LocalizeCache().languages[LocalizeGetLangId()][1]
+    var _cache = __LocalizeCache();
+    return _cache.langCodes[_cache.gameLang];
 }

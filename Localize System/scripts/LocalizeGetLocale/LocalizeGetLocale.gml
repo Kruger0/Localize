@@ -1,6 +1,7 @@
 
+///@desc Returns the system language & region code
 function LocalizeGetLocale() {
-    var _reg = os_get_region();
-    var _lang = os_get_language();
-    return _lang + (_reg == "" ? "" : "-" + _reg);
+    var _region     = os_get_region();
+    var _language   = os_get_language();
+    return _language + (_region == "" ? "" : "-" + _region);
 }
