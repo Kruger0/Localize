@@ -3,7 +3,6 @@
 function __LocalizeDebug() {
     var _cache = __LocalizeCache();
     if (dbg_view_exists(_cache.dbgvPtr)) {
-        //return 0;
         dbg_view_delete(_cache.dbgvPtr);
     }
     
@@ -17,7 +16,7 @@ function __LocalizeDebug() {
     var _is_dbg_open = is_debug_overlay_open();
     _cache.dbgvPtr = dbg_view($"Localize System v{LOC_VERSION}", _is_dbg_open, 128, 128, 320, 250);
     dbg_drop_down(ref_create(_cache, "gameLang"), _dbgref, "Game Language");
-    dbg_text($"Sandboxed: {GM_is_sandboxed ? "true" : "false"}");
+    dbg_text($"Sandboxed: {GM_is_sandboxed ? "TRUE" : "FALSE"}");
     dbg_text("Path: " + filename_path(LOC_FILENAME) + LOC_FILENAME);
     dbg_button("Update online", __LocalizeDownload, 300);
     dbg_button("Update local", __LocalizeUpdate, 300);
