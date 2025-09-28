@@ -2,7 +2,19 @@
 ///@ignore
 function __LocalizeUpdate() {
     var _cache  = __LocalizeCache();
-    var _buffer = buffer_load(LOC_FILENAME); // TODO make this async
+    
+    // Validade buffer file
+    var _buffer = undefined;
+    if (file_exists(LOC_FILENAME)) {
+        _buffer = buffer_load(LOC_FILENAME); // TODO make this async
+        if (_buffer == -1) {
+            // Error reading buffer
+            return 0;
+        }
+    } else {
+        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, LOC_FILENAME);
+        return 0;
+    }
     
     // Check for sheet compression
     var _header = buffer_read(_buffer, buffer_u16);
@@ -19,6 +31,7 @@ function __LocalizeUpdate() {
     if (array_length(_sheet) == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, string(_cache.traceMsg.file404, LOC_FILENAME));
         _cache.locExists = false;
+        return false;
     } else {
         _cache.locExists = true;
         _cache.gameTexts = {};
@@ -63,4 +76,5 @@ function __LocalizeUpdate() {
     // Finish process
     __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.updtGood);
     __LocalizeDebug();
+    return 1;
 }

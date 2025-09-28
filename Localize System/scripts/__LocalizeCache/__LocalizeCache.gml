@@ -6,7 +6,7 @@ function __LocalizeCache() {
     cache ??= {
         gameTexts   : {},
         gameLang    : 0,
-        fallback    : "English",
+        fallback    : -1,
         locPath     : working_directory,
         requestId   : undefined,
         locExists   : false,
@@ -16,8 +16,10 @@ function __LocalizeCache() {
         langCodes   : [""],
         traceMsg    : {
             startup     : $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}",
-            offline     : "INFO - Offline mode. Using local sheet",
-            online      : "INFO - Online mode. Using most recent cloud sheet",
+            offline     : "ALERT - No internet connection. Unable to download sheet",
+            online      : "INFO - Downloading cloud sheet...",
+            waitingFile : "ALERT - Sheet \"{0}\" not found. Waiting for cloud sheet download",
+            localFile   : "INFO - Using local sheet file",
             trns404     : "Key \"{0}\" missing {1} translation",
             
             file404     : "ERROR - Sheet \"{0}\" not found",

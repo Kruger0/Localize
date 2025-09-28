@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeTextExt",
+  "%Name":"Localize",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeTextExt",
+  "name":"Localize",
   "parent":{
     "name":"Public",
     "path":"folders/Localize/Public.yy",

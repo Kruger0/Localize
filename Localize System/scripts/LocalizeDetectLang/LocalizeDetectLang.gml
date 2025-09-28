@@ -4,6 +4,9 @@
 function LocalizeDetectLang() {
     var _cache  = __LocalizeCache();
     var _locale = LocalizeGetLocale();
+    
+    // Skip it no language loaded
+    if (array_length(_cache.gameLang) == 0) return 0;
 
     // Search for language + region code
     for (var i = 0; i < array_length(_cache.langCodes); i++) {
@@ -25,5 +28,7 @@ function LocalizeDetectLang() {
     }
     
     // Language fallback
-    LocalizeSetLang(_cache.fallback);
+    if (_cache.fallback != -1) {
+        LocalizeSetLang(_cache.fallback);
+    }
 }

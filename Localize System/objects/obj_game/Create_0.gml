@@ -10,6 +10,7 @@ global.font = font_add(_font, 36, false, false, 32, 255)
 
 //show_debug_log(true)
 
+LocalizeSetFallback("English")
 LocalizeDetectLang()
 
 LocalizeSetTag("[uid]", environment_get_variable("USERNAME"));

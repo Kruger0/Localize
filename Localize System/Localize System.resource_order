@@ -30,6 +30,5 @@
     {"name":"LocalizeSetFallback","order":12,"path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},
     {"name":"LocalizeSetLang","order":9,"path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},
     {"name":"LocalizeSetTags","order":14,"path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},
-    {"name":"LocalizeTextExt","order":1,"path":"scripts/LocalizeTextExt/LocalizeTextExt.yy",},
   ],
 }
