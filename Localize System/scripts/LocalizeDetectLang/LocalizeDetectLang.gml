@@ -5,7 +5,7 @@ function LocalizeDetectLang() {
     var _cache  = __LocalizeCache();
     var _locale = LocalizeGetLocale();
 
-    // Search for language + region
+    // Search for language + region code
     for (var i = 0; i < array_length(_cache.langCodes); i++) {
         var _langCode = _cache.langCodes[i];
         if (_locale == _langCode) {

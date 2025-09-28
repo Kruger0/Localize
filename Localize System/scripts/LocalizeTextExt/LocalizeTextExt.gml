@@ -8,15 +8,23 @@ function LocalizeTextExt(_key, _arr) {
     // Get localized string
     var _langs = __LocalizeCache().gameTexts[$ _key];
     if (is_array(_langs)) {
-        _str = string_ext(_langs[_lang], _arr);
-    } else {
-        // No key was found
-        _str = string(_cache.traceMsg.key404, _key, LOC_FILENAME);
+        if (array_length(_langs) > _lang) {
+            _str = string_ext(_langs[_lang], _arr);
+        }
     }
     
-    // No translation was found
+    // Key failsafe
     if (_str == "") {
         _str = string(_cache.traceMsg.trns404, _key, _cache.langNames[_lang]);
+    }
+    
+    // Apply text tags
+    var _tagArr = struct_get_names(_cache.tags);
+    var _tagLen = array_length(_tagArr);
+    for (var i = 0; i < _tagLen; i++) {
+        var _tagName = _tagArr[i];
+        var _tagValue = _cache.tags[$ _tagName];
+        _str = string_replace_all(_str, _tagName, _tagValue);
     }
     
     return _str;

@@ -6,9 +6,12 @@ enum LOC_TRACE {
     DISABLED,
     CRITICAL,
     VERBOSE,
+    INFO,
+    ALERT,
+    ERROR,
 }
 
-enum LOC_ONLINE {
+enum LOC_UPDATE {
     DISABLED,
     DEVELOPMENT,
     PRODUCTION,

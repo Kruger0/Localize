@@ -4,18 +4,18 @@ if (keyboard_check_pressed(vk_enter)) {
 }
 
 if (keyboard_check_pressed(vk_f9)) {
-    show_debug_overlay(!is_debug_overlay_open())
+    show_debug_overlay(!is_debug_overlay_open());
 }
 
-var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left)
+var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
 if (_change != 0) {
-    var _lang = LocalizeGetLangId()+_change
+    var _lang = LocalizeGetLangId()+_change;
     if (_lang < 0) {
-        _lang = LocalizeGetLangCount()-1
+        _lang = LocalizeGetLangCount()-1;
     }
     if (_lang > LocalizeGetLangCount()-1) {
-        _lang = 0
+        _lang = 0;
     }
-    LocalizeSetLang(_lang)
+    LocalizeSetLang(_lang);
 }
 

@@ -28,7 +28,7 @@
   
   --Online mode
   If you want your game to autimatically checks for changes on the Google Sheets at every start, change the 
-  LOC_ONLINE_MODE macro to "true". Otherwise it will only use the provided .csv file in the game included files
+  LOC_UPDATE_MODE macro to "true". Otherwise it will only use the provided .csv file in the game included files
   
   --About CJK fonts
   In order for the system to work with CJK (Chinese Japanese Korean) languages, the font

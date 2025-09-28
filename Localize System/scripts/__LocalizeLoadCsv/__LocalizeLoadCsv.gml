@@ -1,27 +1,38 @@
 
-/// Decodes an CSV string and outputs a 2D array
-/// @jujuadams 2023-01-02
-/// Modified snap_from_csv
-/// Feather ignore all
+// @jujuadams 2023-01-02
+// Modified snap_from_csv
+
+/// @desc Decodes an CSV string and outputs a 2D array
+/// @return 2D array that represents the contents of the CSV string
+/// @param buffer Buffer to read data from
 /// @ignore
 function __LocalizeLoadCsv(buffer) {
-  
     buffer_seek(buffer, buffer_seek_start, 0);
+    var _size = buffer_get_size(buffer);
     
-    var _bufferSize            = buffer_get_size(buffer)
+    var _restorePos  = _size + buffer_tell(buffer);
+    var _restoreByte = undefined;
+    if (_restorePos < buffer_get_size(buffer)) {
+        _restoreByte = buffer_peek(buffer, _restorePos, buffer_u8);
+        buffer_poke(buffer, _restorePos, buffer_u8, 0x00);
+    } else {
+        buffer_resize(buffer, buffer_get_size(buffer)+1);
+    }
+    
     var _cellDelimiterOrd      = ord(LOC_CELL_DELIM);
-    var _stringDelimiterOrd    = ord(LOC_STRING_DELIM);
     var _stringDelimiterDouble = LOC_STRING_DELIM + LOC_STRING_DELIM;
+    var _stringDelimiterOrd    = ord(LOC_STRING_DELIM);
     
-    var _rootArray  = [];
-    var _rowArray   = undefined;
+    var _rootArray = [];
+    var _rowArray  = undefined;
+    
     var _newline    = false;
     var _read       = false;
     var _wordStart  = 0;
     var _inString   = false;
     var _stringCell = false;
     
-    repeat(_bufferSize) {
+    repeat(_size+1) {
         var _value = buffer_read(buffer, buffer_u8);
         
         if (_value == _stringDelimiterOrd) {
@@ -29,7 +40,9 @@ function __LocalizeLoadCsv(buffer) {
             if (_inString) _stringCell = true;
         } else {
             if (_value == 0x00) {
-                if (_inString) _stringCell = true;
+                if (_inString) {
+                    _stringCell = true;
+                }
                 _inString = false;
                 
                 var _prev_value = buffer_peek(buffer, buffer_tell(buffer)-2, buffer_u8);
@@ -76,10 +89,11 @@ function __LocalizeLoadCsv(buffer) {
                     
                     if (_rowArray == undefined) {
                         _rowArray = [];
-                        _rootArray[ array_length(_rootArray)] = _rowArray;
+                        _rootArray[@ array_length(_rootArray)] = _rowArray;
                     }
                     
-                    _rowArray[ array_length(_rowArray)] = _string;
+                    _rowArray[@ array_length(_rowArray)] = _string;
+                    
                     _stringCell = false;
                     _wordStart = _tell;
                     
@@ -92,6 +106,13 @@ function __LocalizeLoadCsv(buffer) {
                 }
             }
         }
-    }    
+    }
+    
+    if (_restoreByte == undefined) {
+        buffer_resize(buffer, buffer_get_size(buffer)-1);
+    } else {
+        buffer_poke(buffer, _restorePos, buffer_u8, _restoreByte);
+    }
+    
     return _rootArray;
 }
