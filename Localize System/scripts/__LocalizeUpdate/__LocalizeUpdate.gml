@@ -4,16 +4,16 @@ function __LocalizeUpdate() {
     var _cache = __LocalizeCache();
     
     // Check difference between old and new .dat file
-    var _md5_old = md5_file(LOC_FILENAME);
-    var _md5_new = md5_file(LOC_FILENAME + ".new")
-    if (_md5_old == _md5_new) {
-        file_delete(LOC_FILENAME + ".new");
-    } else {
-        if (file_exists(LOC_FILENAME + ".new")) {
-            file_delete(LOC_FILENAME);
-            file_rename(LOC_FILENAME + ".new", LOC_FILENAME);
-        }
-    }
+    //var _md5_old = md5_file(LOC_FILENAME);
+    //var _md5_new = md5_file(LOC_FILENAME + ".new")
+    //if (_md5_old == _md5_new) {
+    //    file_delete(LOC_FILENAME + ".new");
+    //} else {
+    //    if (file_exists(LOC_FILENAME + ".new")) {
+    //        file_delete(LOC_FILENAME);
+    //        file_rename(LOC_FILENAME + ".new", LOC_FILENAME);
+    //    }
+    //}
     
     // Check if file is valid and load it to cache
     var _grid = load_csv(LOC_FILENAME);
@@ -52,9 +52,9 @@ function __LocalizeUpdate() {
                 var _text = _grid[# j, i]
                 _text = string_replace_all(_text, "\\n", "\n");
                 _text = string_replace_all(_text, "\\r", "\r");
-                //for (var k = 0; k < array_length(_tags); k++) {
-                //    _text = string_replace_all(_text, _tags[k][0], _tags[k][1]);
-                //}                
+                for (var k = 0; k < array_length(_tags); k++) {
+                    _text = string_replace_all(_text, _tags[k][0], _tags[k][1]);
+                }                
                 _texts[j-1] = _text;
             }
             

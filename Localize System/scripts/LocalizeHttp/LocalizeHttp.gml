@@ -13,7 +13,7 @@ function LocalizeHttp() {
             __LocalizeUpdate();
             if (!GM_is_sandboxed && GM_build_type == "run") {
                 // If its running from the IDE, the file will be automatically copyed to the project datafiles
-                var _pathSrc = _cache.locPath + LOC_FILENAME + ".new";
+                var _pathSrc = _cache.locPath + LOC_FILENAME;
                 var _pathDst = filename_dir(GM_project_filename)+"/datafiles/"+LOC_FILENAME;
                 file_copy(_pathSrc, _pathDst);
             }

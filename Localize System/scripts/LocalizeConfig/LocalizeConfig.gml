@@ -28,26 +28,8 @@
 // Character to delimit strings in the .csv sheet
 #macro LOC_STRING_DELIM "\""
 
-// Key for the current language in the sheet.
-#macro LOC_LANG_KEY "language"
-
 // The default key to use in a language when no key is provided
 #macro LOC_MISSING_KEY "loc_missing_key"
-
-// If you want to use the LOC_AUTO_DETECT feature, place the languages used here
-// along with their respective language code according to the ISO 639 Standart
-//langs = [
-//    ["en", "English"],
-//    ["es", "Español",],
-//    ["pt", "Português",],
-//    ["it", "Italiano",],
-//    ["ru", "Русский",],
-//    ["zh", "简体中文",],
-//    ["ja", "日本語",],
-//    ["ko", "한국어",],
-//    ["de", "Deutsch",],
-//    ["fr", "Français",],
-//]
 
 // To use special characters like line breaks and other replacements, you can asign specific tags to 
 // be replaced after parsing the .csv, as they can't be directly written in the sheet
