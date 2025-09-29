@@ -1,3 +1,10 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 ///@desc Returns the system language & region code
 function LocalizeGetLocale() {

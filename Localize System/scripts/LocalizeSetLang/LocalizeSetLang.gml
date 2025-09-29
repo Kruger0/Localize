@@ -1,3 +1,10 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 ///@desc Set the game language from the lang name, lang code or the lang id.
 function LocalizeSetLang(lang) {

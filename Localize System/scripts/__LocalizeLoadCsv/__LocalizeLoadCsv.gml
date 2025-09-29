@@ -1,3 +1,10 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 // @jujuadams 2023-01-02
 // Modified snap_from_csv

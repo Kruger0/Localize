@@ -2,13 +2,13 @@
   []=============================================[]
   ||        Localization System for GameMaker    ||
   ||                                             ||
-  ||                                --KrugDev    ||
+  ||              github.com/Kruger0/Localize    ||
   []=============================================[]
 */
 
 // Start system
 var _cache = __LocalizeCache();
-__LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.startup);
+__LocalizeTrace(-1, _cache.traceMsg.startup);
 
 // Trace sandbox status
 if (LOC_UPDATE_MODE != LOC_UPDATE.DISABLED) {
@@ -17,6 +17,7 @@ if (LOC_UPDATE_MODE != LOC_UPDATE.DISABLED) {
 
 // Search for any local file
 __LocalizeUpdate();
+__LocalizeDebug();
 
 // Download sheet file from cloud
 switch (LOC_UPDATE_MODE) {

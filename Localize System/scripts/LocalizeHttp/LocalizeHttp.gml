@@ -1,3 +1,10 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 ///@desc Trace the sheet file download status. Call it in Async HTTP on your game manager object.
 function LocalizeHttp() {

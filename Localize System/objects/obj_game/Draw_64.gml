@@ -9,7 +9,7 @@ var _langCode   = LocalizeGetLangCode();
 var _text = $"{_langId ? "<<" : ""} {_langId} - {_langName} ({_langCode}) {_langId == _langCount-1 ? "" : ">>"}\n\n"+
 Localize("text_intro")+"\n"+
 Localize("text_debugger")+"\n"+
-Localize("text_cycle")+"\n"+
+Localize("text with - a weird k3y")+"\n"+
 Localize("lang_check")+"\n"+
 Localize("text_placeholder")+"\n"+
 Localize("text_score", points, Localize("text_key_space"));

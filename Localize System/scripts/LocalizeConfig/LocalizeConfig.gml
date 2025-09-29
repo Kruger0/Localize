@@ -2,7 +2,7 @@
   []=============================================[]
   ||        Localization System for GameMaker    ||
   ||                                             ||
-  ||                                --KrugDev    ||
+  ||              github.com/Kruger0/Localize    ||
   []=============================================[]
 */
 
@@ -23,7 +23,7 @@
 // INFO:        All logs will be displayed on the console
 // ALERT:       Errors and alerts will be displayed on the console
 // ERROR:       Only errors will be displayed on the console
-#macro LOC_TRACE_LEVEL LOC_TRACE.INFO
+#macro LOC_TRACE_LEVEL LOC_TRACE.DISABLED
 
 // Online update enviroment
 // DISABLED:    Use only local sheet files
@@ -58,7 +58,7 @@
 
 
 
-// ========================================================= WIP
+// ============================= WIP ============================
 // Read files using asyncronous save/load events
 #macro LOC_ASYNC_MODE true
 

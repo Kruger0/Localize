@@ -1,3 +1,10 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 ///@desc Automatically detects the users system language and set it as the game language
 function LocalizeDetectLang() {

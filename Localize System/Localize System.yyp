@@ -17,7 +17,6 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"localize.dat","CopyToMask":-1,"filePath":"datafiles","name":"localize.dat","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"NotoSansCJK-Regular.ttc","CopyToMask":-1,"filePath":"datafiles","name":"NotoSansCJK-Regular.ttc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
@@ -36,7 +35,6 @@
     {"id":{"name":"__LocalizeDownload","path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},},
     {"id":{"name":"__LocalizeInit","path":"scripts/__LocalizeInit/__LocalizeInit.yy",},},
     {"id":{"name":"__LocalizeLoadCsv","path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},},
-    {"id":{"name":"__LocalizeParseCsv","path":"scripts/__LocalizeParseCsv/__LocalizeParseCsv.yy",},},
     {"id":{"name":"__LocalizeTrace","path":"scripts/__LocalizeTrace/__LocalizeTrace.yy",},},
     {"id":{"name":"__LocalizeUpdate","path":"scripts/__LocalizeUpdate/__LocalizeUpdate.yy",},},
     {"id":{"name":"Localize","path":"scripts/Localize/Localize.yy",},},

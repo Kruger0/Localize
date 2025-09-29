@@ -13,7 +13,6 @@
     {"name":"__LocalizeDownload","order":3,"path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},
     {"name":"__LocalizeInit","order":1,"path":"scripts/__LocalizeInit/__LocalizeInit.yy",},
     {"name":"__LocalizeLoadCsv","order":5,"path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},
-    {"name":"__LocalizeParseCsv","order":6,"path":"scripts/__LocalizeParseCsv/__LocalizeParseCsv.yy",},
     {"name":"__LocalizeTrace","order":8,"path":"scripts/__LocalizeTrace/__LocalizeTrace.yy",},
     {"name":"__LocalizeUpdate","order":2,"path":"scripts/__LocalizeUpdate/__LocalizeUpdate.yy",},
     {"name":"LocalizeConfig","order":1,"path":"scripts/LocalizeConfig/LocalizeConfig.yy",},

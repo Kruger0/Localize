@@ -1,7 +1,14 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
 
 ///@ignore
 function __LocalizeTrace(mode, msg) {
-    if (LOC_TRACE_LEVEL == LOC_TRACE.DISABLED) return 0;
+    //if (LOC_TRACE_LEVEL == LOC_TRACE.DISABLED) return 0;
     if (mode <= LOC_TRACE_LEVEL) {
         for (var i = 2; i < argument_count; i++) {
             var _substr = "{" + string(i - 2) + "}";
