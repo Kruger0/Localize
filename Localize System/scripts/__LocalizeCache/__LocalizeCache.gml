@@ -7,9 +7,7 @@ function __LocalizeCache() {
         gameTexts   : {},
         gameLang    : 0,
         fallback    : -1,
-        locPath     : working_directory,
         requestId   : undefined,
-        locExists   : false,
         dbgvPtr     : undefined,
         tags        : {},
         langNames   : [""],
@@ -32,8 +30,8 @@ function __LocalizeCache() {
             fileCopy    : "INFO - Sheet copied to game datafiles at {0}",
             langIndex   : "ALERT - Invalid language index: {0}",
             
-            sandboxOn   : "ALERT - File System Sandbox Enabled. Unable to store localization file inside game datafiles. Saving to local folder instead",
-            sandboxOff  : "INFO - File System Sandbox Disabled. Localization file will be saved at game datafiles",
+            sandboxOn   : "ALERT - Unable to store localization file inside game datafiles. Saving to local folder instead",
+            sandboxOff  : "INFO - Localization file will be saved at game datafiles",
         }
     }
     return cache;

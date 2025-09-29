@@ -1,5 +1,4 @@
 
-///@func LocalizeSetLang(lang)
 ///@desc Set the game language from the lang name, lang code or the lang id.
 function LocalizeSetLang(lang) {
     var _cache = __LocalizeCache();
@@ -12,13 +11,13 @@ function LocalizeSetLang(lang) {
                 return 1;
             }
         }
-        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.lang404, lang);
+        __LocalizeTrace(LOC_TRACE.ERROR, _cache.traceMsg.lang404, lang);
         return 0
     } else if (is_real(lang)) {
         lang = clamp(lang, 0, LocalizeGetLangCount());
         _cache.gameLang = lang;
     } else {
-        __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.langIndex, lang);
+        __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.langIndex, lang);
     }
     return 1;
 }

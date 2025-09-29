@@ -25,8 +25,6 @@
     {"name":"LocalizeGetLangs","order":8,"path":"scripts/LocalizeGetLangs/LocalizeGetLangs.yy",},
     {"name":"LocalizeGetLocale","order":13,"path":"scripts/LocalizeGetLocale/LocalizeGetLocale.yy",},
     {"name":"LocalizeHttp","order":2,"path":"scripts/LocalizeHttp/LocalizeHttp.yy",},
-    {"name":"LocalizeReplace","order":11,"path":"scripts/LocalizeReplace/LocalizeReplace.yy",},
-    {"name":"LocalizeSaveLoad","order":3,"path":"scripts/LocalizeSaveLoad/LocalizeSaveLoad.yy",},
     {"name":"LocalizeSetFallback","order":12,"path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},
     {"name":"LocalizeSetLang","order":9,"path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},
     {"name":"LocalizeSetTags","order":14,"path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},

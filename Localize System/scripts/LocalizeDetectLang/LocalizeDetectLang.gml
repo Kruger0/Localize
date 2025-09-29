@@ -1,5 +1,4 @@
 
-///@func LocalizeDetectLang()
 ///@desc Automatically detects the users system language and set it as the game language
 function LocalizeDetectLang() {
     var _cache  = __LocalizeCache();

@@ -48,8 +48,6 @@
     {"id":{"name":"LocalizeGetLangs","path":"scripts/LocalizeGetLangs/LocalizeGetLangs.yy",},},
     {"id":{"name":"LocalizeGetLocale","path":"scripts/LocalizeGetLocale/LocalizeGetLocale.yy",},},
     {"id":{"name":"LocalizeHttp","path":"scripts/LocalizeHttp/LocalizeHttp.yy",},},
-    {"id":{"name":"LocalizeReplace","path":"scripts/LocalizeReplace/LocalizeReplace.yy",},},
-    {"id":{"name":"LocalizeSaveLoad","path":"scripts/LocalizeSaveLoad/LocalizeSaveLoad.yy",},},
     {"id":{"name":"LocalizeSetFallback","path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},},
     {"id":{"name":"LocalizeSetLang","path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},},
     {"id":{"name":"LocalizeSetTags","path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},},

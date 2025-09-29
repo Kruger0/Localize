@@ -5,14 +5,16 @@ function __LocalizeUpdate() {
     
     // Validade buffer file
     var _buffer = undefined;
-    if (file_exists(LOC_FILENAME)) {
-        _buffer = buffer_load(LOC_FILENAME); // TODO make this async
-        if (_buffer == -1) {
-            // Error reading buffer
-            return 0;
-        }
+    var _dataFile = program_directory + LOC_FILENAME;
+    if (file_exists(_dataFile)) {
+        _buffer = buffer_load(_dataFile);
+    } else if (file_exists(LOC_FILENAME)) {
+        _buffer = buffer_load(LOC_FILENAME);
     } else {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, LOC_FILENAME);
+        __LocalizeTrace(LOC_TRACE.ERROR, _cache.traceMsg.file404, LOC_FILENAME);
+        return 0;
+    }
+    if (_buffer == -1) {
         return 0;
     }
     
@@ -29,11 +31,9 @@ function __LocalizeUpdate() {
     var _sheet = __LocalizeLoadCsv(_buffer);
     buffer_delete(_buffer);
     if (array_length(_sheet) == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, string(_cache.traceMsg.file404, LOC_FILENAME));
-        _cache.locExists = false;
+        __LocalizeTrace(LOC_TRACE.ERROR, string(_cache.traceMsg.file404, LOC_FILENAME));
         return false;
     } else {
-        _cache.locExists = true;
         _cache.gameTexts = {};
     }
     
@@ -64,9 +64,10 @@ function __LocalizeUpdate() {
             var _text = _sheet[i, j]
             
             // Replace linebreaks
-            _text = string_replace_all(_text, "\\n", "\n");
-            _text = string_replace_all(_text, "\\r", "\r");
-            
+            if (LOC_REPLACE_NEWLINE) {
+                _text = string_replace_all(_text, "\\n", "\n");
+                _text = string_replace_all(_text, "\\r", "\r");
+            }
             
             _texts[j-1] = _text;
         }
@@ -74,7 +75,7 @@ function __LocalizeUpdate() {
     }
     
     // Finish process
-    __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.updtGood);
+    __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.updtGood);
     __LocalizeDebug();
     return 1;
 }

@@ -4,8 +4,7 @@
   ||                                             ||
   ||                                --KrugDev    ||
   []=============================================[]
-
-
+  
   --How to use!
   1. Create a Google Sheets file, share it and select "Anyone with the link" to be a Viewer (Reader).
      (You can also use the demo sheet as a base — just copy it and change the Sheet ID)
@@ -18,17 +17,26 @@
   
   3. Call LocalizeHttp() in the Async HTTP event of your game manager object. A success message should appear in the console log.
   
-  4. Use the system by calling localize("your_text_key") and it will return the localized string according to the setted language.
+  4. Use the system by calling Localize("your_text_key") and it will return the localized string according to the setted language.
   
   --Important!
-  By default, GameMaker runs in sandbox mode, so the .csv file will be downloaded to AppData/Local.
+  By default, GameMaker runs in sandbox mode, so the sheet file will be downloaded to AppData/Local.
   To store it in the game directory instead, go to Game Options -> Windows, and check “Disable File System Sandbox”.
-  This way, the .csv sheed will be downloaded directly to the included files of the game during development, and 
+  This way, the sheet file will be downloaded directly to the game datafiles during development, and 
   automatically exported at the executable build.
   
-  --Online mode
-  If you want your game to autimatically checks for changes on the Google Sheets at every start, change the 
-  LOC_UPDATE_MODE macro to "true". Otherwise it will only use the provided .csv file in the game included files
+  --Update Mode
+  There is tree update modes for the system. Disabled, where nothing will be downloaded and only local files will
+  be uses. DEVELOPMENT, where the sheet downloading only happens on runtime builds (recomended behavior, as the developer
+  can asure that everything is working correctly with console logs. And PRODUCTION, where the game will aways try to download
+  and replace the sheet file. This setting is not recomended since errors can happen and not every system will allow 
+  download/replace files inside of the game folder. Use it at your own risk.
+  
+  --Auto detect
+  The system can detect the computer language of the user and automatically set the language based on the lang code. In
+  oder to use it, write them on the language name, just like in the example sheet provided. If you want both language and
+  regional detection, write the full regional code to be used. If the system finds no match between the user region and
+  the sheet regions, the first language entry will be used.
   
   --About CJK fonts
   In order for the system to work with CJK (Chinese Japanese Korean) languages, the font
@@ -36,8 +44,8 @@
   
   .csv sheet format example
   |---------------|-------------------|-------------------|---------------------------|
-  |language       | English           | Português         | Español                   |
+  |language       | English-en-US     | Português-pt-BR   | Español-es                |
   |---------------|-------------------|-------------------|---------------------------|
-  |text_intro     | This is an intro!    | Isso é uma intro!    | Esta és una introducion!  |
+  |text_intro     | This is an intro! | Isso é uma intro! | Esta és una introducion!  |
   |---------------|-------------------|-------------------|---------------------------|
 */

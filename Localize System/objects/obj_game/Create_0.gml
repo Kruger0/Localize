@@ -7,10 +7,8 @@ points = 0
 var _font = "NotoSansCJK-Regular.ttc"
 global.font = font_add(_font, 36, false, false, 32, 255)
 
-
-//show_debug_log(true)
-
 LocalizeSetFallback("English")
 LocalizeDetectLang()
 
-LocalizeSetTag("[uid]", environment_get_variable("USERNAME"));
+LocalizeSetTag("[user_id]", environment_get_variable("USERNAME"));
+LocalizeSetTag("[os_date]", $"{current_year}-{current_month}-{current_day}");
