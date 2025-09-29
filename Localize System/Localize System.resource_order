@@ -2,8 +2,8 @@
   "FolderOrderSettings":[
     {"name":"Demo","order":5,"path":"folders/Demo.yy",},
     {"name":"Localize","order":4,"path":"folders/Localize.yy",},
-    {"name":"Private","order":2,"path":"folders/Localize/Private.yy",},
-    {"name":"Public","order":3,"path":"folders/Localize/Public.yy",},
+    {"name":"Private","order":3,"path":"folders/Localize/Private.yy",},
+    {"name":"Public","order":2,"path":"folders/Localize/Public.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},

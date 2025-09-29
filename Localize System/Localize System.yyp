@@ -27,6 +27,7 @@
   },
   "name":"Localize System",
   "resources":[
+    {"id":{"name":"Localize System","path":"notes/Localize System/Localize System.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"__LocalizeCache","path":"scripts/__LocalizeCache/__LocalizeCache.yy",},},
@@ -51,7 +52,6 @@
     {"id":{"name":"LocalizeSetFallback","path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},},
     {"id":{"name":"LocalizeSetLang","path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},},
     {"id":{"name":"LocalizeSetTags","path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},},
-    {"id":{"name":"LocalizeSystem","path":"scripts/LocalizeSystem/LocalizeSystem.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
