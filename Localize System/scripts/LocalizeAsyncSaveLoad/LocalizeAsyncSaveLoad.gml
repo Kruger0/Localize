@@ -7,7 +7,7 @@
 */
 
 ///@desc Handles the sheet asyncronous loading. Call it in Async Save/Load event on your game manager object.
-function LocalizeAsyncLoad() {
+function LocalizeAsyncSaveLoad() {
     var _cache      = __LocalizeCache();
     var _asyncLoad  = json_parse(json_encode(async_load));
     var _asyncArray = _cache.asyncArray;

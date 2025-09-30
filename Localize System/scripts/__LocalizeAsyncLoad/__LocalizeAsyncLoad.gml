@@ -6,7 +6,6 @@
   []=============================================[]
 */
 
-
 ///@ignore
 function __LocalizeAsyncLoad(filename, callback) {
     var _cache = __LocalizeCache();

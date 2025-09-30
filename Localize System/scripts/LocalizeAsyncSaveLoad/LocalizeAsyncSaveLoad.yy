@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeAsyncLoad",
+  "%Name":"LocalizeAsyncSaveLoad",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeAsyncLoad",
+  "name":"LocalizeAsyncSaveLoad",
   "parent":{
     "name":"Public",
     "path":"folders/Localize/Public.yy",

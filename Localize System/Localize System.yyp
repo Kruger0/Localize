@@ -43,7 +43,7 @@
     {"id":{"name":"__LocalizeUpdate","path":"scripts/__LocalizeUpdate/__LocalizeUpdate.yy",},},
     {"id":{"name":"Localize","path":"scripts/Localize/Localize.yy",},},
     {"id":{"name":"LocalizeAsyncHttp","path":"scripts/LocalizeAsyncHttp/LocalizeAsyncHttp.yy",},},
-    {"id":{"name":"LocalizeAsyncLoad","path":"scripts/LocalizeAsyncLoad/LocalizeAsyncLoad.yy",},},
+    {"id":{"name":"LocalizeAsyncSaveLoad","path":"scripts/LocalizeAsyncSaveLoad/LocalizeAsyncSaveLoad.yy",},},
     {"id":{"name":"LocalizeConfig","path":"scripts/LocalizeConfig/LocalizeConfig.yy",},},
     {"id":{"name":"LocalizeDetectLang","path":"scripts/LocalizeDetectLang/LocalizeDetectLang.yy",},},
     {"id":{"name":"LocalizeGetLangCode","path":"scripts/LocalizeGetLangCode/LocalizeGetLangCode.yy",},},
