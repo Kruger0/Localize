@@ -1,3 +1,11 @@
+/*
+  []=============================================[]
+  ||        Localization System for GameMaker    ||
+  ||                                             ||
+  ||              github.com/Kruger0/Localize    ||
+  []=============================================[]
+*/
+
 
 ///@ignore
 function __LocalizeAsyncLoad(filename, callback) {
