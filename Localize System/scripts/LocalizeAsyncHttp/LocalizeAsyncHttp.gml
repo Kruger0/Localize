@@ -6,8 +6,8 @@
   []=============================================[]
 */
 
-///@desc Trace the sheet file download status. Call it in Async HTTP on your game manager object.
-function LocalizeHttp() {
+///@desc Handles the sheet file download. Call it in Async HTTP event on your game manager object.
+function LocalizeAsyncHttp() {
     var _cache = __LocalizeCache();
     var _result;
     var _async = json_parse(json_encode(async_load))

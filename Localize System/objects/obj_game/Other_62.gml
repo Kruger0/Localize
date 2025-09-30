@@ -1,2 +1,2 @@
-LocalizeHttp()
 
+LocalizeAsyncHttp();

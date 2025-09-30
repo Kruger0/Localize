@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeHandleBuffer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeHandleBuffer",
+  "parent":{
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

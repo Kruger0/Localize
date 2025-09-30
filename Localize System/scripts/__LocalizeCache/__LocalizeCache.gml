@@ -16,6 +16,7 @@ function __LocalizeCache() {
         fallback    : -1,
         requestId   : undefined,
         debugPtr    : undefined,
+        asyncArray  : [],
         tags        : {},
         langNames   : [""],
         langCodes   : [""],

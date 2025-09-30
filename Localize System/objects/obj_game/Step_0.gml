@@ -18,4 +18,3 @@ if (_change != 0) {
     }
     LocalizeSetLang(_lang);
 }
-

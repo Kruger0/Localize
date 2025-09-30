@@ -15,7 +15,7 @@
      
   2. Copy the unique sheet ID from the URL and paste it into the LOC_SHEET_ID macro.
   
-  3. Call LocalizeHttp() in the Async HTTP event of your game manager object. A success message should appear in the console log.
+  3. Call LocalizeAsyncHttp() in the Async HTTP event of your game manager object. A success message should appear in the console log.
   
   4. Use the system by calling Localize("your_text_key") and it will return the localized string according to the setted language.
   

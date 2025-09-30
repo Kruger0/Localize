@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeAsyncHttp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeAsyncHttp",
+  "parent":{
+    "name":"Public",
+    "path":"folders/Localize/Public.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
