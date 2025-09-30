@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeAsyncSave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeAsyncSave",
+  "parent":{
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

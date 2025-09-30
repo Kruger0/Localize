@@ -16,7 +16,7 @@
 #macro LOC_FILENAME "localize.dat"
 
 // Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
-#macro LOC_COMPRESS false
+#macro LOC_COMPRESS true
 
 // Debug trace level
 // DISABLED:    No log will be displayed on the console

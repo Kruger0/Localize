@@ -1,2 +1,2 @@
 
-LocalizeAsyncSaveLoad();
+LocalizeAsyncLoad();

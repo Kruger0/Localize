@@ -15,14 +15,14 @@ function __LocalizeUpdate() {
     var _dataFile = program_directory + LOC_FILENAME;
     if (file_exists(_dataFile)) {
         if (LOC_ASYNC_MODE) {
-            __LocalizeSaveLoad(_dataFile, __LocalizeHandleBuffer);
+            __LocalizeAsyncLoad(_dataFile, __LocalizeHandleBuffer);
             return 1;
         } else {
             _buffer = buffer_load(_dataFile);
         }
     } else if (file_exists(LOC_FILENAME)) {
         if (LOC_ASYNC_MODE) {
-            __LocalizeSaveLoad(LOC_FILENAME, __LocalizeHandleBuffer);
+            __LocalizeAsyncLoad(LOC_FILENAME, __LocalizeHandleBuffer);
             return 1;
         } else {
             _buffer = buffer_load(LOC_FILENAME);
