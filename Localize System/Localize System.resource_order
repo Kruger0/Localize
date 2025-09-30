@@ -21,6 +21,7 @@
     {"name":"LocalizeAsyncSaveLoad","order":2,"path":"scripts/LocalizeAsyncSaveLoad/LocalizeAsyncSaveLoad.yy",},
     {"name":"LocalizeConfig","order":1,"path":"scripts/LocalizeConfig/LocalizeConfig.yy",},
     {"name":"LocalizeDetectLang","order":11,"path":"scripts/LocalizeDetectLang/LocalizeDetectLang.yy",},
+    {"name":"LocalizeDownloadSheet","order":13,"path":"scripts/LocalizeDownloadSheet/LocalizeDownloadSheet.yy",},
     {"name":"LocalizeGetLangCode","order":5,"path":"scripts/LocalizeGetLangCode/LocalizeGetLangCode.yy",},
     {"name":"LocalizeGetLangCount","order":3,"path":"scripts/LocalizeGetLangCount/LocalizeGetLangCount.yy",},
     {"name":"LocalizeGetLangId","order":6,"path":"scripts/LocalizeGetLangId/LocalizeGetLangId.yy",},

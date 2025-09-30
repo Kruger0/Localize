@@ -7,7 +7,7 @@
 */
 
 #macro LOC_VERSION  "2.0.0"
-#macro LOC_DATE     "2025-09-29"
+#macro LOC_DATE     "2025-09-30"
 
 enum LOC_TRACE {
     DISABLED,
