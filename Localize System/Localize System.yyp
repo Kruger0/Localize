@@ -37,6 +37,7 @@
     {"id":{"name":"__LocalizeConstants","path":"scripts/__LocalizeConstants/__LocalizeConstants.yy",},},
     {"id":{"name":"__LocalizeDebug","path":"scripts/__LocalizeDebug/__LocalizeDebug.yy",},},
     {"id":{"name":"__LocalizeDownload","path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},},
+    {"id":{"name":"__LocalizeFetchEnabled","path":"scripts/__LocalizeFetchEnabled/__LocalizeFetchEnabled.yy",},},
     {"id":{"name":"__LocalizeHandleBuffer","path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},},
     {"id":{"name":"__LocalizeInit","path":"scripts/__LocalizeInit/__LocalizeInit.yy",},},
     {"id":{"name":"__LocalizeLoadCsv","path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},},
