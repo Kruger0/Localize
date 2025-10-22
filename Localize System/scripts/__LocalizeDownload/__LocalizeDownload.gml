@@ -7,12 +7,17 @@
 */
 
 ///@ignore
-function __LocalizeDownload(){
-    var _cache = __LocalizeCache();
+function __LocalizeDownload(fileId){
+    var _cache  = __LocalizeCache();
+    var _file   = _cache.files[fileId];
+    
     // Credits to https://twitter.com/VINE2D for coming up with this
-    var _link = $"https://docs.google.com/spreadsheets/d/{LOC_SHEET_ID}/export?format=csv&gid={LOC_SHEET_PAGE}";
+    var _link = $"https://docs.google.com/spreadsheets/d/{_file.sheetId}/export?format=csv&gid={_file.sheetPage}";
+    
+    // Check for internet connection (is this necessary?)
     var _isConnected = network_resolve("www.google.com") != "";
     if (os_type == os_gxgames) _isConnected = true;
+    
     var _path = working_directory + LOC_FILENAME;
     if (_isConnected) {
         __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.online);
@@ -22,6 +27,6 @@ function __LocalizeDownload(){
         }
     } else {
         __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.offline);
-        __LocalizeUpdate();
+        __LocalizeUpdate(_file.fileName);
     }
 }
