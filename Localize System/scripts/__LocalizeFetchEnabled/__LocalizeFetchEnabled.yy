@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeFetchEnabled",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeFetchEnabled",
+  "parent":{
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
