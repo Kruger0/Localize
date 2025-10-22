@@ -12,6 +12,7 @@ function __LocalizeDownload(){
     // Credits to https://twitter.com/VINE2D for coming up with this
     var _link = $"https://docs.google.com/spreadsheets/d/{LOC_SHEET_ID}/export?format=csv&gid={LOC_SHEET_PAGE}";
     var _isConnected = network_resolve("www.google.com") != "";
+    if (os_type == os_gxgames) _isConnected = true;
     var _path = working_directory + LOC_FILENAME;
     if (_isConnected) {
         __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.online);

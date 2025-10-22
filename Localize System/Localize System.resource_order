@@ -6,7 +6,8 @@
     {"name":"Public","order":2,"path":"folders/Localize/Public.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
+    {"name":"obj_demo","order":1,"path":"objects/obj_demo/obj_demo.yy",},
+    {"name":"obj_localize","order":2,"path":"objects/obj_localize/obj_localize.yy",},
     {"name":"__LocalizeAsyncLoad","order":9,"path":"scripts/__LocalizeAsyncLoad/__LocalizeAsyncLoad.yy",},
     {"name":"__LocalizeAsyncSave","order":8,"path":"scripts/__LocalizeAsyncSave/__LocalizeAsyncSave.yy",},
     {"name":"__LocalizeCache","order":2,"path":"scripts/__LocalizeCache/__LocalizeCache.yy",},
@@ -27,6 +28,7 @@
     {"name":"LocalizeGetLangName","order":4,"path":"scripts/LocalizeGetLangName/LocalizeGetLangName.yy",},
     {"name":"LocalizeGetLangs","order":7,"path":"scripts/LocalizeGetLangs/LocalizeGetLangs.yy",},
     {"name":"LocalizeGetLocale","order":12,"path":"scripts/LocalizeGetLocale/LocalizeGetLocale.yy",},
+    {"name":"LocalizeLoad","order":13,"path":"scripts/LocalizeLoad/LocalizeLoad.yy",},
     {"name":"LocalizeSetFallback","order":10,"path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},
     {"name":"LocalizeSetLang","order":8,"path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},
     {"name":"LocalizeSetTags","order":9,"path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},

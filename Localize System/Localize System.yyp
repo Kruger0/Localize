@@ -28,8 +28,9 @@
   "name":"Localize System",
   "resources":[
     {"id":{"name":"Localize System","path":"notes/Localize System/Localize System.yy",},},
-    {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
-    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
+    {"id":{"name":"obj_localize","path":"objects/obj_localize/obj_localize.yy",},},
+    {"id":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},
     {"id":{"name":"__LocalizeAsyncLoad","path":"scripts/__LocalizeAsyncLoad/__LocalizeAsyncLoad.yy",},},
     {"id":{"name":"__LocalizeAsyncSave","path":"scripts/__LocalizeAsyncSave/__LocalizeAsyncSave.yy",},},
     {"id":{"name":"__LocalizeCache","path":"scripts/__LocalizeCache/__LocalizeCache.yy",},},
@@ -52,6 +53,7 @@
     {"id":{"name":"LocalizeGetLangName","path":"scripts/LocalizeGetLangName/LocalizeGetLangName.yy",},},
     {"id":{"name":"LocalizeGetLangs","path":"scripts/LocalizeGetLangs/LocalizeGetLangs.yy",},},
     {"id":{"name":"LocalizeGetLocale","path":"scripts/LocalizeGetLocale/LocalizeGetLocale.yy",},},
+    {"id":{"name":"LocalizeLoad","path":"scripts/LocalizeLoad/LocalizeLoad.yy",},},
     {"id":{"name":"LocalizeSetFallback","path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},},
     {"id":{"name":"LocalizeSetLang","path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},},
     {"id":{"name":"LocalizeSetTags","path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},},
@@ -59,7 +61,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

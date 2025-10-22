@@ -14,6 +14,7 @@ function __LocalizeCache() {
         gameTexts   : {},
         gameLang    : 0,
         fallback    : -1,
+        canFetch    : (os_type == os_windows || os_type == os_macosx || os_type == os_linux),
         requestId   : undefined,
         debugPtr    : undefined,
         asyncArray  : [],
@@ -38,6 +39,7 @@ function __LocalizeCache() {
             dlBad       : "ERROR - Unable to download sheet: {0}",
             fileCopy    : "INFO - Sheet copied to game datafiles at {0}",
             langIndex   : "ALERT - Invalid language index: {0}",
+            cantFetch   : "ALERT - Platform doesn't support fetching",
             
             sandboxOn   : "ALERT - Unable to store localization file inside game datafiles. Saving to local folder instead",
             sandboxOff  : "INFO - Localization file will be saved at game datafiles",

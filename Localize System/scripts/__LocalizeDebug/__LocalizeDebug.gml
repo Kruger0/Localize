@@ -8,6 +8,7 @@
 
 ///@ignore
 function __LocalizeDebug() {
+    if (os_browser != browser_not_a_browser) return 0;
     var _cache = __LocalizeCache();
     if (dbg_view_exists(_cache.debugPtr)) {
         dbg_view_delete(_cache.debugPtr);
