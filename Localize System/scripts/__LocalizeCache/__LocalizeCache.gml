@@ -18,6 +18,7 @@ function __LocalizeCache() {
         requestId   : undefined,
         debugPtr    : undefined,
         asyncArray  : [],
+        files       : [],
         pathDest    : filename_dir(GM_project_filename)+"/datafiles/"+LOC_FILENAME,
         pathSource  : "",
         tags        : {},
