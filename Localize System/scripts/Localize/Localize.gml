@@ -12,6 +12,8 @@ function Localize(key) {
     var _string = "";
     var _lang   = _cache.gameLang;
     
+    if (LocalizeGetLangCount() < 1) return 0; // TODO is this the best fallback method?
+    
     // Get localized string
     var _langs = __LocalizeCache().gameTexts[$ key];
     if (is_array(_langs)) {

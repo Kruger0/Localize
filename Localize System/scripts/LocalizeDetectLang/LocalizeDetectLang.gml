@@ -12,7 +12,7 @@ function LocalizeDetectLang() {
     var _locale = LocalizeGetLocale();
     
     // Skip it no language loaded
-    if (array_length(_cache.gameLang) == 0) return 0;
+    if (array_length(_cache.langNames) == 0) return 0;
 
     // Search for language + region code
     for (var i = 0; i < array_length(_cache.langCodes); i++) {

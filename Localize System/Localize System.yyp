@@ -17,7 +17,9 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"localize.dat","CopyToMask":-1,"filePath":"datafiles","name":"localize.dat","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialogues.loc","CopyToMask":-1,"filePath":"datafiles","name":"dialogues.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"interface.loc","CopyToMask":-1,"filePath":"datafiles","name":"interface.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"items.loc","CopyToMask":-1,"filePath":"datafiles","name":"items.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"NotoSansCJK-Regular.ttc","CopyToMask":-1,"filePath":"datafiles","name":"NotoSansCJK-Regular.ttc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
@@ -48,6 +50,7 @@
     {"id":{"name":"LocalizeAsyncSaveLoad","path":"scripts/LocalizeAsyncSaveLoad/LocalizeAsyncSaveLoad.yy",},},
     {"id":{"name":"LocalizeConfig","path":"scripts/LocalizeConfig/LocalizeConfig.yy",},},
     {"id":{"name":"LocalizeDetectLang","path":"scripts/LocalizeDetectLang/LocalizeDetectLang.yy",},},
+    {"id":{"name":"LocalizeGetFiles","path":"scripts/LocalizeGetFiles/LocalizeGetFiles.yy",},},
     {"id":{"name":"LocalizeGetLangCode","path":"scripts/LocalizeGetLangCode/LocalizeGetLangCode.yy",},},
     {"id":{"name":"LocalizeGetLangCount","path":"scripts/LocalizeGetLangCount/LocalizeGetLangCount.yy",},},
     {"id":{"name":"LocalizeGetLangId","path":"scripts/LocalizeGetLangId/LocalizeGetLangId.yy",},},

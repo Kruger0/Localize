@@ -6,15 +6,6 @@
   []=============================================[]
 */
 
-// The Google Sheet ID containing the localization. Copy your sheet ID here!
-#macro LOC_SHEET_ID "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444"
-
-// The Google Sheet page containing the text data. Change it if your texts are stored in a different page other than the 1st one
-#macro LOC_SHEET_PAGE "0"
-
-// Name of the sheet file after being downloaded
-#macro LOC_FILENAME "localize.dat"
-
 // Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
 #macro LOC_COMPRESS true
 
@@ -40,28 +31,7 @@
 // Character to delimit strings in the sheet. Default for Google Sheets is "\""
 #macro LOC_STRING_DELIM "\""
 
+#macro LOC_CODE_DELIM "_"
+
 // If enabled, string escape characters (\n, \r) will be parsed as new line
 #macro LOC_REPLACE_NEWLINE true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ============================= WIP ============================
-
-
-// Add extra pages of the same sheet to load text from multiple files
-#macro LOC_SHEET_PAGES ["0", "845810860", "798887904"]
