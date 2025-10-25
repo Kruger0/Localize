@@ -32,7 +32,8 @@ function Localize(key) {
     
     // Key failsafe
     if (_string == "") {
-        _string = string(_cache.traceMsg.trns404, key, _cache.langNames[_lang]);
+        var _currLang = _cache.languages[_lang];
+        _string = string(_cache.traceMsg.trns404, key, $"{_currLang[0]}-{_currLang[1]}");
     }
     
     // Apply text tags

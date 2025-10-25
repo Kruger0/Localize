@@ -11,7 +11,7 @@ LocalizeDownloadSheet("langs/baseGame.dat",     "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxa
 LocalizeDownloadSheet("langs/dialogues.dat",    "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444", "1449269156");
 LocalizeDownloadSheet("langs/missions.dat",     "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444", "1212707375");
 
-LocalizeSetFallback("English");
+LocalizeSetFallback("English-en-US");
 LocalizeDetectLang();
 
 LocalizeSetTag("[user_id]", environment_get_variable("USERNAME"));

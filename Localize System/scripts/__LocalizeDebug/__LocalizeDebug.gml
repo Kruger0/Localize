@@ -16,7 +16,7 @@ function __LocalizeDebug() {
     var _dbgref = "";
     var _langs = LocalizeGetLangs();
     for (var i = 0, _len = array_length(_langs); i < _len; i++) {
-        _dbgref += _langs[i];
+        _dbgref += _langs[i][0];
         _dbgref += $":{i}"+(i < _len-1 ? "," : "");
     }
     

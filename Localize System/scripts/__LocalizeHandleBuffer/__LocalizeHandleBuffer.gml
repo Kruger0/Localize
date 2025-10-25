@@ -36,20 +36,19 @@ function __LocalizeHandleBuffer(buffer, status) {
     // Process languages
     var _langNames = [];
     var _langCodes = [];
+    var _languages = [];
     for (var i = 1; i < array_length(_sheet[0]); i++) {
         var _langString = _sheet[0, i];
-        var _langData = string_split(_langString, "-");
-        var _langName = _langData[0];
-        var _langCode = "";
-        switch (array_length(_langData)) {
-            case 2: _langCode = _langData[1]; break;
-            case 3: _langCode = _langData[1] + "-" + _langData[2]; break;
-        }
-        array_push(_langNames, _langName);
-        array_push(_langCodes, _langCode);
+        var _langData = __LocalizeSplitLang(_langString);
+        array_push(_langNames, _langData[0]);
+        array_push(_langCodes, _langData[1]);
+        array_push(_languages, _langData);
     }
     _cache.langNames = _langNames;
     _cache.langCodes = _langCodes;
+    _cache.languages = _languages;
+    
+    __LocalizeFindLanguageIndex("en")
     
     // Process texts
     for (var i = 1; i < array_length(_sheet); i++) {

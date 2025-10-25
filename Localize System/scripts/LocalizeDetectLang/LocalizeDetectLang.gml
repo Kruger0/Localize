@@ -6,13 +6,13 @@
   []=============================================[]
 */
 
-///@desc Automatically detects the users system language and set it as the game language
+///@desc Automatically detects system language and applies it
 function LocalizeDetectLang() {
     var _cache  = __LocalizeCache();
     var _locale = LocalizeGetLocale();
     
     // Skip it no language loaded
-    if (array_length(_cache.gameLang) == 0) return 0;
+    if (array_length(_cache.languages) == 0) return 0;
 
     // Search for language + region code
     for (var i = 0; i < array_length(_cache.langCodes); i++) {

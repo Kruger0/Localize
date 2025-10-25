@@ -8,5 +8,5 @@
 
 ///@desc Returns the current language count loaded on the game.
 function LocalizeGetLangCount() {
-    return array_length(LocalizeGetLangs());
+    return array_length(__LocalizeCache().langNames);
 }

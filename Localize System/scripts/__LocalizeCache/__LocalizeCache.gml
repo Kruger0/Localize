@@ -22,6 +22,7 @@ function __LocalizeCache() {
         tags        : {},
         langNames   : [""],
         langCodes   : [""],
+        languages   : [],
         traceMsg    : {
             startup     : $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}",
             offline     : "ALERT - No internet connection. Unable to download sheet",
