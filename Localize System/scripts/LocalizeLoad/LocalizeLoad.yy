@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeLoad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeLoad",
+  "parent":{
+    "name":"Public",
+    "path":"folders/Localize/Public.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

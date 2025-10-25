@@ -12,8 +12,9 @@ Localize("text_debugger")+"\n"+
 Localize("text with - a weird k3y")+"\n"+
 Localize("lang_check")+"\n"+
 Localize("text_placeholder")+"\n"+
+Localize("dialog.warrior.2")+"\n"+
 Localize("text_score", points, Localize("text_key_space"));
 
-draw_text_ext(32, 32, _text, 64, 1300);
+draw_text_ext(32, 32, _text, 48, 1300);
 
 draw_set_font(-1);

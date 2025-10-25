@@ -27,22 +27,46 @@ function __LocalizeHandleBuffer(buffer, status) {
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
     if (array_length(_sheet) == 0) {
-        __LocalizeTrace(LOC_TRACE.ERROR, string(_cache.traceMsg.file404, LOC_FILENAME));
+        __LocalizeTrace(LOC_TRACE.ERROR, string(_cache.traceMsg.file404, -1)); // TODO pass a file here?
         return 0;
     } else {
-        _cache.gameTexts = {};
+        //_cache.gameTexts = {};
     }
     
     // Process languages
+    _cache.texts = {}
     var _langNames = [];
     var _langCodes = [];
-    var _languages = [];
-    for (var i = 1; i < array_length(_sheet[0]); i++) {
+    
+    // Iterate rows
+    for (var i = 0; i < array_length(_sheet); i++) {
+        var _line = _sheet[i];
+        
+        
+        // Iterate cols
+        for (var j = 0; j < array_length(_line); j++) {
+            var _cell = _line[j];
+        }
+        
+        // TODO iraaaaaaaa
+        
         var _langString = _sheet[0, i];
-        var _langData = __LocalizeSplitLang(_langString);
-        array_push(_langNames, _langData[0]);
-        array_push(_langCodes, _langData[1]);
-        array_push(_languages, _langData);
+        var _langData = string_split(_langString, LOC_CODE_DELIM);
+        var _langName = _langData[0];
+        var _langCode = "";
+        if (array_length(_langData) > 1) {
+            _langCode = _langData[1]; 
+        } else {
+            // TODO use lookup ISO code
+            _langCode = _langName;
+        }
+        array_push(_langNames, _langName);
+        array_push(_langCodes, _langCode);
+        
+        _cache.texts[$ _langCode] ??= {
+            langName: _langName,
+            langKeys: {},
+        }
     }
     _cache.langNames = _langNames;
     _cache.langCodes = _langCodes;
@@ -56,9 +80,9 @@ function __LocalizeHandleBuffer(buffer, status) {
         var _line = _sheet[i];
         var _key = _line[0];
         for (var j = 1; j < array_length(_line); j++) {
-            var _text = _sheet[i, j]
+            var _text = _sheet[i, j];
             
-            // Replace linebreaks
+            // Replace linebreaks for a new line
             if (LOC_REPLACE_NEWLINE) {
                 _text = string_replace_all(_text, "\\n", "\n");
                 _text = string_replace_all(_text, "\\r", "\r");
@@ -66,7 +90,7 @@ function __LocalizeHandleBuffer(buffer, status) {
             
             _texts[j-1] = _text;
         }
-        _cache.gameTexts[$ _key] = _texts;
+        _cache.gameTexts[$ _key] ??= _texts;
     }
     
     // Finish process
