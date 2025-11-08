@@ -8,7 +8,7 @@ if (keyboard_check_pressed(vk_f9)) {
 }
 
 if (keyboard_check_pressed(vk_f5)) {
-  __LocalizeUpdate()
+  __LocalizeUpdate();
 }
 
 var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);

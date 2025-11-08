@@ -31,67 +31,75 @@ function __LocalizeHandleBuffer(buffer, status) {
         return 0;
     } else {
         //_cache.gameTexts = {};
+        // Here is where we should reset the cache
     }
     
     // Process languages
-    _cache.texts = {}
-    var _langNames = [];
-    var _langCodes = [];
+    _cache.texts = {} // TODO rename this
     
     // Iterate rows
+    var _langCode = ""; 
     for (var i = 0; i < array_length(_sheet); i++) {
         var _line = _sheet[i];
-        
         
         // Iterate cols
         for (var j = 0; j < array_length(_line); j++) {
             var _cell = _line[j];
-        }
-        
-        // TODO iraaaaaaaa
-        
-        var _langString = _sheet[0, i];
-        var _langData = string_split(_langString, LOC_CODE_DELIM);
-        var _langName = _langData[0];
-        var _langCode = "";
-        if (array_length(_langData) > 1) {
-            _langCode = _langData[1]; 
-        } else {
-            // TODO use lookup ISO code
-            _langCode = _langName;
-        }
-        array_push(_langNames, _langName);
-        array_push(_langCodes, _langCode);
-        
-        _cache.texts[$ _langCode] ??= {
-            langName: _langName,
-            langKeys: {},
-        }
-    }
-    _cache.langNames = _langNames;
-    _cache.langCodes = _langCodes;
-    _cache.languages = _languages;
-    
-    __LocalizeFindLanguageIndex("en")
-    
-    // Process texts
-    for (var i = 1; i < array_length(_sheet); i++) {
-        var _texts = [];
-        var _line = _sheet[i];
-        var _key = _line[0];
-        for (var j = 1; j < array_length(_line); j++) {
-            var _text = _sheet[i, j];
             
-            // Replace linebreaks for a new line
-            if (LOC_REPLACE_NEWLINE) {
-                _text = string_replace_all(_text, "\\n", "\n");
-                _text = string_replace_all(_text, "\\r", "\r");
+            // Store language
+            if (i == 0 && j > 0) {
+                var _langData = string_split(_cell, LOC_CODE_DELIM);
+                var _langName = _langData[0];
+                if (array_length(_langData) > 1) {
+                    _langCode = _langData[1]; 
+                } else {
+                    // TODO use lookup ISO code
+                    _langCode = _langName;
+                }
+                
+                // Override array cell
+                _line[j] = _langCode;
+                
+                _cache.texts[$ _langCode] ??= {
+                    langName: _langName,
+                    langKeys: {},
+                };
             }
             
-            _texts[j-1] = _text;
+            // Store translations
+            if (i > 0 && j > 0) {
+                var _key = _line[0];
+                _langCode = _sheet[0][j];
+                
+                // Replace escaped linebreaks for real ones
+                if (LOC_REPLACE_NEWLINE) {
+                    _cell = string_replace_all(_cell, "\\n", "\n");
+                    _cell = string_replace_all(_cell, "\\r", "\r");
+                }
+                
+                _cache.texts[$ _langCode].langKeys[$ _key] ??= _cell; // TODO option to replace new entries?
+            }
         }
-        _cache.gameTexts[$ _key] ??= _texts;
     }
+    
+    //// Process texts
+    //for (var i = 1; i < array_length(_sheet); i++) {
+    //    var _texts = [];
+    //    var _line = _sheet[i];
+    //    var _key = _line[0];
+    //    for (var j = 1; j < array_length(_line); j++) {
+    //        var _text = _sheet[i, j];
+            
+    //        // Replace linebreaks for a new line
+    //        if (LOC_REPLACE_NEWLINE) {
+    //            _text = string_replace_all(_text, "\\n", "\n");
+    //            _text = string_replace_all(_text, "\\r", "\r");
+    //        }
+            
+    //        _texts[j-1] = _text;
+    //    }
+    //    _cache.gameTexts[$ _key] ??= _texts;
+    //}
     
     // Finish process
     __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.updtGood);

@@ -12,7 +12,7 @@ function __LocalizeCache() {
     if (GM_build_type == "run") global.__LocalizeCache = cache;
     cache ??= {
         gameTexts   : {},
-        gameLang    : 0,
+        gameLang    : 0,  // turn into a string
         fallback    : -1,
         canDownload : (os_type == os_windows || os_type == os_macosx || os_type == os_linux),
         debugPtr    : pointer_null,
@@ -21,8 +21,8 @@ function __LocalizeCache() {
         pathDest    : filename_dir(GM_project_filename)+"/datafiles/",
         pathSource  : "",
         tags        : {},
-        langNames   : [""],
-        langCodes   : [""],
+        langNames   : [""], // deprecated
+        langCodes   : [""], // deprecated
         languages   : [],
         traceMsg    : {
             startup     : $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}",
