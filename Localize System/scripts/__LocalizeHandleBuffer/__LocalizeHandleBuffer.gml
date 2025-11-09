@@ -11,7 +11,7 @@ function __LocalizeHandleBuffer(buffer, status) {
     var _cache = __LocalizeCache();
     
     if !(status) {
-        __LocalizeTrace(LOC_TRACE.ERROR, _cache.traceMsg.file404, status)
+        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, status)
     }
     
     // Check for sheet compression
@@ -27,7 +27,7 @@ function __LocalizeHandleBuffer(buffer, status) {
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
     if (array_length(_sheet) == 0) {
-        __LocalizeTrace(LOC_TRACE.ERROR, string(_cache.traceMsg.file404, -1)); // TODO pass a file here?
+        __LocalizeTrace(LOC_TRACE.CRITICAL, string(_cache.traceMsg.file404, -1)); // TODO pass a file here?
         return 0;
     }
     
@@ -52,7 +52,7 @@ function __LocalizeHandleBuffer(buffer, status) {
                 _line[j] = _langCode;
                 
                 // Store text on language key TODO trace when new language is defined
-                _cache.gameTexts[$ _langCode] ??= {
+                _cache.langData[$ _langCode] ??= {
                     langName: _langName,
                     langKeys: {},
                 };
@@ -67,13 +67,13 @@ function __LocalizeHandleBuffer(buffer, status) {
                     _cell = string_replace_all(_cell, "\\n", "\n");
                     _cell = string_replace_all(_cell, "\\r", "\r");
                 }
-                _cache.gameTexts[$ _langCode].langKeys[$ _key] ??= _cell; // TODO option to replace new entries?
+                _cache.langData[$ _langCode].langKeys[$ _key] ??= _cell; // TODO option to replace new entries?
             }
         }
     }
     
     // Finish process
-    __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.updtGood);
+    __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.updtGood);
     __LocalizeDebug();
     return 1;
 }

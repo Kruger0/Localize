@@ -11,7 +11,7 @@ function LocalizeSetLang(langCode) {
     var _cache = __LocalizeCache();
     
     // Check for full locale entry
-    var _langCodes = struct_get_names(_cache.gameTexts);
+    var _langCodes = struct_get_names(_cache.langData);
     if (array_contains(_langCodes, langCode)) {
         _cache.gameLang = langCode;
         return true;
@@ -22,6 +22,7 @@ function LocalizeSetLang(langCode) {
         var _langCode = string_split(_langCodes[i], "-")[0];
         if (_langCode == langCode) {
             _cache.gameLang = langCode;
+            _cache.langKeys = _cache.gameLang[langCode];
             return true;
         }
     }

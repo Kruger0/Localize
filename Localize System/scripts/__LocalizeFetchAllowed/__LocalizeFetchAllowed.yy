@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeSplitLang",
+  "%Name":"__LocalizeFetchAllowed",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeSplitLang",
+  "name":"__LocalizeFetchAllowed",
   "parent":{
     "name":"Private",
     "path":"folders/Localize/Private.yy",

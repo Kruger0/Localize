@@ -30,7 +30,7 @@ function __LocalizeUpdate(fileId) {
             _buffer = buffer_load(_localFile);
         }
     } else {
-        __LocalizeTrace(LOC_TRACE.ERROR, _cache.traceMsg.file404, _localFile);
+        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, _localFile);
         return 0;
     }
     if (_buffer == -1) {

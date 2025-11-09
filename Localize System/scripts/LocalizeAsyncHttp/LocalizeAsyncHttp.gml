@@ -25,7 +25,7 @@ function LocalizeAsyncHttp() {
         var _http = _asyncLoad[$ "http_status"];
         if (_http == 200) {
             _cache.pathSource = string_replace_all(_asyncLoad[$ "result"], "\\", "/");
-            __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.dlGood, _cache.pathSource);
+            __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.dlGood, _cache.pathSource);
             var _fileName = filename_name(_cache.pathSource);
             var _pathDest = _cache.pathDest + _fileName;
             
@@ -45,10 +45,10 @@ function LocalizeAsyncHttp() {
                 
                 buffer_save(_buffer, _pathDest);
                 buffer_delete(_buffer);
-                __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.fileCopy, _pathDest);
+                __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.fileCopy, _pathDest);
             }
         } else {
-            __LocalizeTrace(LOC_TRACE.ERROR, _cache.traceMsg.dlBad, _asyncLoad[$ "http_status"]);
+            __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.dlBad, _asyncLoad[$ "http_status"]);
         }
     }
 }

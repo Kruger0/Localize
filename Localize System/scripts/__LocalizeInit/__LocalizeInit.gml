@@ -8,12 +8,12 @@
 
 // Start system
 var _cache = __LocalizeCache();
-__LocalizeTrace(-1, _cache.traceMsg.startup);
+__LocalizeTrace(-1, $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}");
 
 // Trace sandbox status
-if (LOC_UPDATE_MODE != LOC_UPDATE.DISABLED && _cache.canDownload) {
+if (__LocalizeFetchAllowed()) {
     var _sandboxed = (GM_is_sandboxed ? _cache.traceMsg.sandboxOn : _cache.traceMsg.sandboxOff);
-    __LocalizeTrace(LOC_TRACE.INFO, _sandboxed);
+    __LocalizeTrace(LOC_TRACE.VERBOSE, _sandboxed);
 }
 
 // Initialize system debug window

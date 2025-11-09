@@ -7,18 +7,19 @@
 */
 
 ///@ignore
-function __LocalizeFetchEnabled(){
-    var _localizeFetch;
+function __LocalizeFetchAllowed(){
+    var _modeAllowed;
     switch (LOC_UPDATE_MODE) {
         case LOC_UPDATE.DISABLED:
-            _localizeFetch = false;
+            _modeAllowed = false;
             break;
         case LOC_UPDATE.DEVELOPMENT:
-            _localizeFetch = (GM_build_type == "run");
+            _modeAllowed = (GM_build_type == "run");
             break;
         case LOC_UPDATE.PRODUCTION:
-            _localizeFetch = true;
+            _modeAllowed = true;
             break;
     }
-    return _localizeFetch;
+    var _platformAllowed = (os_type == os_windows || os_type == os_macosx || os_type == os_linux);
+    return (_modeAllowed && _platformAllowed);
 }

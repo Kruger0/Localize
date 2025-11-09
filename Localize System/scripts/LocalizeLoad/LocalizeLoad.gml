@@ -24,13 +24,9 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     __LocalizeUpdate(_fileId);
     
     // Fetch sheet file from cloud
-    if (__LocalizeFetchEnabled()) {
-        if (_cache.canDownload) {
-            __LocalizeDownload(_fileId);
-        } else {
-            __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.cantFetch);
-        }
+    if (__LocalizeFetchAllowed()) {
+        __LocalizeDownload(_fileId);
     } else {
-        __LocalizeTrace(LOC_TRACE.INFO, _cache.traceMsg.localFile);
+        __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.localFile);
     }
 }

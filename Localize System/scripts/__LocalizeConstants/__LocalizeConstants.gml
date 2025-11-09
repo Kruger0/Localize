@@ -7,13 +7,12 @@
 */
 
 #macro LOC_VERSION  "2.0.0"
-#macro LOC_DATE     "2025-09-30"
+#macro LOC_DATE     "2025-11-08"
 
 enum LOC_TRACE {
     DISABLED,
-    ERROR,
-    ALERT,
-    INFO,
+    CRITICAL,
+    VERBOSE,
 }
 
 enum LOC_UPDATE {
