@@ -6,8 +6,8 @@
   []=============================================[]
 */
 
-#macro LOC_VERSION  "2.0.0"
-#macro LOC_DATE     "2025-11-08"
+#macro LOC_VERSION  "2.0.0-rc.2"
+#macro LOC_DATE     "2025-11-09"
 
 enum LOC_TRACE {
     DISABLED,

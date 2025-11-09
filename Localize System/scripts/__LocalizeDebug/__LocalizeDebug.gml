@@ -8,7 +8,7 @@
 
 ///@ignore
 function __LocalizeDebug() {
-    if (os_browser != browser_not_a_browser) return 0; // dbg_* functions are broken on HTML
+    if (os_browser != browser_not_a_browser) return 0;
     var _cache = __LocalizeCache();
     
     if (dbg_view_exists(_cache.dbgView)) {
@@ -27,7 +27,6 @@ function __LocalizeDebug() {
     dbg_watch(ref_create(_cache, "fetchAllowed"), "Download Allowed");
     dbg_watch(ref_create(_cache, "sandboxed"), "Sandboxed");
     dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages");
-    
     dbg_text("");
     
     //==========================================================
@@ -35,6 +34,10 @@ function __LocalizeDebug() {
     for (var i = 0; i < array_length(_cache.files); i++) {
         var _file = _cache.files[i];
         dbg_text("  -  " + _file.fileName);
+    }
+    var _files = _cache.files;
+    if (array_length(_files) > 0) {
+        dbg_text("Path: " + filename_path(_files[0].fileName));
     }
     
     dbg_text("");
@@ -47,7 +50,6 @@ function __LocalizeDebug() {
         }
     }, _width);
     
-    
     //==========================================================
     dbg_button("Update Local", function() {
         var _cache = __LocalizeCache();
@@ -55,7 +57,6 @@ function __LocalizeDebug() {
             __LocalizeUpdate(i)
         }
     }, _width);
-    
     
     show_debug_overlay(_isDbgOpen);
 }

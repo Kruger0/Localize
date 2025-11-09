@@ -29,6 +29,9 @@ _cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD
     var _cache = __LocalizeCache();
     with (_cache) {
         
+        // Wait for database to load
+        if (is_undefined(locDatabase)) continue;
+        
         // Update fallback data
         if (is_undefined(locFallData)) {
             locFallData = locDatabase[$ locFallCode];

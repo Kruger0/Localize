@@ -8,13 +8,11 @@
 
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status) {
-    var _cache = __LocalizeCache();
-    
+    var _cache = __LocalizeCache();    
     if !(status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
         return 0;
-    }
-    
+    }    
     // Check for sheet compression
     var _header = buffer_read(buffer, buffer_u16);
     if (_header == 0x9C78) { // zlib default compression header
@@ -22,16 +20,14 @@ function __LocalizeHandleBuffer(buffer, status) {
         buffer_delete(buffer);
         buffer = _decomp;
         buffer_seek(buffer, buffer_seek_start, 0);
-    }
-    
+    }    
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
     if (array_length(_sheet) == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading .csv as array");
         return 0;
-    }
-    
+    }    
     // Iterate rows
     var _langCode = ""; 
     for (var i = 0; i < array_length(_sheet); i++) {
@@ -46,7 +42,7 @@ function __LocalizeHandleBuffer(buffer, status) {
                 if (array_length(_langData) > 1) {
                     _langCode = _langData[1]; 
                 } else {
-                    _langCode = _langName; // TODO use lookup ISO code ? nah let the user handle that
+                    _langCode = _langName;
                     __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated");
                 }
                 // Override array cell

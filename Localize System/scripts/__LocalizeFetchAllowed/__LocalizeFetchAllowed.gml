@@ -19,12 +19,13 @@ function __LocalizeFetchAllowed(){
             _modeAllowed = true;
             break;
     }
-    var _platformAllowed = false
+    var _platformAllowed = false;
     switch (os_type) {
         case os_windows:
         case os_macosx:
         case os_linux:
-            _platformAllowed = true
+            _platformAllowed = true;
+            break;
     }
     return (_modeAllowed && _platformAllowed);
 }

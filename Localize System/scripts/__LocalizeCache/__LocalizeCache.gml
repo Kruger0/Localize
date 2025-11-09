@@ -9,7 +9,7 @@
 ///@ignore
 function __LocalizeCache() {
     static cache = undefined;
-    if (GM_build_type == "run") global.__LocalizeCache = cache;
+    //if (GM_build_type == "run") global.__LocalizeCache = cache;
     cache ??= {
         locDatabase : undefined,
         locLangData : undefined,

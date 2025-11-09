@@ -44,7 +44,7 @@
   
   Sheet structure example
   +---------------+-------------------+-------------------+---------------------------+
-  |Keys           | English-en-US     | Português-pt      | Español                   |
+  |Keys           | English_en-US     | Português_pt      | Español                   |
   +---------------+-------------------+-------------------+---------------------------+
   |text_intro     | This is an intro! | Isso é uma intro! | Esta és una introducion!  |
   +---------------+-------------------+-------------------+---------------------------+
