@@ -42,3 +42,7 @@
 
 // If enabled, string escape characters (\n and \r) will be parsed as new line
 #macro LOC_REPLACE_NEWLINE true
+
+
+// Interval in frames where the system will check for language changes
+#macro LOC_AUTODETECT_PERIOD 6

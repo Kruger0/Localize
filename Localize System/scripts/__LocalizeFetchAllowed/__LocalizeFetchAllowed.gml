@@ -8,10 +8,9 @@
 
 ///@ignore
 function __LocalizeFetchAllowed(){
-    var _modeAllowed;
+    var _modeAllowed = false;
     switch (LOC_UPDATE_MODE) {
         case LOC_UPDATE.DISABLED:
-            _modeAllowed = false;
             break;
         case LOC_UPDATE.DEVELOPMENT:
             _modeAllowed = (GM_build_type == "run");
@@ -20,6 +19,12 @@ function __LocalizeFetchAllowed(){
             _modeAllowed = true;
             break;
     }
-    var _platformAllowed = (os_type == os_windows || os_type == os_macosx || os_type == os_linux);
+    var _platformAllowed = false
+    switch (os_type) {
+        case os_windows:
+        case os_macosx:
+        case os_linux:
+            _platformAllowed = true
+    }
     return (_modeAllowed && _platformAllowed);
 }

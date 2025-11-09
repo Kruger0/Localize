@@ -20,13 +20,9 @@ function __LocalizeDownload(fileId){
     
     var _filePath = working_directory + _file.fileName;
     if (_isConnected) {
-        __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.online);
+        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloading file \"{_file.fileName}\"");
         _file.requestId = http_get_file(_link, _filePath);
-        if (_file.requestId == -1) {
-            __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.badRqst);
-        }
     } else {
-        __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.offline);
-        __LocalizeUpdate(_file.fileName);
+        __LocalizeUpdate(fileId);
     }
 }

@@ -6,7 +6,8 @@
   []=============================================[]
 */
 
-/////@desc Returns the current game language as a numeric id.
-//function LocalizeGetLangId() {
-//    return __LocalizeCache().gameLang;
-//}
+///@desc Returns an array containing the name of the loaded languages actives in the game
+function LocalizeGetLangCodes() {
+    var _cache = __LocalizeCache();
+    return _cache.langCodes;
+}

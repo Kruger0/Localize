@@ -25,14 +25,14 @@ function LocalizeAsyncHttp() {
         var _http = _asyncLoad[$ "http_status"];
         if (_http == 200) {
             _cache.pathSource = string_replace_all(_asyncLoad[$ "result"], "\\", "/");
-            __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.dlGood, _cache.pathSource);
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Sheet downloaded at {_cache.pathSource}");
             var _fileName = filename_name(_cache.pathSource);
             var _pathDest = _cache.pathDest + _fileName;
             
             // Load the downloaded file
             __LocalizeUpdate(_fileId);
             
-            // If its running from the IDE without sandbox, copy sheet to the game datafiles
+            // If its running from the IDE without sandbox, copy sheet to project datafiles
             if (!GM_is_sandboxed && GM_build_type == "run") {
                 var _buffer = buffer_load(_cache.pathSource);
                 
@@ -45,10 +45,8 @@ function LocalizeAsyncHttp() {
                 
                 buffer_save(_buffer, _pathDest);
                 buffer_delete(_buffer);
-                __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.fileCopy, _pathDest);
+                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Sheet copied to project datafiles at {_pathDest}");
             }
-        } else {
-            __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.dlBad, _asyncLoad[$ "http_status"]);
         }
     }
 }

@@ -7,8 +7,7 @@
 */
 
 ///@desc Returns the current game language as a string.
-function LocalizeGetLangName(includeCode = false) {
+function LocalizeGetLangName() {
     var _cache = __LocalizeCache();
-    var _lang = _cache.langData[$ _cache.gameLang];
-    return _lang.langName + (includeCode ? "-" + _cache.gameLang : "");
+    return _cache.locLangData.langName;
 }

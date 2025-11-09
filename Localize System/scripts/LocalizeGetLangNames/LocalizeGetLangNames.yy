@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeGetLangs",
+  "%Name":"LocalizeGetLangNames",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeGetLangs",
+  "name":"LocalizeGetLangNames",
   "parent":{
     "name":"Public",
     "path":"folders/Localize/Public.yy",

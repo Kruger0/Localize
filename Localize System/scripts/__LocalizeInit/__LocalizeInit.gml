@@ -12,9 +12,34 @@ __LocalizeTrace(-1, $"Running v{LOC_VERSION} | Created by Krug | github.com/Krug
 
 // Trace sandbox status
 if (__LocalizeFetchAllowed()) {
-    var _sandboxed = (GM_is_sandboxed ? _cache.traceMsg.sandboxOn : _cache.traceMsg.sandboxOff);
+    var _sandboxed = (GM_is_sandboxed ? 
+        "Sandbox enabled. Saving sheet downloads at local folder" : 
+        "Sandbox disabled. Saving sheet downloads at project datafiles");
     __LocalizeTrace(LOC_TRACE.VERBOSE, _sandboxed);
 }
+
+// Auto detect language changes
+_cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD, time_source_units_frames, function() {
+    var _cache = __LocalizeCache();
+    with (_cache) {
+        
+        // Update fallback data
+        if (is_undefined(locFallData)) {
+            locFallData = locDatabase[$ locFallCode];
+        }
+        
+        // Update lang & cache
+        if (is_undefined(locLangData)) {
+            locLangData = locDatabase[$ locLangCode];
+        } else {    // keep up to date with lang code
+            if (locLangData.langCode != locLangCode) {
+                locLangData = locDatabase[$ locLangCode]
+                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to \"{locLangCode}\"");
+            }
+        }
+    }
+}, [], -1);
+time_source_start(_cache.timesource);
 
 // Initialize system debug window
 __LocalizeDebug();

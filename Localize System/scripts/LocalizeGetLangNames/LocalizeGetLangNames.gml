@@ -6,9 +6,8 @@
   []=============================================[]
 */
 
-///@desc Returns an array containing the ISO code of the loaded languages actives in the game
-function LocalizeGetLangs() {
+///@desc Returns an array containing the ISO 639 codes of the loaded languages actives in the game
+function LocalizeGetLangNames() {
     var _cache = __LocalizeCache();
-    var _langCodes = struct_get_names(_cache.langData);
-    return _langCodes;
+    return _cache.langNames;
 }

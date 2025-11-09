@@ -11,7 +11,8 @@ function __LocalizeHandleBuffer(buffer, status) {
     var _cache = __LocalizeCache();
     
     if !(status) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, status)
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
+        return 0;
     }
     
     // Check for sheet compression
@@ -27,7 +28,7 @@ function __LocalizeHandleBuffer(buffer, status) {
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
     if (array_length(_sheet) == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, string(_cache.traceMsg.file404, -1)); // TODO pass a file here?
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading .csv as array");
         return 0;
     }
     
@@ -37,8 +38,7 @@ function __LocalizeHandleBuffer(buffer, status) {
         var _line = _sheet[i];
         // Iterate cols
         for (var j = 0; j < array_length(_line); j++) {
-            var _cell = _line[j];
-            
+            var _cell = _line[j];            
             // Store language
             if (i == 0 && j > 0) {
                 var _langData = string_split(_cell, LOC_CODE_DELIM);
@@ -47,17 +47,23 @@ function __LocalizeHandleBuffer(buffer, status) {
                     _langCode = _langData[1]; 
                 } else {
                     _langCode = _langName; // TODO use lookup ISO code ? nah let the user handle that
+                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated");
                 }
                 // Override array cell
                 _line[j] = _langCode;
                 
-                // Store text on language key TODO trace when new language is defined
-                _cache.langData[$ _langCode] ??= {
-                    langName: _langName,
-                    langKeys: {},
-                };
+                // Store text on language key
+                _cache.locDatabase ??= {};
+                var _cacheLang = _cache.locDatabase[$ _langCode];
+                if (is_undefined(_cacheLang)) {
+                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language \"{_langCode}\"");
+                    _cache.locDatabase[$ _langCode] = {
+                        langName: _langName,
+                        langCode: _langCode,
+                        langKeys: {},
+                    };
+                }
             }
-            
             // Store translations
             if (i > 0 && j > 0) {
                 var _key = _line[0];
@@ -67,13 +73,24 @@ function __LocalizeHandleBuffer(buffer, status) {
                     _cell = string_replace_all(_cell, "\\n", "\n");
                     _cell = string_replace_all(_cell, "\\r", "\r");
                 }
-                _cache.langData[$ _langCode].langKeys[$ _key] ??= _cell; // TODO option to replace new entries?
+                // Add translation to database
+                _cache.locDatabase[$ _langCode].langKeys[$ _key] = _cell;
             }
         }
-    }
-    
+    }    
     // Finish process
-    __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.updtGood);
+    with (_cache) {
+        var _dataCodes = struct_get_names(locDatabase);
+        var _dataCount = array_length(_dataCodes);
+        var _dataNames = [];
+        for (var i = 0; i < _dataCount; i++) {
+            array_push(_dataNames, locDatabase[$ _dataCodes[i]].langName);
+        }
+        langCodes = _dataCodes;
+        langCount = _dataCount;
+        langNames = _dataNames; 
+    }
+    __LocalizeTrace(LOC_TRACE.VERBOSE, "Database updated!");
     __LocalizeDebug();
     return 1;
 }

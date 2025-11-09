@@ -13,13 +13,9 @@ function LocalizeDetectLang() {
     var _region     = os_get_region();
     var _langCode   = _language + (_region == "" ? "" : "-" + _region);
     
-    if (_language == "") {
-        return false;
-    }
+    if (_language == "") return false;
     
     if !(LocalizeSetLang(_langCode)) {
-        // Language not found. Apply fallback
-        _cache.fallback ??= _langCode;
-        _cache.gameLang = _cache.fallback;
+        _cache.locLangData = _cache.locFallData;
     }
 }

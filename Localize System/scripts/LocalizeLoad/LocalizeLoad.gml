@@ -17,6 +17,7 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         sheetPage,
         requestId : -1,
         async : false,
+        md5 : "",
     });
     var _fileId = array_length(_cache.files)-1;
     
@@ -27,6 +28,6 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     if (__LocalizeFetchAllowed()) {
         __LocalizeDownload(_fileId);
     } else {
-        __LocalizeTrace(LOC_TRACE.VERBOSE, _cache.traceMsg.localFile);
+        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Using local file for {fileName}");
     }
 }

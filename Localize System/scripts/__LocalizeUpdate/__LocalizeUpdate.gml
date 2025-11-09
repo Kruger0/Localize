@@ -30,7 +30,7 @@ function __LocalizeUpdate(fileId) {
             _buffer = buffer_load(_localFile);
         }
     } else {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, _cache.traceMsg.file404, _localFile);
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"File \"{_localFile}\" does not exists", );
         return 0;
     }
     if (_buffer == -1) {

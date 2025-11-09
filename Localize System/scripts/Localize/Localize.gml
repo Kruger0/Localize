@@ -9,20 +9,19 @@
 ///@desc Returns the localized text on the language cache from a provided key, and the values to replace in the string template.
 function Localize(key) {
     var _cache  = __LocalizeCache();
-    var _lang   = _cache.gameLang;
     
-    // Get localized string
-    var _langKeys = _cache.langData[$ _lang].langKeys; // TODO cache this?
-    var _string = _langKeys[$ key]; // _cache.langKeys[$ key]; // TODO WIP
+    var _langData = _cache.locLangData;
+    // If missing data, use fallback
+    if (is_undefined(_langData)) {
+        _langData = _cache.locFallData;
+        if (is_undefined(_langData)) return key;
+    }
     
-    // Key translation missing. Use fallback
+    var _string = _langData.langKeys[$ key];
+    // If missing translation, use fallback
     if (is_undefined(_string)) {
-        _string = _cache.langFallback[$ key];
-        
-        // Fallback translation not found
-        if (is_undefined(_string)) {
-            return string(_cache.traceMsg.trns404, key, $"{_lang}");
-        }
+        _string = _cache.locFallData.langKeys[$ key];
+        if (is_undefined(_string)) return key;
     }
     
     // Handle string templates
@@ -31,21 +30,19 @@ function Localize(key) {
         for (var i = 1; i < argument_count; i++) {
             array_push(_args, argument[i]);
         }    
-        if (array_length(_args) > 0) {
-            _string = string_ext(_string, _args);
-        }
+        _string = string_ext(_string, _args);
     }
     
     // Check for tag replacement
     var _tagStart = string_pos("[", _string);
     if (_tagStart >= 1) {
-        var _tagArr = struct_get_names(_cache.langTags);
+        var _tagArr = struct_get_names(_cache.locTags);
         var _tagLen = array_length(_tagArr);
         for (var i = 0; i < _tagLen; i++) {
             var _tagName = _tagArr[i];
             
             if (string_pos(_tagName, _string) >= 1) {
-                var _tagValue = _cache.langTags[$ _tagName];
+                var _tagValue = _cache.locTags[$ _tagName];
                 _string = string_replace_all(_string, _tagName, _tagValue);
             }
         } 
