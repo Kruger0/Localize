@@ -16,6 +16,7 @@ function __LocalizeCache() {
         locLangCode : "",
         locFallData : undefined,
         locFallCode : "",
+        osLangCode  : "",
         locTags     : {},
         langCodes   : [],
         langCount   : -1,
@@ -24,6 +25,8 @@ function __LocalizeCache() {
         files       : [],
         pathDest    : filename_dir(GM_project_filename)+"/datafiles/",
         pathSource  : "",
+        fetchAllowed: __LocalizeFetchAllowed(),
+        sandboxed   : GM_is_sandboxed,
         dbgView     : pointer_null,
         dbgSection  : pointer_null,
         timesource  : -1

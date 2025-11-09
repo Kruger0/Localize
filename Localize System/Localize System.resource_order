@@ -6,6 +6,7 @@
     {"name":"Public","order":2,"path":"folders/Localize/Public.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_demo","order":3,"path":"fonts/fnt_demo/fnt_demo.yy",},
     {"name":"obj_demo","order":1,"path":"objects/obj_demo/obj_demo.yy",},
     {"name":"obj_localize","order":2,"path":"objects/obj_localize/obj_localize.yy",},
     {"name":"__LocalizeAsyncLoad","order":9,"path":"scripts/__LocalizeAsyncLoad/__LocalizeAsyncLoad.yy",},

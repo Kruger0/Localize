@@ -15,35 +15,47 @@ function __LocalizeDebug() {
         dbg_view_delete(_cache.dbgView);
     }
     
-    dbg_view_delete(_cache.dbgView);
-    
     var _isDbgOpen = is_debug_overlay_open();
-    _cache.dbgView = dbg_view($"Localize System v{LOC_VERSION}", _isDbgOpen, 128, 128, 320, 250);
-    _cache.dbgSection = dbg_section("Configuration", true);
-        
-    dbg_drop_down(ref_create(_cache, "locLangCode"), LocalizeGetLangCodes(), "Game Language");
+    var _width = 350;
+    var _height = 350;
+    _cache.dbgView = dbg_view($"Localize System v{LOC_VERSION}", _isDbgOpen, 128, 128, _width, _height);
+    _cache.dbgSection = dbg_section("Main Section", true);
     
-    dbg_text($"Sandboxed: {GM_is_sandboxed ? "TRUE" : "FALSE"}");
-    dbg_text($"Can Download: {__LocalizeFetchAllowed() ? "TRUE" : "FALSE"}");
+    dbg_drop_down(ref_create(_cache, "locLangCode"), LocalizeGetLangCodes(), "Game Language");
+    dbg_watch(ref_create(_cache, "osLangCode"), "System Language");
+    dbg_watch(ref_create(_cache, "locFallCode"), "Fallback Language");
+    dbg_watch(ref_create(_cache, "fetchAllowed"), "Download Allowed");
+    dbg_watch(ref_create(_cache, "sandboxed"), "Sandboxed");
+    dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages");
+    
+    dbg_text("");
+    
+    //==========================================================
     dbg_text("Files loaded: ")
     for (var i = 0; i < array_length(_cache.files); i++) {
         var _file = _cache.files[i];
         dbg_text("  -  " + _file.fileName);
     }
     
+    dbg_text("");
+    
+    //==========================================================
     dbg_button("Update Online", function() {
         var _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeDownload(i)
         }
-    }, 300);
+    }, _width);
     
+    
+    //==========================================================
     dbg_button("Update Local", function() {
         var _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i)
         }
-    }, 300);
+    }, _width);
+    
     
     show_debug_overlay(_isDbgOpen);
 }
