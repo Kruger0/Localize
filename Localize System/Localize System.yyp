@@ -62,6 +62,8 @@
     {"id":{"name":"LocalizeLoad","path":"scripts/LocalizeLoad/LocalizeLoad.yy",},},
     {"id":{"name":"LocalizeSetFallback","path":"scripts/LocalizeSetFallback/LocalizeSetFallback.yy",},},
     {"id":{"name":"LocalizeSetLang","path":"scripts/LocalizeSetLang/LocalizeSetLang.yy",},},
+    {"id":{"name":"LocalizeSetLangNext","path":"scripts/LocalizeSetLangNext/LocalizeSetLangNext.yy",},},
+    {"id":{"name":"LocalizeSetLangPrevious","path":"scripts/LocalizeSetLangPrevious/LocalizeSetLangPrevious.yy",},},
     {"id":{"name":"LocalizeSetTags","path":"scripts/LocalizeSetTags/LocalizeSetTags.yy",},},
   ],
   "resourceType":"GMProject",

@@ -11,9 +11,17 @@ function __LocalizeCache() {
     static cache = undefined;
     if (GM_build_type == "run") global.__LocalizeCache = cache;
     cache ??= {
+        // Core
         gameTexts   : {},
-        gameLang    : 0,  // turn into a string
-        fallback    : -1,
+        gameLang    : undefined,
+        fallback    : undefined,
+        
+        // Cache
+        langName    : -1,
+        langKeys    : -1,
+        langFallback: -1, //aways loaded
+        
+        // File handling
         canDownload : (os_type == os_windows || os_type == os_macosx || os_type == os_linux),
         debugPtr    : pointer_null,
         asyncArray  : [],
@@ -21,9 +29,9 @@ function __LocalizeCache() {
         pathDest    : filename_dir(GM_project_filename)+"/datafiles/",
         pathSource  : "",
         tags        : {},
-        langNames   : [""], // deprecated
-        langCodes   : [""], // deprecated
-        languages   : [],
+        //langNames   : [""], // deprecated
+        //langCodes   : [""], // deprecated
+        //languages   : [], // deprecated
         traceMsg    : {
             startup     : $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}",
             offline     : "ALERT - No internet connection. Unable to download sheet",

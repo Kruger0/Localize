@@ -8,33 +8,18 @@
 
 ///@desc Automatically detects system language and applies it
 function LocalizeDetectLang() {
-    var _cache  = __LocalizeCache();
-    var _locale = LocalizeGetLocale();
+    var _cache      = __LocalizeCache();
+    var _language   = os_get_language();
+    var _region     = os_get_region();
+    var _langCode   = _language + (_region == "" ? "" : "-" + _region);
     
-    // Skip it no language loaded
-    if (array_length(_cache.languages) == 0) return 0;
-
-    // Search for language + region code
-    for (var i = 0; i < array_length(_cache.langCodes); i++) {
-        var _langCode = _cache.langCodes[i];
-        if (_locale == _langCode) {
-            LocalizeSetLang(i);
-            return;
-        }
+    if (_language == "") {
+        return false;
     }
     
-    // Search for language only
-    _locale = string_split(_locale, "-")[0];
-    for (var i = 0; i < array_length(_cache.langCodes); i++) {
-        var _langCode = string_split(_cache.langCodes[i], "-")[0];
-        if (_locale == _langCode) {
-            LocalizeSetLang(i);
-            return;
-        }
-    }
-    
-    // Language fallback
-    if (_cache.fallback != -1) {
-        LocalizeSetLang(_cache.fallback);
+    if !(LocalizeSetLang(_langCode)) {
+        // Language not found. Apply fallback
+        _cache.fallback ??= _langCode;
+        _cache.gameLang = _cache.fallback;
     }
 }
