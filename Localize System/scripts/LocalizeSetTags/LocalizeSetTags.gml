@@ -8,6 +8,6 @@
 
 ///@desc Defines a custom tag to be replaced by any value
 function LocalizeSetTag(tag, value){
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     _cache.locTags[$ tag] = string(value);
 }

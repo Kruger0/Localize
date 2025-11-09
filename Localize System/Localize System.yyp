@@ -20,6 +20,7 @@
     {"$GMIncludedFile":"","%Name":"dialogues.loc","CopyToMask":-1,"filePath":"datafiles","name":"dialogues.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"interface.loc","CopyToMask":-1,"filePath":"datafiles","name":"interface.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"items.loc","CopyToMask":-1,"filePath":"datafiles","name":"items.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"localize_license .txt","CopyToMask":-1,"filePath":"datafiles","name":"localize_license .txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"NotoSansCJK-Regular.ttc","CopyToMask":-1,"filePath":"datafiles","name":"NotoSansCJK-Regular.ttc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,

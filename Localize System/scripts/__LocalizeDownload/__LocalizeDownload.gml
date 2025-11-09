@@ -8,7 +8,7 @@
 
 ///@ignore
 function __LocalizeDownload(fileId){
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     var _file  = _cache.files[fileId];
     
     // Credits to https://twitter.com/VINE2D for coming up with this

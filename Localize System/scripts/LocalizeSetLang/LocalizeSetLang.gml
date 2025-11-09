@@ -8,7 +8,7 @@
 
 ///@desc Set the game language from the lang ISO 639 code
 function LocalizeSetLang(langCode) {
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     if (is_undefined(_cache.locDatabase)) {
         _cache.locLangCode = langCode;
         return 0;

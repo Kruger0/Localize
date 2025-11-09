@@ -8,6 +8,6 @@
 
 ///@desc Returns an array containing the ISO 639 codes of the loaded languages actives in the game
 function LocalizeGetLangNames() {
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     return _cache.langNames;
 }

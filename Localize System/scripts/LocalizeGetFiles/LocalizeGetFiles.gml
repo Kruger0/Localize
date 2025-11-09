@@ -8,6 +8,6 @@
 
 ///@desc Returns a list of loaded files and their respective Google Sheets IDs
 function LocalizeGetFiles(){
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     return _cache.files;
 }

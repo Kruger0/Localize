@@ -8,6 +8,6 @@
 
 ///@desc Returns the current game language as a string.
 function LocalizeGetLangName() {
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     return _cache.locLangData.langName;
 }

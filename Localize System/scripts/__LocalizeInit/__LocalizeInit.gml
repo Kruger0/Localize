@@ -26,7 +26,7 @@ if (__LocalizeFetchAllowed()) {
 
 // Auto detect language changes
 _cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD, time_source_units_frames, function() {
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     with (_cache) {
         
         // Wait for database to load

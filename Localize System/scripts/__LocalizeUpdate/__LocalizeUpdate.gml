@@ -8,7 +8,7 @@
 
 ///@ignore
 function __LocalizeUpdate(fileId) {
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     var _file  = _cache.files[fileId];
     
     // Validade buffer file

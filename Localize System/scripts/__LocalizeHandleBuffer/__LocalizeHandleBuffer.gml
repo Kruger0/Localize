@@ -8,7 +8,7 @@
 
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status) {
-    var _cache = __LocalizeCache();    
+    static _cache = __LocalizeCache();    
     if !(status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
         return 0;
@@ -37,7 +37,7 @@ function __LocalizeHandleBuffer(buffer, status) {
             var _cell = _line[j];            
             // Store language
             if (i == 0 && j > 0) {
-                var _langData = string_split(_cell, LOC_CODE_DELIM);
+                var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
                 var _langName = _langData[0];
                 if (array_length(_langData) > 1) {
                     _langCode = _langData[1]; 

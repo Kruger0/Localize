@@ -8,7 +8,7 @@
 
 ///@desc Defines a fallback language to be used if LocalizeDetectLang() fails
 function LocalizeSetFallback(langCode){
-    var _cache = __LocalizeCache();
+    static _cache = __LocalizeCache();
     if (is_undefined(_cache.locDatabase)) {
         _cache.locFallCode = langCode;
         return 0;
