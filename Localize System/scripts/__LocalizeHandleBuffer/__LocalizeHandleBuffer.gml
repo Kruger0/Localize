@@ -29,25 +29,29 @@ function __LocalizeHandleBuffer(buffer, status) {
         return 0;
     }    
     // Iterate rows
+    var _langCodes = [];
+    var _langNames = [];
     var _langCode = ""; 
     for (var i = 0; i < array_length(_sheet); i++) {
         var _line = _sheet[i];
         // Iterate cols
         for (var j = 0; j < array_length(_line); j++) {
-            var _cell = _line[j];            
+            var _cell = _line[j];
             // Store language
             if (i == 0 && j > 0) {
                 var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
                 var _langName = _langData[0];
+                if (_langName == "") continue;
                 if (array_length(_langData) > 1) {
                     _langCode = _langData[1]; 
                 } else {
                     _langCode = _langName;
-                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated");
+                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated.");
                 }
-                // Override array cell
                 _line[j] = _langCode;
-                
+                // TODO clean this
+                array_push(_langCodes, _langCode);
+                array_push(_langNames, _langName);
                 // Store text on language key
                 _cache.locDatabase ??= {};
                 var _cacheLang = _cache.locDatabase[$ _langCode];
@@ -64,6 +68,8 @@ function __LocalizeHandleBuffer(buffer, status) {
             if (i > 0 && j > 0) {
                 var _key = _line[0];
                 _langCode = _sheet[0][j];
+                if (_key == "") continue;
+                if (_langCode == "") continue;
                 // Replace escaped linebreaks for real ones
                 if (LOC_REPLACE_NEWLINE) {
                     _cell = string_replace_all(_cell, "\\n", "\n");
@@ -73,19 +79,22 @@ function __LocalizeHandleBuffer(buffer, status) {
                 _cache.locDatabase[$ _langCode].langKeys[$ _key] = _cell;
             }
         }
-    }    
-    // Finish process
-    with (_cache) {
-        var _dataCodes = struct_get_names(locDatabase);
-        var _dataCount = array_length(_dataCodes);
-        var _dataNames = [];
-        for (var i = 0; i < _dataCount; i++) {
-            array_push(_dataNames, locDatabase[$ _dataCodes[i]].langName);
-        }
-        langCodes = _dataCodes;
-        langCount = _dataCount;
-        langNames = _dataNames; 
     }
+    _cache.langCodes = array_union(_cache.langCodes, _langCodes)
+    _cache.langNames = array_union(_cache.langNames, _langNames)
+    _cache.langCount = array_length(_cache.langCodes);
+    // Finish process
+    //with (_cache) {
+    //    var _dataCodes = struct_get_names(locDatabase);
+    //    var _dataCount = array_length(_dataCodes);
+    //    var _dataNames = [];
+    //    for (var i = 0; i < _dataCount; i++) {
+    //        array_push(_dataNames, locDatabase[$ _dataCodes[i]].langName);
+    //    }
+    //    langCodes = _dataCodes;
+    //    langCount = _dataCount;
+    //    langNames = _dataNames; 
+    //}
     __LocalizeTrace(LOC_TRACE.VERBOSE, "Database updated!");
     __LocalizeDebug();
     return 1;

@@ -8,7 +8,7 @@
 
 ///@desc Handles the sheet file download. Call it in Async HTTP event on your game manager object.
 function LocalizeAsyncHttp() {
-    var _cache      = __LocalizeCache();
+    static _cache   = __LocalizeCache();
     var _asyncLoad  = json_parse(json_encode(async_load));
     
     // Check for what file are we handling
@@ -19,8 +19,7 @@ function LocalizeAsyncHttp() {
             _fileId = i;
             break;
         }
-    }
-    
+    }    
     if (_fileId != -1) {
         var _http = _asyncLoad[$ "http_status"];
         if (_http == 200) {
@@ -33,16 +32,14 @@ function LocalizeAsyncHttp() {
             __LocalizeUpdate(_fileId);
             
             // If its running from the IDE without sandbox, copy sheet to project datafiles
-            if (!GM_is_sandboxed && GM_build_type == "run") {
-                var _buffer = buffer_load(_cache.pathSource);
-                
+            if (!_cache.sandboxed && GM_build_type == "run") {
+                var _buffer = buffer_load(_cache.pathSource);                
                 // If compress enbaled, obfuscate sheet using zlib compression
                 if (LOC_COMPRESS) {
                     var _comp = buffer_compress(_buffer, 0, buffer_get_size(_buffer));
                     buffer_delete(_buffer);
                     _buffer = _comp;
-                }
-                
+                }                
                 buffer_save(_buffer, _pathDest);
                 buffer_delete(_buffer);
                 __LocalizeTrace(LOC_TRACE.VERBOSE, $"Sheet copied to project datafiles at {_pathDest}");

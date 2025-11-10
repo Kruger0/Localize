@@ -8,21 +8,24 @@
 
 ///@desc Returns the localized text on the language cache from a provided key, and the values to replace in the string template.
 function Localize(key) {
-    var _cache  = __LocalizeCache();
+    static _cache  = __LocalizeCache();
+    if (_cache.debugMode) return key;
     
     var _langData = _cache.locLangData;
-    // If missing data, use fallback
     if (is_undefined(_langData)) {
         _langData = _cache.locFallData;
         if (is_undefined(_langData)) return key;
     }
     
+    // TODO adjust this workflow
     var _string = _langData.langKeys[$ key];
-    // If missing translation, use fallback
+    // If key does not exists for that language
     if (is_undefined(_string)) {
+        // Set it to the fallback language
         _string = _cache.locFallData.langKeys[$ key];
         if (is_undefined(_string)) return key;
     }
+    if (_string == "") return key;
     
     // Handle string templates
     if (argument_count > 1) {

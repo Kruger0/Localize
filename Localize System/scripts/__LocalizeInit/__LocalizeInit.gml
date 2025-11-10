@@ -36,7 +36,7 @@ _cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD
         if (is_undefined(locFallData)) {
             locFallData = locDatabase[$ locFallCode];
         }
-        
+        // TODO define WHAT this code does
         // Update lang & cache
         if (is_undefined(locLangData)) {
             locLangData = locDatabase[$ locLangCode];

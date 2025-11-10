@@ -21,7 +21,7 @@
 #macro LOC_FORCE_BUNDLED_FILE
 
 // Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
-#macro LOC_COMPRESS true
+#macro LOC_COMPRESS false
 
 // Read files using asyncronous save/load events
 #macro LOC_ASYNC_MODE true

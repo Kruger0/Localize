@@ -6,8 +6,8 @@
   []=============================================[]
 */
 
-///@desc Returns the current game language as a string.
-function LocalizeGetLangName() {
+///@desc e
+function LocalizeFlush(){
     static _cache = __LocalizeCache();
-    return _cache.locLangData.langName; // TODO check if it exists
+    _cache.locDatabase = {};
 }

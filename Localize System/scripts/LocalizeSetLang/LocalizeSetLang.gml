@@ -6,7 +6,7 @@
   []=============================================[]
 */
 
-///@desc Set the game language from the lang ISO 639 code
+///@desc Set the game language from the language name or language code
 function LocalizeSetLang(langCode) {
     static _cache = __LocalizeCache();
     if (is_undefined(_cache.locDatabase)) {
@@ -17,7 +17,7 @@ function LocalizeSetLang(langCode) {
     var _langFound = false;
     // Check for full locale entry
     if (array_contains(_langCodes, langCode)) {
-        _cache.locLangData = _cache.locDatabase[$ langCode];
+        _cache.locLangCode = langCode;
         return 1;
     }    
     // Check for language only entry
@@ -25,10 +25,13 @@ function LocalizeSetLang(langCode) {
         var _langCode = _langCodes[i];
         var _language = string_split(_langCode, "-")[0];
         if (langCode == _language) {
-            _cache.locLangData = _cache.locDatabase[$ _langCode];
+            _cache.locLangCode = langCode;
             return 1;
         }
     }
+    // TODO Check for language name
+    
+    
     // No language could be setted
     __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{langCode}\" does not exists");
     return 0;

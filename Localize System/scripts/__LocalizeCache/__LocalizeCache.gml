@@ -9,7 +9,7 @@
 ///@ignore
 function __LocalizeCache() {
     static cache = undefined;
-    //if (GM_build_type == "run") global.__LocalizeCache = cache;
+    if (GM_build_type == "run") global.__localizeCache = cache;
     cache ??= {
         locDatabase : undefined,
         locLangData : undefined,
@@ -29,7 +29,8 @@ function __LocalizeCache() {
         sandboxed   : GM_is_sandboxed,
         dbgView     : pointer_null,
         dbgSection  : pointer_null,
-        timesource  : -1
+        timesource  : -1,
+        debugMode   : false,
     }
     return cache;
 }

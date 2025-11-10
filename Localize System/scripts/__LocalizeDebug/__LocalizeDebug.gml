@@ -29,6 +29,7 @@ function __LocalizeDebug() {
     dbg_drop_down(ref_create(_cache, "locLangCode"), LocalizeGetLangCodes(), "Game Language");
     dbg_watch(ref_create(_cache, "osLangCode"), "System Language");
     dbg_watch(ref_create(_cache, "locFallCode"), "Fallback Language");
+    dbg_checkbox(ref_create(_cache, "debugMode"), "Debug Mode");
     
     //==========================================================
     
@@ -38,11 +39,12 @@ function __LocalizeDebug() {
     dbg_watch(ref_create(_cache, "fetchAllowed"), "Download is Allowed");
     dbg_watch(ref_create(_cache, "sandboxed"), "Game is Sandboxed");
     dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages");
+    //TODO include compression status
     
     dbg_text("");
     
     var _fileCount = array_length(_cache.files)
-    dbg_text($"Files loaded ({_fileCount}): ")
+    dbg_text($"Files Loaded ({_fileCount}): ")
     for (var i = 0; i < _fileCount; i++) {
         var _file = _cache.files[i];
         dbg_text("  -  " + _file.fileName);

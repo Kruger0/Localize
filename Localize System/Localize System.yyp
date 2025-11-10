@@ -53,6 +53,7 @@
     {"id":{"name":"LocalizeConfig","path":"scripts/LocalizeConfig/LocalizeConfig.yy",},},
     {"id":{"name":"LocalizeDetectLang","path":"scripts/LocalizeDetectLang/LocalizeDetectLang.yy",},},
     {"id":{"name":"LocalizeDownloadSheet","path":"scripts/LocalizeDownloadSheet/LocalizeDownloadSheet.yy",},},
+    {"id":{"name":"LocalizeFlush","path":"scripts/LocalizeFlush/LocalizeFlush.yy",},},
     {"id":{"name":"LocalizeGetFiles","path":"scripts/LocalizeGetFiles/LocalizeGetFiles.yy",},},
     {"id":{"name":"LocalizeGetLangCode","path":"scripts/LocalizeGetLangCode/LocalizeGetLangCode.yy",},},
     {"id":{"name":"LocalizeGetLangCodes","path":"scripts/LocalizeGetLangCodes/LocalizeGetLangCodes.yy",},},
