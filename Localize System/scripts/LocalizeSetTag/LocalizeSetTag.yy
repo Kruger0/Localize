@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeSetTags",
+  "%Name":"LocalizeSetTag",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeSetTags",
+  "name":"LocalizeSetTag",
   "parent":{
     "name":"Public",
     "path":"folders/Localize/Public.yy",

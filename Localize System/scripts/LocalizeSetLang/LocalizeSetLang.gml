@@ -15,11 +15,13 @@ function LocalizeSetLang(langCode) {
     }
     var _langCodes = struct_get_names(_cache.locDatabase);
     var _langFound = false;
+    
     // Check for full locale entry
     if (array_contains(_langCodes, langCode)) {
         _cache.locLangCode = langCode;
         return 1;
-    }    
+    }
+    
     // Check for language only entry
     for (var i = 0; i < array_length(_langCodes); i++) {
         var _langCode = _langCodes[i];
@@ -30,6 +32,8 @@ function LocalizeSetLang(langCode) {
         }
     }
     // TODO Check for language name
+    
+    // TODO Check for code index?
     
     
     // No language could be setted

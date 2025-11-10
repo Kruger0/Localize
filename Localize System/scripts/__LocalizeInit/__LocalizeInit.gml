@@ -36,13 +36,13 @@ _cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD
         if (is_undefined(locFallData)) {
             locFallData = locDatabase[$ locFallCode];
         }
-        // TODO define WHAT this code does
+        
         // Update lang & cache
         if (is_undefined(locLangData)) {
             locLangData = locDatabase[$ locLangCode];
-        } else {    // keep up to date with lang code
+        } else { // Make sure to keep up to date with lang code
             if (locLangData.langCode != locLangCode) {
-                locLangData = locDatabase[$ locLangCode]
+                locLangData = locDatabase[$ locLangCode];
                 __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to \"{locLangCode}\"");
             }
         }

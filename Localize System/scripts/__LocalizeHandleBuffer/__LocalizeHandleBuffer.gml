@@ -8,11 +8,12 @@
 
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status) {
-    static _cache = __LocalizeCache();    
+    static _cache = __LocalizeCache();
+    var _t = get_timer();
     if !(status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
         return 0;
-    }    
+    }
     // Check for sheet compression
     var _header = buffer_read(buffer, buffer_u16);
     if (_header == 0x9C78) { // zlib default compression header
@@ -20,18 +21,18 @@ function __LocalizeHandleBuffer(buffer, status) {
         buffer_delete(buffer);
         buffer = _decomp;
         buffer_seek(buffer, buffer_seek_start, 0);
-    }    
+    }
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
     if (array_length(_sheet) == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading .csv as array");
         return 0;
-    }    
-    // Iterate rows
+    }
     var _langCodes = [];
     var _langNames = [];
-    var _langCode = ""; 
+    var _langCode = "";
+    // Iterate rows
     for (var i = 0; i < array_length(_sheet); i++) {
         var _line = _sheet[i];
         // Iterate cols
@@ -49,10 +50,8 @@ function __LocalizeHandleBuffer(buffer, status) {
                     __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated.");
                 }
                 _line[j] = _langCode;
-                // TODO clean this
                 array_push(_langCodes, _langCode);
                 array_push(_langNames, _langName);
-                // Store text on language key
                 _cache.locDatabase ??= {};
                 var _cacheLang = _cache.locDatabase[$ _langCode];
                 if (is_undefined(_cacheLang)) {
@@ -80,22 +79,11 @@ function __LocalizeHandleBuffer(buffer, status) {
             }
         }
     }
-    _cache.langCodes = array_union(_cache.langCodes, _langCodes)
-    _cache.langNames = array_union(_cache.langNames, _langNames)
-    _cache.langCount = array_length(_cache.langCodes);
     // Finish process
-    //with (_cache) {
-    //    var _dataCodes = struct_get_names(locDatabase);
-    //    var _dataCount = array_length(_dataCodes);
-    //    var _dataNames = [];
-    //    for (var i = 0; i < _dataCount; i++) {
-    //        array_push(_dataNames, locDatabase[$ _dataCodes[i]].langName);
-    //    }
-    //    langCodes = _dataCodes;
-    //    langCount = _dataCount;
-    //    langNames = _dataNames; 
-    //}
-    __LocalizeTrace(LOC_TRACE.VERBOSE, "Database updated!");
+    _cache.langCodes = array_union(_cache.langCodes, _langCodes);
+    _cache.langNames = array_union(_cache.langNames, _langNames);
+    _cache.langCount = array_length(_cache.langCodes);
+    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms");
     __LocalizeDebug();
     return 1;
 }

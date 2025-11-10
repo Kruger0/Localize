@@ -9,7 +9,7 @@
 ///@ignore
 function __LocalizeCache() {
     static cache = undefined;
-    if (GM_build_type == "run") global.__localizeCache = cache;
+    if (GM_build_type == "run" && debug_mode) global.__LocalizeCache = cache;
     cache ??= {
         locDatabase : undefined,
         locLangData : undefined,
@@ -23,8 +23,8 @@ function __LocalizeCache() {
         langCodes   : [],
         langCount   : -1,
         langNames   : [],
-        asyncArray  : [],
         files       : [],
+        asyncArray  : [],
         pathDest    : filename_dir(GM_project_filename)+"/datafiles/",
         pathSource  : "",
         fetchAllowed: __LocalizeFetchAllowed(),

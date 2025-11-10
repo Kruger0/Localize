@@ -28,6 +28,7 @@ function __LocalizeDebug() {
     
     dbg_drop_down(ref_create(_cache, "locLangCode"), LocalizeGetLangCodes(), "Game Language");
     dbg_watch(ref_create(_cache, "osLangCode"), "System Language");
+    dbg_watch(ref_create(_cache, "locLangCode"), "Game Language");
     dbg_watch(ref_create(_cache, "locFallCode"), "Fallback Language");
     dbg_checkbox(ref_create(_cache, "debugMode"), "Debug Mode");
     

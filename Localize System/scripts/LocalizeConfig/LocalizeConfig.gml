@@ -21,7 +21,7 @@
 #macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
 
 // Default: true
-#macro LOC_FORCE_BUNDLED_FILE true // TODO use this
+#macro LOC_FORCE_BUNDLED_FILE true // TODO use this in the system
 
 // Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
 // Default: false

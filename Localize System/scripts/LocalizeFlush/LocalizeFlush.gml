@@ -6,8 +6,22 @@
   []=============================================[]
 */
 
-///@desc e
+///@desc Flush
 function LocalizeFlush(){
     static _cache = __LocalizeCache();
-    _cache.locDatabase = {};
+    with (_cache) {
+        locDatabase = undefined;
+        locLangData = undefined;
+        locLangCode = "";
+        locFallData = undefined;
+        locFallCode = "";
+        osLangCode  = "";
+        locTagKeys  = {};
+        locTagNames = [];
+        locTagCount = 0;
+        langCodes   = [];
+        langCount   = -1;
+        langNames   = [];
+        files       = [];
+    }
 }
