@@ -20,14 +20,12 @@ function Localize(key) {
     
     // Check if key entry exists
     var _string = _langData.langKeys[$ key];
-    if (is_undefined(_string)) return key;
-    
-    // Check for cell errors
     if (__LocalizeDetectCellError(_string)) return key;
     
     // Check for fallback
     if (_string == "") {
         _string = _cache.locFallData.langKeys[$ key];
+        if (_string == "") return key;
         if (__LocalizeDetectCellError(_string)) return key;
     }
     
