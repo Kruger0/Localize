@@ -40,6 +40,7 @@
     {"id":{"name":"__LocalizeCache","path":"scripts/__LocalizeCache/__LocalizeCache.yy",},},
     {"id":{"name":"__LocalizeConstants","path":"scripts/__LocalizeConstants/__LocalizeConstants.yy",},},
     {"id":{"name":"__LocalizeDebug","path":"scripts/__LocalizeDebug/__LocalizeDebug.yy",},},
+    {"id":{"name":"__LocalizeDetectCellError","path":"scripts/__LocalizeDetectCellError/__LocalizeDetectCellError.yy",},},
     {"id":{"name":"__LocalizeDownload","path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},},
     {"id":{"name":"__LocalizeFetchAllowed","path":"scripts/__LocalizeFetchAllowed/__LocalizeFetchAllowed.yy",},},
     {"id":{"name":"__LocalizeHandleBuffer","path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},},

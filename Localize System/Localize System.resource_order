@@ -14,6 +14,7 @@
     {"name":"__LocalizeCache","order":2,"path":"scripts/__LocalizeCache/__LocalizeCache.yy",},
     {"name":"__LocalizeConstants","order":1,"path":"scripts/__LocalizeConstants/__LocalizeConstants.yy",},
     {"name":"__LocalizeDebug","order":3,"path":"scripts/__LocalizeDebug/__LocalizeDebug.yy",},
+    {"name":"__LocalizeDetectCellError","order":12,"path":"scripts/__LocalizeDetectCellError/__LocalizeDetectCellError.yy",},
     {"name":"__LocalizeDownload","order":5,"path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},
     {"name":"__LocalizeFetchAllowed","order":11,"path":"scripts/__LocalizeFetchAllowed/__LocalizeFetchAllowed.yy",},
     {"name":"__LocalizeHandleBuffer","order":10,"path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},

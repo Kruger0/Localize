@@ -11,45 +11,45 @@ function Localize(key) {
     static _cache  = __LocalizeCache();
     if (_cache.debugMode) return key;
     
+    // Solve langData
     var _langData = _cache.locLangData;
     if (is_undefined(_langData)) {
         _langData = _cache.locFallData;
         if (is_undefined(_langData)) return key;
     }
     
-    // TODO adjust this workflow
+    // Check if key entry exists
     var _string = _langData.langKeys[$ key];
-    // If key does not exists for that language
-    if (is_undefined(_string)) {
-        // Set it to the fallback language
+    if (is_undefined(_string)) return key;
+    
+    // Check for cell errors
+    if (__LocalizeDetectCellError(_string)) return key;
+    
+    // Check for fallback
+    if (_string == "") {
         _string = _cache.locFallData.langKeys[$ key];
-        if (is_undefined(_string)) return key;
+        if (__LocalizeDetectCellError(_string)) return key;
     }
-    if (_string == "") return key;
     
     // Handle string templates
     if (argument_count > 1) {
         var _args = [];
         for (var i = 1; i < argument_count; i++) {
             array_push(_args, argument[i]);
-        }    
+        }
         _string = string_ext(_string, _args);
     }
     
     // Check for tag replacement
     var _tagStart = string_pos("[", _string);
     if (_tagStart >= 1) {
-        var _tagArr = struct_get_names(_cache.locTags);
-        var _tagLen = array_length(_tagArr);
-        for (var i = 0; i < _tagLen; i++) {
-            var _tagName = _tagArr[i];
-            
+        for (var i = 0; i < _cache.locTagCount; i++) {
+            var _tagName = _cache.locTagNames[i];
             if (string_pos(_tagName, _string) >= 1) {
-                var _tagValue = _cache.locTags[$ _tagName];
+                var _tagValue = _cache.locTagKeys[$ _tagName];
                 _string = string_replace_all(_string, _tagName, _tagValue);
             }
         } 
     }
-    
     return _string;
 }
