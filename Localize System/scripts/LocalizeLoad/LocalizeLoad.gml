@@ -30,6 +30,7 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         sheetPage,
         requestId : -1,
         async : false,
+        timestamp : get_timer(),
     });
     var _fileId = array_length(_cache.files)-1;
     
@@ -41,5 +42,15 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         __LocalizeDownload(_fileId);
     } else {
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"Using local file for {fileName}");
+    }
+    
+    // Initiate manager object
+    if !(instance_exists(__LocalizeManager)) {
+        instance_activate_object(__LocalizeManager);
+        if !(instance_exists(__LocalizeManager)) {
+            _cache.managerId = instance_create_depth(0, 0, 0, __LocalizeManager);
+        } else {
+            __LocalizeTrace(LOC_TRACE.CRITICAL, $"{nameof(__LocalizeManager)} was deactivated! Please ensure to activate it after calling instance_deactivate_all()")
+        }
     }
 }

@@ -24,9 +24,11 @@ function Localize(key) {
     
     // Check for fallback
     if (_string == "") {
-        _string = _cache.locFallData.langKeys[$ key];
-        if (_string == "") return key;
-        if (__LocalizeDetectCellError(_string)) return key;
+        if (!is_undefined(_cache.locFallData)) {
+            _string = _cache.locFallData.langKeys[$ key];
+            if (_string == "") return key;
+            if (__LocalizeDetectCellError(_string)) return key;
+        }
     }
     
     // Handle string templates

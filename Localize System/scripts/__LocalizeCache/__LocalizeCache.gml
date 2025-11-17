@@ -25,13 +25,14 @@ function __LocalizeCache() {
         langNames   : [],
         files       : [],
         asyncArray  : [],
-        pathDest    : filename_dir(GM_project_filename)+"/datafiles/",
+        pathDest    : filename_dir(GM_project_filename)+"datafiles/",
         pathSource  : "",
         fetchAllowed: __LocalizeFetchAllowed(),
         sandboxed   : GM_is_sandboxed,
         dbgView     : pointer_null,
         dbgSection  : pointer_null,
         timesource  : -1,
+        managerId   : -1,
         debugMode   : false,
     }
     return cache;

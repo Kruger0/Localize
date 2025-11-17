@@ -9,7 +9,7 @@
 ///@ignore
 function __LocalizeTrace(mode, msg) {
     if (mode <= LOC_TRACE_LEVEL) {
-        var _string = "[Localize]" + (mode == LOC_TRACE.CRITICAL ? " ⚠️ " : " ") + msg;
+        var _string = "[Localize]" + (mode == LOC_TRACE.CRITICAL ? " ⚠️" : " ") + msg;
         if (argument_count > 2) {
             var _args = [];
             for (var i = 2; i < argument_count; i++) {

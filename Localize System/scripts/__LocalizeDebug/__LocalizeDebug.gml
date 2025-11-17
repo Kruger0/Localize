@@ -19,7 +19,7 @@ function __LocalizeDebug() {
     var _width = 400;
     var _height = 450;
     var _align = 0;
-    _cache.dbgView = dbg_view($"Localize System v{LOC_VERSION}", _isDbgOpen, 128, 128, _width, _height);
+    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", _isDbgOpen, 128, 128, _width, _height);
     _cache.dbgSection = dbg_section("Main Section", true);
     
     //==========================================================

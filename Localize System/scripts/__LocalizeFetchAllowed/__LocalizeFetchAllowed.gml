@@ -24,8 +24,17 @@ function __LocalizeFetchAllowed(){
         case os_windows:
         case os_macosx:
         case os_linux:
-            _platformAllowed = true;
+            _platformAllowed = (os_browser == browser_not_a_browser);
             break;
     }
-    return (_modeAllowed && _platformAllowed);
+    var _result = (_modeAllowed && _platformAllowed);
+    if (_result && GM_is_sandboxed) {
+        if (GM_build_type == "run") {
+            __LocalizeError($"Cannot write on datafiles!\nPlease disable file system sandbox on desktop\nOr change \"{nameof(LOC_UPDATE_MODE)}\" to \"{nameof(LOC_UPDATE.DISABLED)}\"");
+        } else {
+            __LocalizeTrace(LOC_TRACE.CRITICAL, "Cannot write on datafiles!");
+            _result = false;
+        }
+    }
+    return _result;
 }

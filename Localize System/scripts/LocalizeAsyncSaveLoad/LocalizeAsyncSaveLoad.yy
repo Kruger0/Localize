@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeAsyncSaveLoad",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"Private",
+    "path":"folders/Localize/Private.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

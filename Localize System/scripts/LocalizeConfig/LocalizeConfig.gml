@@ -11,7 +11,7 @@
 // DEVELOPMENT: Download and save the sheet while on IDE, and use only local file on executable (recomended)
 // PRODUCTION:  Download and save the sheet on both IDE and executable builds
 // Default: LOC_UPDATE:DEVELOPMENT
-#macro LOC_UPDATE_MODE LOC_UPDATE.DEVELOPMENT
+#macro LOC_UPDATE_MODE LOC_UPDATE.DISABLED
 
 // Debug trace level
 // DISABLED:    No log will be displayed on the console
@@ -46,10 +46,6 @@
 // If enabled, string escape characters (\n and \r) will be parsed as new line
 // Default: true
 #macro LOC_REPLACE_NEWLINE true
-
-// Interval in frames where the system will check for language changes
-// Default: 6
-#macro LOC_AUTODETECT_PERIOD 6
 
 // Detect error values (#VALUE!, #ERROR!, #N/A, ...) in the spreadsheet and return the original key instead
 // Default: true

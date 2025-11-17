@@ -7,17 +7,21 @@
 */
 
 ///@desc Defines a fallback language to be used if LocalizeDetectLang() fails
-function LocalizeSetFallback(langCode){
+function LocalizeSetFallback(language){
     static _cache = __LocalizeCache();
-    if (is_undefined(_cache.locDatabase)) {
-        _cache.locFallCode = langCode;
-        return 0;
-    }
-    var _langCodes = struct_get_names(_cache.locDatabase);
-    if (array_contains(_langCodes, langCode)) {
-        _cache.locFallData = _cache.locDatabase[$ langCode];
+    
+    // Set by code
+    if (array_contains(_cache.langCodes, language)) {
+        _cache.locFallCode = _language;
         return 1;
     }
-    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Fallback language \"{langCode}\" does not exists");
+    
+    // Set by name
+    if (array_contains(_cache.langNames, language)) {
+        var _langCode = _cache.langCodes[array_get_index(_cache.langNames, language)];
+        _cache.locFallCode = _langCode;
+        return 1;
+    }
+    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Fallback language \"{language}\" does not exists");
     return 0;
 }

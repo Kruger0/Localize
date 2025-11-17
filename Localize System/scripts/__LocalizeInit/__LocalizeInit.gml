@@ -8,7 +8,7 @@
 
 // Start system
 var _cache = __LocalizeCache();
-__LocalizeTrace(-1, $"Running v{LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {LOC_DATE}");
+__LocalizeTrace(-1, $"Running v{__LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {__LOC_DATE}");
 
 // Get OS language
 var _language   = os_get_language();
@@ -25,7 +25,7 @@ if (__LocalizeFetchAllowed()) {
 }
 
 // Auto detect language changes
-_cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD, time_source_units_frames, function() {
+_cache.timesource = time_source_create(time_source_global, 1, time_source_units_frames, function() {
     static _cache = __LocalizeCache();
     with (_cache) {
         
@@ -46,6 +46,7 @@ _cache.timesource = time_source_create(time_source_global, LOC_AUTODETECT_PERIOD
                 __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to \"{locLangCode}\"");
             }
         }
+        
     }
 }, [], -1);
 time_source_start(_cache.timesource);

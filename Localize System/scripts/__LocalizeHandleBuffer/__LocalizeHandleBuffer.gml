@@ -14,6 +14,7 @@ function __LocalizeHandleBuffer(buffer, status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
         return 0;
     }
+    
     // Check for sheet compression
     var _header = buffer_read(buffer, buffer_u16);
     if (_header == 0x9C78) { // zlib default compression header
@@ -22,6 +23,7 @@ function __LocalizeHandleBuffer(buffer, status) {
         buffer = _decomp;
         buffer_seek(buffer, buffer_seek_start, 0);
     }
+    
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
@@ -35,9 +37,13 @@ function __LocalizeHandleBuffer(buffer, status) {
     // Iterate rows
     for (var i = 0; i < array_length(_sheet); i++) {
         var _line = _sheet[i];
+        var _key = _line[0];
+        if (i > 0 && _key == "") continue;
+        
         // Iterate cols
         for (var j = 0; j < array_length(_line); j++) {
             var _cell = _line[j];
+            
             // Store language
             if (i == 0 && j > 0) {
                 var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
@@ -47,7 +53,7 @@ function __LocalizeHandleBuffer(buffer, status) {
                     _langCode = _langData[1]; 
                 } else {
                     _langCode = _langName;
-                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated.");
+                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated");
                 }
                 _line[j] = _langCode;
                 array_push(_langCodes, _langCode);
@@ -63,22 +69,24 @@ function __LocalizeHandleBuffer(buffer, status) {
                     };
                 }
             }
+            
             // Store translations
             if (i > 0 && j > 0) {
-                var _key = _line[0];
                 _langCode = _sheet[0][j];
-                if (_key == "") continue;
                 if (_langCode == "") continue;
+                
                 // Replace escaped linebreaks for real ones
                 if (LOC_REPLACE_NEWLINE) {
                     _cell = string_replace_all(_cell, "\\n", "\n");
                     _cell = string_replace_all(_cell, "\\r", "\r");
                 }
+                
                 // Add translation to database
                 _cache.locDatabase[$ _langCode].langKeys[$ _key] = _cell;
             }
         }
     }
+    
     // Finish process
     _cache.langCodes = array_union(_cache.langCodes, _langCodes);
     _cache.langNames = array_union(_cache.langNames, _langNames);
