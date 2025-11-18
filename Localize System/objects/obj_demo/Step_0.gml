@@ -1,4 +1,6 @@
 
+LocalizeSetTag("[os_date]", Localize("ui.dateFormat", current_day, current_month, current_year));
+
 if (keyboard_check_pressed(vk_space)) {
     points++;
 }

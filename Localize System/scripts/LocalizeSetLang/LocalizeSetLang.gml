@@ -38,6 +38,6 @@ function LocalizeSetLang(language) {
     
     
     // No language could be setted
-    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{langCode}\" does not exists");
+    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language '{langCode}' does not exists");
     return 0;
 }

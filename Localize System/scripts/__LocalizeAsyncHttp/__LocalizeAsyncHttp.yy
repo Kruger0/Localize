@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeAsyncHttp",
+  "%Name":"__LocalizeAsyncHttp",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeAsyncHttp",
+  "name":"__LocalizeAsyncHttp",
   "parent":{
     "name":"Private",
     "path":"folders/Localize/Private.yy",

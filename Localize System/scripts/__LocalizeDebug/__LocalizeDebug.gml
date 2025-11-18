@@ -68,7 +68,7 @@ function __LocalizeDebug() {
     }, _width);
     
     //==========================================================
-    dbg_button("Update Files Localy", function() {
+    dbg_button("Update Files Locally", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i);

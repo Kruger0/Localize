@@ -14,11 +14,11 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     for (var i = 0; i < array_length(_cache.files); i++) {
         var _file = _cache.files[i];
         if (fileName == _file.fileName) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File \"{fileName}\" already loaded");
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded");
             return 0;
         } else
         if (sheetId == _file.sheetId && sheetPage == _file.sheetPage) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File \"{fileName}\" already loaded from Google Sheets as \"{_file.fileName}\"");
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded from Google Sheets as '{_file.fileName}'");
             return 0;
         }
     }
@@ -29,8 +29,10 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         sheetId,
         sheetPage,
         requestId : -1,
-        async : false,
-        timestamp : get_timer(),
+        //async : false,
+        //timestamp : get_timer(),
+        size : -1,
+        loaded : false,
     });
     var _fileId = array_length(_cache.files)-1;
     
@@ -42,15 +44,5 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         __LocalizeDownload(_fileId);
     } else {
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"Using local file for {fileName}");
-    }
-    
-    // Initiate manager object
-    if !(instance_exists(__LocalizeManager)) {
-        instance_activate_object(__LocalizeManager);
-        if !(instance_exists(__LocalizeManager)) {
-            _cache.managerId = instance_create_depth(0, 0, 0, __LocalizeManager);
-        } else {
-            __LocalizeTrace(LOC_TRACE.CRITICAL, $"{nameof(__LocalizeManager)} was deactivated! Please ensure to activate it after calling instance_deactivate_all()")
-        }
     }
 }

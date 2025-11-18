@@ -1,1 +1,1 @@
-LocalizeAsyncHttp();
+__LocalizeAsyncHttp();

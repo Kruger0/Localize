@@ -6,7 +6,7 @@
   []=============================================[]
 */
 
-// Start system
+// System initialization
 var _cache = __LocalizeCache();
 __LocalizeTrace(-1, $"Running v{__LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {__LOC_DATE}");
 
@@ -19,36 +19,13 @@ _cache.osLangCode = _langCode;
 // Trace sandbox status
 if (__LocalizeFetchAllowed()) {
     var _sandboxed = (GM_is_sandboxed ? 
-        "Sandbox enabled. Saving sheet downloads at local folder" : 
-        "Sandbox disabled. Saving sheet downloads at project datafiles");
+        "Sandbox enabled. Downloaded sheets will be saved at local folder" : 
+        "Sandbox disabled. Downloaded sheets will be saved at project datafiles");
     __LocalizeTrace(LOC_TRACE.VERBOSE, _sandboxed);
 }
 
-// Auto detect language changes
-_cache.timesource = time_source_create(time_source_global, 1, time_source_units_frames, function() {
-    static _cache = __LocalizeCache();
-    with (_cache) {
-        
-        // Wait for database to load
-        if (is_undefined(locDatabase)) continue;
-        
-        // Update fallback data
-        if (is_undefined(locFallData)) {
-            locFallData = locDatabase[$ locFallCode];
-        }
-        
-        // Update lang & cache
-        if (is_undefined(locLangData)) {
-            locLangData = locDatabase[$ locLangCode];
-        } else { // Make sure to keep up to date with lang code
-            if (locLangData.langCode != locLangCode) {
-                locLangData = locDatabase[$ locLangCode];
-                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to \"{locLangCode}\"");
-            }
-        }
-        
-    }
-}, [], -1);
+// Starts system internal step function
+_cache.timesource = time_source_create(time_source_global, 1, time_source_units_frames, __LocalizeStepFunction, [], -1);
 time_source_start(_cache.timesource);
 
 // Initialize system debug window

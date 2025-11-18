@@ -16,6 +16,7 @@ function __LocalizeHandleBuffer(buffer, status) {
     }
     
     // Check for sheet compression
+    buffer_seek(buffer, buffer_seek_start, 0);
     var _header = buffer_read(buffer, buffer_u16);
     if (_header == 0x9C78) { // zlib default compression header
         var _decomp = buffer_decompress(buffer);
@@ -23,6 +24,7 @@ function __LocalizeHandleBuffer(buffer, status) {
         buffer = _decomp;
         buffer_seek(buffer, buffer_seek_start, 0);
     }
+    var _size = buffer_get_size(buffer);
     
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
@@ -49,11 +51,12 @@ function __LocalizeHandleBuffer(buffer, status) {
                 var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
                 var _langName = _langData[0];
                 if (_langName == "") continue;
+                var _hasCode = false;
                 if (array_length(_langData) > 1) {
                     _langCode = _langData[1]; 
+                    _hasCode = true;
                 } else {
                     _langCode = _langName;
-                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language \"{_langName}\" does not have a ISO 639 code associated");
                 }
                 _line[j] = _langCode;
                 array_push(_langCodes, _langCode);
@@ -61,7 +64,7 @@ function __LocalizeHandleBuffer(buffer, status) {
                 _cache.locDatabase ??= {};
                 var _cacheLang = _cache.locDatabase[$ _langCode];
                 if (is_undefined(_cacheLang)) {
-                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language \"{_langCode}\"");
+                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}' {_hasCode ? "" : "(Warning: Use full locale format like 'English_en-US' instead of just 'English' for better compatibility)"}");
                     _cache.locDatabase[$ _langCode] = {
                         langName: _langName,
                         langCode: _langCode,
@@ -91,7 +94,7 @@ function __LocalizeHandleBuffer(buffer, status) {
     _cache.langCodes = array_union(_cache.langCodes, _langCodes);
     _cache.langNames = array_union(_cache.langNames, _langNames);
     _cache.langCount = array_length(_cache.langCodes);
-    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms");
+    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms to load {_size/1024}KB");
     __LocalizeDebug();
     return 1;
 }

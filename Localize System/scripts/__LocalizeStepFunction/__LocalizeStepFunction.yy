@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeAsyncSaveLoad",
+  "%Name":"__LocalizeStepFunction",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeAsyncSaveLoad",
+  "name":"__LocalizeStepFunction",
   "parent":{
     "name":"Private",
     "path":"folders/Localize/Private.yy",

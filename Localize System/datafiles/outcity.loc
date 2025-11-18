@@ -1,0 +1,1182 @@
+idioma,English,Português,Español,Deutsch,Italiano,Français,[kanji2]日本語,[kanji2]中文
+text_jogar,Play,Jogar,Jugar,Spielen,Giocare,Jouer,[kanji2]スタート,[kanji2]开始游戏
+text_opcoes,Options,Opções,Opciones,Optionen,Opzioni,Options,[kanji2]設定,[kanji2]设置
+text_creditos,Credits,Créditos,Créditos,Mitwirkend,Crediti,Crédits,[kanji2]スタッフロール,[kanji2]制作人员
+text_sair,Exit,Sair,Salir,Beenden,Esci,Quitter,[kanji2]閉じる,[kanji2]退出游戏
+text_voltar,Back [spr_arrow_back],Voltar [spr_arrow_back],Volver [spr_arrow_back],Zurück [spr_arrow_back],Indietro [spr_arrow_back],Retour [spr_arrow_back],[kanji2]戻る [spr_arrow_back],[kanji2]返回 [spr_arrow_back]
+text_video,Video,Vídeo,Video,Grafik,Video,Vidéo,[kanji2]グラフィック,[kanji2]画面设置
+text_jogo,Game,Jogo,Juego,Spiel,Gioco,Jeu,[kanji2]ゲーム,[kanji2]游戏
+text_audio,Audio,Áudio,Audio,Ton,Audio,Audio,[kanji2]サウンド,[kanji2]音频
+text_controle,Controls,Controle,Controles,Steuerung,Controlli,Contrôles,[kanji2]コントローラー,[kanji2]控制设置
+text_graficos,Graphics,Gráficos,Gráficos,Grafik,Grafica,Graphismes,[kanji2]グラフィック,[kanji2]画面设置
+text_resolucao,Resolution,Resolução,Resolución,Auflösung,Risoluzione,Résolution,[kanji2]解像度,[kanji2]分辨率
+text_idiomas,Languages,Idiomas,Idiomas,Sprachen,Lingua,Langues,[kanji2]言語,[kanji2]语言
+text_sombras,Shadows,Sombras,Sombras,Schtten,Ombre,Ombres,[kanji2]影,[kanji2]阴影
+text_pixel_perfect,Pixel Perfect,Pixel Perfect,Pixel Perfect,Pixel Perfect,Pixel Perfect,Pixel Perfect,[kanji2]ピクセルパーフェクト,[kanji2]像素完美
+text_zoom,Zoom,Zoom,Zoom,Zoom,Zoom,Zoom,[kanji2]ズーム,[kanji2]缩放
+text_iluminacao_dinamica,Dynamic Lighting,Iluminação Dinâmica,Iluminación Dinámica,Dynamische Beleuchtung,Illuminazione Dinamica,Éclairage Dynamique,[kanji2]ダイナミックライティング,[kanji2]动态光照
+text_post_processing,Post-Processing,Post-Processing,Post-Procesamiento,Nachbearbeitung,Post-Processing,Post-Traitement,[kanji2]ポストプロセス,[kanji2]后期处理
+text_vsync,V-Sync,V-Sync,V-Sync,V-Sync,V-Sync,V-Sync,[kanji2]垂直同期,[kanji2]垂直同步
+text_modo_tela,Screen Mode,Modo de Tela,Modo de Pantalla,Anzeigmodus,Modalità Schermo,Mode Affichage,[kanji2]ディスプレイモード,[kanji2]屏幕模式
+text_idioma_jogo,Game Language,Idioma do Jogo,Idioma del Juego,Sprache,Lingua di Gioco,Langue du Jeu,[kanji2]言語,[kanji2]游戏语言
+text_formato_data,Date Format,Formato de Data,Formato de Fecha,Datumsformat,Formato Data,Format Date,[kanji2]日付形式,[kanji2]日期格式
+text_gameplay,Gameplay,Gameplay,Gameplay,Gameplay,Gameplay,Gameplay,[kanji2]ゲームプレイ,[kanji2]游戏玩法
+text_interface,Interface,Interface,Interfaz,Interface,Interfaccia,Interface,[kanji2]インタフェース,[kanji2]游戏界面
+text_acessibilidade,Accessibility,Acessibilidade,Accesibilidad,Barrierefreiheit,Acessibilità,Accessibilité,[kanji2]アクセシビリティ,[kanji2]辅助功能
+text_pausar_inventario,Pause with Inventory,Pausar com inventário,Pausar con Inventario,Bei Inventar pausieren,Pausa con Inventario,Pause avec Inventaire,[kanji2]インヴェントリーでポーズ,[kanji2]打开背包时暂停
+text_correr_sempre,Always Run,Correr Sempre,Correr Siempre,Dauerhaft rennen,Corsa Sempre Attiva,Toujours Courir,[kanji2]いつも走る,[kanji2]自动奔跑
+text_velocidade_jogo,Game Speed,Velocidade do Jogo,Velocidad del Juego,Spielgeschwindigkeit,Velocità di Gioco,Vitesse Jeu,[kanji2]ゲームスピード,[kanji2]游戏速度
+text_auto_save,Auto-Save,Auto-Save,Auto-Guardado,Automatisches Speichern,Salvataggio Automatico,Sauvegarde Auto,[kanji2]自動セーブ,[kanji2]自动保存
+text_mostrar_dicas,Show Tips,Mostrar Dicas,Mostrar Consejos,Tipps anzeigen,Mostra Suggerimenti,Afficher Astuces,[kanji2]ヒント,[kanji2]显示提示
+text_notificacoes,Notifications,Notificações,Notificaciones,Benachrichtigungen,Notifiche,Notifications,[kanji2]通知用の設定,[kanji2]通知设置 
+text_mostrar_fps,Show FPS,Mostrar FPS,Mostrar FPS,FPS anzeigen,Mostra FPS,Afficher FPS,[kanji2]FPSの表示,[kanji2]显示帧数
+text_daltonismo,Colorblind Support,Daltonismo,Daltonismo,Farbenblindheit,Daltonismo,Daltonisme,[kanji2]色覚異常,[kanji2]色盲模式
+text_alto_contraste,High Contrast,Alto Contraste,Alto Contraste,Hoher Kontrast,Alto Contrasto,Contraste Élevé,[kanji2]ハイコントラストモード,[kanji2]高对比度
+text_cursor_maior,Large Cursor,Cursor Maior,Cursor Grande,Großer Cursor,Cursore Grande,Curseur Agrandi,[kanji2]大きいマウスポインター,[kanji2]大光标
+text_volume_geral,Master Volume,Volume Geral,Volumen General,Gesamtlautstärke,Volume Principale,Volume Général,[kanji2]マスター音量,[kanji2]主音量
+text_musica,Music,Música,Música,Musik,Musica,Musique,[kanji2]BGM音量,[kanji2]音乐
+text_efeitos_sonoros,Sound Effects,Efeitos Sonoros,Efectos de Sonido,Soundeffekte,Effetti Sonori,Effets Sonores,[kanji2]SE音量,[kanji2]音效素材音量
+text_ambiente,Ambient,Ambiente,Ambiente,Atmosphäre,Ambiente,Environnement,[kanji2]環境音,[kanji2]环境音量
+text_voz,Voice,Voz,Voz,Stimmen,Voce,Voix,[kanji2]声,[kanji2]语音音量
+text_vibracao,Vibration,Vibração,Vibración,Vibration,Vibrazione,Vibration,[kanji2]コントローラーの振動,[kanji2]振动
+text_zona_morta,Deadzone,Zona Morta,Zona Muerta,Deadzone,Zona Morta,Zone Morte,[kanji2]デッドゾーン,[kanji2]盲区
+text_teclado,Keyboard,Teclado,Teclado,Tastatur,Tastiera,Clavier,[kanji2]キーボード,[kanji2]键盘
+text_gamepad,Gamepad,Gamepad,Gamepad,Gamepad,Gamepad,Manette,[kanji2]ゲームパッド,[kanji2]手柄
+text_configurar_teclas,Configure Keys,Configurar Teclas,Configurar Teclas,Tastenbelegung,Configura Tasti,Configurer les Touches,[kanji2]キー設定,[kanji2]键位设置
+text_detectar_controle,Detect Controller,Detectar Controle,Detectar Control,Controller erkebben,Rileva Controller,Détecter la Manette,[kanji2]コントローラー検索,[kanji2]搜索控制器
+text_desligadas,Off,Desligadas,Desactivadas,Aus,Spente,Désactivé,[kanji2]OFF,[kanji2]关闭
+text_baixas,Minimum,Baixas,Bajas,Niedrig,Basse,Faibles,[kanji2]LOW,[kanji2]最低
+text_baixa,Low,Baixa,Baja,Niedrig,Bassa,Faible,[kanji2]LOW,[kanji2]低
+text_medias,Medium,Médias,Medias,Mittel,Medie,Moyennes,[kanji2]MEDIUM,[kanji2]中
+text_media,Medium,Média,Media,Mittel,Media,Moyenne,[kanji2]MEDIUM,[kanji2]中
+text_altas,High,Altas,Altas,Hoch,Alte,Élevées,[kanji2]HIGH,[kanji2]高
+text_alta,High,Alta,Alta,Hoch,Alta,Élevée,[kanji2]HIGH,[kanji2]高
+text_janela,Windowed,Janela,Ventana,Fenstermodus,Finestra,Fenêtré,[kanji2]ウィンドウ,[kanji2]窗口模式
+text_tela_cheia,Fullscreen,Tela Cheia,Pantalla Completa,Vollbild,Schermo Intero,Plein Écran,[kanji2]フルスクリーン,[kanji2]全屏模式
+text_janela_sem_bordas,Borderless Window,Janela sem Bordas,Ventana sin Bordes,Randloses Fenster,Finestra Senza Bordi,Fenêtre Sans Bord,[kanji2]ボーダレスウィンドウ,[kanji2]无边框窗口模式
+text_portugues,Portuguese,Português,Portugués,Portugiesisch,Portoghese,Portugais,[kanji2]ポルトガル語,[kanji2]葡萄牙语
+text_english,English,English,English,Englisch,Inglese,Anglais,[kanji2]英語,[kanji2]英语
+frances,French,Francês,Francés,Französisch,Francese,Français,[kanji2]フランス語,[kanji2]法语
+alemao,German,Alemão,Alemán,Deutsch,Tedesco,Allemand,[kanji2]ドイツ語,[kanji2]德语
+italiano,Italian,Italiano,Italiano,Italienisch,Italiano,Italien,[kanji2]イタリア語,[kanji2]意大利语
+text_espanol,Spanish,Español,Español,Spanisch ,Spagnolo,Espagnol,[kanji2]スペイン語,[kanji2]西班牙语
+text_1_min,1 min,1 min,1 min,1 min,1 min,1 min,[kanji2]1分,[kanji2]1分
+text_5_min,5 min,5 min,5 min,5 min,5 min,5 min,[kanji2]5分,[kanji2]5分
+text_10_min,10 min,10 min,10 min,10 min,10 min,10 min,[kanji2]10分,[kanji2]10分
+text_15_min,15 min,15 min,15 min,15 min,15 min,15 min,[kanji2]15分,[kanji2]15分
+text_todas,All,Todas,Todas,Alle,Tutte,Toutes,[kanji2]すべてを受け取る,[kanji2]都
+text_importantes,Important,Importantes,Importantes,Wichtig,Importanti,Importantes,[kanji2]重要な通知のみ,[kanji2]重要
+text_nenhuma,None,Nenhuma,Ninguna,Keine,Nessuna,Aucune,[kanji2]受け取らない,[kanji2]无
+text_normal,Default,Nenhum ,Ningún,Normal,Nessuno,Aucun,[kanji2]デフォルト,[kanji2]缺省
+text_protanopia,Protanopia,Protanopia,Protanopia,Protanopie,Protanopia,Protanopie,[kanji2]第一色盲,[kanji2]第一色盲
+text_deuteranopia,Deuteranopia,Deuteranopia,Deuteranopia,Deuteranopie,Deuteranopia,Deutéranopie,[kanji2]第二色盲,[kanji2]第二色盲
+text_tritanopia,Tritanopia,Tritanopia,Tritanopia,Tritanopie,Tritanopia,Tritanopie,[kanji2]第三色盲,[kanji2]第三色盲
+text_diretor_geral,General Director,Diretor Geral,Director General,Generaldirektor,Direttore Generale,Directeur Général,[kanji2]ゲーム総監督,[kanji2]总监
+text_diretor_financeiro,Producer,Produtor,Productor,Produzent,Produttore,Producteur,[kanji2]プロデューサー,[kanji2]制作人
+text_game_design,Game Design,Game Design,Diseño de Juego,Gamedesign,Game Design,Game Design,[kanji2]ゲームデザイン,[kanji2]游戏设计
+text_arte,Art,Arte,Arte,Kunst & Grafik,Arte,Art,[kanji2]芸術家,[kanji2]美术
+text_programacao,Programming,Programação,Programación,Programmierung,Programmazione,Programmation,[kanji2]プログラミング,[kanji2]程序
+text_design_som,Sound Design,Design de Som,Diseño de Sonido,Sounddesign,Sound Design,Sound Design,[kanji2]サウンドデザイン,[kanji2]音效师
+text_teste_qualidade,Quality Testing,Teste de Qualidade,Pruebas de Calidad,Qualitätssicherung Test,Quality Assurance,Test de Qualité,[kanji2]QAテスター,[kanji2]质量保证
+text_agradecimentos,Special Thanks,Agradecimentos Especiais,Agradecimientos Especiales,Besonderer Dank,Ringranziamenti Speciali,Remerciements Spéciaux,[kanji2]家族と友人に,[kanji2]特别鸣谢
+text_familia_amigos,Family and Friends,Família e Amigos,Familia y Amigos,Familie und Freunde,Famiglia e Amici,Famille et Amis,[kanji2]スペシャルサンクス,[kanji2]家人和朋友们
+text_obrigado_jogar,Thank you for playing!,Obrigado por jogar!,¡Gracias por jugar!,Danke fürs Spielen!,Grazie per aver giocato!,Merci d'avoir joué!,[kanji2]プレイしてくれてありがとうございました,[kanji2]感谢游玩!
+text_musica_fundo,Background Music,Música de Fundo,Música de Fondo,Hintergrundmusik,Musica di Sottofondo,Musique de Fond,[kanji2]BGM音量,[kanji2]音乐音量
+text_som_minimizar,Sound when Minimized,Som ao Minimizar,Sonido al Minimizar,Ton bei Minimierung,Suono quando Minimizzato,Son en arrière-plan,[kanji2]バックグラウンドで音声を再生する,[kanji2]最小化时播放声音
+text_qualidade_audio,Audio Quality,Qualidade do Áudio,Calidad de Audio,Audioqualität,Qualità Audio,Qualité Audio,[kanji2]オーディオ品質,[kanji2]音质
+text_sensibilidade,Sensitivity,Sensibilidade,Sensibilidad,Empfindlichkeit,Sensibilità,Sensibilité,[kanji2]感度,[kanji2]灵敏度
+text_repeticao_tecla,Key Repeat,Repetição de Tecla,Repetición de Tecla,Tastenwiederholung,Ripetizione Tasti,Répétition des touches,[kanji2]キーレピーター,[kanji2]按键重复
+text_configurar,Configure,Configurar,Configurar,Konfigurieren,Configura,Configurer,[kanji2]設定する,[kanji2]配置
+text_conectado,Connected,Conectado,Conectado,Verbunden,Connesso,Connecté,[kanji2]接続されています ,[kanji2]已连接
+text_desconectado,Disconnected,Desconectado,Desconectado,Getrennt,Disconnesso,Déconnecté,[kanji2]接続されていません,[kanji2]未连接
+text_on,On,Ligado,Activado,An,Attivato,Activé,[kanji2]ON,[kanji2]开启
+text_off,Off,Desligado,Desactivado,Aus,Disattivato,Désactivé,[kanji2]OFF,[kanji2]关闭
+text_voltar,Back [spr_arrow_back],Voltar [spr_arrow_back],Volver [spr_arrow_back],Zurück [spr_arrow_back],Indietro [spr_arrow_back],Retour [spr_arrow_back],[kanji2]戻る [spr_arrow_back],[kanji2]返回 [spr_arrow_back]
+text_controle,Gamepad,Controle,,Gamepad,Controllo,Contrôle,[kanji2]ゲームパッド,[kanji2]手柄
+text_vibracao,Vibration,Vibração,,Vibration,Vibrazione,Vibration,[kanji2]コントローラーの振動,[kanji2]振动
+key,en,pt,es,de,it,fr,[kanji2]ja,[kanji2]zh
+build_label,[fa_center][fa_middle][hammer] Build[hammer],[fa_center][fa_middle][hammer] Construir[hammer],[fa_center][fa_middle][hammer] Construir[hammer],[fa_center][fa_middle][hammer] Bauen[hammer],[fa_center][fa_middle][hammer] Costruire[hammer],[fa_center][fa_middle][hammer] Construire[hammer],[kanji2][fa_center][fa_middle][hammer] 作る[hammer],[kanji2][fa_center][fa_middle][hammer]建造[hammer]
+upgrade_button,{0}[fa_center][fa_middle][sword] Upgrade [sword],[fa_center][fa_middle][sword] Upgrade [sword],[fa_center][fa_middle][sword] Mejorar [sword],[fa_center][fa_middle][sword] Verbessern [sword],[fa_center][fa_middle][sword] Migliorare [sword],[fa_center][fa_middle][sword] Améliorer [sword],[kanji2]{0}[fa_center][fa_middle][sword] 強化 [sword],[kanji2]{0}[fa_center][fa_middle][sword] 升级 [sword]
+unavailable,"[fa_center][fa_middle][shake][scale,2][c_red]Unavailable","[fa_center][fa_middle][shake][scale,2][c_red]Indisponível","[fa_center][fa_middle][shake][scale,2][c_red]No disponible","[fa_center][fa_middle][shake][scale,2][c_red]Nicht verfügbar","[fa_center][fa_middle][shake][scale,2][c_red]Indisponibile","[fa_center][fa_middle][shake][scale,2][c_red]Indisponible","[kanji2][fa_center][fa_middle][shake][scale,2][c_red]出来ません","[kanji2][fa_center][fa_middle][shake][scale,2][c_red]尚未开放"
+wood_resource_zero,"[fa_left][fa_middle][scale,2]Wood: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Madeira: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Madera: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Holz: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Legno: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Bois: [c_yellow]0/10","[kanji2][fa_left][fa_middle][scale,2]木材: [c_yellow]0/10","[kanji2][fa_left][fa_middle][scale,2]木头: [c_yellow]0/10"
+wood_resource_amount,"[fa_left][fa_middle][scale,2]Wood: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Madeira: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Madera: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Holz: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Legno: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Bois: [c_yellow]{0}/10","[kanji2][fa_left][fa_middle][scale,2]木材: [c_yellow]{0}/10","[kanji2][fa_left][fa_middle][scale,2]木头: [c_yellow]{0}/10"
+stone_resource_zero,"[fa_left][fa_middle][scale,2]Stone: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Pedra: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Piedra: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Stein: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Pietra: [c_yellow]0/10","[fa_left][fa_middle][scale,2]Pierre: [c_yellow]0/10","[kanji2][fa_left][fa_middle][scale,2]石: [c_yellow]0/10","[kanji2][fa_left][fa_middle][scale,2]石头: [c_yellow]0/10"
+stone_resource_amount,"[fa_left][fa_middle][scale,2]Stone: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Pedra: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Piedra: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Stein: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Pietra: [c_yellow]{0}/10","[fa_left][fa_middle][scale,2]Pierre: [c_yellow]{0}/10","[kanji2][fa_left][fa_middle][scale,2]石: [c_yellow]{0}/10","[kanji2][fa_left][fa_middle][scale,2]石头: [c_yellow]{0}/10"
+vida,Health,Vida,Salud,Gesundheit,Vita,Vie,[kanji2]体力,[kanji2]血量
+dano,Damage,Dano,Daño,Schaden,Danno,Dégâts,[kanji2]ダメージ,[kanji2]伤害
+nivel,Level,Nível,Nivel,Level,Livello,Niveau,[kanji2]レベル,[kanji2]等级
+unavailable_upgrade,"[fa_center][fa_middle][scale,2][c_red][shake]Unavailable","[fa_center][fa_middle][scale,2][c_red][shake]Indisponível","[fa_center][fa_middle][scale,2][c_red][shake]No disponible","[fa_center][fa_middle][scale,2][c_red][shake]Nicht verfügbar","[fa_center][fa_middle][scale,2][c_red][shake]Indisponibile","[fa_center][fa_middle][scale,2][c_red][shake]Indisponible","[kanji2][fa_center][fa_middle][scale,2][c_red][shake]出来ません","[kanji2][fa_center][fa_middle][scale,2][c_red][shake]不可用"
+build_title,"[fa_center][fa_middle][wave][scale,3]Build: {0}","[fa_center][fa_middle][wave][scale,3]Construir: {0}","[fa_center][fa_middle][wave][scale,3]Construir: {0}","[fa_center][fa_middle][wave][scale,3]Bauen: {0}","[fa_center][fa_middle][wave][scale,3]Costruisci: {0}","[fa_center][fa_middle][wave][scale,3]Construire: {0}","[kanji2][fa_center][fa_middle][scale,2][c_red][shake]出来ません","[kanji2][fa_center][fa_middle][wave][scale,3]建造: {0}"
+instructions,"[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] to navigate | [c_lime]CLICK[c_white] to build |","[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] para navegar | [c_lime]CLIQUE[c_white] para construir |","[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] para navegar | [c_lime]CLIC[c_white] para construir |","[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] zum Navigieren | [c_lime]KLICK[c_white] zum Bauen |","[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] per navigare | [c_lime]CLIC[c_white] per costruire |","[fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] pour naviguer | [c_lime]CLIC[c_white] pour construire |","[kanji2][fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] ナビゲーション | [c_lime]CLICK[c_white] 作る |","[kanji2][fa_center][fa_middle][scale,1.5][c_lime]Q/R[c_white] 切换 | [c_lime]点击[c_white] 建造 |"
+fish_escaped,[fa_center][fa_middle]The fish escaped!,[fa_center][fa_middle]O peixe escapou!,[fa_center][fa_middle]¡El pez escapó!,[fa_center][fa_middle]Der Fisch ist entkommen!,[fa_center][fa_middle]Il pesce è scappato!,[fa_center][fa_middle]Le poisson s'est échappé!,[kanji2][fa_center][fa_middle]魚に逃げられた,[kanji2][fa_center][fa_middle]鱼逃走了!
+prompt_press_z,[wave][fa_middle][fa_center]Press Z to open,[wave][fa_middle][fa_center]Pressione Z para abrir,[wave][fa_middle][fa_center]Presiona Z para abrir,[wave][fa_middle][fa_center]Drücke Z zum Öffnen,[wave][fa_middle][fa_center]Premi Z per aprire,[wave][fa_middle][fa_center]Appuie sur Z pour ouvrir,[kanji2][wave][fa_middle][fa_center]Zで開ける,[kanji2][wave][fa_middle][fa_center]按Z键打开
+prompt_click_box,[wave][fa_middle][fa_center]Click the box to pick up items,[wave][fa_middle][fa_center]Clique na caixa para pegar itens,[wave][fa_middle][fa_center]Haz clic en la caja para recoger ítems,"[wave][fa_middle][fa_center]Klicke auf die Kiste, um Gegenstände aufzuheben",[wave][fa_middle][fa_center]Clicca sulla scatola per raccogliere oggetti,[wave][fa_middle][fa_center]Cliquez sur la boîte pour prendre les objets,[kanji2][wave][fa_middle][fa_center]箱にクリックでアイテム獲得,[kanji2][wave][fa_middle][fa_center]点击箱子拾取物品
+use_remove_keys,"[scale,2][fa_middle][fa_center][spr_keycap_r] - Use | [spr_keycap_q] - Remove","[scale,2][fa_middle][fa_center][spr_keycap_r] - Usar | [spr_keycap_q] - Remover","[scale,2][fa_middle][fa_center][spr_keycap_r] - Usar | [spr_keycap_q] - Quitar","[scale,2][fa_middle][fa_center][spr_keycap_r] - Benutzen | [spr_keycap_q] - Entfernen","[scale,2][fa_middle][fa_center][spr_keycap_r] - Usa | [spr_keycap_q] - Rimuovi","[scale,2][fa_middle][fa_center][spr_keycap_r] - Utilise | [spr_keycap_q] - Retirer","[kanji2][scale,2][fa_middle][fa_center][spr_keycap_r] - 使う | [spr_keycap_q] - 捨てる","[kanji2][scale,2][fa_middle][fa_center][spr_keycap_r] - 使用 | [spr_keycap_q] - 移除"
+info_title,[fa_center][fa_middle]Information,[fa_center][fa_middle]Informações,[fa_center][fa_middle]Información,[fa_center][fa_middle]Informationen,[fa_center][fa_middle]Informazioni,[fa_center][fa_middle]Informations,[kanji2][fa_center][fa_middle]情報,[kanji2][fa_center][fa_middle]信息
+value_label,"[fa_middle][scale,2][c_yellow]Value:","[fa_middle][scale,2][c_yellow]Valor:","[fa_middle][scale,2][c_yellow]Valor:","[fa_middle][scale,2][c_yellow]Wert:","[fa_middle][scale,2][c_yellow]Valore:","[fa_middle][scale,2][c_yellow]Valeur:","[kanji2][fa_middle][scale,2][c_yellow]値段","[kanji2][fa_middle][scale,2][c_yellow]价值"
+type_name_desc_rarity,"[scale,2][#FFD700]Type:[c_white] {0} [#FFD700]Name:[c_white] {1} [#FFD700]Description:[c_white] {2} [#FFD700]Rarity:[c_white] {3}","[scale,2][#FFD700]Tipo:[c_white] {0} [#FFD700] Nome:[c_white] {1} [#FFD700] Descrição:[c_white] {2} [#FFD700] Raridade:[c_white] {3}","[scale,2][#FFD700]Tipo:[c_white] {0}[#FFD700]Nombre:[c_white] {1}[#FFD700]Descripción:[c_white] {2}[#FFD700]Rareza:[c_white] {3}","[scale,2][#FFD700]Typ:[c_white] {0} [#FFD700]Name:[c_white] {1} [#FFD700]Beschreibung:[c_white] {2} [#FFD700]Seltenheit:[c_white] {3}","[scale,2][#FFD700]Tipo:[c_white] {0}[#FFD700]Nome:[c_white] {1}[#FFD700]Descrizione:[c_white] {2}[#FFD700]Rarità:[c_white] {3}","[scale,2][#FFD700]Type:[c_white] {0} [#FFD700] Nom:[c_white] {1} [#FFD700] Description:[c_white] {2} [#FFD700] Rareté:[c_white] {3}","[kanji2][scale,2][#FFD700]カテゴリー:[c_white] {0} [#FFD700] 名前:[c_white] {1} [#FFD700] アイテム説明:[c_white] {2} [#FFD700] レア度:[c_white] {3}","[kanji2][scale,2][#FFD700]类型:[c_white] {0} [#FFD700]名称:[c_white] {1} [#FFD700]描述:[c_white] {2} [#FFD700]稀有度:[c_white] {3}"
+filter_button_top,"[fa_center][fa_middle][scale,1.2][c_gray]Filter","[fa_center][fa_middle][scale,1.2][c_gray]Filtro","[fa_center][fa_middle][scale,1.2][c_gray]Filtro","[fa_center][fa_middle][scale,1.2][c_gray]Filter","[fa_center][fa_middle][scale,1.2][c_gray]Filtro","[fa_center][fa_middle][scale,1.2][c_gray]Filtre","[kanji2][fa_center][fa_middle][scale,1.2][c_gray]フィルター","[kanji2][fa_center][fa_middle][scale,1.2][c_gray]筛选"
+sort_button_top,"[fa_center][fa_middle][scale,1.2][c_gray]Sort","[fa_center][fa_middle][scale,1.2][c_gray]Ordenar","[fa_center][fa_middle][scale,1.2][c_gray]Ordenar","[fa_center][fa_middle][scale,1.2][c_gray]Sortieren","[fa_center][fa_middle][scale,1.2][c_gray]Ordina","[fa_center][fa_middle][scale,1.2][c_gray]Trier","[kanji2][fa_center][fa_middle][scale,1.2][c_gray]ソート","[kanji2][fa_center][fa_middle][scale,1.2][c_gray]排序"
+inventory_title,"[scale,3][fa_center][fa_middle]Inventory","[scale,3][fa_center][fa_middle]Inventário","[scale,3][fa_center][fa_middle]Inventario","[scale,3][fa_center][fa_middle]Inventar","[scale,3][fa_center][fa_middle]Inventario","[scale,3][fa_center][fa_middle]Inventaire","[kanji2][scale,3][fa_center][fa_middle]インベントリ","[kanji2][scale,3][fa_center][fa_middle]背包"
+chest_title,"[scale,3][fa_middle]Chest","[scale,3][fa_middle]Baú","[scale,3][fa_middle]Baúl","[scale,3][fa_middle]Truhe","[scale,3][fa_middle]Baule","[scale,3][fa_middle]Coffre",[kanji2]チェスト,"[kanji2][scale,3][fa_middle]箱子"
+controls_transfer,"[scale,1.5][fa_center][fa_middle][c_yellow]RIGHT BUTTON[c_white]: Transfer Item","[scale,1.5][fa_center][fa_middle][c_yellow]BOTÃO DIREITO[c_white]: Transferir Item","[scale,1.5][fa_center][fa_middle][c_yellow]BOTÓN DERECHO[c_white]: Transferir Ítem","[scale,1.5][fa_center][fa_middle][c_yellow]RECHTE MAUSTASTE[c_white]: Gegenstand übertragen","[scale,1.5][fa_center][fa_middle][c_yellow]TASTO DESTRO[c_white]: Trasferisci item","[scale,1.5][fa_center][fa_middle][c_yellow]CLIC DROIT[c_white]: Transférer l'objet","[kanji2][scale,1.5][fa_center][fa_middle][c_yellow]右クリックで[c_white]: 移動する","[kanji2][scale,1.5][fa_center][fa_middle][c_yellow]鼠标右键[c_white]: 转移物品"
+controls_store_take,"[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Store All | [c_yellow]T[c_white]: Take All","[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Guardar Tudo | [c_yellow]T[c_white]: Pegar Tudo","[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Guardar Todo | [c_yellow]T[c_white]: Tomar Todo","[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Alles lagern | [c_yellow]T[c_white]: Alles nehmen","[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Deposita tutto | [c_yellow]T[c_white]: Prendi tutto","[scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: Tout ranger | [c_yellow]T[c_white]: Tout prendre","[kanji2][scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: 全部入れる | [c_yellow]T[c_white]: 全部習得","[kanji2][scale,1.5][fa_center][fa_middle][c_yellow]G[c_white]: 全部存放 | [c_yellow]T[c_white]: 全部取出"
+harvest_time,"[fa_center][fa_middle][wave][scale,4]Harvest Time!","[fa_center][fa_middle][wave][scale,4]Hora de Plantar!","[fa_center][fa_middle][wave][scale,4]¡Tiempo de Cosecha!","[fa_center][fa_middle][wave][scale,4]Erntezeit!","[fa_center][fa_middle][wave][scale,4]Tempo del raccolto!","[fa_center][fa_middle][wave][scale,4]Temps de récolte!","[kanji2][fa_center][fa_middle][wave][scale,4]種まきの時間だ！","[kanji2][fa_center][fa_middle][wave][scale,4]收获时间到!"
+use_left_button,"[fa_center][fa_middle][scale,2]Use your [c_yellow]LEFT BUTTON","[fa_center][fa_middle][scale,2]Use seu [c_yellow]BOTÃO ESQUERDO","[fa_center][fa_middle][scale,2]Usa tu [c_yellow]BOTÓN IZQUIERDO","[fa_center][fa_middle][scale,2]Benutze deine [c_yellow]LINKE MAUSTASTE","[fa_center][fa_middle][scale,2]Usa il [c_yellow]TASTO SINISTRO","[fa_center][fa_middle][scale,2]Utilise votre [c_yellow]CLIC GAUCHE","[kanji2][fa_center][fa_middle][scale,2]Use seu [c_yellow]左クリック","[kanji2][fa_center][fa_middle][scale,2]使用[c_yellow]鼠标左键"
+tip,"[fa_middle][fa_center][scale,1][wave]TIP: {0}","[fa_middle][fa_center][scale,1][wave]DICA: {0}","[fa_middle][fa_center][scale,1][wave]CONSEJO: {0}","[fa_middle][fa_center][scale,1][wave]TIPP: {0}","[fa_middle][fa_center][scale,1][wave]SUGGERIMENTO: {0}","[fa_middle][fa_center][scale,1][wave]ASTUCE: {0}","[kanji2][fa_middle][fa_center][scale,1][wave]ヒント: {0}","[kanji2][fa_middle][fa_center][scale,1][wave]提示: {0}"
+status_planting,Planting seeds...,Plantando sementes...,Plantando semillas...,Pflanze Samen...,Piantando semi...,Plantation des graines...,[kanji2]種を植えている...,[kanji2]播种中...
+status_building,Building barns...,Construindo celeiros...,Construyendo graneros...,Baue Scheunen...,Costruendo granai...,Construction des granges...,[kanji2]納屋を建てている...,[kanji2]建造谷仓中...
+status_calling_animals,Calling the animals...,Chamando os animais...,Llamando a los animales...,Rufe die Tiere...,Chiamando animali...,Appel des animaux...,[kanji2]動物を呼んでいる...,[kanji2]呼唤动物中...
+status_finalizing,Finalizing details...,Finalizando detalhes...,Finalizando detalles...,Schließe Details ab...,Completando dettagli...,Finalisation des détails...,[kanji2]...,[kanji2]最终调整中...
+status_done,"[scale,3][wave][rainbow]LOADING COMPLETED","[scale,3][wave][rainbow]CARREGAMENTO CONCLUIDO","[scale,3][wave][rainbow]CARGA COMPLETADA","[scale,3][wave][rainbow]LADEN ABGESCHLOSSEN","[scale,3][wave][rainbow]CARICAMENTO COMPLETATO","[scale,3][wave][rainbow]CHARGEMENT TERMINÉ","[kanji2][scale,3][wave][rainbow]ロード完了","[kanji2][scale,3][wave][rainbow]加载完成"
+tip_press_z,Tip: Press Z to open delivery boxes!,Dica: Pressione Z para abrir caixas de entrega!,Consejo: ¡Presiona Z para abrir cajas de entrega!,"Tipp: Drücke Z, um Lieferkisten zu öffnen!",Suggerimento: Premi Z per aprire le casse di consegna!,Conseil: Appuie sur Z pour ouvrir les boîtes de livraison!,[kanji2]ヒント: Zで箱開けられます,[kanji2]提示：按Z键打开送货箱!
+main_menu_resume,Resume,Retomar,Reanudar,Fortsetzen,Riprendi,Reprendre,[kanji2]続く,[kanji2]继续游戏
+main_menu_audio,Audio,Áudio,Audio,Audio,Audio,Audio,[kanji2]サウンド,[kanji2]音频
+main_menu_video,Video,Vídeo,Video,Grafik,Video,Vidéo,[kanji2]ビデオ,[kanji2]视频
+main_menu_main_menu,Main Menu,Menu Principal,Menú Principal,Hauptmenü,Menu principale,Menu Principal,[kanji2]メニュー,[kanji2]主菜单
+audio_menu_master_volume,Master Volume,Volume Geral,Volumen General,Gesamtlautstärke,Volume generale,Volume Général,[kanji2]マスター音量,[kanji2]主音量
+audio_menu_music,Music,Música,Música,Musik,Musica,Musique,[kanji2]BGM音量,[kanji2]音乐音量
+audio_menu_sfx,Sound Effects,Efeitos Sonoros,Efectos de Sonido,Soundeffekte,Effetti sonori,Effets Sonores,[kanji2]SE音量,[kanji2]音效音量
+audio_menu_ambient,Ambient,Ambiente,Ambiente,Umgebung,Ambiente,Ambiance,[kanji2]環境音,[kanji2]环境音量
+audio_menu_ui,UI,Interface,Interfaz,Interface,Interfaccia,Interface,[kanji2]インターフェース,[kanji2]界面音量
+audio_menu_voice,Voice,Voz,Voz,Stimme,Voce,Voix,[kanji2]声,[kanji2]语音音量
+audio_menu_back,Back,Voltar,Volver,Zurück,Indietro,Retour,[kanji2]戻る,[kanji2]返回
+video_menu_ppfx,PPFX,PPFX,PPFX,PPFX,PPFX,PPFX,[kanji2]PPFX,[kanji2]后期效果
+video_menu_shadow,Shadow,Sombra,Sombra,Schatten,Ombra,Ombres,[kanji2]影,[kanji2]阴影
+video_menu_effects,Effects,Efeitos,Efectos,Effekte,Effetti,Effets,[kanji2]エフェクト,[kanji2]特效
+video_menu_lighting,Lighting,Iluminação,Iluminación,Beleuchtung,Illuminazione,Éclairage,[kanji2]明るさ,[kanji2]光照
+video_menu_back,Back,Voltar,Volver,Zurück,Indietro,Retour,[kanji2]戻る,[kanji2]返回
+volume_master,Master Volume,Volume Master,Volumen Maestro,Gesamtlautstärke,Volume principale,Volume Principal,[kanji2]マスター音量,[kanji2]主音量
+volume_music,Music Volume,Volume Música,Volumen Música,Musiklautstärke,Volume musica,Volume Musique,[kanji2]BGM音量,[kanji2]音乐音量
+volume_sfx,SFX Volume,Volume Efeitos,Volumen Efectos,Effektlautstärke,Volume effetti,Volume Effets,[kanji2]SE音量,[kanji2]音效音量
+volume_ambient,Ambient Volume,Volume Ambiente,Volumen Ambiente,Umgebungslautstärke,Volume ambiente,Volume Ambiance,[kanji2]環境音,[kanji2]环境音量
+volume_ui,UI Volume,Volume UI,Volumen Interfaz,UI-Lautstärke,Volume UI,Volume Interface,[kanji2]インターフェース,[kanji2]界面音量
+volume_voice,Voice Volume,Volume Voz,Volumen Voz,Stimmenlautstärke,Volume voce,Volume Voix,[kanji2]声,[kanji2]语音音量
+status_on,On,Ligado,Encendido,An,Attivato,Activé,[kanji2]ON,[kanji2]开启
+status_off,Off,Desligado,Apagado,Aus,Disattivato,Désactivé,[kanji2]OFF,[kanji2]关闭
+ppfx,Post-processing,Pós-processamento,Post-procesamiento,Nachbearbeitung,Post-elaborazione,Post-traitement,[kanji2]ポストプロセス,[kanji2]后期效果
+shadow,Shadow,Sombra,Sombra,Schatten,Ombra,Ombres,[kanji2]影,[kanji2]阴影
+effects,Effects,Efeitos,Efectos,Effekte,Effetti,Effets,[kanji2]エフェクト,[kanji2]特效
+lighting,Lighting,Iluminação,Iluminación,Beleuchtung,Illuminazione,Éclairage,[kanji2]明るさ,[kanji2]光照
+esc_back_unpause,Press ESC to return and unpause,Pressione ESC para voltar e despausar,Presiona ESC para volver y despausar,"Drücke ESC, um zurückzukehren und die Pause aufzuheben",Premi ESC per tornare e riprendere,Appuie sur ESC pour revenir et reprendre,[kanji2]Escで戻る,[kanji2]按 ESC返回并继续游戏
+fence_title,"[scale,3][fa_middle][fa_center]FENCE","[scale,3][fa_middle][fa_center]CERCADO","[scale,3][fa_middle][fa_center]CERCA","[scale,3][fa_middle][fa_center]ZAUN","[scale,3][fa_middle][fa_center]Recinto","[scale,3][fa_middle][fa_center]ENCLOS","[kanji2][scale,3][fa_middle][fa_center]フェンス","[kanji2][scale,3][fa_middle][fa_center]栅栏"
+filter_all,[fa_middle][fa_center]All,[fa_middle][fa_center]Todos,[fa_middle][fa_center]Todos,[fa_middle][fa_center]Alle,[fa_middle][fa_center]Tutti,[fa_middle][fa_center]Tous,[kanji2][fa_middle][fa_center]全て,[kanji2][fa_middle][fa_center]全部
+filter_pig,[fa_middle][fa_center]Pig,[fa_middle][fa_center]Porco,[fa_middle][fa_center]Cerdo,[fa_middle][fa_center]Schwein,[fa_middle][fa_center]Maiale,[fa_middle][fa_center]Cochon,[kanji2][fa_middle][fa_center]豚,[kanji2][fa_middle][fa_center]猪
+filter_chicken,[fa_middle][fa_center]Chicken,[fa_middle][fa_center]Galinha,[fa_middle][fa_center]Gallina,[fa_middle][fa_center]Huhn,[fa_middle][fa_center]Gallina,[fa_middle][fa_center]Poule,[kanji2][fa_middle][fa_center]鶏,[kanji2][fa_middle][fa_center]鸡
+filter_cow,[fa_middle][fa_center]Cow,[fa_middle][fa_center]Vaca,[fa_middle][fa_center]Vaca,[fa_middle][fa_center]Kuh,[fa_middle][fa_center]Mucca,[fa_middle][fa_center]Vache,[kanji2][fa_middle][fa_center]牛,[kanji2][fa_middle][fa_center]牛
+filter_sheep,[fa_middle][fa_center]Sheep,[fa_middle][fa_center]Ovelha,[fa_middle][fa_center]Oveja,[fa_middle][fa_center]Schaf,[fa_middle][fa_center]Pecora,[fa_middle][fa_center]Mouton,[kanji2][fa_middle][fa_center]羊,[kanji2][fa_middle][fa_center]羊
+hunger_label,[fa_middle]Hunger,[fa_middle]Fome,[fa_middle]Hambre,[fa_middle]Hunger,[fa_middle]Fame,[fa_middle]Faim,[kanji2][fa_middle]空腹,[kanji2]饱食度
+happiness_label,[fa_middle]Happiness,[fa_middle]Felicidade,[fa_middle]Felicidad,[fa_middle]Zufriedenheit,[fa_middle]Felicità,[fa_middle]Bonheur,[kanji2][fa_middle]幸せ,[kanji2]幸福度
+sell_button,[fa_middle][fa_center]Sell,[fa_middle][fa_center]Vender,[fa_middle][fa_center]Vender,[fa_middle][fa_center]Verkaufen,[fa_middle][fa_center]Vendi,[fa_middle][fa_center]Vendre,[kanji2][fa_middle][fa_center]売る,[kanji2][fa_middle][fa_center]卖
+page_indicator,[fa_middle][fa_center]{0}/{1},[fa_middle][fa_center]{0}/{1},[fa_middle][fa_center]{0}/{1},[fa_middle][fa_center]{0}/{1},[fa_middle][fa_center]{0}/{1},[fa_middle][fa_center]{0}/{1},[kanji2][fa_middle][fa_center]{0}/{1},[kanji2][fa_middle][fa_center]{0}/{1}
+close_button,[fa_middle][fa_center]X,[fa_middle][fa_center]X,[fa_middle][fa_center]X,[fa_middle][fa_center]X,[fa_middle][fa_center]X,[fa_middle][fa_center]X,[kanji2][fa_middle][fa_center]X,[kanji2][fa_middle][fa_center]X
+selected_info,[fa_middle][fa_center]SELECTED: {0},[fa_middle][fa_center]SELECIONADO: {0},[fa_middle][fa_center]SELECCIONADO: {0},[fa_middle][fa_center]AUSGEWÄHLT: {0},[fa_middle][fa_center]SELEZIONATO: {0},[fa_middle][fa_center]SÉLECTION: {0},[kanji2][fa_middle][fa_center]選択中: {0},[kanji2][fa_middle][fa_center]已选择: {0}
+shutdown_message_1,"[scale,2][fa_middle][fa_center]Shutting down FarmNet OS...","[scale,2][fa_middle][fa_center]Desligando FarmNet OS...","[scale,2][fa_middle][fa_center]Apagando FarmNet OS...","[scale,2][fa_middle][fa_center]Fahre FarmNet OS herunter...","[scale,2][fa_middle][fa_center]Spegnimento FarmNet OS...","[scale,2][fa_middle][fa_center]Extinction de FarmNet OS...","[kanji2][scale,2][fa_middle][fa_center] FarmNet OSシャットダウン中...","[kanji2][scale,2][fa_middle][fa_center]正在关闭 FarmNet 系统..."
+shutdown_message_2,"[scale,2][fa_middle][fa_center]Saving farm data...","[scale,2][fa_middle][fa_center]Salvando dados da fazenda...","[scale,2][fa_middle][fa_center]Guardando datos de la granja...","[scale,2][fa_middle][fa_center]Speichere Farmdaten...","[scale,2][fa_middle][fa_center]Salvataggio dati della fattoria...","[scale,2][fa_middle][fa_center]Sauvegarde des données de la ferme...","[kanji2][scale,2][fa_middle][fa_center]Farm date セーブ中...","[kanji2][scale,2][fa_middle][fa_center]正在保存农场数据..."
+life_label,"[fa_left][fa_bottom][scale,.5]Health: {0}","[fa_left][fa_bottom][scale,.5]Vida: {0}","[fa_left][fa_bottom][scale,.5]Salud: {0}","[fa_left][fa_bottom][scale,.5]Gesundheit: {0}","[fa_left][fa_bottom][scale,.5]Vita: {0}","[fa_left][fa_bottom][scale,.5]Vie: {0}","[kanji2][fa_left][fa_bottom][scale,.5]体力: {0}","[kanji2][fa_left][fa_bottom][scale,.5]血量: {0}"
+follow_label,"[fa_left][fa_bottom][scale,.5]{0}Follow","[fa_left][fa_bottom][scale,.5]{0}Seguir","[fa_left][fa_bottom][scale,.5]{0}Seguir","[fa_left][fa_bottom][scale,.5]{0}Folgen","[fa_left][fa_bottom][scale,.5]{0}Segui","[fa_left][fa_bottom][scale,.5]{0}Suivre","[kanji2][fa_left][fa_bottom][scale,.5]{0}追従","[kanji2][fa_left][fa_bottom][scale,.5]{0}跟随"
+madeira,Wood,Madeira,Madera,Holz,Legno,Bois,[kanji2]木材,[kanji2]木头
+pedra,Stone,Pedra,Piedra,Stein,Pietra,Pierre,[kanji2]石,[kanji2]石头
+ferramenta,Tool,Ferramenta,Herramienta,Werkzeug,Stumento,Outil,[kanji2]道具,[kanji2]工具
+espada,Sword,Espada,Espada,Schwert,Spada,Épée,[kanji2]剣,[kanji2]剑
+espada_desc,Good ol' Sharp Steel for the bad guys >:),Ferro afiado para qualquer inimigo,Hierro afilado para cualquier enemigo,Scharfes Eisen für jeden Feind,Ferro affilato per qualsiasi nemico,Fer tranchant pour tout ennemi,[kanji2]悪いやつを倒すならコレ！,[kanji2]对付坏蛋的经典利器
+machado,Axe,Machado,Hacha,Axt,Ascia,Hache,[kanji2]斧,[kanji2]斧头
+machado_desc,Perfect option to chop wood,Perfeito para cortar madeira com força,Perfecto para cortar madera con fuerza,"Perfekt, um Holz mit Kraft zu schneiden",Perfetta per tagliare il legno con forza,Parfait pour couper du bois avec force,[kanji2]チョップ,[kanji2]砍木头的绝佳选择
+regador,Watering Can,Regador,Regadera,Gießkanne,Annaffiatoio,Arrosoir,[kanji2]じょうろ,[kanji2]浇水壶
+regador_desc,Keeps your plants well hydrated (you too),Mantém suas plantas sempre hidratadas,Mantiene tus plantas siempre hidratadas,Hält deine Pflanzen immer bewässert,Mantiene le tue piante sempre idratate,Maintient vos plantes toujours hydratées,[kanji2]みんなに水をあげよう！,[kanji2]让你的植物喝饱水!
+martelo,Hammer,Martelo,Martillo,Hammer,Martello,Marteau,[kanji2]ハンマー,[kanji2]锤子
+martelo_desc,Sturdy tool to build anything,Ferramenta robusta para construir qualquer coisa,Herramienta robusta para construir cualquier cosa,"Robustes Werkzeug, um alles zu bauen",Strumento robusto per costruire qualsiasi cosa,Outil robuste pour construire n'importe quoi,[kanji2]建物をたてる道具,"[kanji2]坚固耐用, 建造万物"
+picareta,Pickaxe,Picareta,Pico,Spitzhacke,Piccone,Pioche,[kanji2]ツルハシ,[kanji2]镐
+picareta_desc,Ideal for mining rocks and ores,Ideal para minerar pedras e minérios,Ideal para extraer piedras y minerales,Ideal zum Abbau von Steinen und Erzen,Ideale per estarre pietre e minerali,Idéal pour miner des pierres et des minerais,[kanji2]石やお宝を手に入れよう！,[kanji2]挖掘岩石与矿石的理想工具
+varadepesca,Fishing Rod,Vara de Pesca,Caña de Pescar,Angelrute,Canna da pesca,Canne à pêche,[kanji2]釣竿,[kanji2]钓竿
+varadepesca_desc,To catch fish in rivers and lakes,Para pegar peixes nos rios e lagos,Para pescar en ríos y lagos,Um Fische in Flüssen und Seen zu fangen,Per pescare pesci nei fiumi e nei laghi,Pour attraper des poissons dans les rivières et les lacs,[kanji2]色んな所で釣ってみよう,[kanji2]在河流与湖泊中垂钓
+pá,Shovel,Pá,Pala,Schaufel,Pala,Pelle,[kanji2]シャベル,[kanji2]铲子
+pá_desc,Easily digs up soil,Cava terra com facilidade e rapidez,Excava tierra con facilidad y rapidez,Gräbt Erde mit Leichtigkeit und schnell,Scava la terra con facilità e rapidità,Creuse la terre avec facilité et rapidité,[kanji2]植えるために穴を掘ろう！,[kanji2]轻松松动土壤
+vida,Health,Vida,Salud,Leben,Vita,Vie,[kanji2]体力,[kanji2]血量
+nenhum_selecionado,No item selected,Nenhum item selecionado,Ningún ítem seleccionado,Kein Gegenstand ausgewählt,Nessun item selezionato,Aucun objet sélectionné,[kanji2]何も選択していません,[kanji2]未选择任何物品
+filter_seeds,Seeds,Sementes,Semillas,Samen,Semi,Graines,[kanji2]種,[kanji2]种子
+filter_tools,Tools,Ferramentas,Herramientas,Arbeitszeug,Attrezzi,Outils,[kanji2]道具,[kanji2]工具
+filter_projects,Projects,Projetos,Proyectos,Projekte,Progetti,Projets,[kanji2]設計,[kanji2]图纸
+filter_food,Food,Alimentos,Alimentos,Nahrung,Cibo,Nourriture,[kanji2]エサ,[kanji2]食物
+filter_animals,Animals,Animais,Animales,Tiere,Animali,Animaux,[kanji2]動物,[kanji2]动物
+filter_special,Special,Especiais,Especiales,Spezial,Speciali,Spéciaux,[kanji2]スペシャル,[kanji2]特殊
+sort_default,Default,Padrão,Predeterminado,Standard,Predefinito,Par défaut,[kanji2]デフォルト,[kanji2]默认
+sort_name_az,Name A-Z,Nome A-Z,Nombre A-Z,Name A-Z,Nome A-Z,Nom A-Z,[kanji2]Name A-Z,[kanji2]名称 A-Z
+sort_name_za,Name Z-A,Nome Z-A,Nombre Z-A,Name Z-A,Nome Z-A,Nom Z-A,[kanji2]Name Z-A,[kanji2]名称 Z-A
+sort_rarity,Rarity,Raridade,Rareza,Seltenheit,Rarità,Rareté,[kanji2]レア度,[kanji2]稀有度
+sort_price_low,Price Low,Preço-,Precio-,Preis-,Prezzo-,Prix -,[kanji2]値段 (昇順),[kanji2]价格最低
+sort_price_high,Price High,Preço+,Precio+,Preis+,Prezzo+,Prix +,[kanji2]値段 (降順),[kanji2]价格最高
+sort_quantity_low,Quantity Low,Quantidade-,Cantidad-,Menge-,Quantità-,Quantité -,[kanji2]数量 (昇順),[kanji2]数量最少
+sort_quantity_high,Quantity High,Quantidade+,Cantidad+,Menge+,Quantita+,Quantité +,[kanji2]数量 (降順),[kanji2]数量最多
+filtro,Filters,Filtros,Filtro,Filter,Filtri,Filtres,[kanji2]フィルター,[kanji2]筛选
+text_programacao_adicional,Additional Programming,Programação Adicional,Programación Adicional,Zusätzliche Programmierung,Programmazione Aggiuntiva,Programmation Additionnelle,[kanji2]アディショナルプログラマー,[kanji2]追加编程
+ordenar,Sort  ,Ordenar,Ordenar,Sortieren,Ordina,Trier,[kanji2]ソート,[kanji2]排序
+key,english,portuguese,spanish,deutsch,italiano,portugais,[kanji2]日本語,[kanji2]中文
+window_title_green_valley,Green Valley Seeds,Green Valley Seeds,Green Valley Seeds,Green Valley Samen,Green Valley Seeds,Graines Green Valley,[kanji2]Green Valley Seeds,[kanji2]绿谷种子
+window_title_robins,Robin's Construction Co.,Robin's Construction Co.,Robin's Construction Co.,Robin's Baufirma,Robin's Construction Co.,Robin's Construction Co.,[kanji2]Robin's Construction Co.,[kanji2]罗宾建筑公司
+window_title_marnies,Marnie's Ranch,Marnie's Ranch,Marnie's Ranch,Marnie's Ranch,Marnie's Ranch,Ranch de Marnie,[kanji2]Marnie's Ranch,[kanji2]玛妮的牧场
+window_slogan_seeds,Growing Dreams Since 1985,Cultivando Sonhos Desde 1985,Cultivando Sueños Desde 1985,Träume wachsen lassen seit 1985,Coltivando Sogni Dal 1985,Cultivant des Rêves Depuis 1985,[kanji2]Growing Dreams Since 1985,[kanji2]自1985年起播种梦想
+window_slogan_construction,Building Your Future,Construindo Seu Futuro,Construyendo Tu Futuro,Wir bauen deine Zukunft,Costruendo il Tuo Futuro,Construire Votre Avenir,[kanji2]Building Your Future,[kanji2]筑就您的未来
+window_slogan_animals,"Happy Animals, Happy Farm","Animais Felizes, Fazenda Feliz","Animales Felices, Granja Feliz","Glückliche Tiere, glückliche Farm","Animali Felici, Fattoria Felice","Animaux Heureux, Ferme Heureuse","[kanji2]Happy Animals, Happy Farm","[kanji2]动物开心, 农场欢欣"
+category_all,All,Todas,Todas,Alle,Tutte,Toutes,[kanji2]全て,[kanji2]全部
+category_fast,Fast (1-3 days),Rápido (1-3 dias),Rápido (1-3 días),Schnell (1-3 Tage),Veloce (1-3 giorni),Rapide (1-3 jours),[kanji2]早い (1～3 日),[kanji2]快（1-3日）
+category_medium,Medium (4-7 days),Médio (4-7 dias),Medio (4-7 días),Mittel (4-7 Tage),Medio (4-7 giorni),Moyen (4-7 jours),[kanji2]普通 (4～7 日),[kanji2]中（4-7日）
+category_slow,Slow (8+ days),Lento (8+ dias),Lento (8+ días),Langsam (8+ Tage),Lento (8+ giorni),Lent (8+ jours),[kanji2]遅い (8～ 日),[kanji2]慢（8+日）
+category_multiple,Multiple Harvests,Múltiplas Colheitas,Cosechas Múltiples,Mehrfache Ernten,Raccolte Multiple,Multiples Récoltes,[kanji2]複数回収穫,[kanji2]多次收获
+category_house,House,Casa,Casa,Haus,Casa,Maison,[kanji2]家,[kanji2]房屋
+category_farm,Farm,Fazenda,Granja,Farm,Fattoria,Ferme,[kanji2]農場,[kanji2]农场
+category_decoration,Decoration,Decoração,Decoración,Dekoration,Decorazione,Décoration,[kanji2]家具,[kanji2]装饰
+category_utilities,Utilities,Utilitários,Utilidades,Hilfsmittel,Utilità,Utilitaires,[kanji2]道具,[kanji2]工具
+category_birds,Birds,Aves,Aves,Vögel,Uccelli,Oiseaux,[kanji2]トリ,[kanji2]鸟类
+category_mammals,Mammals,Mamíferos,Mamíferos,Säugetiere,Mammiferi,Mammifères,[kanji2]哺乳類,[kanji2]哺乳类
+category_feed,Feed,Ração,Alimento,Futter,Mangime,Nourriture,[kanji2]エサ,[kanji2]饲料
+category_accessories,Accessories,Acessórios,Accesorios,Zubehör,Accessori,Accessoires,[kanji2]アクセサリー,[kanji2]饰品
+item_beetroot_seed,Seeds of Beetroot ,Semente de Beterraba,Semilla de Remolacha,Samen von roten Bete,Seme di Barbabietola,Graines de Betterave,[kanji2]ビートルートの種,[kanji2]种子之甜菜
+item_carrot_seed,Seeds of Carrot ,Semente de Cenoura,Semilla de Zanahoria,Samen von Karotte,Seme di Carota,Graines de Carotte,[kanji2]ニンジンの種,[kanji2]种子之胡萝卜种子
+item_cabbage_seed,Seeds of Cabbage ,Semente de Repolho,Semilla de Repollo,Samen von Kohl,Seme di Cavolo,Graines de Chou,[kanji2]紫キャベツの種,[kanji2]种子之卷心菜
+item_cauliflower_seed,Seeds of Cauliflower ,Semente de Couve-Flor,Semilla de Coliflor,Samen von Blumenkohl,Seme di Cavolfiore,Graines de Chou-Fleur,[kanji2]カリフラワーの種,[kanji2]种子之花椰菜
+item_kale_seed,Seeds of Kale ,Semente de Couve,Semilla de Col Rizada,Samen von Grünkohl,Seme di Cavolo Nero,Graines de Chou-Vert,[kanji2]キャベツの種,[kanji2]种子之羽衣甘蓝
+item_parsnip_seed,Seeds of Parsnip ,Semente de Chirívia,Semilla de Chirivía,Samen von Pastinaken,Seme di Pastinaca,Graines de Panais,[kanji2]パースニップの種,[kanji2]种子之欧防风
+item_pumpkin_seed,Seeds of Pumpkin ,Semente de Abóbora,Semilla de Calabaza,Samen von Kürbis,Seme di Zucca,Graines de Citrouille,[kanji2]カボチャの種,[kanji2]种子之南瓜
+item_potato_seed,Seeds of Potato ,Semente de Batata,Semilla de Papa,Samen von Kartoffel,Seme di Patata,Graines de Pomme de Terre,[kanji2]ジャガイモの種,[kanji2]种子之土豆
+item_radish_seed,Seeds of Radish ,Semente de Rabanete,Semilla de Rábano,Samen von Rettich,Seme di Ravanello,Graines de Radis,[kanji2]ラディッシュの種,[kanji2]种子之萝卜
+item_sunflower_seed,Seeds of Sunflower ,Semente de Girassol,Semilla de Girasol,Samen von Sonnenblumen,Seme di Girasole,Graines de Tournesol,[kanji2]ひまわりの種,[kanji2]种子之向日葵
+item_wheat_seed,Seeds of Wheat ,Semente de Trigo,Semilla de Trigo,Samen von Weizen,Semi di Grano,Graines de Blé,[kanji2]小麦の種,[kanji2]种子之小麦
+item_oak_seed,Seeds of Oak ,Semente de Carvalho,Semilla de Roble,Samen von Eichen,Seme di Quercia,Graines de Chêne,[kanji2]オークの種の,[kanji2]种子之橡树
+item_small_house_4,Small House 4,Casa Pequena 4,Casa Pequeña 4,Kleines Haus 4,Casa Piccola 4,Petite Maison 4,[kanji2]小さい家４,[kanji2]小房子4
+item_small_house_3,Small House 3,Casa Pequena 3,Casa Pequeña 3,Kleines Haus 3,Casa Piccola 3,Petite Maison 3,[kanji2]小さい家３,[kanji2]小房子3
+item_small_house_2,Small House 2,Casa Pequena 2,Casa Pequeña 2,Kleines Haus 2,Casa Piccola 2,Petite Maison 2,[kanji2]小さい家２,[kanji2]小房子2
+item_small_house,Small House 1,Casa Pequena 1,Casa Pequeña 1,Kleines Haus 1,Casa Piccola 1,Petite Maison 1,[kanji2]小さい家１,[kanji2]小房子1
+item_fence,5x5 Fence,Cercado 5x5,Cercado 5x5,5x5 Zaun,Recinto 5x5,Enclos 5x5,[kanji2]フェンス5x5,[kanji2]5x5 栅栏
+,,,,,,,,
+solo_desc,Build to grow food,Construa para cultivar alimento,Construye para cultivar alimento,"Baue, um Nahrung anzupflanzen",Costruire per coltivare cibo,Construire pour cultiver de la nourriture,[kanji2]これで作物を育てよう！,[kanji2]用于耕种作物
+item_floor,2x2 Floor,Solo 2x2,Suelo 2x2,2x2 Boden,Terreno 2x2,Sol 2x2,[kanji2]土地2x2,[kanji2]2x2地块
+item_chicken,Chicken,Galinha,Gallina,Huhn,Gallina,Poule,[kanji2]鶏,[kanji2]鸡
+item_cow,Cow,Vaca,Vaca,Kuh,Mucca,Vache,[kanji2]牛,[kanji2]牛
+item_sheep,Sheep,Ovelha,Oveja,Schaf,Pecora,Mouton,[kanji2]羊,[kanji2]羊
+item_pig,Pig,Porco,Cerdo,Schwein,Maiale,Cochon,[kanji2]豚,[kanji2]猪
+item_premium_feed,Premium Feed,Ração Premium,Alimento Premium,Premium-Futter,Mangime Premium,Nourriture Premium,[kanji2]プレミアムエサ,[kanji2]特级饲料
+item_common_feed,Common Feed,Ração Comum,Alimento Común,Gewöhnliches Futter,Mangime Comune,Nourriture Standard,[kanji2]エサ,[kanji2]普通饲料
+desc_beetroot,Purple and sweet,Roxa e adocicada,Remolacha desc,"Süße Rote Bete, ideal zur Körperentgiftung",Barbabietola desc,Betteraves riches en nutriments,[kanji2]甘くて美味しい紫野菜,"[kanji2]紫色外皮, 味道甘甜!"
+desc_carrot,Orange and crunchy,Laranja e crocante,Zanahorias crujientes ricas en vitaminas,Orange und knackig,"Carote croccanti, ricche di vitamina A e betacarotene",Carottes croquantes riches en vitamines,[kanji2]畑のオレンジと言えば！,"[kanji2]橙色的外表, 清脆的口感!"
+desc_cabbage,Green and firm leaves,Folhas verdes e firmes,Hojas verdes y firmes,Grüne und feste Blätter,Foglie verdi e sode,Feuilles vertes et fermes,[kanji2]紫ボール！,"[kanji2]叶片紧实, 色泽翠绿"
+desc_cauliflower,White and delicate,Branca e delicada,Blanca y delicada,Weiß und zart,Bianca e delicata,Blanche et délicate,[kanji2]野菜界の白いモコモコ！,"[kanji2]色泽洁白, 口感细腻"
+desc_kale,Green and nutritious,Verde e nutritiva,Verde y nutritiva,Grün und nahrhaft,Verde e nutriente,Verte et nutritive,[kanji2]緑ボール！,[kanji2]深绿且营养丰富
+desc_parsnip,Pale and sweet,Clara e adocicada,Clara y dulce,Hell und süßlich,Chiaro e dolce,Claire et douce,[kanji2]雪に溶けるニンジン,"[kanji2]颜色浅白, 带有甘甜风味!"
+desc_pumpkin,Large and orange,Grande e alaranjada,Grande y anaranjada,Groß und orangefarben,Grande e arancione,Grosse et orange,[kanji2]トリックオアトリート,"[kanji2]个头硕大, 橙黄耀眼"
+desc_potato,Simple and versatile,Simples e versátil,Simple y versátil,Einfach und vielseitig,Semplice e versatile,Simple et polyvalente,[kanji2]近いうちにおいしい食べ物になる運命,"[kanji2]看似朴实, 却能千变万化"
+desc_radish,Red and spicy,Vermelho e picante,Rojo y picante,Rot und scharf,Rosso e piccante,Rouge et épicé,[kanji2]ファイアボール！,"[kanji2]通体鲜红, 带有一丝辛辣"
+desc_sunflower,Yellow and radiant,Amarelo e radiante,Amarillo y radiante,Gelb und strahlend,Giallo e raggiante,Jaune et radieux,[kanji2]太陽を求めている花,[kanji2]花色金黄永远朝向太阳
+desc_corn,Golden and juicy,Dourado e suculento,Dorado y suculento,Golden und saftig,Dorato e succoso,Doré et juteux,[kanji2]とうもころし、じゃない！,"[kanji2]颗粒金黄, 饱满多汁"
+desc_wheat,Golden and abundant,Dourado e abundante,Dorado y abundante,Golden und reichlich,Dorato e abbandante,Doré et abondant,[kanji2]いつかパンになる宿命,[kanji2]金黄饱满的麦穗
+desc_oak,Majestic tree that produces valuable wood,Árvore majestosa que produz madeira valiosa,Árbol majestuoso que produce madera valiosa,"Majestätischer Baum, der wertvolles Holz produziert",Albero maestoso che produce legno pregiato,Arbre majestueux qui produit du bois précieux,[kanji2]貴重な木材資源です,[kanji2]高大雄伟能产出珍贵的木材
+desc_small_house,Cozy shelter for Alex,Abrigo aconchegante para o Alex,Refugio acogedor para Alex,Gemütlicher Unterschlupf für Alex,Rifugio accogliente per Alex,Abri douillet pour Alex,[kanji2]Alexの秘密基地,[kanji2]专为亚历克斯准备的舒适小家
+desc_barn,Spacious barn for large animals,Celeiro espaçoso para animais grandes,Granero espacioso para animales grandes,Geräumige Scheune für große Tiere,Fienile spazioso per animali di grossa taglia,Grange spacieuse pour les grands animaux,[kanji2]動物が幸せそうに過ごせる家,[kanji2]空间宽敞供大型动物舒适居住
+desc_chicken,Friendly chicken that produces fresh eggs daily,Galinha amigável que produz ovos frescos diariamente,Gallina amigable que produce huevos frescos diariamente,"Freundliches Huhn, das täglich frische Eier legt",Gallina amichevole che produce uova fresche ogni giorno,Poule amicale qui produit des œufs frais quotidiennement,[kanji2]朝に目覚めと卵を与えてくれます,[kanji2]性情友好每天都会提供新鲜的鸡蛋
+desc_cow,Docile cow that produces fresh and nutritious milk,Vaca dócil que produz leite fresco e nutritivo,Vaca dócil que produce leche fresca y nutritiva,"Sanfte Kuh, die frische und nahrhafte Milch gibt",Mucca docile che produce latte fresco e nutriente,Vache docile qui produit du lait frais et nutritif,[kanji2]健康なミルクを分けてくれます,[kanji2]性情温顺提供新鲜营养的牛奶
+desc_sheep,Fluffy sheep that produces high quality soft wool,Ovelha fofa que produz lã macia de alta qualidade,Oveja esponjosa que produce lana suave de alta calidad,"Flauschiges Schaf, das weiche, hochwertige Wolle produziert",Pecora morbida che produce lana soffice di alta qualità,Mouton adorable qui produit de la laine douce de haute qualité,[kanji2]モフモフな毛はいつも暖めてくれます,[kanji2]毛发蓬松柔软能产出高品质的羊毛
+desc_pig,Smart pig that finds valuable truffles,Porco inteligente que encontra trufas valiosas,Cerdo inteligente que encuentra trufas valiosas,"Intelligentes Schwein, das wertvolle Trüffel findet",Maiale intelligente che trova tartufi pregiati,Cochon intelligent qui trouve des truffes précieuses,[kanji2]頭の良い豚がトリュフを見つけてくれます,[kanji2]聪明伶俐能帮你找到珍贵的松露
+desc_premium_feed,High quality feed that increases happiness,Ração de alta qualidade que aumenta a felicidade,Alimento de alta calidad que aumenta la felicidad,"Hochwertiges Futter, das die Zufriedenheit erhöht",Mangime di alta qualità che aumenta la felicità,Nourriture de haute qualité qui augmente le bonheur,[kanji2]動物たちにあげると幸せになります！,[kanji2]高品质饲料能提升动物的幸福感
+desc_common_feed,Basic feed to keep your animals fed,Ração básica para manter seus animais alimentados,Alimento básico para mantener a tus animales alimentados,"Grundfutter, um deine Tiere zu versorgen",Mangime base per nutrire i tuoi animali,Nourriture de base pour nourrir vos animaux,[kanji2]お腹パンパンになるまであげよう！,[kanji2]基础饲料保证让你的动物吃饱
+button_buy,BUY,COMPRAR,COMPRAR,KAUFEN,ACQUISTA,ACHETER,[kanji2]買う,[kanji2]购买
+button_add_cart,ADD TO CART,ADICIONAR AO CARRINHO,AÑADIR AL CARRITO,ZUM WARENKORB HINZUFÜGEN,AGGIUNGI AL CARRELLO,AJOUTER AU PANIER,[kanji2]カートに入れる,[kanji2]加入购物车
+button_checkout,CHECKOUT,FINALIZAR COMPRA,FINALIZAR COMPRA,KAUF ABSCHLIESSEN,CONFERMA ACQUISTO,FINALISER L'ACHAT,[kanji2]買う,[kanji2]结算
+button_close,Close,Fechar,Cerrar,Schließen,Chiudi,Fermer,[kanji2]閉じる,[kanji2]关闭
+button_minimize,Minimize,Minimizar,Minimizar,Minimieren,Minimizzare,Réduire,[kanji2]小さくする,[kanji2]最小化
+button_maximize,Maximize,Maximizar,Maximizar,Maximieren,Massimizzare,Agrandir,[kanji2]大きくする,[kanji2]最大化
+button_previous,◀ Previous,◀ Anterior,◀ Anterior,◀ Zurück,◀ Precedente,◀ Précédent,[kanji2]◀ 前,[kanji2]◀ 上一页
+button_next,Next ▶,Próximo ▶,Siguiente ▶,Weiter ▶,Successivo ▶,Suivant ▶,[kanji2]次 ▶,[kanji2]下一页 ▶
+label_page,Page,Página,Página,Seite,Pagina,Page,[kanji2]ページ,[kanji2]页
+label_of,of,de,de,von,di,de,[kanji2]/,[kanji2]/
+label_price,Price,Preço,Precio,Preis,Prezzo,Prix,[kanji2]値段,[kanji2]价格
+label_each,each,cada,cada,pro Stück,Ogni,chaque,,[kanji2]单价
+label_time,Time,Tempo,Tiempo,Zeit,Tempo,Temps,[kanji2]成長時間,[kanji2]时间
+label_days,days,dias,días,Tage,giorni,jours,[kanji2]日,[kanji2]天
+label_produces,Produces,Produz,Produce,Produziert,Produce,Produit,[kanji2]収穫,[kanji2]收获
+label_materials,Materials,Materiais,Materiales,Materialien,Materiali,Matériaux,[kanji2]素材,[kanji2]材料
+label_maintenance,Maintenance,Manutenção,Mantenimiento,Wartung,Manutenzione,Maintenance,[kanji2]メンテナンス,[kanji2]维护成本
+label_happiness,Happiness,Felicidade,Felicidad,Zufriedenheit,Felicità,Bonheur,[kanji2]幸せ,[kanji2]幸福度
+label_production,Production,Produção,Producción,Produktion,Produzione,Production,[kanji2]生産,[kanji2]生产
+label_daily,Daily,Diário,Diario,Täglich,Giornaliero,Quotidien,[kanji2]毎日,[kanji2]每日
+label_seasonal,Seasonal,Sazonal,Estacional,Saisonal,Stagionale,Saisonnier,[kanji2]シーズン,[kanji2]季节性
+label_wood,Wood,Madeira,Madera,Holz,Legno,Bois,[kanji2]木材,[kanji2]木头
+label_stone,Stone,Pedra,Piedra,Stein,Pietra,Pierre,[kanji2]石,[kanji2]石头
+label_total,Total,Total,Total,Gesamt,Totale,Total,[kanji2]合計,[kanji2]总计
+label_quantity,Quantity,Quantidade,Cantidad,Menge,Quantità,Quantité,[kanji2]数量,[kanji2]数量
+menu_file,File,Arquivo,Archivo,Datei,Archivio,Fichier,[kanji2]ファイル,[kanji2]文件
+menu_edit,Edit,Editar,Editar,Bearbeiten,Modifica,Éditer,[kanji2]変更,[kanji2]编辑
+menu_view,View,Ver,Ver,Ansicht,Visualizza,Voir,[kanji2]見る,[kanji2]视图
+menu_help,Help,Ajuda,Ayuda,Hilfe,Aiuto,Aide,[kanji2]ヘルプ,[kanji2]帮助
+search_placeholder,Search...,Buscar...,Buscar...,Suchen...,Cerca...,Rechercher...,[kanji2]サーチ,[kanji2]搜索…
+search_applied,Search applied,Busca aplicada,Búsqueda aplicada,Suche angewendet,Ricerca applicata,Recherche appliquée,[kanji2]検索しました,[kanji2]已应用搜索
+search_cancelled,Search cancelled,Busca cancelada,Búsqueda cancelada,Suche abgebrochen,Ricerca annullata,Recherche annulée,[kanji2]検索できませんでした,[kanji2]已取消搜索
+category_changed,Category changed to,Categoria alterada para,Categoría cambiada a,Kategorie geändert zu,Categoria modificata in,Catégorie changée pour,[kanji2]カテゴリーが変更されました,[kanji2]类别已切换为
+sort_changed,Sort changed to,Ordenação alterada para,Orden cambiado a,Sortierung geändert zu,Ordinamento modificato in,Tri changé pour,[kanji2]並び替えました,[kanji2]排序已切换为
+sort_name_asc,Name (A-Z),Nome (A-Z),Nombre (A-Z),Name (A-Z),Nome (A-Z),Nom (A-Z),[kanji2]アルファベット順(A-Z),[kanji2]名称 (A-Z)
+sort_name_desc,Name (Z-A),Nome (Z-A),Nombre (Z-A),Name (Z-A),Nome (Z-A),Nom (Z-A),[kanji2]アルファベット順(Z-A),[kanji2]名称 (Z-A)
+sort_price_asc,Price (Lowest),Preço (Menor),Precio (Menor),Preis (Niedrigster),Prezzo (Minore),Prix (le plus bas),[kanji2]価格(昇順),[kanji2]价格 (最低)
+sort_price_desc,Price (Highest),Preço (Maior),Precio (Mayor),Preis (Höchster),Prezzo (Maggiore),Prix (le plus élevé),[kanji2]価格(降順),[kanji2]价格 (最高)
+filters_cleared,All filters cleared,Todos os filtros foram limpos,Todos los filtros han sido borrados,Alle Filter wurden zurückgesetzt,Tutti i filtri sono stati rimossi,Tous les filtres ont été réinitialisés,[kanji2]フィルターをクリア,[kanji2]已清除所有筛选
+cart_title,Shopping Cart,Carrinho de Compras,Carrito de Compras,Warenkorb,Carrello della spesa,Panier d'achat,[kanji2]ショッピングカート,[kanji2]购物车
+cart_empty,Cart empty,Carrinho vazio,Carrito vacío,Warenkorb ist leer,Carrello vuoto,Panier vide,[kanji2]空のカート,[kanji2]购物车为空
+cart_item_added,Item added to cart!,Item adicionado ao carrinho!,¡Artículo añadido al carrito!,Artikel zum Warenkorb hinzugefügt!,Articolo aggiunto al carrello!,Article ajouté au panier!,[kanji2]カートに入れました,[kanji2]物品已加入购物车!
+cart_insufficient_money,Insufficient money! Need,Dinheiro insuficiente! Precisa de,¡Dinero insuficiente! Necesita,Nicht genügend Geld! Du benötigst,Fondi insufficienti! Necessari,Fonds insuffisants! Il vous faut,[kanji2]お金が足りません！,[kanji2]资金不足! 还差
+cart_without_money,WITHOUT MONEY,SEM DINHEIRO,SIN DINERO,KEIN GELD,SENZA SOLDI,ARGENT INSUFFISANT,[kanji2]お金が足りません！,[kanji2]余额不足
+cart_unavailable,Unavailable,Indisponível,No disponible,Nicht verfügbar,Non disponibile,Indisponible,[kanji2]まだ買えません,[kanji2]不可购买
+cart_out_of_stock,Out of stock,Fora de estoque,Agotado,Ausverkauft,Esaurito,En rupture de stock,[kanji2]在庫切れ,[kanji2]缺货
+notification_order_confirmed,Order confirmed! Delivery in,Pedido confirmado! Entrega em,¡Pedido confirmado! Entrega en,Bestellung bestätigt! Lieferung in,Ordine confermato! Consegna in,Commande confirmée! Livraison dans,[kanji2]注文しました！,[kanji2]订单确认! 预计送达时间
+notification_seconds,seconds,segundos,segundos,Sekunden,secondi,secondes,[kanji2]秒,[kanji2]秒
+notification_delivery_on_way,Delivery on the way! Order,Entregador a caminho! Pedido,¡Repartidor en camino! Pedido,Lieferant ist unterwegs! Bestellung,Fattorino in arrivo! Ordine,Livreur en route! Commande,[kanji2]配達中...,[kanji2]正在派送中! 订单
+notification_delivery_arrived,Your order arrived! Check the door,Seu pedido chegou! Verifique a porta,¡Tu pedido llegó! Revisa la puerta,Deine Bestellung ist da! Überprüfe die Tür,Il tuo ordine è arrivato! Controlla la porta,Votre commande est arrivée! Vérifiez à la porte,[kanji2]買い物が到着しました！,[kanji2]您的订单已送达! 请查看门口
+notification_purchase_success,Purchase completed! Order,Compra realizada! Pedido,¡Compra realizada! Pedido,Kauf abgeschlossen!,Acquisto effettuato! Ordine,Achat effectué! La commande,[kanji2]購入完了！,[kanji2]购买成功! 订单
+notification_will_be_delivered,will be delivered soon,será entregue em breve,será entregado pronto,Bestellung wird in Kürze geliefert,sarà consegnato a breve,sera livrée sous peu,[kanji2]もうすぐで到着だ！,[kanji2]即将送达
+window_too_small,Window too small!,Janela muito pequena!,¡Ventana muy pequeña!,Fenster zu klein!,Finestra troppo piccola!,Fenêtre trop petite!,[kanji2]ウィンドウが小さい！,[kanji2]窗口太小了! 
+window_resize_to_see,Resize to see items,Redimensione para ver os itens,Cambia el tamaño para ver los artículos,"Größe ändern, um die Artikel zu sehen",Ridimensiona per vedere gli articoli,Redimensionnez pour voir les articles,[kanji2]ウィンドウを大きくしてください,[kanji2]请调整窗口大小以查看物品
+no_items_found,No items found,Nenhum item encontrado,No se encontraron artículos,Keine Artikel gefunden,Nessun articolo trovato,Aucun article trouvé,[kanji2]アイテムが見つかりませんでした,[kanji2]未找到任何物品
+check_filters,Check filters,Verifique os filtros,Verifica los filtros,Überprüfe die Filter,Controlla i filtri,Vérifiez les filtres,[kanji2]フィルターを確認してください,[kanji2]请检查筛选条件
+products_label,PRODUCTS,PRODUTOS,PRODUCTOS,PRODUKTE,PRODOTTI,PRODUITS,[kanji2]商品,[kanji2]商品
+clear_button,Clear,Limpar,Limpiar,Leeren,Azzera,Effacer,[kanji2]クリア,[kanji2]清除
+typing_to_search,"Type to search... (Enter to confirm, Esc to cancel)","Digite para buscar... (Enter para confirmar, Esc para cancelar)","Escribe para buscar... (Enter para confirmar, Esc para cancelar)","""Zum Suchen tippen... (Enter zum Bestätigen, Esc zum Abbrechen)""","Digita per cercare... (Enter per confermare, Esc per annullare)","Tapez pour rechercher... (Enter pour valider, Esc pour annuler)",[kanji2]入力して検索(Enter入力 Escキャンセル),"[kanji2]输入搜索内容...（Enter确认, Esc取消）"
+select_category,Select a category,Selecione uma categoria,Selecciona una categoría,Wähle eine Kategorie,Seleziona una categoria,Sélectionnez une catégorie,[kanji2]カテゴリー選択,[kanji2]选择分类
+click_to_change,Click to change,Clique para alterar,Haz clic para cambiar,Zum Ändern klicken,Clicca per cambiare,Cliquez pour modifier,[kanji2]切替,[kanji2]点击切换
+formato_horas,Time Format,Formato de tempo,Formato de tiempo,Zeitformat,Formato ora,Format horaire,[kanji2]時間表記,[kanji2]时间格式
+12hours,12 Hour,12 Horas,12 Horas,12 Stunden,12 ore,12 heures,[kanji2]12時間,[kanji2]12小时制
+24hours,24 Hours,24 Horas,24 Horas,24 Stunden,24 ore,24 heures,[kanji2]24時間,[kanji2]24小时制
+time_sunday,Sun,Dom,Dom,So,Dom,Dim,[kanji2]日曜日,[kanji2]星期日
+time_monday,Mon,Seg,Lun,Mo,Lun,Lun,[kanji2]月曜日,[kanji2]星期一
+time_tuesday,Tue,Ter,Mar,Di,Mar,Mar,[kanji2]火曜日,[kanji2]星期二
+time_wednesday,Wed,Qua,Mié,Mi,Mer,Mer,[kanji2]水曜日,[kanji2]星期三
+time_thursday,Thu,Qui,Jue,Do,Gio,Jeu,[kanji2]木曜日,[kanji2]星期四
+time_friday,Fri ,Sex,Vie,Fr,Ven,Ven,[kanji2]金曜日,[kanji2]星期五
+time_saturday,Sat,Sab,Sáb,Sa,Sab,Sam,[kanji2]土曜日,[kanji2]星期六
+raridade_exotica,[rainbow][wave]Exotic[/wave][/rainbow],[rainbow][wave]Exótico[/wave][/rainbow],[rainbow][wave]Exótico[/wave][/rainbow],"""[rainbow][wave]Exotisch[/wave][/rainbow]""",[rainbow][wave]Esotico[/wave][/rainbow],[rainbow][wave]Exotique[/wave][/rainbow],[kanji2][rainbow][wave]レア[/wave][/rainbow],[kanji2][rainbow][wave]传说[/wave][/rainbow]
+raridade_comum,Common,Comum,Común,Gewöhnlich,Comune,Commun,[kanji2]ノーマル,[kanji2]普通
+category_animal,Animal,Animal,Animal,Tier,Animale,Animal,[kanji2]動物,[kanji2]动物
+category_seed,Seed,Semente,Semilla,Samen,Seme,Graine,[kanji2]種,[kanji2]种子
+nenhum_item_encontrado,"[fa_center][fa_middle][scale,2][c_red]No building items in inventory!","[fa_center][fa_middle][scale,2][c_red]Nenhum item de construção no inventário!","[fa_center][fa_middle][scale,2][c_red]¡Ningún objeto de construcción en el inventario!",System Ready！,"[fa_center][fa_middle][scale,2][c_red]Nessun oggetto da costruzione nell'inventario!","[fa_center][fa_middle][scale,2][c_red]Aucun objet de construction dans l'inventaire !","[kanji2][fa_center][fa_middle][scale,2][c_red]インベントリに設計図がありません","[kanji2][fa_center][fa_middle][scale,2][c_red]背包中没有建筑物品!"
+boot_initializing_system,Initializing System,Inicializando sistema,Inicializando sistema,System wird gestartet,Inizializzazione del sistema,Initialisation du système,[kanji2]Initializing System,[kanji2]系统初始化中
+boot_loading_drivers,Loading Drivers,Carregando drivers,Cargando controladores,Treiber werden geladen,Caricamento dei driver,Chargement des pilotes,[kanji2]Loading Drivers,[kanji2]正在加载驱动程序
+boot_connecting_farmnet,Connecting Farmnet,Conectando à FarmNet,Conectando a FarmNet,Verbinde mit FarmNet,Connessione a FarmNet,Connexion à FarmNet,[kanji2]Connecting Farmnet,[kanji2]正在连接FarmNet
+boot_checking_updates,Checking Updates,Verificando atualizações,Verificando actualizaciones,Suche nach Updates,Verifica degli aggiornamenti,Vérification des mises à jour,[kanji2]Checking Updates,[kanji2]检查更新中
+boot_loading_interface,Loading Interface,Carregando interface,Cargando interfaz,Lade Benutzeroberfläche,Caricamento dell'interfaccia,Chargement de l'interface,[kanji2]Loading Interface,[kanji2]正在加载界面
+boot_system_ready,System Ready!,Sistema pronto!,¡Sistema listo!,System bereit!,Sistema pronto!,Système prêt !,[kanji2]System Ready!,[kanji2]系统准备就绪!
+use_shovel,Use a [c_orange]SHOVEL[c_white] to dig a [c_lime]HOLE,Utilize a [c_orange]PÁ[c_white] para cavar um [c_lime]BURACO,Utiliza la [c_orange]PALA[c_white] para cavar un [c_lime]HOYO,"""Benutze die [c_orange]SCHAUFEL[c_white], um ein [c_lime]LOCH [c_white]zu graben""",Utilizza la [c_orange]PALA[c_white] per scavare una [c_lime]BUCA,Utilisez la [c_orange]PELLE[c_white] pour creuser un [c_lime]TROU,[kanji2][c_orange]シャベルで[c_lime]穴を[c_white]掘ろう,[kanji2]使用[c_orange]铲子[c_white]挖掘[c_lime]坑洞
+use_hammer,Use the [c_orange]HAMMER[c_white] to build a [c_lime]TERRAIN,Utilize o [c_orange]MARTELO[c_white] para construir um [c_lime]TERRENO,Utiliza el [c_orange]MARTILLO[c_white] para construir un [c_lime]TERRENO,"""Benutze den [c_orange]HAMMER[c_white], um ein [c_lime]GRUNDSTÜCK [c_white]zu bauen""",Utilizza il [c_orange]MARTELLO[c_white] per costruire un [c_lime]TERRENO,Utilisez le [c_orange]MARTEAU[c_white] pour construire un [c_lime]TERRAIN,[kanji2][c_orange]ハンマーで[c_lime]土地を[c_white]作ろう,[kanji2]使用[c_orange]锤子[c_white]整修[c_lime]地形
+seed_carrot_premium,Seeds of Premium Carrot,Sementes de Cenoura Premium,Semillas de Zanahoria Premium,Premium-Karottensamen,Semi di Carota Premium,Graines de Carotte Premium,[kanji2]プレミアムニンジンの種,[kanji2]特级胡萝卜种子
+seed_carrot_premium_desc,Plant to harvest PREMIUM carrots,Plante para colher cenouras PREMIUM,Planta para cosechar zanahorias PREMIUM,"Pflanze, um PREMIUM-Karotten zu ernten",Pianta per raccogliere carote PREMIUM,Plantez pour récolter des carottes PREMIUM,[kanji2]プレミアムニンジンを育てましょう,"[kanji2]种下它, 就能收获特级胡萝卜"
+peixe_achiga,Largemouth bass,Peixe Achigã,Pez Lobina,Forellenbarsch,Pesce Persico,Perche,[kanji2]オオクチバス,[kanji2]大口黑鲈
+peixe_achiga_desc,Freshwater predator,Predador de água doce,Depredador de agua dulce,Süßwasser-Raubfisch,Predatore d'acqua dolce,Prédateur d'eau douce,[kanji2]淡水魚のプレデター,[kanji2]淡水掠食者
+coleta,Gathering,Coleta,Recolección,Sammlung,Raccolta,Récolte,[kanji2]収集,[kanji2]收获
+peixe_salmao,Salmon,Salmão,Salmón,Lachs,Salmone,Saumon,[kanji2]サケ,[kanji2]鲑鱼
+peixe_salmao_desc,Rich in omega-3,Rico em ômega 3,Rico en omega 3,Reich an Omega-3,Ricco di omega 3,Riche en oméga-3,[kanji2]海から川へグルメ界の魚代表！,[kanji2]富含欧米伽-3
+peixe_salmonete_vermelho,Red mullet,Salmonete vermelho,Salmonete rojo,Rote Meerbarbe,Triglia,Rouget,[kanji2]アカヒメジ,[kanji2]红鲻鱼
+peixe_salmonete_vermelho_desc,Small and reddish,Pequeno e avermelhado,Pequeño y rojizo,Klein und rötlich,Piccolo e rossastro,Petit et rougeâtre,[kanji2]海の小さいオジサン,[kanji2]体小色红
+peixe_cirurgiao_azul,Blue tang,Cirurgião azul,Cirujano azul,Paletten-Doktorfisch,Pesce Chirurgo Blu,Poisson-chirurgien bleu,[kanji2]ブルータン,[kanji2]蓝吊鱼
+peixe_cirurgiao_azul_desc,Vibrant blue of the reef,Azul vibrante do recife,Azul vibrante del arrecife,Leuchtendes Blau vom Riff,Blu vibrante della barriera corallina,Bleu vibrant du récif,[kanji2]もの覚えが悪い魚かもしれない,[kanji2]与珊瑚礁同样鲜亮的蓝
+peixe_sardinha,Sardine,Sardinha,Sardina,Sardine,Sardina,Sardine,[kanji2]イワシ,[kanji2]沙丁鱼
+peixe_sardinha_desc,Small and silver,Pequena e prateada,Pequeña y plateada,Klein und silbern,Piccola e argentata,Petite et argentée,[kanji2]頭が魔除けになる!スゴイ!,[kanji2]小巧银亮
+peixe_robalo_negro,Black Bass,Robalo negro,Róbalo negro,Schwarzbarsch,Spigola nera,Bar noir,[kanji2]ブラックバス,[kanji2]黑鲈鱼
+peixe_robalo_negro_desc,Tough and tasty,Resistente e saboroso,Resistente y sabroso,Widerstandsfähig und schmackhaft,Resistente e saporito,Résistant et savoureux,[kanji2]大きな口にスゴイ食欲!,"[kanji2]肉质紧实, 味道鲜美"
+peixe_pargo_vermelho,Red Snapper,Pargo vermelho,Pargo rojo,Roter Schnapper,Pargo rosso,Vivaneau rouge,[kanji2]タイ,[kanji2]红鲷鱼
+peixe_pargo_vermelho_desc,Deep red from the sea,Vermelho intenso do mar,Rojo intenso del mar,Tiefrot aus dem Meer,Rosso intenso del mare,Rouge intense de la mer,[kanji2]これは...めでたい!!,[kanji2]深海中的一抹绯红
+peixe_cirurgiao_amarelo,Yellow tang,Cirurgião amarelo,Cirujano amarillo,Gelber Segelflossendoktor,Pesce Chirurgo Giallo,Poisson-chirurgien jaune,[kanji2]キイロハギ,[kanji2]黄吊
+peixe_cirurgiao_amarelo_desc,Colorful and tropical,Colorido e tropical,Colorido y tropical,Bunt und tropisch,Colorato e tropicale,Coloré et tropical,[kanji2]海に漂う太陽のよう,[kanji2]色彩艳丽的热带鱼
+peixe_palhaco,Clownfish,Peixe Palhaço,Payaso,Clownfisch,Pesce Pagliaccio,Poisson-clown,[kanji2]クマノミ,[kanji2]小丑鱼
+peixe_palhaco_desc,Orange with white stripes,Laranja com listras brancas,Naranja con rayas blancas,Orange mit weißen Streifen,Arancione con strisce bianche,Orange à rayures blanches,[kanji2]かくれんぼの天才,[kanji2]橙白相间的条纹
+peixe_linguado,Flounder,Linguado,Lenguado,Flunder,Sogliola,Sole,[kanji2]ヒラメ,[kanji2]比目鱼
+peixe_linguado_desc,Flat fish from the seafloor,Peixe achatado do fundo,Pez aplastado del fondo,Plattfisch vom Grund,Pesce piatto dei fondali,Poisson plat des fonds marins,[kanji2]海底のじゅうたん,[kanji2]一条比目鱼潜伏在海底
+,,,,,,,,
+Dialogos e Tutorial ULTRA IMPORTANTE,,,,,,,,
+mother_name,Mom,Mamãe,Mamá,Mama,Mamma,Maman,[kanji2]お母さん,[kanji2]妈妈
+dialog_alex_1_0,Hi ma... Did you forget something? ,Oi mãe... o que cê esqueceu de dizer?,Hola mamá... ¿qué olvidaste decir?,"Hallo, Mama... Was hast du vergessen zu sagen?",Ciao mamma... cos'hai dimenticato di dirmi?,Salut maman… qu’est-ce que tu as oublié de me dire?,[kanji2]もしもし、かあちゃん？なんか言い忘れたの？,[kanji2]你好妈... 你是不是忘了点啥?
+,,,,,,,,
+dialog_alex_1_1,"10 years of friendship, and suddenly you're calling me mom? ","10 anos de amizade e ainda me chama de mãe, como pode...","10 años de amistad y todavía me llamas mamá, cómo puede ser...","10 Jahre Freundschaft und du nennst mich immer noch Mama, wie kann das sein...","10 anni di amicizia e mi chiami ancora mamma, no ci credo...","Ça fait 10 ans que je te vois grandir, et tu m’appelles toujours “maman”…",[kanji2]10年友達だったらお前の母親になっちまうのか？,"[kanji2]都做了十年朋友了, 你怎么突然叫我妈了？"
+,,,,,,,,
+dialog_alex_1_2,"Alex?? Hi, are you already here?","Eaeee Alex, já chegou por aqui?","¡Eyy Alex, ya llegaste por aquí?","Heyy Alex, bist du schon hier?","Ehiii Alex, sei già arrivato?","Hey Alex, t’es déjà dans le coin?",[kanji2]アレックス？もう着いた？！,"[kanji2]亚历克斯?! 嘿, 你已经到了?"
+,,,,,,,,
+dialog_alex_1_3,"Yup! I'm outside, waiting on you ","Tô na frente da tua casa, te esperando já","Estoy frente a tu casa, ya te estoy esperando","Vor deiner Tür, ich warte auf dich schon","Sono davanti a casa tua, ti aspetto qui","Je suis devant ta maison, je t’attends.",[kanji2]家の前で待ってるべ,[kanji2]对啊! 我在你家门口等着呢! 
+,,,,,,,,
+tutorial_2_inicio_0,"Good morning, sleepy head.","Bom dia, bela adormecida","Buenos días, bella durmiente","Guten Morgen, Dornröschen","Buongiorno, bella addormentata","Bonjour, belle au bois dormant",[kanji2]起きたかい？お寝坊さん,"[kanji2]早上好啊, 贪睡鬼"
+,,,,,,,,
+tutorial_2_inicio_1,...,...,...,...,...,...,[kanji2]...,[kanji2]...
+,,,,,,,,
+tutorial_2_inicio_2,"Alrighty, let's get started! How about building a small [c_lime]farming area? ","Bom bora lá, que tal construir uma pequena [c_lime]área de plantação?","Bueno, vamos allá, ¿qué tal construir una pequeña [c_lime]área de cultivo?","""Also los, wie wäre es, wenn wir eine kleine [c_lime]Anbaufläche bauen?""","Dai andiamo, che ne dici di costruire un piccolo [c_lime] campo coltivabile?","Bon, allons-y, que dirais-tu de construire une petite [c_lime]zone de plantation[c_white]?",[kanji2]よーしとりあえず[c_lime]畑作るべ？,"[kanji2]好的, 咱们开始吧! 先弄一小块[c_lime]农田[c_white]怎么样?"
+,,,,,,,,
+tutorial_2_inicio_3,Come chat to me after that! ,Depois cê volta aqui...,Luego vuelves aquí...,Danach kommst du hier zurück...,Poi torni qui...,Reviens ici ensuite…,[kanji2]終わったら俺のところに来てくれ,[kanji2]弄完了再来找我聊聊!
+,,,,,,,,
+tutorial_3_sementes_0,"Nothing to plant? Lucky for you, I always got some seeds in my pocket ",Sem o que plantar? Sorte a tua que eu sempre tenho umas no meu bolso,¿Nada para plantar? Suerte la tuya que siempre tengo algunas en mi bolsillo,"Nichts zum Pflanzen? Dein Glück, dass ich immer welche in meiner Tasche habe",Niente da piantare? Fortuna che ne ho sempre qualcuna in tasca,"Tu n’as rien à planter? Heureusement pour toi, j’en ai toujours quelques-unes dans ma poche.",[kanji2]あれ？種持ってないのかい？しょうがないな...これをあげるからやってみ～,"[kanji2]没东西种? 算你走运, 我口袋里总揣着些种子"
+,,,,,,,,
+tutorial_3_sementes_1,Use them in your [c_lime]inventory,Usa no seu [c_lime]inventário,Úsalas en tu [c_lime]inventario,"""Benutze es in deinem [c_lime]Inventar""",Usali nel tuo [c_lime]inventario,Utilise-les dans ton [c_lime]inventaire[c_white].,[kanji2][c_lime]インべントリーあるから使ってみよう,[kanji2]在你的[c_lime]背包[c_white]里用就行
+,,,,,,,,
+tutorial_4_sementes_0,"Hot dawg! Now water it up, wait for it to grow, then harvest and sell by getting close to that [c_aqua]boat[c_white] over yonder","Muito bom mano! Agora regue, espere crescer, colha e venda falando com o [c_aqua]véio do barco[c_white] ali no fundo","¡Muy bien, hermano! Ahora riega, espera que crezca, cosecha y vende acercándote a esa [c_lime]caja[c_white] allá atrás","""Sehr gut, Kumpel! Jetzt gieße, warte, bis es wächst, ernte und verkaufe es, indem du mit dem [c_aqua]alten Mann vom Boot[c_white] da hinten sprichst""","Ottimo fra! Ora innaffia, aspetta che cresca, raccogli e vendi avvicinandoti a quella [c_lime]vecchio del barco[c_white] laggiù in fondo","Très bien mec ! Maintenant arrose, attends que ça pousse, récolte et vends ça en parlant avec le [c_aqua]vieux du bateau[c_white] là-bas au fond.",[kanji2]いいじゃんいいじゃん！水かけるのも収穫するのも忘れんなよ！次に[c_white] あそこにいる[c_aqua]じいさんに売ってみな,"[kanji2]太棒了, 兄弟! 现在浇浇水, 等它长大, 然后收割了卖给那边那个[c_aqua]船上的老头[c_white]"
+,,,,,,,,
+tutorial_4_sementes_1,"After finishing, come talk to me","Depois de terminar, venha falar comigo","Después de terminar, ven a hablar conmigo","""Wenn du fertig bist, sprich mit mir""","Una volta finito, vieni a parlare con me","Quand tu auras fini, viens me parler.",[kanji2]終わったら戻ってくれ,[kanji2]搞定之后再来找我
+,,,,,,,,
+tutorial_5_casa_0,"Nice one, bro! Using your [c_lime]computer[c_white] inside your [c_yellow]house[c_white], buy more seeds and a [c_lime]house blueprint[c_white]",Boa mano! Usando seu [c_lime]computador[c_white] lá dentro da sua [c_yellow]casa[c_white] compre mais algumas sementes e um [c_lime]projeto[c_white] de uma casa,"¡Buen trabajo, hermano! Usando tu [c_lime]computadora[c_white] dentro de tu [c_yellow]casa[c_white], compra más semillas y un [c_lime]proyecto[c_white] de una casa","""Gut gemacht, Kumpel! Benutze deinen [c_lime]Computer[c_white] in deinem [c_yellow]Haus[c_white], um noch ein paar Samen und einen [c_lime]Bauplan[c_white] für ein Haus zu kaufen""",Bravissimo! Usando il tuo [c_lime]computer[c_white] lì dentro la tua [c_yellow]casa[c_white] compra altri semi e un [c_lime]progetto[c_white] per una casa,"Bien joué! En utilisant ton [c_lime]ordinateur[c_white] à l’intérieur de ta [c_yellow]maison[c_white], achète encore quelques graines et un [c_lime]plan[c_white] de maison.",[kanji2] [c_yellow]家[c_white] の中の[c_lime]パソコンで[c_white]種と[c_lime]設計図[c_white]を買ってこい！,"[kanji2]干得漂亮, 兄弟! 在你[c_yellow]家[c_white]里用你的[c_lime]电脑[c_white]多买点种子, 再买一张[c_lime]房屋图纸[c_white]"
+,,,,,,,,
+tutorial_5_casa_1,"After buying, just build using the [c_lime]hammer!!",Depois de comprar é só construir usando o [c_lime]martelo!!,"¡Después de comprar, solo construye usando el [c_lime]martillo!!","""Nach dem Kauf einfach mit dem [c_lime]Hammer bauen!!""",Dopo l'acquisto puoi costruire usando il [c_lime]martello!!,"Après avoir acheté, il te suffit de construire en utilisant le [c_lime]marteau[c_white]!!",[kanji2]買ったら[c_lime]ハンマーで作ってみて,[kanji2]买完之后直接用[c_lime]锤子[c_white]建就行!!
+,,,,,,,,
+dialogo_casa_tutorial_0,"Darnit, I need to hurry, where are my tools?! ","Droga, preciso me apressar cadê as minhas ferramentas?","Maldita sea, necesito darme prisa, ¿dónde están mis herramientas?","""Verdammt, ich muss mich beeilen, wo sind meine Werkzeuge?""","Mannaggia, devo sbrigarmi, dove sono i miei attrezzi?","Mince, je dois me dépêcher… où sont mes outils?",[kanji2]早くしないと...道具は...,"[kanji2]真见鬼, 我得赶紧了, 我的工具跑哪儿去了?!"
+,,,,,,,,
+alo_mae_0,"Hello?, who is this?",Alô? Quem tá falando?,¿Hola? ¿Quién habla?,Hallo? Wer spricht da?,Ciao? Chi parla?,Allô? Qui est à l’appareil?,[kanji2]もしもし誰ですか,[kanji2]喂?是谁啊？
+,,,,,,,,
+alo_mae_1,[shake][c_red]YOU'RE ALWAYS ON THE PHONE AND NEVER ANSWER MY CALLS!!!,[shake][c_red]VIVE COM O CELULAR MAS NUNCA ATENDE!!!,[shake][c_red]¡SIEMPRE CON EL CELULAR PERO NUNCA CONTESTA!!!,"""[shake][c_red]LEBT MIT DEM HANDY, ABER GEHT NIE RAN!!!""",[shake][c_red]VIVI COL CELLULARE MA NON RISPONDI MAI!!!,[shake][c_red]TU VIS AVEC TON TÉLÉPHONE MAIS TU NE RÉPONDS JAMAIS !!![c_white],[kanji2][shake][c_red]もう...毎日毎日携帯ばっかいじってないで早く出なさい！,"[kanji2][shake][c_red]你天天抱着手机, 可就是不接我电话!!!"
+,,,,,,,,
+alo_mae_2,"Mom, it's 8 in the morning, please... gimme a break...","Mãe, são 8 da manhã, por favor... mais 5 minutinhos...","Mamá, son las 8 de la mañana, por favor... 5 minutitos más...","""Mama, es ist 8 Uhr morgens, bitte... noch 5 Minuten...""","Mamma, sono le 8 di mattina, ti prego... ancora 5 minuti...","Maman, il est huit heures du matin, s’il te plaît… encore cinq minutes…",[kanji2]かあちゃん...あと5分...,"[kanji2]妈, 现在才早上八点…拜托…再让我睡会儿…"
+,,,,,,,,
+alo_mae_3,"I'm just worried, we haven't talked in days","Só tô preocupada com você, faz dias que a gente não se fala","Solo estoy preocupada por ti, hace días que no hablamos","""Ich mache mir nur Sorgen um dich, wir haben seit Tagen nicht gesprochen""","Solo preoccupata per te, sono giorni che non ci sentiamo","Je suis juste inquiète pour toi, ça fait des jours qu’on ne se parle pas.",[kanji2]最近あんまり話してないからさ...おかあさん心配してるよ,"[kanji2]我只是担心你, 咱俩都好几天没说话了"
+,,,,,,,,
+alo_mae_4,"I'm fine, ma. Just feeling a bit lonely... I called Alex, he must be on his way ","Tô bem, só me sentindo um pouco sozinho... chamei o Alex, ele já deve tá vindo","Estoy bien, solo me siento un poco solo... llamé a Alex, ya debe estar viniendo","""Mir geht's gut, fühle mich nur ein bisschen einsam... Ich habe Alex gerufen, er müsste bald da sein""","Sto bene, solo un po' solo... ho chiamato Alex, starà arrivando","Ça va, je me sens juste un peu seul… j’ai appelé Alex, il doit être en route.",[kanji2]大丈夫だって！そろそろアレックス来るから行くよ,"[kanji2]我没事, 妈. 就是有点孤单... 我叫了亚历克斯了, 他应该快到了"
+,,,,,,,,
+alo_mae_5,"I'm glad you're okay, sweetheart... maybe I'll stop by haha, take care, [rainbow]I love you.","Que bom que cê tá bem... quem sabe eu não dou uma passadinha aí haha, se cuida, [rainbow]te amo.","Qué bueno que estás bien... tal vez pase por ahí jajaja, cuídate, [rainbow]te amo.","""Schön, dass es dir gut geht... vielleicht schaue ich mal vorbei haha, pass auf dich auf, [rainbow]ich liebe dich.""","Che bello che stai bene... magari faccio un salto da te haha, prenditi cura di te, [rainbow]ti voglio bene.","Je suis contente que tu ailles bien… peut-être que je passerai un de ces jours, prends soin de toi, [rainbow]je t’aime.",[kanji2]大丈夫だったらいいけど...いってらっしゃい,"[kanji2]你没事就好, 宝贝…说不定我一会儿就去看看你哈哈, 照顾好自己, [rainbow]我爱你"
+,,,,,,,,
+dialog_bill_1_0,"Howdy partner! The Name's Bill, and this here boat is my office. I buy everything, but I don't have time to explain the obvious! ","Óia só, clientela... Sou o Bill, e esse barco aqui é meu escritório. Compro de tudo, mas não tenho tempo pra ficar explicando óbvio!","¡Oye, clientela... Soy Bill, y este barco aquí es mi oficina. Compro de todo, pero no tengo tiempo para andar explicando obviedades!","""Na sieh mal an, ein Kunde... Ich bin Bill, und dieses Boot hier ist mein Büro. Ich kaufe alles, aber ich habe keine Zeit, das Offensichtliche zu erklären!""","Hey hey, freguesia... Sou Bill, e questa barca qui è il mio ufficio. Compro di tutto, ma non ho tempo per stare a spiegare l'ovvio!","Regarde ça, un client… Moi c’est Bill, et ce bateau est mon bureau. J’achète de tout, mais je n’ai pas le temps d’expliquer l’évidence!",[kanji2]おや噂の若者か...わっしはビル売りたいもんあったらいつでもきな,"[kanji2]嘿, 伙计! 我叫比尔, 这条船就是我的办公室. 我啥都收, 但没空跟你废话那些显而易见的事!"
+,,,,,,,,
+dialog_bill_1_1,Got some junk to sell? Then stop standing there and GET TO SELLIN,"Quer vender alguma bugiganga? Então para de ficar parado aí e abre logo esse seu inventário, menino!","¿Quieres vender alguna chuchería? ¡Entonces deja de quedarte ahí parado y abre de una vez ese inventario tuyo, muchacho!　","""Willst du Ramsch verkaufen? Dann hör auf, da rumzustehen, und öffne dein Inventar, Junge!""","Vuoi vendere qualche cianfrusaglia? Allora smettila di stare lì fermo e apri subito quell'inventario, ragazzo!","Tu veux vendre un bric-à-brac? Alors arrête de rester planté là et ouvre ton inventaire, gamin!",[kanji2]売りたいもんあったらいつでも声かけな,"[kanji2]有破烂要卖? 那就别像根木头杵着, 赶紧打开[c_lime]背包[c_white]开始卖!"
+,,,,,,,,
+dialog_bill_1_2,Click on the item ya want to get rid of.,Clica no item que quer se livrar.,Haz clic en el objeto del que te quieres deshacer.,"Klick auf den Gegenstand, den du loswerden willst.",Clica sull'oggetto di cui vuoi sbarazzarti.,Clique sur l’objet dont tu veux te débarrasser.,[kanji2]いらないアイテムを選んでくれ,[kanji2]点一下你想脱手的东西
+,,,,,,,,
+dialog_bill_1_3,Then hit the 'Sell' button and stop making it complicated. Im not gonna wait here all day!,Então aperta no botão 'Vender' e para de complicar. Não vou ficar aqui o dia todo esperando!,Luego presiona el botón 'Vender' y deja de complicar. ¡No me voy a quedar aquí todo el día esperando!,Dann drück auf den 'Verkaufen'-Button und mach es nicht komplizierter.,Poi premi il pulsante 'Vendi' e smettila di complicare. Non resterò qui tutto il giorno ad aspettare!,Puis appuie sur le bouton “Vendre” et arrête de compliquer. Je ne vais pas t’attendre toute la journée!,[kanji2]時は金なりだよ...少年,"[kanji2]然后按“出售”, 别整得那么麻烦! 我可不打算在这儿耗一整天! "
+,,,,,,,,
+dialog_blacksmith_1_0,"Ah, some company! I am [wave]Magnus[/wave], the [c_orange]master blacksmith[c_white]. Welcome to the forge, where iron and fire dance together!","Ah, um visitante! Sou [wave]Magnus[/wave], o [c_orange]mestre ferreiro[c_white]. Bem-vindo à minha forja, onde ferro e fogo dançam juntos!","¡Ah, un visitante! Soy [wave]Magnus[/wave], el [c_orange]maestro herrero[c_white] de esta aldea. ¡Bienvenido a mi forja, donde hierro y fuego bailan juntos!","""Ah, ein Besucher! Ich bin [wave]Magnus[/wave], [c_orange]Schmiedemeister[c_white]. Willkommen in meiner Schmiede, wo Eisen und Feuer zusammen tanzen!""","Ah, un visitatore! Sono [wave]Magnus[/wave], il [c_orange]fabbro maestro[c_white]. Benvenuto alla mia fucina, dove ferro e fuoco danzano insieme!","Ah, un visiteur! Je suis [wave]Magnus[/wave], le [c_orange]maître-forgeron[c_white]. Bienvenue dans ma forge, où le fer et le feu dansent ensemble!",[kanji2]よく来たな若いの! ワシは [wave]マグナム[/wave]この村の鍛冶師をやっている!作ってほしいもんがありゃいつでも来な,"[kanji2]啊, 有客人来了! 我是[wave]马格努斯[/wave], [c_orange]铁匠大师[c_white]. 欢迎来到我的铁匠铺, 在这里, 铁与火一同共舞! "
+,,,,,,,,
+dialog_blacksmith_1_1,"I see you need some tools, my friend. That [c_lime]anvil[c_white] over there is your best pal! Get close to it and [c_yellow]interact[c_white], watch it doesn't burn ya! ","Vejo que precisa de ferramentas, amigo. Aquela [c_lime]bigorna[c_white] ali é sua melhor amiga! Chegue perto dela e [c_yellow]interaja[c_white],ela não morde hahaha!","Veo que necesitas herramientas, amigo. ¡Ese [c_lime]yunque[c_white] ahí es tu mejor amigo! ¡Acércate y [c_yellow]interactúa[c_white], no muerde jajaja!","""Ich sehe, du brauchst Werkzeuge, Freund. Dieser [c_lime]Amboss[c_white] da drüben ist dein bester Freund! Geh zu ihm hin und [c_yellow]interagiere[c_white], er beißt nicht hahaha!""","Vedo che hai bisogno di attrezzi, amico. Quell'[c_lime]incudine[c_white] lì è la tua migliore amica! Avvicinati e [c_yellow]interagisci[c_white], non morde ahahah!","Je vois que tu as besoin d’outils, mon ami. Cette [c_lime]enclume[c_white] là-bas est ta meilleure amie ! Approche-toi et [c_yellow]interagis[c_white] avec elle, elle ne mord pas hahaha !",[kanji2]何かを作りたいのか?あそこの [c_lime]金床[c_white]に近づいてくれ,"[kanji2]我看你需要些工具, 朋友啊. 那边的那个[c_lime]铁砧[c_white]就是你最好的伙伴! 靠近它然后[c_yellow]互动[c_white], 放心, 它不会咬人的! 哈哈!"
+,,,,,,,,
+dialog_blacksmith_1_2,"[c_yellow]Wood, stone, and a few coins[c_white] in yer' pocket... that's all y'all need to forge wonders! Simple materials, powerful results! ","[c_yellow]Madeira, pedra e algumas moedas[c_white] no seu bolso, é tudo que se precisa para forjar maravilhas ! Materiais simples, resultados poderosos !","[c_yellow]Madera, piedra y algunas monedas[c_white] en el bolsillo... ¡eso es todo lo que necesitas para forjar maravillas! ¡Materiales simples, resultados poderosos!","""[c_yellow]Holz, Stein und ein paar Münzen[c_white] in der Tasche... das ist alles, was du brauchst, um Wunder zu schmieden! Einfache Materialien, mächtige Ergebnisse!""","[c_yellow]Legno, pietra e qualche moneta[c_white] in tasca... è tutto ciò di cui hai bisogno per forgiare meraviglie! Materiali semplici, risultati potenti!","[c_yellow]Du bois, de la pierre et quelques pièces[c_white] dans ta poche, c’est tout ce qu’il faut pour forger des merveilles ! Matériaux simples, résultats puissants !",[kanji2][c_yellow]木材と石とお金さえありゃ[c_white]何でも作れる !,"[kanji2][c_yellow]木头, 石头, 再加上兜里的几个子儿[c_white]... 这就是锻造奇迹所需的一切! 材料虽简, 威力不凡!"
+,,,,,,,,
+dialog_blacksmith_1_3,Now go! Forge your first creation and discover the power of [c_aqua]giving the right tools [c_white]to the right people. The whole village will evolve quickly!,Agora vá! Forje sua primeira criação e descubra o poder de [c_aqua]dar as ferramentas [c_white]certas para as pessoas certas. A vila toda se transformará!,¡Ahora ve! Forja tu primera creación y descubre el poder de [c_aqua]dar las herramientas[c_white] correctas a las personas correctas. ¡Toda la aldea se transformará!,"""Jetzt geh! Schmiede deine erste Kreation und entdecke die Macht, den richtigen Leuten die richtigen [c_aqua]Werkzeuge zu geben[c_white]. Das ganze Dorf wird sich verändern!""",Ora vai! Forgia la tua prima creazione e scopri il potere di [c_aqua]dare gli attrezzi[c_white] giusti alle persone giuste. L'intero villaggio si trasformerà!,"Allez, vas-y! Forge ta première création et découvre le pouvoir de [c_aqua]donner les bons outils[c_white] aux bonnes personnes. Tout le village s’en trouvera transformé!",[kanji2]さっさと行け！最新作作りたければ[c_white]正しい人に[c_aqua]正しい道を！,"[kanji2]现在就去吧! 去锻造你的第一件作品, 并领悟[c_aqua]将合适的工具[c_white]交给合适的人所带来的力量. 整个村庄都将飞速发展! "
+,,,,,,,,
+dialog_chest_1,I need a chest to stash all this new stuff i got!,Preciso de um baú para conseguir guardar os itens que coletei!,¡Necesito un cofre para poder guardar los objetos que recolecté!,"Ich brauche eine Truhe, um die gesammelten Gegenstände aufzubewahren!",,J’ai besoin d’un coffre pour pouvoir garder les objets que j’ai collectés!,[kanji2]これだけ揃ったらチェスト作らねえと...,"[kanji2]我得有个箱子, 好把这些新搞到的东西藏起来!"
+,,,,,,,,
+dialog_noah_0_1,"Hmm, the ground's too hard. Better use the [c_yellow][wave]shovel[/wave] [c_white]first.","Hmm, o chão está muito duro. Melhor usar a [c_yellow][wave]pá[/wave] [c_white] primeiro.","Hmm, el suelo está muy duro. Mejor usar la [c_yellow][wave]pala[/wave] [c_white] primero.",,,"Hmm, le sol est trop dur. Mieux vaut utiliser la [c_yellow][wave]pelle[/wave][c_white] d’abord.",[kanji2]種を植えるために [c_yellow][wave]シャベルを[/wave] [c_white] 使ってみよう.,"[kanji2]嗯, 这地太硬了. 还是先用[c_yellow][wave]铲子[/wave][c_white]比较好"
+,,,,,,,,
+cenoura,carrot,cenoura,zanahoria,karotte,carota,carotte,[kanji2]ニンジン,[kanji2]胡萝卜
+cenoura_premium,premium carrot,cenoura premium,zanahoria premium,premium karotte,carota premium,carotte premium,[kanji2]プレミアムニンジン,[kanji2]特级胡萝卜
+alface,lettuce,alface,lechuga,kopfsalat,lattuga,laitue,[kanji2]レタス,[kanji2]生菜
+rabanete,radish,rabanete,rábano,radieschen,ravanello,radis,[kanji2]ラディッシュ,[kanji2]萝卜
+abobora,pumpkin,abóbora,calabaza,kürbis,zucca,citrouille,[kanji2]カボチャ,[kanji2]南瓜
+batata,potato,batata,patata,kartoffel,patata,pomme de terre,[kanji2]ジャガイモ,[kanji2]土豆
+couve,kale,couve,col rizada,grünkohl,cavolo riccio,chou frisé,[kanji2]キャベツ,[kanji2]羽衣甘蓝
+couve_flor,cauliflower,couve-flor,coliflor,blumenkohl,cavolfiore,chou-fleur,[kanji2]カリフラワー,[kanji2]菜花
+beterraba,beet,beterraba,remolacha,rote beete,barbabietola,betterave,[kanji2]ビートルート,[kanji2]甜菜
+chirivia,parsnip,chirívia,chirivía,pastinake,pastinaca,panais,[kanji2]パースニップ,[kanji2]欧洲萝卜
+girassol,sunflower,girassol,girasol,sonnenblume,girasole,tournesol,[kanji2]ひまわり,[kanji2]向日葵
+abobora_grande,giant pumpkin,abóbora gigante,calabaza gigante,riesenkürbis,zucca gigante,citrouille géante,[kanji2]巨大カボチャ,[kanji2]巨型南瓜
+trigo,wheat,trigo,trigo,weizen,grano,blé,[kanji2]小麦,[kanji2]小麦
+milho,corn,milho,maíz,mais,mais,maïs,[kanji2]トウモロコシ,[kanji2]玉米
+raridade_epico,Epic,Épico,Épico,Episch,Epico,Épique,[kanji2]エピック,[kanji2]史诗
+raridade_raro,Rare,Raro,Raro,Selten,Raro,Rare,[kanji2]レア,[kanji2]稀有
+item_bau,Chest,Baú,Cofre,Truhe,Baule,Coffre,[kanji2]チェスト,[kanji2]箱子
+desc_bau,Store your items,Guarde seus itens,Guarda tus objetos,Lagere deine Gegenstände,Conserva i tuoi oggetti,Garde tes objets,[kanji2]アイテム保存,[kanji2]用于存放物品
+desc_ferreiro,Build items for NPCs,Construa itens para NPCs,Construye objetos para NPCs,Stelle Gegenstände für NPCs her,Costruisci oggetti per gli NPC,Construis des objets pour les NPCs,[kanji2]NPCにアイテムを作る,[kanji2]为NPC打造物品
+item_ferreiro,Blacksmith,Ferreiro,Herrero,Schmied,Fabbro,Forgeron,[kanji2]鍛冶師,[kanji2]铁匠
+label_minutes,Minutes,Minutos,Minutos,Minuten,Minuti,Minutes,[kanji2]分,[kanji2]分
+label_build,Craft,Construir,Construir,Bauen,Construire,Construire,[kanji2]クラフト,[kanji2]制作
+discord_state_1,Farmin up!,Cuidando da fazendinha,Cuidando la granjita,Kümmere dich um die Farm,Prendersi cura della fattoria,Prendre soin de la ferme,農場を大切にしましょう,打理小农场
+discord_state_2,Giving the yard a little love.,Aprendendo a carpir,Aprendiendo a carpir,Lerne zu jäten,Imparando a zappare,Apprendre à sarcler,ガーデニングやってみよう,给田地一点爱
+discord_state_3,Taking a sip of coffee,Tomando um gole de café,Tomando un sorbo de café,Einen Schluck Kaffee trinken,Bevendo un sorso di caffè,Prendre un gorgée de café,コーヒー飲んでる,喝口咖啡
+discord_state_4,Fishing,Pescando,Pescando,Angeln,Pescando,Pêcher,フィッシング,钓鱼
+discord_details_1,Demo,Demonstração,Demostración,Demonstration,Dimostrazione,Démonstration,Demo,试玩版
+discord_details_2,Fishing for patience,Pescando a paciência,Pescando la paciencia,Geduld angeln,Pescando la pazienza,Pêcher la patience,キレ釣り,钓鱼考验耐心
+npc_following_stop,"[fa_center][fa_middle][scale,2.5]Stop","[fa_center][fa_middle][scale,2.5]Parar","[fa_center][fa_middle][scale,2.5]Parar","""[fa_center][fa_middle][scale,2.5]Stopp""","[fa_center][fa_middle][scale,2.5]Fermare","[fa_center][fa_middle][scale,2.5]Arrêter","[kanji2][fa_center][fa_middle][scale,2.5]止まる","[kanji2][fa_center][fa_middle][scale,2.5]停下"
+npc_following_start,"[fa_center][fa_middle][scale,2.5]Follow","[fa_center][fa_middle][scale,2.5]Seguir","[fa_center][fa_middle][scale,2.5]Seguir","""[fa_center][fa_middle][scale,2.5]Folgen""","[fa_center][fa_middle][scale, 2.5]Seguire","[fa_center][fa_middle][scale, 2.5]Suivre","[kanji2][fa_center][fa_middle][scale,2.5]追従","[kanji2][fa_center][fa_middle][scale,2.5]跟随"
+npc_ui_name,NPC,NPC,NPC,NPC,NPC,NPC,[kanji2]NPC,[kanji2]NPC
+semente_desbloqueada,A new seed is available at the shop!,Uma nova semente foi desbloqueada!,¡Una nueva semilla está disponible en la tienda!,Ein neuer Samen wurde freigeschaltet!,Un nuovo seme è stato sbloccato!,Une nouvelle graine a été desbloquée!,[kanji2]新しい種がアンロックされました,[kanji2]商店上架了新种子!
+pedra_descricao,Rock and Roll.,Pedra e rolamento,Piedra y rodamiento,Stein und rollen,Pietra e rotolamento,Pierre et roulement,[kanji2]ロックンロール,[kanji2]摇滚与石头
+tora_descricao,Wood,Tora de madeira,Tronco de madera,Holzstamm,Tronco di legno,Bûche de bois,[kanji2]木材,[kanji2]木头
+use_left_button_demolition,"[fa_center][fa_middle][scale,2]Hold your [c_yellow]LEFT BUTTON","[fa_center][fa_middle][scale,2]Segure seu [c_yellow]BOTÃO ESQUERDO","[fa_center][fa_middle][scale,2]Mantén pulsado el [c_yellow]botón izquierdo.","[fa_center][fa_middle][scale,2]Halt die [c_yellow]LINKE TASTE gedrückt","[fa_center][fa_middle][scale,2]Tieni premuto il [c_yellow]TASTO SINISTRO","[fa_center][fa_middle][scale,2]Maintenez votre [c_yellow]CLIC DROIT","[kanji2][fa_center][fa_middle][scale,2]左クリック [c_yellow]ホールド","[kanji2][fa_center][fa_middle][scale,2]长按[c_yellow]鼠标左键"
+wrecking_time,"[fa_middle][fa_center][scale,3]Wrecking Time","[fa_middle][fa_center][scale,3]Modo Demolição","[fa_middle][fa_center][scale,3]Modo de demolición",,"[fa_middle][fa_center][scale,3]Modalità Demolizione","[fa_middle][fa_center][scale,3]Mode Démolition","[kanji2][fa_middle][fa_center][scale,3]解体モード","[kanji2][fa_middle][fa_center][scale,3]拆除模式"
+loja_vender,Sell,Vender,Vender,,,,[kanji2]売る,[kanji2]卖
+use_remove_button,"[scale,2][fa_middle][fa_center][spr_xbox_A] - Use | [spr_xbox_RB] - Remove","[scale,2][fa_middle][fa_center][spr_xbox_A] - Usar | [spr_xbox_RB] - Remover","[scale,2][fa_middle][fa_center][spr_xbox_A] - Usar | [spr_xbox_RB] - Quitar","[scale,2][fa_middle][fa_center][spr_xbox_A] - Benutzen | [spr_xbox_RB] - Entfernen","[scale,2][fa_middle][fa_center][spr_xbox_A] - Usa | [spr_xbox_RB] - Rimuovi","[scale,2][fa_middle][fa_center][spr_xbox_A] - Utiliser | [spr_xbox_RB] - Retirer","[kanji2][scale,2][fa_middle][fa_center][spr_xbox_A] - 使う | [spr_xbox_RB] - 捨てる","[kanji2][scale,2][fa_middle][fa_center][spr_xbox_A] - 使用 | [spr_xbox_RB] - 移除"
+barqueiro_vender,Sell,Vender,Vender,Verkaufen,Vendere,Vendre,[kanji2]売る,[kanji2]卖
+barqueiro_total,Total: ,Total: ,Total: ,Gesamt: ,Totale: ,Total: ,[kanji2]合計,[kanji2]总计：
+text_tradutores,Language Architets,Tradução e Localização,Traducción y localización,,,,[kanji2]翻訳者,[kanji2]翻译与本地化
+slider_adjust,Quantity,Quantidade,Cantidad,Menge,Quantità,Quantité,[kanji2]数量,[kanji2]数量
+shop_confirm,Confirm,Confirmar,Confirmar,Bestätigen,Conferma,Confirmer,[kanji2]確定,[kanji2]确认
+shop_cancel,Cancel,Cancelar,Cancelar,Abbrechen,Annulla,Annuler,[kanji2]キャンセル,[kanji2]取消
+item_ferro,Iron,Ferro,Hierro,Eisen,Ferro,Fer,[kanji2]鉄,[kanji2]铁
+ferro_descricao,Strong metal,Metal resistente,Metal resistente,Starkes Metall,Metallo resistente,Métal résistant,[kanji2]強い金属,[kanji2]坚固金属
+info_peixe_comum,[fa_left][fa_middle][c_white]Common[c_white] Fish: ,[fa_left][fa_middle]Peixe Comum: ,[fa_left][fa_middle]Pez Común: ,[fa_left][fa_middle]Gewöhnlicher Fisch: ,[fa_left][fa_middle]Pesce Comune: ,[fa_left][fa_middle]Poisson Commun: ,[kanji2][fa_left][fa_middle]一般的な 魚: ,[kanji2][fa_left][fa_middle][c_white]普通[c_white]鱼：
+info_peixe_raro,[fa_left][fa_middle][c_aqua]Rare[c_white] Fish: ,[fa_left][fa_middle]Peixe [c_aqua]Raro[c_white]: ,[fa_left][fa_middle]Pez [c_aqua]Raro[c_white]: ,[fa_left][fa_middle][c_aqua]Seltener[c_white] Fisch: ,[fa_left][fa_middle]Pesce [c_aqua]Raro[c_white]: ,[fa_left][fa_middle]Poisson [c_aqua]Rare[c_white]: ,[kanji2][fa_left][fa_middle][c_aqua]希少な[c_white] 魚: ,[kanji2][fa_left][fa_middle][c_aqua]稀有[c_white]鱼：
+info_peixe_epico,[fa_left][fa_middle][c_purple]Epic[c_white] Fish: ,[fa_left][fa_middle]Peixe [c_purple]Épico[c_white]: ,[fa_left][fa_middle]Pez [c_purple]Épico[c_white]: ,[fa_left][fa_middle][c_purple]Epischer[c_white] Fisch: ,[fa_left][fa_middle]Pesce [c_purple]Epico[c_white]: ,[fa_left][fa_middle]Poisson [c_purple]Épique[c_white]: ,[kanji2][fa_left][fa_middle][c_purple]エピックな[c_white] 魚: ,[kanji2][fa_left][fa_middle][c_purple]史诗[c_white]鱼：
+info_peixe_exotico,[fa_left][fa_middle][rainbow][wave]Exotic[/wave][/rainbow] Fish: ,[fa_left][fa_middle]Peixe [rainbow][wave]Exótico[/rainbow]: ,[fa_left][fa_middle]Pez [rainbow]Exótico[/rainbow]: ,[fa_left][fa_middle][rainbow]Exotischer[/rainbow] Fisch: ,[fa_left][fa_middle]Pesce [rainbow]Esotico[/rainbow]: ,[fa_left][fa_middle]Poisson [rainbow]Exotique[/rainbow]: ,[kanji2][fa_left][fa_middle][rainbow]エキゾチックな[/rainbow] 魚: ,[kanji2][fa_left][fa_middle][rainbow][wave]传说[/wave][/rainbow]鱼：
+text_novo_jogo,New Game,Novo Jogo,Nuevo juego,,,,[kanji2]新しいワールド,[kanji2]新游戏
+text_criar,Create,Começar!,Comenzar,,,,[kanji2]始まる,[kanji2]开始!
+text_muito_perto,Too close,Muito perto do jogador,Muy cerca del jugador,,,,[kanji2]プレイヤーが近すぎる,[kanji2]距离太近
+text_escolha_mapa,Choose Map,Escolha o mapa,Elige el mapa,,,,[kanji2]マップ選んでください,[kanji2]请选择地图
+text_criar_mundo,Create World,Criar o mundo,Crear el mundo,,,,[kanji2]ワールド新規作成,[kanji2]创建世界
+text_use_o_martelo,Use the Hammer,Utilize o Martelo,Utiliza el Martillo,,,,[kanji2]ハンマーを使ってみよう,[kanji2]使用锤子啊
+item_red_berry,Red Berry,Baga Vermelha,Baya Roja,Rote Beere,Bacca Rossa,Baie Rouge,赤い実,红莓果
+item_red_berry_desc,A sweet wild berry. Restores a small amount of health.,Uma baga silvestre doce. Restaura uma pequena quantidade de vida.,Una baya silvestre dulce. Restaura una pequeña cantidad de salud.,Eine süße wilde Beere. Stellt eine kleine Menge Gesundheit wieder her.,Una bacca selvatica dolce. Ripristina una piccola quantità di salute.,Une baie sauvage sucrée. Restaure une petite quantité de santé.,甘い野生のベリー。少量の体力を回復します。,甜美的野生浆果。恢复少量生命值。
+item_golden_berry,Golden Berry,Baga Dourada,Baya Dorada,Goldene Beere,Bacca Dorata,Baie Dorée,金色の実,金色莓果
+item_golden_berry_desc,A legendary shimmering berry. Grants temporary buffs and full health restoration.,Uma baga cintilante lendária. Concede buffs temporários e restauração total de vida.,Una baya brillante legendaria. Otorga mejoras temporales y restauración completa de salud.,Eine legendäre schimmernde Beere. Gewährt temporäre Buffs und volle Gesundheitswiederherstellung.,Una bacca luccicante leggendaria. Concede buff temporanei e ripristino completo della salute.,Une baie scintillante légendaire. Accorde des bonus temporaires et une restauration complète de la santé.,伝説の輝くベリー。一時的なバフと完全な体力回復を与えます。,传说中的闪光浆果。给予临时增益和完全生命恢复。
+alimento,,Alimento,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+UPGRADES,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+adrenalina_1_nome,,Adrenalina I,Adrenalina I,,Adrenalina I,Adrenaline I,,
+adrenalina_1_desc,,[c_yellow]+15%[/c] de dano abaixo de [c_red]50% HP[/c],15% daño por debajo de 50% HP,,[c_yellow]+15%[/c] di danno sotto il [c_red]50% HP[/c],[c_yellow]+15%[/c] de dégâts en dessous de [c_red]50% HP[/c],,
+adrenalina_2_nome,,Adrenalina II,Adrenalina II,,Adrenalina II,Adrenaline II,,
+adrenalina_2_desc,,[c_yellow]+30%[/c] de dano abaixo de [c_red]50% HP[/c],30% daño por debajo de 50% HP,,[c_yellow]+30%[/c] di danno sotto il [c_red]50% HP[/c],[c_yellow]+30%[/c] de dégâts en dessous de [c_red]50% HP[/c],,
+adrenalina_3_nome,,Adrenalina III,Adrenalina III,,Adrenalina III,Adrenaline III,,
+adrenalina_3_desc,,[c_yellow]+50%[/c] de dano abaixo de [c_red]40% HP[/c],50% daño por debajo de 40% HP,,[c_yellow]+50%[/c] di danno sotto il [c_red]40% HP[/c],[c_yellow]+50%[/c] de dégâts en dessous de [c_red]40% HP[/c],,
+adrenalina_4_nome,,Adrenalina IV,Adrenalina IV,,Adrenalina IV,Adrenaline IV,,
+adrenalina_4_desc,,[c_yellow]+80%[/c] de dano abaixo de [c_red]30% HP[/c] [c_yellow]+ 25%[/c] de velocidade,80% daño por debajo de 30% HP + velocidad +25%,,[c_yellow]+80%[/c] di danno sotto il [c_red]30% HP[/c] [c_yellow]+ 25%[/c] di velocità,[c_yellow]+80%[/c] de dégâts en dessous de [c_red]30% HP[/c] [c_yellow]+ 25%[/c] de vitesse,,
+alma_imortal_1_nome,,Alma Imortal I,Alma Inmortal I,,Anima Immortale I,Âme Immortelle I,,
+alma_imortal_1_desc,,[c_aqua]0.3s[/c] de invencibilidade após tomar dano,0.3s de invulnerabilidad después de recibir daño,,[c_aqua]0.3s[/c] di invincibilità dopo aver preso danno,[c_aqua]0.3s[/c] d’invincibilité après avoir subi des dégâts,,
+alma_imortal_2_nome,,Alma Imortal II,Alma Inmortal II,,Anima Immortale II,Âme Immortelle II,,
+alma_imortal_2_desc,,[c_aqua]0.5s[/c] de invencibilidade após tomar dano,0.5s invulnerabilidad,,[c_aqua]0.5s[/c] di invincibilità dopo aver preso danno,[c_aqua]0.5s[/c] d’invincibilité après avoir subi des dégâts,,
+alma_imortal_3_nome,,Alma Imortal III,Alma Inmortal III,,Anima Immortale III,Âme Immortelle III,,
+alma_imortal_3_desc,,[c_aqua]0.8s[/c] de invencibilidade após tomar dano,0.8s invulnerabilidad,,[c_aqua]0.8s[/c] di invincibilità dopo aver preso danno,[c_aqua]0.8s[/c] d’invincibilité après avoir subi des dégâts,,
+alma_imortal_4_nome,,Alma Imortal IV,Alma Inmortal IV,,Anima Immortale IV,Âme Immortelle IV,,
+alma_imortal_4_desc,,[c_aqua]1.2s[/c] de invencibilidade após tomar dano,1.2s invulnerabilidad,,[c_aqua]1.2s[/c] di invincibilità dopo aver preso danno,[c_aqua]1.2s[/c] d’invincibilité après avoir subi des dégâts,,
+anzol_duplo_1_nome,,Anzol Duplo I,Anzuelo Doble I,,Amo Doppio I,Hameçon Double I,,
+anzol_duplo_1_desc,,[c_lime]5%[/c] de chance de pescar [c_orange]2 peixes[/c],5% probabilidad de pescar 2 peces,,[c_lime]5%[/c] di probabilità di pescare [c_orange]2 pesci[/c],[c_lime]5%[/c] de chance de pêcher [c_orange]2 poissons[/c],,
+anzol_duplo_2_nome,,Anzol Duplo II,Anzuelo Doble II,,Amo Doppio II,Hameçon Double II,,
+anzol_duplo_2_desc,,[c_lime]12%[/c] de chance de pescar [c_orange]2 peixes[/c],12% probabilidad de pescar 2 peces,,[c_lime]12%[/c] di probabilità di pescare [c_orange]2 pesci[/c],[c_lime]12%[/c] de chance de pêcher [c_orange]2 poissons[/c],,
+anzol_duplo_3_nome,,Anzol Duplo III,Anzuelo Doble III,,Amo Doppio III,Hameçon Double III,,
+anzol_duplo_3_desc,,[c_lime]22%[/c] de chance de pescar [c_orange]2 peixes[/c],22% probabilidad de pescar 2 peces,,[c_lime]22%[/c] di probabilità di pescare [c_orange]2 pesci[/c],[c_lime]22%[/c] de chance de pêcher [c_orange]2 poissons[/c],,
+anzol_duplo_4_nome,,Anzol Duplo IV,Anzuelo Doble IV,,Amo Doppio IV,Hameçon Double IV,,
+anzol_duplo_4_desc,,[c_lime]35%[/c] de chance de pescar [c_orange]2 peixes[/c],35% probabilidad de 2 ,,[c_lime]35%[/c] di probabilità di pescare [c_orange]2 pesci[/c],[c_lime]35%[/c] de chance de pêcher [c_orange]2 poissons[/c],,
+anzol_relampago_1_nome,,Anzol Relâmpago I,Anzuelo Relámpago I,,Amo Lampo I,Hameçon Fulgurant I,,
+anzol_relampago_1_desc,,[c_yellow]+25%[/c] de velocidade de pesca,25% velocidad de pesca,,[c_yellow]+25%[/c] di velocità di pesca,[c_yellow]+25%[/c] de vitesse de pêche,,
+anzol_relampago_2_nome,,Anzol Relâmpago II,Anzuelo Relámpago II,,Amo Lampo II,Hameçon Fulgurant II,,
+anzol_relampago_2_desc,,[c_yellow]+50%[/c] de velocidade de pesca,50% velocidad,,[c_yellow]+50%[/c] di velocità di pesca,[c_yellow]+50%[/c] de vitesse de pêche,,
+anzol_relampago_3_nome,,Anzol Relâmpago III,Anzuelo Relámpago III,,Amo Lampo III,Hameçon Fulgurant III,,
+anzol_relampago_3_desc,,[c_yellow]+80%[/c] de velocidade de pesca,80% velocidad,,[c_yellow]+80%[/c] di velocità di pesca,[c_yellow]+80%[/c] de vitesse de pêche,,
+anzol_relampago_4_nome,,Anzol Relâmpago IV,Anzuelo Relámpago IV,,Amo Lampo IV,Hameçon Fulgurant IV,,
+anzol_relampago_4_desc,,[c_yellow]+120%[/c] de velocidade de pesca,120% velocidad,,[c_yellow]+120%[/c] di velocità di pesca,[c_yellow]+120%[/c] de vitesse de pêche,,
+bencao_arquitetonica_1_nome,,Benção Arquitetônica I,Bendición Arquitectónica I,,Benedizione Architettonica I,Bénédiction Architecturale I,,
+bencao_arquitetonica_1_desc,,[c_orange]1 estrutura[/c] de qualquer tipo grátis,1 estructura de cualquier tipo gratis,,[c_orange]1 struttura[/c] di qualsiasi tipo gratuita,[c_orange]1 structure[/c] de n’importe quel type gratuite,,
+bencao_arquitetonica_2_nome,,Benção Arquitetônica II,Bendición Arquitectónica II,,Benedizione Architettonica II,Bénédiction Architecturale II,,
+bencao_arquitetonica_2_desc,,[c_orange]1 estrutura[/c] de qualquer tipo grátis,1 estructura de cualquier tipo gratis,,[c_orange]1 struttura[/c] di qualsiasi tipo gratuita,[c_orange]1 structure[/c] de n’importe quel type gratuite,,
+bencao_arquitetonica_3_nome,,Benção Arquitetônica III,Bendición Arquitectónica III,,Benedizione Architettonica III,Bénédiction Architecturale III,,
+bencao_arquitetonica_3_desc,,[c_orange]1 estrutura[/c] de qualquer tipo grátis,1 estructura de cualquier tipo gratis,,[c_orange]1 struttura[/c] di qualsiasi tipo gratuita,[c_orange]1 structure[/c] de n’importe quel type gratuite,,
+bencao_arquitetonica_4_nome,,Benção Arquitetônica IV,Bendición Arquitectónica IV,,Benedizione Architettonica IV,Bénédiction Architecturale IV,,
+bencao_arquitetonica_4_desc,,[c_orange]1 estrutura[/c] de qualquer tipo grátis,1 estructura de cualquier tipo gratis,,[c_orange]1 struttura[/c] di qualsiasi tipo gratuita,[c_orange]1 structure[/c] de n’importe quel type gratuite,,
+bolsa_dourada_1_nome,,Bolsa Dourada I,Bolsa Dorada I,,Borsa Dorata I,Bourse Dorée I,,
+bolsa_dourada_1_desc,,[c_yellow]500 moedas[/c] instantâneas,500 monedas instantáneas,,[c_yellow]500 monete[/c] istantanee,[c_yellow]500 pièces[/c] instantanées,,
+bolsa_dourada_2_nome,,Bolsa Dourada II,Bolsa Dorada II,,Borsa Dorata II,Bourse Dorée II,,
+bolsa_dourada_2_desc,,[c_yellow]1.200 moedas[/c] instantâneas,1.200 monedas instantáneas,,[c_yellow]1.200 monete[/c] istantanee,[c_yellow]1.200 pièces[/c] instantanées,,
+bolsa_dourada_3_nome,,Bolsa Dourada III,Bolsa Dorada III,,Borsa Dorata III,Bourse Dorée III,,
+bolsa_dourada_3_desc,,[c_yellow]3.000 moedas[/c] instantâneas,3.000 monedas instantáneas,,[c_yellow]3.000 monete[/c] istantanee,[c_yellow]3.000 pièces[/c] instantanées,,
+bolsa_dourada_4_nome,,Bolsa Dourada IV,Bolsa Dorada IV,,Borsa Dorata IV,Bourse Dorée IV,,
+bolsa_dourada_4_desc,,Nível [c_yellow]× 350 moedas[/c] instantâneas,+nivel x 350 monedas instantáneas,,Livello × [c_yellow]350 monete[/c] istantanee,Niveau [c_yellow]× 350 pièces[/c] instantanée,,
+campo_magnetico_1_nome,,Campo Magnético I,Campo Magnético I,,Campo Magnetico I,Champ Magnétique I,,
+campo_magnetico_1_desc,,Auto-coleta de recursos em raio de [c_aqua]2 tiles[/c],Recolección automática en radio de 2 tiles,,Raccolta automatica delle risorse in un raggio di [c_aqua]2 tiles[/c],Auto-collecte des ressources dans un rayon de [c_aqua]2 tiles[/c],,
+campo_magnetico_2_nome,,Campo Magnético II,Campo Magnético II,,Campo Magnetico II,Champ Magnétique II,,
+campo_magnetico_2_desc,,Auto-coleta de recursos em raio de [c_aqua]4 tiles[/c],Auto-recolección radio 4 tiles ,,Raccolta automatica delle risorse in un raggio di [c_aqua]4 tiles[/c],Auto-collecte des ressources dans un rayon de [c_aqua]4 tiles[/c],,
+campo_magnetico_3_nome,,Campo Magnético III,Campo Magnético III,,Campo Magnetico III,Champ Magnétique III,,
+campo_magnetico_3_desc,,Auto-coleta de recursos em raio de [c_aqua]6 tiles[/c],Auto-recolección radio 6 tiles,,Raccolta automatica delle risorse in un raggio di [c_aqua]6 tiles[/c],Auto-collecte des ressources dans un rayon de [c_aqua]6 tiles[/c],,
+campo_magnetico_4_nome,,Campo Magnético IV,Campo Magnético IV,,Campo Magnetico IV,Champ Magnétique IV,,
+campo_magnetico_4_desc,,Auto-coleta de recursos em raio de [c_aqua]10 tiles[/c],Radio 10 tiles ,,Raccolta automatica delle risorse in un raggio di [c_aqua]10 tiles[/c],Auto-collecte des ressources dans un rayon de [c_aqua]10 tiles[/c],,
+carretilha_premium_1_nome,,Carretilha Premium I,Carrete Premium I,,Mulinello Premium I,Moulinet Premium I,,
+carretilha_premium_1_desc,,Controle [c_lime]10%[/c] mais forte,Control 10% más fuerte,,Controllo [c_lime]10%[/c] più forte,Contrôle [c_lime]10%[/c] plus fort,,
+carretilha_premium_2_nome,,Carretilha Premium II,Carrete Premium II,,Mulinello Premium II,Moulinet Premium II,,
+carretilha_premium_2_desc,,Controle [c_lime]20%[/c] mais forte,Control 20% más fuerte,,Controllo [c_lime]20%[/c] più forte,Contrôle [c_lime]20%[/c] plus fort,,
+carretilha_premium_3_nome,,Carretilha Premium III,Carrete Premium III,,Mulinello Premium III,Moulinet Premium III,,
+carretilha_premium_3_desc,,Controle [c_lime]25%[/c] mais forte,Control 25% más fuerte,,Controllo [c_lime]25%[/c] più forte,Contrôle [c_lime]25%[/c] plus fort,,
+carretilha_premium_4_nome,,Carretilha Premium IV,Carrete Premium IV,,Mulinello Premium IV,Moulinet Premium IV,,
+carretilha_premium_4_desc,,Controle [c_lime]30%[/c] mais responsivo,Control 30% más responsivo,,Controllo [c_lime]30%[/c] più reattivo,Contrôle [c_lime]30%[/c] plus réactif,,
+colecionador_botanico_1_nome,,Colecionador Botânico I,Coleccionista Botánico I,,Collezionista Botanico I,Collectionneur Botanique I,,
+colecionador_botanico_1_desc,,Unlock [c_lime]1 planta[/c],Desbloquea 1 planta,,Sblocca [c_lime]1 pianta[/c],Unlock [c_lime]1 plante[/c],,
+colecionador_botanico_2_nome,,Colecionador Botânico II,Coleccionista Botánico II,,Collezionista Botanico II,Collectionneur Botanique II,,
+colecionador_botanico_2_desc,,Unlock [c_lime]1 planta[/c],Desbloquea 1 planta,,Sblocca [c_lime]1 pianta[/c],Unlock [c_lime]1 plante[/c],,
+colecionador_botanico_3_nome,,Colecionador Botânico III,Coleccionista Botánico III,,Collezionista Botanico III,Collectionneur Botanique III,,
+colecionador_botanico_3_desc,,Unlock [c_lime]1 planta[/c],Desbloquea 1 planta,,Sblocca [c_lime]1 pianta[/c],Unlock [c_lime]1 plante[/c],,
+colecionador_botanico_4_nome,,Colecionador Botânico IV,Coleccionista Botánico IV,,Collezionista Botanico IV,Collectionneur Botanique IV,,
+colecionador_botanico_4_desc,,Unlock [c_lime]1 planta[/c],Desbloquea 1 planta,,Sblocca [c_lime]1 pianta[/c],Unlock [c_lime]1 plante[/c],,
+colheita_generosa_1_nome,,Colheita Generosa I,Cosecha Generosa I,,Colheita Generosa I,Récolte Généreuse I,,
+colheita_generosa_1_desc,,[c_lime]15%[/c] de chance de semente extra ao colher,15% probabilidad de semilla extra al cosechar,,[c_lime]15%[/c] di probabilità di un seme extra al raccolto,[c_lime]15%[/c] de chance d’une graine supplémentaire lors de la récolte,,
+colheita_generosa_2_nome,,Colheita Generosa II,Cosecha Generosa II,,Colheita Generosa II,Récolte Généreuse II,,
+colheita_generosa_2_desc,,[c_lime]30%[/c] de chance de semente extra ao colher,30% probabilidad de semilla,,[c_lime]30%[/c] di probabilità di un seme extra al raccolto,[c_lime]30%[/c] de chance d’une graine supplémentaire lors de la récolte,,
+colheita_generosa_3_nome,,Colheita Generosa III,Cosecha Generosa III,,Colheita Generosa III,Récolte Généreuse III,,
+colheita_generosa_3_desc,,[c_lime]50%[/c] de chance de semente extra ao colher,50% probabilidad de semilla,,[c_lime]50%[/c] di probabilità di un seme extra al raccolto,[c_lime]50%[/c] de chance d’une graine supplémentaire lors de la récolte,,
+colheita_generosa_4_nome,,Colheita Generosa IV,Cosecha Generosa IV,,Colheita Generosa IV,Récolte Généreuse IV,,
+colheita_generosa_4_desc,,[c_lime]75%[/c] de chance de semente extra ao colher,75% probabilidad + siempre cae al menos 1 semilla,,[c_lime]75%[/c] di probabilità di un seme extra al raccolto,[c_lime]75%[/c] de chance d’une graine supplémentaire lors de la récolte,,
+colheita_tsunami_1_nome,,Colheita Tsunami I,Cosecha Tsunami I,,Colheita Tsunami I,Récolte Tsunami I,,
+colheita_tsunami_1_desc,,Colhe área [c_lime]3x3[/c],Cosecha área 3x3,,Raccoglie area [c_lime]3x3[/c],Récolte une zone de [c_lime]3x3[/c],,
+colheita_tsunami_2_nome,,Colheita Tsunami II,Cosecha Tsunami II,,Colheita Tsunami II,Récolte Tsunami II,,
+colheita_tsunami_2_desc,,Colhe área [c_lime]4x4[/c],Cosecha área 4x4,,Raccoglie area [c_lime]4x4[/c],Récolte une zone de [c_lime]4x4[/c],,
+colheita_tsunami_3_nome,,Colheita Tsunami III,Cosecha Tsunami III,,Colheita Tsunami III,Récolte Tsunami III,,
+colheita_tsunami_3_desc,,Colhe área [c_lime]5x5[/c],Cosecha área 5x5,,Raccoglie area [c_lime]5x5[/c],Récolte une zone de [c_lime]5x5[/c],,
+colheita_tsunami_4_nome,,Colheita Tsunami IV,Cosecha Tsunami IV,,Colheita Tsunami IV,Récolte Tsunami IV,,
+colheita_tsunami_4_desc,,Colhe área [c_lime]6x6[/c],Cosecha área 6x6 sosteniendo F,,Raccoglie area [c_lime]6x6[/c],Récolte une zone de [c_lime]6x6[/c],,
+detector_cardume_1_nome,,Detector de Cardume I,Detector de Cardumen I,,Detector de Cardume I,Détecteur de Bancs I,,
+detector_cardume_1_desc,,[c_lime]5%[/c] de chance de peixes [c_purple]raros[/c],5% probabilidad de peces raros,,[c_lime]5%[/c] di probabilità di pesci [c_purple]rari[/c],[c_lime]5%[/c] de chance de poissons [c_purple]rares[/c],,
+detector_cardume_2_nome,,Detector de Cardume II,Detector de Cardumen II,,Detector de Cardume II,Détecteur de Bancs II,,
+detector_cardume_2_desc,,[c_lime]10%[/c] de chance de peixes [c_purple]raros[/c],10% probabilidad de raros,,[c_lime]10%[/c] di probabilità di pesci [c_purple]rari[/c],[c_lime]10%[/c] de chance de poissons [c_purple]rares[/c],,
+detector_cardume_3_nome,,Detector de Cardume III,Detector de Cardumen III,,Detector de Cardume III,Détecteur de Bancs III,,
+detector_cardume_3_desc,,[c_lime]15%[/c] de chance de peixes [c_purple]raros[/c],15% probabilidad de raros,,[c_lime]15%[/c] di probabilità di pesci [c_purple]rari[/c],[c_lime]15%[/c] de chance de poissons [c_purple]rares[/c],,
+detector_cardume_4_nome,,Detector de Cardume IV,Detector de Cardumen IV,,Detector de Cardume IV,Détecteur de Bancs IV,,
+detector_cardume_4_desc,,[c_lime]20%[/c] de chance de peixes [c_purple]raros[/c],20% probabilidad de raros,,[c_lime]20%[/c] di probabilità di pesci [c_purple]rari[/c],[c_lime]20%[/c] de chance de poissons [c_purple]rares[/c],,
+esporas_douradas_1_nome,,Esporas Douradas I,Espuelas Doradas I,,Esporas Douradas I,Spores Dorées I,,
+esporas_douradas_1_desc,,[c_yellow]+15%[/c] de velocidade de movimento,15% velocidad de movimiento,,[c_yellow]+15%[/c] velocità di movimento,[c_yellow]+15%[/c] de vitesse de déplacement,,
+esporas_douradas_2_nome,,Esporas Douradas II,Espuelas Doradas II,,Esporas Douradas II,Spores Dorées II,,
+esporas_douradas_2_desc,,[c_yellow]+30%[/c] de velocidade de movimento,30% velocidad ,,[c_yellow]+30%[/c] velocità di movimento,[c_yellow]+30%[/c] de vitesse de déplacement,,
+esporas_douradas_3_nome,,Esporas Douradas III,Espuelas Doradas III,,Esporas Douradas III,Spores Dorées III,,
+esporas_douradas_3_desc,,[c_yellow]+50%[/c] de velocidade de movimento,50% velocidad ,,[c_yellow]+50%[/c] velocità di movimento,[c_yellow]+50%[/c] de vitesse de déplacement,,
+esporas_douradas_4_nome,,Esporas Douradas IV,Espuelas Doradas IV,,Esporas Douradas IV,Spores Dorées IV,,
+esporas_douradas_4_desc,,[c_yellow]+75%[/c] de velocidade de movimento,75% velocidad de movimiento,,[c_yellow]+75%[/c] velocità di movimento,[c_yellow]+75%[/c] de vitesse de déplacement,,
+esquiva_sombria_1_nome,,Esquiva Sombria I,Esquiva Sombría I,,Esquiva Sombria I,Esquive Ombreuse I,,
+esquiva_sombria_1_desc,,"Dash com [c_aqua]0.3s[/c] de invencibilidade, cooldown de [c_red]4s[/c]","Dash con 0.3s de i-frames, enfriamiento 4s",,"Dash con [c_aqua]0.3s[/c] di invincibilità, cooldown di [c_red]4s[/c]","Dash avec [c_aqua]0.3s[/c] d’invincibilité, cooldown de [c_red]4s[/c]",,
+esquiva_sombria_2_nome,,Esquiva Sombria II,Esquiva Sombría II,,Esquiva Sombria II,Esquive Ombreuse II,,
+esquiva_sombria_2_desc,,"Dash com [c_aqua]0.5s[/c] de invencibilidade, cooldown de [c_red]3s[/c]","Dash 0.5s i-frames, enfriamiento 3s",,"Dash con [c_aqua]0.5s[/c] di invincibilità, cooldown di [c_red]3s[/c]","Dash avec [c_aqua]0.5s[/c] d’invincibilité, cooldown de [c_red]3s[/c]",,
+esquiva_sombria_3_nome,,Esquiva Sombria III,Esquiva Sombría III,,Esquiva Sombria III,Esquive Ombreuse III,,
+esquiva_sombria_3_desc,,"Dash com [c_aqua]0.7s[/c] de invencibilidade, cooldown de [c_red]2s[/c]","Dash 0.7s i-frames, enfriamiento 2s",,"Dash con [c_aqua]0.7s[/c] di invincibilità, cooldown di [c_red]2s[/c]","Dash avec [c_aqua]0.7s[/c] d’invincibilité, cooldown de [c_red]2s[/c]",,
+esquiva_sombria_4_nome,,Esquiva Sombria IV,Esquiva Sombría IV,,Esquiva Sombria IV,Esquive Ombreuse IV,,
+esquiva_sombria_4_desc,,"Dash com [c_aqua]1s[/c] de invencibilidade, cooldown de [c_red]1.5s[/c]","Dash 1s i-frames, enfriamiento 1.5s",,"Dash con [c_aqua]1s[/c] di invincibilità, cooldown di [c_red]1.5s[/c]","Dash avec [c_aqua]1s[/c] d’invincibilité, cooldown de [c_red]1.5s[/c]",,
+faro_ouro_1_nome,,Faro do Ouro I,Faro del Oro I,,Faro do Ouro I,Flair d’Or I,,
+faro_ouro_1_desc,,[c_yellow]+20%[/c] de dinheiro de todas as fontes,20% dinero de todas las fuentes,,[c_yellow]+20%[/c] denaro da tutte le fonti,[c_yellow]+20%[/c] d’argent provenant de toutes les sources,,
+faro_ouro_2_nome,,Faro do Ouro II,Faro del Oro II,,Faro do Ouro II,Flair d’Or II,,
+faro_ouro_2_desc,,[c_yellow]+40%[/c] de dinheiro de todas as fontes,40% dinero + monedas tienen brillo dorado,,[c_yellow]+40%[/c] denaro da tutte le fonti,[c_yellow]+40%[/c] d’argent provenant de toutes les sources,,
+faro_ouro_3_nome,,Faro do Ouro III,Faro del Oro III,,Faro do Ouro III,Flair d’Or III,,
+faro_ouro_3_desc,,[c_yellow]+70%[/c] de dinheiro de todas as fontes,70% dinero + monedas brillan + sonido satisfecho,,[c_yellow]+70%[/c] denaro da tutte le fonti,[c_yellow]+70%[/c] d’argent provenant de toutes les sources,,
+faro_ouro_4_nome,,Faro do Ouro IV,Faro del Oro IV,,Faro do Ouro IV,Flair d’Or IV,,
+faro_ouro_4_desc,,[c_yellow]+120%[/c] de dinheiro de todas as fontes,120% dinero + 10% probabilidad drop doble + explosión épica,,[c_yellow]+120%[/c] denaro da tutte le fonti,[c_yellow]+120%[/c] d’argent provenant de toutes les sources,,
+generosidade_divina_1_nome,,Generosidade Divina I,Generosidad Divina I,,Generosidade Divina I,Générosité Divine I,,
+generosidade_divina_1_desc,,[c_orange]10[/c] de cada material básico instantâneo,10 de cada material básico instantáneo,,[c_orange]10[/c] di ogni materiale base istantaneo,[c_orange]10[/c] de chaque matériau basique instantanément,,
+generosidade_divina_2_nome,,Generosidade Divina II,Generosidad Divina II,,Generosidade Divina II,Générosité Divine II,,
+generosidade_divina_2_desc,,[c_orange]25[/c] de cada material básico instantâneo,25 de cada material básico,,[c_orange]25[/c] di ogni materiale base istantaneo,[c_orange]25[/c] de chaque matériau basique instantanément,,
+generosidade_divina_3_nome,,Generosidade Divina III,Generosidad Divina III,,Generosidade Divina III,Générosité Divine III,,
+generosidade_divina_3_desc,,[c_orange]50[/c] de cada material básico instantâneo,50 de cada básico,,[c_orange]50[/c] di ogni materiale base istantaneo,[c_orange]50[/c] de chaque matériau basique instantanément,,
+generosidade_divina_4_nome,,Generosidade Divina IV,Generosidad Divina IV,,Generosidade Divina IV,Générosité Divine IV,,
+generosidade_divina_4_desc,,Nível [c_orange]× 25[/c] de cada material básico instantâneo,nivel x 25 de cada básico,,Livello × [c_orange]25[/c] di ogni materiale base istantaneo,Niveau [c_orange]× 25[/c] de chaque matériau basique instantanément,,
+genetica_avancada_1_nome,,Genética Avançada I,Genética Avanzada I,,Genética Avançada I,Génétique Avancée I,,
+genetica_avancada_1_desc,,[c_lime]+20% yield[/c],20% rendimiento,,[c_lime]+20% yield[/c],[c_lime]+20% yield[/c],,
+genetica_avancada_2_nome,,Genética Avançada II,Genética Avanzada II,,Genética Avançada II,Génétique Avancée II,,
+genetica_avancada_2_desc,,[c_lime]+40% yield[/c],40% rendimiento,,[c_lime]+40% yield[/c],[c_lime]+40% yield[/c],,
+genetica_avancada_3_nome,,Genética Avançada III,Genética Avanzada III,,Genética Avançada III,Génétique Avancée III,,
+genetica_avancada_3_desc,,[c_lime]+70% yield[/c],70% rendimiento,,[c_lime]+70% yield[/c],[c_lime]+70% yield[/c],,
+genetica_avancada_4_nome,,Genética Avançada IV,Genética Avanzada IV,,Genética Avançada IV,Génétique Avancée IV,,
+genetica_avancada_4_desc,,[c_lime]+120% yield[/c],120% rendimiento,,[c_lime]+120% yield[/c],[c_lime]+120% yield[/c],,
+ima_aquatico_1_nome,,Ímã Aquático I,Imán Acuático I,,Ímã Aquático I,Aimant Aquatique I,,
+ima_aquatico_1_desc,,[c_lime]3%[/c] de chance de peixes [c_fuchsia]épicos[/c],3% probabilidad de peces épicos,,[c_lime]3%[/c] di probabilità di pesci [c_fuchsia]epici[/c],[c_lime]3%[/c] de chance de poissons [c_fuchsia]épiques[/c],,
+ima_aquatico_2_nome,,Ímã Aquático II,Imán Acuático II,,Ímã Aquático II,Aimant Aquatique II,,
+ima_aquatico_2_desc,,[c_lime]5%[/c] de chance de peixes [c_fuchsia]épicos[/c],5% probabilidad de épicos,,[c_lime]5%[/c] di probabilità di pesci [c_fuchsia]epici[/c],[c_lime]5%[/c] de chance de poissons [c_fuchsia]épiques[/c],,
+ima_aquatico_3_nome,,Ímã Aquático III,Imán Acuático III,,Ímã Aquático III,Aimant Aquatique III,,
+ima_aquatico_3_desc,,[c_lime]10%[/c] de chance de peixes [c_fuchsia]épicos[/c],10% probabilidad de épicos,,[c_lime]10%[/c] di probabilità di pesci [c_fuchsia]epici[/c],[c_lime]10%[/c] de chance de poissons [c_fuchsia]épiques[/c],,
+ima_aquatico_4_nome,,Ímã Aquático IV,Imán Acuático IV,,Ímã Aquático IV,Aimant Aquatique IV,,
+ima_aquatico_4_desc,,[c_lime]15%[/c] de chance de peixes [c_fuchsia]épicos[/c],15% probabilidad de épicos,,[c_lime]15%[/c] di probabilità di pesci [c_fuchsia]epici[/c],[c_lime]15%[/c] de chance de poissons [c_fuchsia]épiques[/c],,
+juros_compostos_1_nome,,Juros Compostos I,Interés Compuesto I,,Juros Compostos I,Intérêts Composés I,,
+juros_compostos_1_desc,,Dinheiro parado rende [c_yellow]0.5%[/c] por dia,Dinero parado rinde 0.5% por día,,Il denaro fermo rende [c_yellow]0.5%[/c] al giorno,Argent stocké rapporte [c_yellow]0.5%[/c] par jour,,
+juros_compostos_2_nome,,Juros Compostos II,Interés Compuesto II,,Juros Compostos II,Intérêts Composés II,,
+juros_compostos_2_desc,,Dinheiro parado rende [c_yellow]1%[/c] por dia,Rinde 1% por día,,Il denaro fermo rende [c_yellow]1%[/c] al giorno,Argent stocké rapporte [c_yellow]1%[/c] par jour,,
+juros_compostos_3_nome,,Juros Compostos III,Interés Compuesto III,,Juros Compostos III,Intérêts Composés III,,
+juros_compostos_3_desc,,Dinheiro parado rende [c_yellow]1.5%[/c] por dia,Rinde 1.5% por día,,Il denaro fermo rende [c_yellow]1.5%[/c] al giorno,Argent stocké rapporte [c_yellow]1.5%[/c] par jour,,
+juros_compostos_4_nome,,Juros Compostos IV,Interés Compuesto IV,,Juros Compostos IV,Intérêts Composés IV,,
+juros_compostos_4_desc,,Dinheiro parado rende [c_yellow]2%[/c] por dia,Rinde 2% por día,,Il denaro fermo rende [c_yellow]2%[/c] al giorno,Argent stocké rapporte [c_yellow]2%[/c] par jour,,
+lanterna_espiritual_1_nome,,Lanterna Espiritual I,Linterna Espiritual I,,Lanterna Espiritual I,Lanterne Spirituelle I,,
+lanterna_espiritual_1_desc,,[c_yellow]+30%[/c] no raio de luz do player,30% radio de luz del jugador,,[c_yellow]+30%[/c] raggio di luce del player,[c_yellow]+30%[/c] au rayon de lumière du joueur,,
+lanterna_espiritual_2_nome,,Lanterna Espiritual II,Linterna Espiritual II,,Lanterna Espiritual II,Lanterne Spirituelle II,,
+lanterna_espiritual_2_desc,,[c_yellow]+60%[/c] no raio de luz do player,60% radio de luz ,,[c_yellow]+60%[/c] raggio di luce del player,[c_yellow]+60%[/c] au rayon de lumière du joueur,,
+lanterna_espiritual_3_nome,,Lanterna Espiritual III,Linterna Espiritual III,,Lanterna Espiritual III,Lanterne Spirituelle III,,
+lanterna_espiritual_3_desc,,[c_yellow]+100%[/c] no raio de luz do player,100% radio de luz ,,[c_yellow]+100%[/c] raggio di luce del player,[c_yellow]+100%[/c] au rayon de lumière du joueur,,
+lanterna_espiritual_4_nome,,Lanterna Espiritual IV,Linterna Espiritual IV,,Lanterna Espiritual IV,Lanterne Spirituelle IV,,
+lanterna_espiritual_4_desc,,[c_yellow]+150%[/c] no raio de luz do player,150% radio de luz,,[c_yellow]+150%[/c] raggio di luce del player,[c_yellow]+150%[/c] au rayon de lumière du joueur,,
+lider_nato_1_nome,,Líder Nato I,Líder Nativo I,,Líder Nato I,Leader Né I,,
+lider_nato_1_desc,,NPCs trabalham [c_lime]15%[/c] mais rápido,NPCs trabajan 15% más rápido,,Gli NPC lavorano [c_lime]15%[/c] più velocemente,Les NPC travaillent [c_lime]15%[/c] plus vite,,
+lider_nato_2_nome,,Líder Nato II,Líder Nativo II,,Líder Nato II,Leader Né II,,
+lider_nato_2_desc,,NPCs trabalham [c_lime]30%[/c] mais rápido,NPCs trabajan 30% más rápido,,Gli NPC lavorano [c_lime]30%[/c] più velocemente,Les NPC travaillent [c_lime]30%[/c] plus vite,,
+lider_nato_3_nome,,Líder Nato III,Líder Nativo III,,Líder Nato III,Leader Né III,,
+lider_nato_3_desc,,NPCs trabalham [c_lime]50%[/c] mais rápido,NPCs trabajan 50% más rápido ,,Gli NPC lavorano [c_lime]50%[/c] più velocemente,Les NPC travaillent [c_lime]50%[/c] plus vite,,
+lider_nato_4_nome,,Líder Nato IV,Líder Nativo IV,,Líder Nato IV,Leader Né IV,,
+lider_nato_4_desc,,NPCs trabalham [c_lime]80%[/c] mais rápido,NPCs 80% más rápido ,,Gli NPC lavorano [c_lime]80%[/c] più velocemente,Les NPC travaillent [c_lime]80%[/c] plus vite,,
+lingua_prata_1_nome,,Língua de Prata I,Lengua de Plata I,,Língua de Prata I,Langue d’Argent I,,
+lingua_prata_1_desc,,[c_yellow]-10%[/c] preços em NPCs,-10% precios en NPCs,,[c_yellow]-10%[/c] prezzi presso NPC,[c_yellow]-10%[/c] sur les prix des NPC,,
+lingua_prata_2_nome,,Língua de Prata II,Lengua de Plata II,,Língua de Prata II,Langue d’Argent II,,
+lingua_prata_2_desc,,[c_yellow]-18%[/c] preços em NPCs,-18% precios ,,[c_yellow]-18%[/c] prezzi presso NPC,[c_yellow]-18%[/c] sur les prix des NPC,,
+lingua_prata_3_nome,,Língua de Prata III,Lengua de Plata III,,Língua de Prata III,Langue d’Argent III,,
+lingua_prata_3_desc,,[c_yellow]-30%[/c] preços em NPCs,-30% precios ,,[c_yellow]-30%[/c] prezzi presso NPC,[c_yellow]-30%[/c] sur les prix des NPC,,
+lingua_prata_4_nome,,Língua de Prata IV,Lengua de Plata IV,,Língua de Prata IV,Langue d’Argent IV,,
+lingua_prata_4_desc,,[c_yellow]-45%[/c] preços em NPCs,-45% precios ,,[c_yellow]-45%[/c] prezzi presso NPC,[c_yellow]-45%[/c] sur les prix des NPC,,
+maos_ageis_1_nome,,Mãos Ágeis I,Manos Ágiles I,,Mãos Ágeis I,Mains Agiles I,,
+maos_ageis_1_desc,,Construção de decorações [c_lime]25%[/c] mais rápida,Construcción 25% más rápida en decoraciones,,Costruzione di decorazioni [c_lime]25%[/c] più veloce,Construction de décorations [c_lime]25%[/c] plus rapide,,
+mercador_nato_1_nome,,Mercador Nato I,Comerciante Nativo I,,Mercador Nato I,Marchand Né I,,
+mercador_nato_1_desc,,Itens valem [c_yellow]+20%[/c] na venda,Items valen +20% en la venta,,Gli oggetti valgono [c_yellow]+20%[/c] alla vendita,Les objets valent [c_yellow]+20%[/c] à la vente,,
+mercador_nato_2_nome,,Mercador Nato II,Comerciante Nativo II,,Mercador Nato II,Marchand Né II,,
+mercador_nato_2_desc,,Itens valem [c_yellow]+40%[/c] na venda,Items valen +40% + etiqueta dorada,,Gli oggetti valgono [c_yellow]+40%[/c] alla vendita,Les objets valent [c_yellow]+40%[/c] à la vente,,
+mercador_nato_3_nome,,Mercador Nato III,Comerciante Nativo III,,Mercador Nato III,Marchand Né III,,
+mercador_nato_3_desc,,Itens valem [c_yellow]+65%[/c] na venda,Items valen +65% + NPCs hacen ofertas especiales,,Gli oggetti valgono [c_yellow]+65%[/c] alla vendita,Les objets valent [c_yellow]+65%[/c] à la vente,,
+mercador_nato_4_nome,,Mercador Nato IV,Comerciante Nativo IV,,Mercador Nato IV,Marchand Né IV,,
+mercador_nato_4_desc,,Itens valem [c_yellow]+100%[/c] na venda,Items valen +100% + ofertas frecuentes + sistema de subasta,,Gli oggetti valgono [c_yellow]+100%[/c] alla vendita,Les objets valent [c_yellow]+100%[/c] à la vente,,
+mestre_artesao_1_nome,,Mestre Artesão I,Maestro Artesano I,,Mestre Artesão I,Maître Artisan I,,
+mestre_artesao_1_desc,,[c_lime]15%[/c] de chance de não gastar recursos ao craftar,15% probabilidad de no gastar recursos al craftear,,[c_lime]15%[/c] di probabilità di non consumare risorse nel crafting,[c_lime]15%[/c] de chance de ne pas dépenser de ressources en craftant,,
+mestre_artesao_2_nome,,Mestre Artesão II,Maestro Artesano II,,Mestre Artesão II,Maître Artisan II,,
+mestre_artesao_2_desc,,[c_lime]25%[/c] de chance de não gastar recursos ao craftar,25% probabilidad + brillo dorado cuando se activa,,[c_lime]25%[/c] di probabilità di non consumare risorse nel crafting,[c_lime]25%[/c] de chance de ne pas dépenser de ressources en craftant,,
+mestre_artesao_3_nome,,Mestre Artesão III,Maestro Artesano III,,Mestre Artesão III,Maître Artisan III,,
+mestre_artesao_3_desc,,[c_lime]40%[/c] de chance de não gastar recursos ao craftar,40% probabilidad de no gastar recursos,,[c_lime]40%[/c] di probabilità di non consumare risorse nel crafting,[c_lime]40%[/c] de chance de ne pas dépenser de ressources en craftant,,
+mestre_artesao_4_nome,,Mestre Artesão IV,Maestro Artesano IV,,Mestre Artesão IV,Maître Artisan IV,,
+mestre_artesao_4_desc,,[c_lime]60%[/c] de chance de não gastar recursos ao craftar,60% probabilidad de no gastar recursos,,[c_lime]60%[/c] di probabilità di non consumare risorse nel crafting,[c_lime]60%[/c] de chance de ne pas dépenser de ressources en craftant,,
+mira_expandida_1_nome,,Mira Expandida I,Mira Expandida I,,Mira Expandida I,Visée Élargie I,,
+mira_expandida_1_desc,,Zona verde [c_lime]10%[/c] maior,Zona verde 10% mayor,,Zona verde [c_lime]10%[/c] più grande,Zone verte [c_lime]10%[/c] plus grande,,
+mira_expandida_2_nome,,Mira Expandida II,Mira Expandida II,,Mira Expandida II,Visée Élargie II,,
+mira_expandida_2_desc,,Zona verde [c_lime]20%[/c] maior,Zona verde 20% mayor,,Zona verde [c_lime]20%[/c] più grande,Zone verte [c_lime]20%[/c] plus grande,,
+mira_expandida_3_nome,,Mira Expandida III,Mira Expandida III,,Mira Expandida III,Visée Élargie III,,
+mira_expandida_3_desc,,Zona verde [c_lime]35%[/c] maior,Zona verde 35% mayor,,Zona verde [c_lime]35%[/c] più grande,Zone verte [c_lime]35%[/c] plus grande,,
+mira_expandida_4_nome,,Mira Expandida IV,Mira Expandida IV,,Mira Expandida IV,Visée Élargie IV,,
+mira_expandida_4_desc,,Zona verde [c_lime]40%[/c] maior,Zona verde 40% mayor + crece gradualmente durante captura,,Zona verde [c_lime]40%[/c] più grande,Zone verte [c_lime]40%[/c] plus grande,,
+olho_predador_1_nome,,Olho Predador I,Ojo Depredador I,,Olho Predador I,Œil Prédateur I,,
+olho_predador_1_desc,,Mostra [c_red]HP[/c] dos inimigos em barra,Muestra HP de enemigos en barra,,Mostra l’[c_red]HP[/c] dei nemici in barra,Affiche le [c_red]HP[/c] des ennemis sous forme de barre,,
+osteologia_1_nome,,Osteologia I,Osteología I,,Osteologia I,Ostéologie I,,
+osteologia_1_desc,,Caveiras geram [c_lime]+15%[/c] de crescimento nas plantas,Las calaveras generan +15% crecimiento en radio de 3 tiles,,Le ossa generano [c_lime]+15%[/c] crescita nelle piante,Les crânes génèrent [c_lime]+15%[/c] de croissance des plantes,,
+osteologia_2_nome,,Osteologia II,Osteología II,,Osteologia II,Ostéologie II,,
+osteologia_2_desc,,Caveiras geram [c_lime]+30%[/c] de crescimento nas plantas,30% crecimiento,,Le ossa generano [c_lime]+30%[/c] crescita nelle piante,Les crânes génèrent [c_lime]+30%[/c] de croissance des plantes,,
+osteologia_3_nome,,Osteologia III,Osteología III,,Osteologia III,Ostéologie III,,
+osteologia_3_desc,,Caveiras geram [c_lime]+50%[/c] de crescimento nas plantas,50% crecimiento,,Le ossa generano [c_lime]+50%[/c] crescita nelle piante,Les crânes génèrent [c_lime]+50%[/c] de croissance des plantes,,
+osteologia_4_nome,,Osteologia IV,Osteología IV,,Osteologia IV,Ostéologie IV,,
+osteologia_4_desc,,Caveiras geram [c_lime]+80%[/c] de crescimento nas plantas,80% crecimiento,,Le ossa generano [c_lime]+80%[/c] crescita nelle piante,Les crânes génèrent [c_lime]+80%[/c] de croissance des plantes,,
+pele_rigida_1_nome,,Pele Rígida I,Piel Rígida I,,Pele Rígida I,Peau Rigide I,,
+pele_rigida_1_desc,,[c_aqua]-10%[/c] de dano recebido,-10% daño recibido,,[c_aqua]-10%[/c] danno ricevuto,[c_aqua]-10%[/c] de dégâts reçus,,
+pele_rigida_2_nome,,Pele Rígida II,Piel Rígida II,,Pele Rígida II,Peau Rigide II,,
+pele_rigida_2_desc,,[c_aqua]-18%[/c] de dano recebido,-18% daño recibido,,[c_aqua]-18%[/c] danno ricevuto,[c_aqua]-18%[/c] de dégâts reçus,,
+pele_rigida_3_nome,,Pele Rígida III,Piel Rígida III,,Pele Rígida III,Peau Rigide III,,
+pele_rigida_3_desc,,[c_aqua]-28%[/c] de dano recebido,-28% daño recibido,,[c_aqua]-28%[/c] danno ricevuto,[c_aqua]-28%[/c] de dégâts reçus,,
+pele_rigida_4_nome,,Pele Rígida IV,Piel Rígida IV,,Pele Rígida IV,Peau Rigide IV,,
+pele_rigida_4_desc,,[c_aqua]-40%[/c] de dano recebido [c_yellow]+ reflete 15%[/c] do dano,-40% daño + refleja 15% ,,[c_aqua]-40%[/c] danno ricevuto [c_yellow]+ riflette 15%[/c] del danno,[c_aqua]-40%[/c] de dégâts reçus [c_yellow]+ renvoie 15%[/c] des dégâts,,
+pescador_nato_1_nome,,Pescador Nato I,Pescador Nativo I,,Pescador Nato I,Pêcheur Né I,,
+pescador_nato_1_desc,,[c_lime]1%[/c] de chance de peixe [c_orange]exótico[/c],1% probabilidad pez exótico,,[c_lime]1%[/c] probabilità di pesce [c_orange]esotico[/c],[c_lime]1%[/c] de chance de poisson [c_orange]exotique[/c],,
+pescador_nato_2_nome,,Pescador Nato II,Pescador Nativo II,,Pescador Nato II,Pêcheur Né II,,
+pescador_nato_2_desc,,[c_lime]3%[/c] de chance de peixe [c_orange]exótico[/c],3% probabilidad exótico,,[c_lime]3%[/c] probabilità di pesce [c_orange]esotico[/c],[c_lime]3%[/c] de chance de poisson [c_orange]exotique[/c],,
+pescador_nato_3_nome,,Pescador Nato III,Pescador Nativo III,,Pescador Nato III,Pêcheur Né III,,
+pescador_nato_3_desc,,[c_lime]5%[/c] de chance de peixe [c_orange]exótico[/c],5% probabilidad exótico,,[c_lime]5%[/c] probabilità di pesce [c_orange]esotico[/c],[c_lime]5%[/c] de chance de poisson [c_orange]exotique[/c],,
+pescador_nato_4_nome,,Pescador Nato IV,Pescador Nativo IV,,Pescador Nato IV,Pêcheur Né IV,,
+pescador_nato_4_desc,,[c_lime]10%[/c] de chance de peixe [c_orange]exótico[/c],10% probabilidad exótico,,[c_lime]10%[/c] probabilità di pesce [c_orange]esotico[/c],[c_lime]10%[/c] de chance de poisson [c_orange]exotique[/c],,
+portal_domestico_1_nome,,Portal Doméstico I,Portal Doméstico I,,Portal Doméstico I,Portail Domestique I,,
+portal_domestico_1_desc,,"Teleporte para casa, cooldown de [c_red]5min[/c], canalizar por [c_aqua]5s[/c]","Teletransporte a casa, enfriamiento 5min, canalizar 5s",,"Teletrasporto a casa, cooldown di [c_red]5min[/c], canalizzazione per [c_aqua]5s[/c]","Téléportation à la maison, cooldown de [c_red]5min[/c], canalisation pendant [c_aqua]5s[/c]",,
+portal_domestico_2_nome,,Portal Doméstico II,Portal Doméstico II,,Portal Doméstico II,Portail Domestique II,,
+portal_domestico_2_desc,,"Teleporte para casa, cooldown de [c_red]3min[/c], canalizar por [c_aqua]5s[/c]","Enfriamiento 3min, canalizar 5s",,"Teletrasporto a casa, cooldown di [c_red]3min[/c], canalizzazione per [c_aqua]5s[/c]","Téléportation à la maison, cooldown de [c_red]3min[/c], canalisation pendant [c_aqua]5s[/c]",,
+portal_domestico_3_nome,,Portal Doméstico III,Portal Doméstico III,,Portal Doméstico III,Portail Domestique III,,
+portal_domestico_3_desc,,"Teleporte para casa, cooldown de [c_red]1min[/c], canalizar por [c_aqua]5s[/c]","Enfriamiento 1min, canalizar 5s",,"Teletrasporto a casa, cooldown di [c_red]1min[/c], canalizzazione per [c_aqua]5s[/c]","Téléportation à la maison, cooldown de [c_red]1min[/c], canalisation pendant [c_aqua]5s[/c]",,
+portal_domestico_4_nome,,Portal Doméstico IV,Portal Doméstico IV,,Portal Doméstico IV,Portail Domestique IV,,
+portal_domestico_4_desc,,Teleporte para casa [c_lime]sem cooldown[/c] (não pode usar em combate),Teletransporte sin enfriamiento (no se puede usar en combate),,Teletrasporto a casa [c_lime]senza cooldown[/c] (non utilizzabile in combattimento),Téléportation à la maison [c_lime]sans cooldown[/c] (ne peut pas être utilisée en combat),,
+punho_1_nome,,Punhos de Ferro I,Puños de Hierro I,,Punhos de Ferro I,Poings de Fer I,,
+punho_1_desc,,[c_yellow]+15%[/c] de dano corpo a corpo,15% daño cuerpo a cuerpo,,[c_yellow]+15%[/c] danno corpo a corpo,[c_yellow]+15%[/c] de dégâts de mêlée,,
+punho_2_nome,,Punhos de Ferro II,Puños de Hierro II,,Punhos de Ferro II,Poings de Fer II,,
+punho_2_desc,,[c_yellow]+30%[/c] de dano corpo a corpo,30% daño cuerpo a cuerpo,,[c_yellow]+30%[/c] danno corpo a corpo,[c_yellow]+30%[/c] de dégâts de mêlée,,
+punho_3_nome,,Punhos de Ferro III,Puños de Hierro III,,Punhos de Ferro III,Poings de Fer III,,
+punho_3_desc,,[c_yellow]+50%[/c] de dano corpo a corpo,50% daño ,,[c_yellow]+50%[/c] danno corpo a corpo,[c_yellow]+50%[/c] de dégâts de mêlée,,
+punho_4_nome,,Punhos de Ferro IV,Puños de Hierro IV,,Punhos de Ferro IV,Poings de Fer IV,,
+punho_4_desc,,[c_yellow]+80%[/c] de dano corpo a corpo,80% daño,,[c_yellow]+80%[/c] danno corpo a corpo,[c_yellow]+80%[/c] de dégâts de mêlée,,
+radar_peixes_1_nome,,Radar de Peixes I,Radar de Peces I,,Radar de Peixes I,Radar à Poissons I,,
+radar_peixes_1_desc,,Mostra [c_aqua]silhueta[/c] do tipo de peixe antes de fisgar,30% daño cuerpo a cuerpo,,Mostra [c_aqua]silhueta[/c] del tipo di pesce prima di agganciare,Montre la [c_aqua]silhouette[/c] du type de poisson avant d’accrocher,,
+radar_peixes_2_nome,,Radar de Peixes II,Radar de Peces II,,Radar de Peixes II,Radar à Poissons II,,
+radar_peixes_2_desc,,Mostra [c_aqua]silhueta + raridade[/c] (cor do outline),Muestra silueta + rareza (color del contorno),,Mostra [c_aqua]silhueta + rarità[/c] (colore del contorno),Montre [c_aqua]silhouette + rareté[/c] (couleur du contour),,
+radar_peixes_3_nome,,Radar de Peixes III,Radar de Peces III,,Radar de Peixes III,Radar à Poissons III,,
+radar_peixes_3_desc,,Mostra [c_aqua]silhueta + probabilidade[/c] de captura em [c_lime]%[/c],Muestra silueta + probabilidad de captura en %,,Mostra [c_aqua]silhueta + probabilità[/c] di cattura in [c_lime]%[/c],Montre [c_aqua]silhouette + probabilité[/c] de capture en [c_lime]%[/c],,
+radar_peixes_4_nome,,Radar de Peixes IV,Radar de Peces IV,,Radar de Peixes IV,Radar à Poissons IV,,
+radar_peixes_4_desc,,Peixes melhoram automaticamente a cada [c_lime]3 minutos[/c] durante a pesca,,,I pesci migliorano automaticamente ogni [c_lime]3 minuti[/c] durante la pesca,Les poissons s’améliorent automatiquement toutes les [c_lime]3 minutes[/c] pendant la pêche,,
+reciclador_1_nome,,Reciclador,Reciclador,,Reciclador,Recycleur,,
+reciclador_1_desc,,Demolição retorna [c_lime]100%[/c] dos recursos,Demolición devuelve 100% de recursos,,La demolizione restituisce [c_lime]100%[/c] delle risorse,La démolition restitue [c_lime]100%[/c] des ressources,,
+reflexos_agucados_1_nome,,Reflexos Aguçados I,Reflejos Agudos I,,Reflexos Aguçados I,Réflexes Aiguisés I,,
+reflexos_agucados_1_desc,,[c_lime]-20%[/c] tempo de espera até peixe morder,-20% tiempo de espera hasta que pez muerda,,[c_lime]-20%[/c] tempo d’attesa fino al morso del pesce,[c_lime]-20%[/c] de temps d’attente avant que le poisson ne morde,,
+reflexos_agucados_2_nome,,Reflexos Aguçados II,Reflejos Agudos II,,Reflexos Aguçados II,Réflexes Aiguisés II,,
+reflexos_agucados_2_desc,,[c_lime]-35%[/c] tempo de espera até peixe morder,35% tiempo de espera,,[c_lime]-35%[/c] tempo d’attesa fino al morso del pesce,[c_lime]-35%[/c] de temps d’attente avant que le poisson ne morde,,
+reflexos_agucados_3_nome,,Reflexos Aguçados III,Reflejos Agudos III,,Reflexos Aguçados III,Réflexes Aiguisés III,,
+reflexos_agucados_3_desc,,[c_lime]-55%[/c] tempo de espera até peixe morder,55% tiempo de espera,,[c_lime]-55%[/c] tempo d’attesa fino al morso del pesce,[c_lime]-55%[/c] de temps d’attente avant que le poisson ne morde,,
+reflexos_agucados_4_nome,,Reflexos Aguçados IV,Reflejos Agudos IV,,Reflexos Aguçados IV,Réflexes Aiguisés IV,,
+reflexos_agucados_4_desc,,[c_lime]-75%[/c] tempo de espera até peixe morder,75% tiempo de espera,,[c_lime]-75%[/c] tempo d’attesa fino al morso del pesce,[c_lime]-75%[/c] de temps d’attente avant que le poisson ne morde,,
+regador_industrial_1_nome,,Regador Industrial I,Regadera Industrial I,,Regador Industrial I,Arrosoir Industriel I,,
+regador_industrial_1_desc,,Rega área [c_aqua]2x2[/c],Riega área 2x2,,Irriga area [c_aqua]2x2[/c],Arrose une zone de [c_aqua]2x2[/c],,
+regador_industrial_2_nome,,Regador Industrial II,Regadera Industrial II,,Regador Industrial II,Arrosoir Industriel II,,
+regador_industrial_2_desc,,Rega área [c_aqua]3x3[/c],Riega área 3x3,,Irriga area [c_aqua]3x3[/c],Arrose une zone de [c_aqua]3x3[/c],,
+regador_industrial_3_nome,,Regador Industrial III,Regadera Industrial III,,Regador Industrial III,Arrosoir Industriel III,,
+regador_industrial_3_desc,,Rega área [c_aqua]4x4[/c],Riega área 4x4,,Irriga area [c_aqua]4x4[/c],Arrose une zone de [c_aqua]4x4[/c],,
+regador_industrial_4_nome,,Regador Industrial IV,Regadera Industrial IV,,Regador Industrial IV,Arrosoir Industriel IV,,
+regador_industrial_4_desc,,Rega área [c_aqua]5x5[/c],Riega área 5x5,,Irriga area [c_aqua]5x5[/c],Arrose une zone de [c_aqua]5x5[/c],,
+regador_livre_1_nome,,Regador Livre I,Regadera Libre I,,Regador Livre I,Arrosoir Libre I,,
+regador_livre_1_desc,,Rega [c_lime]30%[/c] mais rápido,Riego 30% más rápido (animación acelerada),,Irriga [c_lime]30%[/c] più velocemente,Arrose [c_lime]30%[/c] plus vite,,
+regador_livre_2_nome,,Regador Livre II,Regadera Libre II,,Regador Livre II,Arrosoir Libre II,,
+regador_livre_2_desc,,Rega [c_lime]60%[/c] mais rápido,Riego 60% más rápido,,Irriga [c_lime]60%[/c] più velocemente,Arrose [c_lime]60%[/c] plus vite,,
+regador_livre_3_nome,,Regador Livre III,Regadera Libre III,,Regador Livre III,Arrosoir Libre III,,
+regador_livre_3_desc,,Rega [c_lime]90%[/c] mais rápido,Riego 90% más rápido,,Irriga [c_lime]90%[/c] più velocemente,Arrose [c_lime]90%[/c] plus vite,,
+regador_livre_4_nome,,Regador Livre IV,Regadera Libre IV,,Regador Livre IV,Arrosoir Libre IV,,
+regador_livre_4_desc,,Rega área [c_aqua]2x2[/c],Riego área 2x2,,Irriga area [c_aqua]2x2[/c],Arrose une zone de [c_aqua]2x2[/c],,
+regeneracao_batalha_1_nome,,Regeneração de Batalha I,Regeneración de Batalla I,,Regeneração de Batalha I,Régénération de Combat I,,
+regeneracao_batalha_1_desc,,[c_red]0.5 HP/seg[/c] durante combate,0.5 HP/seg durante combate,,[c_red]0.5 HP/seg[/c] durante il combattimento,[c_red]0.5 HP/sec[/c] en combat,,
+regeneracao_batalha_2_nome,,Regeneração de Batalha II,Regeneración de Batalla II,,Regeneração de Batalha II,Régénération de Combat II,,
+regeneracao_batalha_2_desc,,[c_red]1 HP/seg[/c] durante combate,1 HP/seg durante combate,,[c_red]1 HP/seg[/c] durante il combattimento,[c_red]1 HP/sec[/c] en combat,,
+regeneracao_batalha_3_nome,,Regeneração de Batalha III,Regeneración de Batalla III,,Regeneração de Batalha III,Régénération de Combat III,,
+regeneracao_batalha_3_desc,,[c_red]1.8 HP/seg[/c] durante combate,1.8 HP/seg,,[c_red]1.8 HP/seg[/c] durante il combattimento,[c_red]1.8 HP/sec[/c] en combat,,
+regeneracao_batalha_4_nome,,Regeneração de Batalha IV,Regeneración de Batalla IV,,Regeneração de Batalha IV,Régénération de Combat IV,,
+regeneracao_batalha_4_desc,,[c_red]3 HP/seg[/c] durante combate,3 HP/seg ,,[c_red]3 HP/seg[/c] durante il combattimento,[c_red]3 HP/sec[/c] en combat,,
+regeneracao_verde_1_nome,,Regeneração Verde I,Regeneración Verde I,,Regeneração Verde I,Régénération Verte I,,
+regeneracao_verde_1_desc,,Plantas crescem [c_lime]+25%[/c] mais rápido,Las plantas se regeneran +25% más rápido,,Le piante crescono [c_lime]+25%[/c] più velocemente,Les plantes poussent [c_lime]+25%[/c] plus vite,,
+regeneracao_verde_2_nome,,Regeneração Verde II,Regeneración Verde II,,Regeneração Verde II,Régénération Verte II,,
+regeneracao_verde_2_desc,,Plantas crescem [c_lime]+60%[/c] mais rápido,Las plantas se regeneran +60% más rápido ,,Le piante crescono [c_lime]+60%[/c] più velocemente,Les plantes poussent [c_lime]+60%[/c] plus vite,,
+regeneracao_verde_3_nome,,Regeneração Verde III,Regeneración Verde III,,Regeneração Verde III,Régénération Verte III,,
+regeneracao_verde_3_desc,,Plantas crescem [c_lime]+100%[/c] mais rápido,Se regeneran +100% más rápido ,,Le piante crescono [c_lime]+100%[/c] più velocemente,Les plantes poussent [c_lime]+100%[/c] plus vite,,
+regeneracao_verde_4_nome,,Regeneração Verde IV,Regeneración Verde IV,,Regeneração Verde IV,Régénération Verte IV,,
+regeneracao_verde_4_desc,,Plantas crescem [c_lime]+180%[/c] mais rápido,Regeneración +180% ,,Le piante crescono [c_lime]+180%[/c] più velocemente,Les plantes poussent [c_lime]+180%[/c] plus vite,,
+sobrecarga_1_nome,,Sobrecarga I,Sobrecarga I,,Sobrecarga I,Surcharge I,,
+sobrecarga_1_desc,,[c_yellow]+20%[/c] de velocidade de ataque,20% velocidad de ataque,,[c_yellow]+20%[/c] velocità d’attacco,[c_yellow]+20%[/c] de vitesse d’attaque,,
+sobrecarga_2_nome,,Sobrecarga II,Sobrecarga II,,Sobrecarga II,Surcharge II,,
+sobrecarga_2_desc,,[c_yellow]+40%[/c] de velocidade de ataque,40% velocidad de ataque,,[c_yellow]+40%[/c] velocità d’attacco,[c_yellow]+40%[/c] de vitesse d’attaque,,
+sobrecarga_3_nome,,Sobrecarga III,Sobrecarga III,,Sobrecarga III,Surcharge III,,
+sobrecarga_3_desc,,[c_yellow]+65%[/c] de velocidade de ataque,65% velocidad de ataque,,[c_yellow]+65%[/c] velocità d’attacco,[c_yellow]+65%[/c] de vitesse d’attaque,,
+sobrecarga_4_nome,,Sobrecarga IV,Sobrecarga IV,,Sobrecarga IV,Surcharge IV,,
+sobrecarga_4_desc,,[c_yellow]+100%[/c] de velocidade de ataque,100% velocidad,,[c_yellow]+100%[/c] velocità d’attacco,[c_yellow]+100%[/c] de vitesse d’attaque,,
+solo_blindado_1_nome,,Solo Blindado I,Suelo Blindado I,,Solo Blindado I,Sol Blindé I,,
+solo_blindado_1_desc,,Esqueletos causam [c_aqua]-25%[/c] de dano nas plantações,Esqueletos causan -25% daño en plantaciones,,Gli scheletri infliggono [c_aqua]-25%[/c] danno alle colture,Les squelettes infligent [c_aqua]-25%[/c] de dégâts aux plantations,,
+solo_blindado_2_nome,,Solo Blindado II,Suelo Blindado II,,Solo Blindado II,Sol Blindé II,,
+solo_blindado_2_desc,,Esqueletos causam [c_aqua]-45%[/c] de dano nas plantações,45% daño,,Gli scheletri infliggono [c_aqua]-45%[/c] danno alle colture,Les squelettes infligent [c_aqua]-45%[/c] de dégâts aux plantations,,
+solo_blindado_3_nome,,Solo Blindado III,Suelo Blindado III,,Solo Blindado III,Sol Blindé III,,
+solo_blindado_3_desc,,Esqueletos causam [c_aqua]-70%[/c] de dano nas plantações,70% daño,,Gli scheletri infliggono [c_aqua]-70%[/c] danno alle colture,Les squelettes infligent [c_aqua]-70%[/c] de dégâts aux plantations,,
+solo_blindado_4_nome,,Solo Blindado IV,Suelo Blindado IV,,Solo Blindado IV,Sol Blindé IV,,
+solo_blindado_4_desc,,Esqueletos causam [c_aqua]-90%[/c] de dano nas plantações,90% daño ,,Gli scheletri infliggono [c_aqua]-90%[/c] danno alle colture,Les squelettes infligent [c_aqua]-90%[/c] de dégâts aux plantations,,
+sonar_avancado_1_nome,,Sonar Avançado I,Sonar Avanzado I,,Sonar Avançado I,Sonar Avancé I,,
+sonar_avancado_1_desc,,Mostra quais tipos de peixe existem naquele [c_aqua]spot[/c],Muestra qué tipos de pez existen en ese lugar,,Mostra quali tipi di pesce esistono in quel [c_aqua]spot[/c],Montre quels types de poissons existent dans ce [c_aqua]spot[/c],,
+super_fertilizante_1_nome,,Super Fertilizante I,Super Fertilizante I,,Super Fertilizante I,Super Fertilisant I,,
+super_fertilizante_1_desc,,[c_lime]+15%[/c] de velocidade de crescimento,15% velocidad de crecimiento,,[c_lime]+15%[/c] velocità di crescita,[c_lime]+15%[/c] de vitesse de croissance,,
+super_fertilizante_2_nome,,Super Fertilizante II,Super Fertilizante II,,Super Fertilizante II,Super Fertilisant II,,
+super_fertilizante_2_desc,,[c_lime]+20%[/c] de velocidade de crescimento,20% velocidad,,[c_lime]+20%[/c] velocità di crescita,[c_lime]+20%[/c] de vitesse de croissance,,
+super_fertilizante_3_nome,,Super Fertilizante III,Super Fertilizante III,,Super Fertilizante III,Super Fertilisant III,,
+super_fertilizante_3_desc,,[c_lime]+25%[/c] de velocidade de crescimento,25% velocidad,,[c_lime]+25%[/c] velocità di crescita,[c_lime]+25%[/c] de vitesse de croissance,,
+super_fertilizante_4_nome,,Super Fertilizante IV,Super Fertilizante IV,,Super Fertilizante IV,Super Fertilisant IV,,
+super_fertilizante_4_desc,,[c_lime]+30%[/c] de velocidade de crescimento,30% velocidad,,[c_lime]+30%[/c] velocità di crescita,[c_lime]+30%[/c] de vitesse de croissance,,
+supervisor_1_nome,,Supervisor I,Supervisor I,,Supervisor I,Superviseur I,,
+supervisor_1_desc,,NPCs produzem [c_lime]+20%[/c] de recursos,20% rendimiento de NPCs,,Gli NPC producono [c_lime]+20%[/c] risorse,Les NPC produisent [c_lime]+20%[/c] de ressources,,
+supervisor_2_nome,,Supervisor II,Supervisor II,,Supervisor II,Superviseur II,,
+supervisor_2_desc,,NPCs produzem [c_lime]+40%[/c] de recursos,40% rendimiento ,,Gli NPC producono [c_lime]+40%[/c] risorse,Les NPC produisent [c_lime]+40%[/c] de ressources,,
+supervisor_3_nome,,Supervisor III,Supervisor III,,Supervisor III,Superviseur III,,
+supervisor_3_desc,,NPCs produzem [c_lime]+65%[/c] de recursos,65% rendimiento ,,Gli NPC producono [c_lime]+65%[/c] risorse,Les NPC produisent [c_lime]+65%[/c] de ressources,,
+supervisor_4_nome,,Supervisor IV,Supervisor IV,,Supervisor IV,Superviseur IV,,
+supervisor_4_desc,,NPCs produzem [c_lime]+100%[/c] de recursos,100% rendimiento ,,Gli NPC producono [c_lime]+100%[/c] risorse,Les NPC produisent [c_lime]+100%[/c] de ressources,,
+tecnologia_viva_1_nome,,Tecnologia Viva I,Tecnología Viva I,,Tecnologia Viva I,Technologie Vivante I,,
+tecnologia_viva_1_desc,,Estruturas recuperam [c_red]1 HP[/c] a cada [c_aqua]10s[/c],Estructuras recuperan 1 HP cada 10s,,Le strutture recuperano [c_red]1 HP[/c] ogni [c_aqua]10s[/c],Les structures régénèrent [c_red]1 HP[/c] toutes les [c_aqua]10s[/c],,
+tecnologia_viva_2_nome,,Tecnologia Viva II,Tecnología Viva II,,Tecnologia Viva II,Technologie Vivante II,,
+tecnologia_viva_2_desc,,Estruturas recuperam [c_red]1 HP[/c] a cada [c_aqua]5s[/c],Recupera 1 HP cada 5s,,Le strutture recuperano [c_red]1 HP[/c] ogni [c_aqua]5s[/c],Les structures régénèrent [c_red]1 HP[/c] toutes les [c_aqua]5s[/c],,
+tecnologia_viva_3_nome,,Tecnologia Viva III,Tecnología Viva III,,Tecnologia Viva III,Technologie Vivante III,,
+tecnologia_viva_3_desc,,Estruturas recuperam [c_red]2 HP[/c] a cada [c_aqua]3s[/c],Recupera 2 HP cada 3s,,Le strutture recuperano [c_red]2 HP[/c] ogni [c_aqua]3s[/c],Les structures régénèrent [c_red]2 HP[/c] toutes les [c_aqua]3s[/c],,
+tecnologia_viva_4_nome,,Tecnologia Viva IV,Tecnología Viva IV,,Tecnologia Viva IV,Technologie Vivante IV,,
+tecnologia_viva_4_desc,,Estruturas recuperam [c_red]5 HP[/c] a cada [c_aqua]2s[/c],Recupera 5 HP cada 2s + reparos en cadena + visual cyberpunk,,Le strutture recuperano [c_red]5 HP[/c] ogni [c_aqua]2s[/c],Les structures régénèrent [c_red]5 HP[/c] toutes les [c_aqua]2s[/c],,
+trator_fantasma_1_nome,,Trator Fantasma I,Tractor Fantasma I,,Trator Fantasma I,Tracteur Fantôme I,,
+trator_fantasma_1_desc,,Prepara [c_lime]1 tile[/c] automaticamente,Prepara 1 tile automáticamente (5s por tile),,Prepara automaticamente [c_lime]1 tile[/c],Prépare [c_lime]1 tile[/c] automatiquement,,
+trator_fantasma_2_nome,,Trator Fantasma II,Tractor Fantasma II,,Trator Fantasma II,Tracteur Fantôme II,,
+trator_fantasma_2_desc,,Prepara [c_lime]2 tiles[/c] simultâneos,Prepara 2 tiles simultáneamente (3s por tile),,Prepara [c_lime]2 tiles[/c] simultaneamente,Prépare [c_lime]2 tiles[/c] simultanément,,
+trator_fantasma_3_nome,,Trator Fantasma III,Tractor Fantasma III,,Trator Fantasma III,Tracteur Fantôme III,,
+trator_fantasma_3_desc,,Prepara [c_lime]4 tiles[/c] simultâneos,Prepara 4 tiles (1s) + planta semillas automáticamente,,Prepara [c_lime]4 tiles[/c] simultaneamente,Prépare [c_lime]4 tiles[/c] simultanément,,
+trator_fantasma_4_nome,,Trator Fantasma IV,Tractor Fantasma IV,,Trator Fantasma IV,Tracteur Fantôme IV,,
+trator_fantasma_4_desc,,Solo fica preparado [c_lime]automaticamente[/c],El suelo ya está preparado,,Il terreno viene preparato [c_lime]automaticamente[/c],Le sol est préparé [c_lime]automatiquement[/c],,
+visao_botanica_1_nome,,Visão Botânica I,Visión Botánica I,,Visão Botânica I,Vision Botanique I,,
+visao_botanica_1_desc,,Plantas maduras brilham levemente [c_lime]verde[/c],Las plantas maduras brillan levemente verde,,Le piante mature brillano leggermente in [c_lime]verde[/c],Les plantes mûres brillent légèrement en [c_lime]vert[/c,,
+,,,,,,,,
+TITAN FALAS,,,,,,,,
+titan_fase_1_momento_1_0,,"Oi... você deve ser quem vive por aqui, né? Sou o Raphael, mas todos me chamam de Titan.","Hola... debes ser quien vive por aquí, ¿no? Soy Raphael, pero todos me llaman Titan.",,,,,
+titan_fase_1_momento_1_1,,"Acabei de chegar da metrópole e... cara, que silêncio é esse?","Acabo de llegar de la metrópolis y... tío, ¿qué silencio es este?",,,,,
+titan_fase_1_momento_1_2,,"Tô meio perdido ainda, mas é exatamente isso que vim buscar.","Todavía estoy un poco perdido, pero es exactamente lo que vine a buscar.",,,,,
+titan_fase_1_momento_1_3,,"Mudança de ambiente sempre deixa a gente meio ansioso, né?","Un cambio de ambiente siempre nos deja un poco ansiosos, ¿no?",,,,,
+titan_fase_1_momento_2_0,,"Nossa, ver plantas crescendo de verdade é surreal!","¡Vaya, ver plantas creciendo de verdad es increíble!",,,,,
+titan_fase_1_momento_2_1,,"Sempre joguei jogos de fazendinha, mas isso aqui é bem diferente.","Siempre he jugado juegos de granja, pero esto es muy diferente.",,,,,
+titan_fase_1_momento_2_2,,As texturas da vida real são muito mais complexas.,Las texturas de la vida real son mucho más complejas.,,,,,
+titan_fase_1_momento_2_3,,Acho que a gente subestima o que tá bem na nossa frente.,Creo que subestimamos lo que tenemos justo frente a nosotros.,,,,,
+titan_fase_1_momento_3_0,,Desculpa se pareço esquisito anotando tudo no meu caderno.,Perdón si parezco raro anotando todo en mi cuaderno.,,,,,
+titan_fase_1_momento_3_1,,Vim aqui pra entender como funciona a vida no campo de verdade.,Vine aquí para entender cómo funciona la vida en el campo de verdad.,,,,,
+titan_fase_1_momento_3_2,,"Quero criar algo especial, não só mais um jogo qualquer.","Quiero crear algo especial, no solo otro juego cualquiera.",,,,,
+titan_fase_1_momento_3_3,,"Às vezes precisamos sair da zona de conforto pra crescer, né?","A veces necesitamos salir de nuestra zona de confort para crecer, ¿no?",,,,,
+titan_fase_1_momento_4_0,,Quantas estrelas... na cidade você vê tipo cinco no máximo.,Cuántas estrellas... en la ciudad ves como máximo cinco.,,,,,
+titan_fase_1_momento_4_1,,"Tô começando a entender essa coisa de ""paz interior"".","Estoy empezando a entender eso de la ""paz interior"".",,,,,
+titan_fase_1_momento_4_2,,O silêncio aqui é quase tangível. Assustador mas reconfortante.,El silencio aquí es casi tangible. Asustador pero reconfortante.,,,,,
+titan_fase_1_momento_4_3,,A natureza tem uma forma única de nos acalmar.,La naturaleza tiene una forma única de calmarnos.,,,,,
+titan_fase_1_momento_5_0,,"Essa internet lenta tá me deixando ansioso, não vou mentir.","Esta internet lenta me pone ansioso, no voy a mentir.",,,,,
+titan_fase_1_momento_5_1,,"Mas talvez seja melhor assim, menos distrações digitais.","Pero quizás sea mejor así, menos distracciones digitales.",,,,,
+titan_fase_1_momento_5_2,,"Na cidade a gente vive conectado em tudo, menos no presente.","En la ciudad vivimos conectados a todo, menos al presente.",,,,,
+titan_fase_1_momento_5_3,,Às vezes precisamos desconectar pra nos reconectar conosco.,A veces necesitamos desconectarnos para reconectarnos con nosotros mismos.,,,,,
+titan_fase_1_momento_6_0,,"Nossa, esses animais são maiores do que esperava!","¡Vaya, estos animales son más grandes de lo que esperaba!",,,,,
+titan_fase_1_momento_6_1,,E fazem barulhos bem estranhos... meio intimidador.,Y hacen sonidos bastante extraños... un poco intimidante.,,,,,
+titan_fase_1_momento_6_2,,"Cara, eu realmente não sei o que tô fazendo aqui.","Tío, realmente no sé lo que estoy haciendo aquí.",,,,,
+titan_fase_1_momento_6_3,,"Mas é isso que torna tudo interessante, sair da zona de conforto.","Pero eso es lo que hace todo interesante, salir de la zona de confort.",,,,,
+titan_fase_1_momento_7_0,,Sobrevivi a primeira semana! Tô me sentindo realizado.,¡Sobreviví a la primera semana! Me siento realizado.,,,,,
+titan_fase_1_momento_7_1,,"Tô exausto, mas é um cansaço diferente do mental.","Estoy agotado, pero es un cansancio diferente al mental.",,,,,
+titan_fase_1_momento_7_2,,"Na cidade eu ficava esgotado mentalmente, aqui é físico.","En la ciudad me agotaba mentalmente, aquí es físico.",,,,,
+titan_fase_1_momento_7_3,,Atividade física realmente faz diferença no bem-estar.,La actividad física realmente marca la diferencia en el bienestar.,,,,,
+titan_fase_2_momento_8_0,,Como vocês acordam tão cedo todo dia? Ainda tô me adaptando.,¿Cómo se levantan tan temprano todos los días? Todavía me estoy adaptando.,,,,,
+titan_fase_2_momento_8_1,,"Meu corpo ainda tá no horário de dev - dormir de dia, ficar acordado a noite.","Mi cuerpo todavía está en horario de dev: dormir de día, estar despierto de noche.",,,,,
+titan_fase_2_momento_8_2,,Mas admito que ver o nascer do sol tem seu charme.,Pero admito que ver el amanecer tiene su encanto.,,,,,
+titan_fase_2_momento_8_3,,"Ter uma rotina saudável muda tudo, né? Quem diria.","Tener una rutina saludable cambia todo, ¿quién lo diría?",,,,,
+titan_fase_2_momento_9_0,,Cada planta tem sua personalidade? Que conceito interessante!,¿Cada planta tiene su personalidad? ¡Qué concepto tan interesante!,,,,,
+titan_fase_2_momento_9_1,,É como um sistema orgânico super complexo!,¡Es como un sistema orgánico súper complejo!,,,,,
+titan_fase_2_momento_9_2,,"Desculpa, vejo tudo como código às vezes.","Perdón, a veces veo todo como código.",,,,,
+titan_fase_2_momento_9_3,,A natureza nos ensina paciência que a tecnologia não consegue.,La naturaleza nos enseña paciencia que la tecnología no puede.,,,,,
+titan_fase_2_momento_10_0,,"Minhas mãos nunca ficaram assim, todas sujas de terra.","Mis manos nunca habían estado así, todas sucias de tierra.",,,,,
+titan_fase_2_momento_10_1,,Sempre foram só pra digitar no teclado.,Siempre fueron solo para escribir en el teclado.,,,,,
+titan_fase_2_momento_10_2,,"É estranho, mas... satisfatório? Como resolver um bug difícil.","Es extraño, pero... ¿satisfactorio? Como resolver un bug difícil.",,,,,
+titan_fase_2_momento_10_3,,Trabalho manual traz uma satisfação que o digital não dá.,El trabajo manual trae una satisfacción que lo digital no da.,,,,,
+titan_fase_2_momento_11_0,,"Aqui vocês vivem pelo sol e pelas plantas, não pelo relógio.","Aquí viven por el sol y las plantas, no por el reloj.",,,,,
+titan_fase_2_momento_11_1,,Na cidade eu vivia por deadlines e notificações constantes.,En la ciudad vivía por deadlines y notificaciones constantes.,,,,,
+titan_fase_2_momento_11_2,,"Se a planta não tá pronta, não tá. Simples assim.","Si la planta no está lista, no está. Así de simple.",,,,,
+titan_fase_2_momento_11_3,,A natureza nos ensina a respeitar o tempo natural das coisas.,La naturaleza nos enseña a respetar el tiempo natural de las cosas.,,,,,
+titan_fase_2_momento_12_0,,Tô entendendo por que meus jogos pareciam artificiais.,Estoy entendiendo por qué mis juegos parecían artificiales.,,,,,
+titan_fase_2_momento_12_1,,"A gente tenta simular a natureza, mas nunca captura as imperfeições.","Intentamos simular la naturaleza, pero nunca capturamos las imperfecciones.",,,,,
+titan_fase_2_momento_12_2,,Essas pequenas imperfeições é que tornam tudo real.,Esas pequeñas imperfecciones son las que hacen todo real.,,,,,
+titan_fase_2_momento_12_3,,Perfeição não existe - e tá tudo bem assim.,"La perfección no existe, y está bien así.",,,,,
+titan_fase_2_momento_13_0,,Minha mãe me ligou perguntando como é que eu tô.,Mi madre me llamó preguntando cómo estoy.,,,,,
+titan_fase_2_momento_13_1,,Talvez eu esteja melhor que lá em casa...,Tal vez estoy mejor que en casa...,,,,,
+titan_fase_2_momento_13_2,,Questionando se 16h por dia no PC ou mais realmente era vida.,Cuestionando si 16h al día frente a la PC o más realmente era vida.,,,,,
+titan_fase_2_momento_13_3,,Às vezes questionar nossos hábitos é o primeiro passo pra mudança.,A veces cuestionar nuestros hábitos es el primer paso hacia el cambio.,,,,,
+titan_fase_3_momento_14_0,,"Cresci num apartamento no 15º andar, sem muito verde.","Crecí en un apartamento en el piso 15, sin mucho verde.",,,,,
+titan_fase_3_momento_14_1,,"A única ""natureza"" era um vaso de samambaia da minha mãe.","La única ""naturaleza"" era una maceta de helecho de mi madre.",,,,,
+titan_fase_3_momento_14_2,,Spoiler: dificilmente a planta ficava viva...,Spoiler: difícilmente la planta sobrevivía...,,,,,
+titan_fase_3_momento_14_3,,"A gente só valoriza o que conhece, né?","Solo valoramos lo que conocemos, ¿no?",,,,,
+titan_fase_3_momento_15_0,,"Quando era menor, ficava horas jogando simuladore de cidade.","Cuando era pequeño, pasaba horas jugando simuladores de ciudad.",,,,,
+titan_fase_3_momento_15_1,,Sempre acabava destruindo tudo só pra ver o que acontecia.,Siempre terminaba destruyendo todo solo para ver qué pasaba.,,,,,
+titan_fase_3_momento_15_2,,Acho que sempre tive essa curiosidade meio... destrutiva.,Creo que siempre tuve esa curiosidad un poco... destructiva.,,,,,
+titan_fase_3_momento_15_3,,"Curiosidade é boa, mas é melhor quando constrói ao invés de destruir.","La curiosidad es buena, pero es mejor cuando construye en lugar de destruir.",,,,,
+titan_fase_3_momento_16_0,,"Meu TCC foi sobre ""Procedural Generation em Ambientes Virtuais"".","Mi tesis fue sobre ""Generación Procedural en Entornos Virtuales"".",,,,,
+titan_fase_3_momento_16_1,,"Tentando criar algoritmos pra gerar ""natureza falsa"".","Intentando crear algoritmos para generar ""naturaleza falsa"".",,,,,
+titan_fase_3_momento_16_2,,"Quando a real sempre esteve aqui, funcionando perfeitamente.","Cuando la real siempre ha estado aquí, funcionando perfectamente.",,,,,
+titan_fase_3_momento_16_3,,Às vezes a resposta tá bem na nossa frente.,A veces la respuesta está justo frente a nosotros.,,,,,
+titan_fase_3_momento_17_0,,Trabalhei dois anos numa empresa de jogos mobile.,Trabajé dos años en una empresa de juegos móviles.,,,,,
+titan_fase_3_momento_17_1,,Sabe aqueles que sugam grana com microtransações? Era isso.,¿Conoces esos que sacan dinero con microtransacciones? Era eso.,,,,,
+titan_fase_3_momento_17_2,,"No final, ajudava a criar sistemas pra viciar pessoas.","Al final, ayudaba a crear sistemas para enganchar a la gente.",,,,,
+titan_fase_3_momento_17_3,,"Quando o trabalho não alinha com nossos valores, a gente sente.","Cuando el trabajo no se alinea con nuestros valores, se siente.",,,,,
+titan_fase_3_momento_18_0,,Lembro do dia que decidi vir pra cá. Momento decisivo.,Recuerdo el día que decidí venir aquí. Momento decisivo.,,,,,
+titan_fase_3_momento_18_1,,"Tava numa reunião sobre ""maximizar engajamento de farms virtuais"".","Estaba en una reunión sobre ""maximizar el engagement de granjas virtuales"".",,,,,
+titan_fase_3_momento_18_2,,Pensei: por que não ir numa fazenda real?,Pensé: ¿por qué no ir a una granja real?,,,,,
+titan_fase_3_momento_18_3,,Às vezes a solução mais simples é a mais óbvia.,A veces la solución más simple es la más obvia.,,,,,
+titan_fase_3_momento_19_0,,"Meu pai sempre disse que eu era ""muito na minha"".","Mi padre siempre decía que yo era ""muy a mi manera"".",,,,,
+titan_fase_3_momento_19_1,,Ele ficava preocupado quando eu passava horas no computador.,Se preocupaba cuando pasaba horas en el ordenador.,,,,,
+titan_fase_3_momento_19_2,,"Vai estragar a vista, ""precisa sair mais de casa""...","Vas a arruinar la vista, ""necesitas salir más de casa""...",,,,,
+titan_fase_3_momento_19_3,,"Às vezes as pessoas se preocupam, mesmo não entendendo nossos sonhos.","A veces la gente se preocupa, incluso sin entender nuestros sueños.",,,,,
+titan_fase_3_momento_20_0,,A solidão da cidade é diferente da solidão daqui.,La soledad de la ciudad es diferente de la soledad de aquí.,,,,,
+titan_fase_3_momento_20_1,,"Lá você tá cercado de milhões, mas não conhece ninguém.","Allí estás rodeado de millones, pero no conoces a nadie.",,,,,
+titan_fase_3_momento_20_2,,"Aqui você fica sozinho, mas é uma solidão mais honesta.","Aquí estás solo, pero es una soledad más honesta.",,,,,
+titan_fase_3_momento_20_3,,Estar sozinho não é ruim quando você tá bem consigo mesmo.,Estar solo no es malo cuando estás bien contigo mismo.,,,,,
+titan_fase_4_momento_21_0,,Tô tendo ideias incríveis pro meu jogo! A mente tá fervendo.,¡Estoy teniendo ideas increíbles para mi juego! La mente está hirviendo.,,,,,
+titan_fase_4_momento_21_1,,"E se além de plantar, você tivesse que entender o solo?","¿Y si además de plantar, tuvieras que entender el suelo?",,,,,
+titan_fase_4_momento_21_2,,"pH, nutrientes... agora faz sentido de verdade!","pH, nutrientes... ¡ahora tiene sentido de verdad!",,,,,
+titan_fase_4_momento_21_3,,"Experiência real sempre supera teoria, né?","La experiencia real siempre supera la teoría, ¿no?",,,,,
+titan_fase_4_momento_22_0,,"Conheci o Edward ontem, que cara interessante!","Conocí a Edward ayer, ¡qué tipo interesante!",,,,,
+titan_fase_4_momento_22_1,,"Ele veio da metrópole igual eu, mas por motivos diferentes.","Vino de la metrópolis como yo, pero por motivos diferentes.",,,,,
+titan_fase_4_momento_22_2,,É reconfortante saber que não sou o único fugitivo da cidade.,Es reconfortante saber que no soy el único fugitivo de la ciudad.,,,,,
+titan_fase_4_momento_22_3,,Às vezes precisamos de mudanças radicais pra nos encontrarmos.,A veces necesitamos cambios radicales para encontrarnos.,,,,,
+titan_fase_4_momento_23_0,,"O Jack é um personagem à parte, né?","Jack es un personaje aparte, ¿no?",,,,,
+titan_fase_4_momento_23_1,,"Cara alto, forte, mas se recusa a usar óculos mesmo precisando.","Alto, fuerte, pero se niega a usar gafas aunque las necesite.",,,,,
+titan_fase_4_momento_23_2,,Tem uma paixão por machados que é quase... medieval?,Tiene una pasión por los hachas que es casi... medieval?,,,,,
+titan_fase_4_momento_23_3,,Todo mundo tem suas peculiaridades - e isso torna a vida interessante.,"Todo el mundo tiene sus peculiaridades, y eso hace la vida interesante.",,,,,
+titan_fase_4_momento_24_0,,"Tenho medo de voltar pra cidade, pra falar a verdade.","Tengo miedo de volver a la ciudad, para ser sincero.",,,,,
+titan_fase_4_momento_24_1,,"Mas vendo o Edward e o Jack aqui, me sinto menos sozinho.","Pero viendo a Edward y a Jack aquí, me siento menos solo.",,,,,
+titan_fase_4_momento_24_2,,"Cada um fugiu de algo diferente, mas todos buscamos paz.","Cada uno huyó de algo diferente, pero todos buscamos paz.",,,,,
+titan_fase_4_momento_24_3,,Mudanças assustam menos quando você não tá sozinho nelas.,Los cambios asustan menos cuando no estás solo en ellos.,,,,,
+titan_fase_4_momento_25_0,,"Conversando com a galera daqui, percebi uma coisa.","Hablando con la gente de aquí, me di cuenta de algo.",,,,,
+titan_fase_4_momento_25_1,,Todo mundo veio procurar algo que a cidade não oferecia.,Todos vinieron a buscar algo que la ciudad no ofrecía.,,,,,
+titan_fase_4_momento_25_2,,"Edward queria trabalhar com as mãos, Jack queria sua floresta...","Edward quería trabajar con las manos, Jack quería su bosque...",,,,,
+titan_fase_4_momento_25_3,,E eu? Vim procurar autenticidade - e tô encontrando.,"¿Y yo? Vine a buscar autenticidad, y la estoy encontrando.",,,,,
+titan_fase_4_momento_26_0,,Decidi que meu jogo vai incluir personagens como vocês.,Decidí que mi juego incluirá personajes como ustedes.,,,,,
+titan_fase_4_momento_26_1,,"O Edward fotografando momentos, o Jack com seus machados...","Edward fotografiando momentos, Jack con sus hachas...",,,,,
+titan_fase_4_momento_26_2,,Cada pessoa aqui tem uma história única de transformação.,Cada persona aquí tiene una historia única de transformación.,,,,,
+titan_fase_4_momento_26_3,,Arte de verdade se inspira nas pessoas reais ao nosso redor.,El arte verdadero se inspira en las personas reales a nuestro alrededor.,,,,,
+titan_fase_5_momento_27_0,,"Sempre fui meio... estranho, desde pequeno.","Siempre fui un poco... extraño, desde pequeño.",,,,,
+titan_fase_5_momento_27_1,,"Na escola, os outros jogavam futebol, eu desmontava computadores.","En la escuela, los demás jugaban al fútbol, yo desmontaba computadoras.",,,,,
+titan_fase_5_momento_27_2,,Sempre me senti como um alien tentando entender a humanidade.,Siempre me sentí como un alien intentando entender la humanidad.,,,,,
+titan_fase_5_momento_27_3,,Todos temos nosso ritmo próprio - e tá tudo bem assim.,"Todos tenemos nuestro propio ritmo, y está bien así.",,,,,
+titan_fase_5_momento_28_0,,Às vezes acho que escolhi programação pelo controle total.,A veces creo que elegí programación por el control total.,,,,,
+titan_fase_5_momento_28_1,,"Se algo não funciona, é só corrigir o código.","Si algo no funciona, solo corrige el código.",,,,,
+titan_fase_5_momento_28_2,,"A vida real é mais complicada, mais imprevisível.","La vida real es más complicada, más imprevisible.",,,,,
+titan_fase_5_momento_28_3,,Aceitar que não controlamos tudo é libertador.,Aceptar que no controlamos todo es liberador.,,,,,
+titan_fase_5_momento_29_0,,Minha música favorita pra programar é Lo-Fi Hip Hop.,Mi música favorita para programar es Lo-Fi Hip Hop.,,,,,
+titan_fase_5_momento_29_1,,"Aqueles beats repetitivos, meio melancólicos...","Esos beats repetitivos, un poco melancólicos...",,,,,
+titan_fase_5_momento_29_2,,Mas aqui tô curtindo o som dos grilos e do vento.,Pero aquí estoy disfrutando el sonido de los grillos y del viento.,,,,,
+titan_fase_5_momento_29_3,,A música da natureza é mais relaxante que qualquer playlist.,La música de la naturaleza es más relajante que cualquier playlist.,,,,,
+titan_fase_5_momento_30_0,,Você já sentiu que sua vida toda foi preparação pra algo?,¿Alguna vez sentiste que toda tu vida fue preparación para algo?,,,,,
+titan_fase_5_momento_30_1,,Mas você não sabia o quê exatamente?,Pero no sabías exactamente qué.,,,,,
+titan_fase_5_momento_30_2,,Acho que todos esses anos programando me ensinaram sobre sistemas.,Creo que todos estos años programando me enseñaron sobre sistemas.,,,,,
+titan_fase_5_momento_30_3,,E agora tô vendo o maior sistema de todos funcionando.,Y ahora estoy viendo el mayor sistema de todos funcionando.,,,,,
+titan_fase_5_momento_31_0,,"Nunca contei isso pra ninguém, mas... aqui vai.","Nunca se lo conté a nadie, pero... aquí va.",,,,,
+titan_fase_5_momento_31_1,,Às vezes fico acordado pensando se faço diferença no mundo.,A veces me quedo despierto pensando si hago diferencia en el mundo.,,,,,
+titan_fase_5_momento_31_2,,"Na cidade, era só mais um dev. Aqui sinto que posso ser mais.","En la ciudad, era solo un dev. Aquí siento que puedo ser más.",,,,,
+titan_fase_5_momento_31_3,,Todo mundo tem potencial pra impactar positivamente o mundo.,Todo el mundo tiene potencial para impactar positivamente el mundo.,,,,,
+titan_fase_5_momento_32_0,,Vim aqui pra entender a natureza pro meu jogo.,Vine aquí para entender la naturaleza para mi juego.,,,,,
+titan_fase_5_momento_32_1,,Mas tô aprendendo mais sobre mim mesmo.,Pero estoy aprendiendo más sobre mí mismo.,,,,,
+titan_fase_5_momento_32_2,,É como se tivesse feito debug da minha própria personalidade.,Es como si hubiera hecho debug de mi propia personalidad.,,,,,
+titan_fase_5_momento_32_3,,Autoconhecimento é o melhor investimento que fazemos.,El autoconocimiento es la mejor inversión que hacemos.,,,,,
+titan_fase_5_momento_33_0,,Você é a primeira pessoa com quem consigo conversar assim.,Eres la primera persona con la que puedo hablar así.,,,,,
+titan_fase_5_momento_33_1,,Sem me sentir julgado por ser quem sou.,Sin sentirme juzgado por ser quien soy.,,,,,
+titan_fase_5_momento_33_2,,"Na cidade todo mundo tá correndo, fingindo que tá tudo bem.","En la ciudad todos corren, fingiendo que todo está bien.",,,,,
+titan_fase_5_momento_33_3,,Conexões genuínas são raras - e por isso mais valiosas.,"Las conexiones genuinas son raras, y por eso más valiosas.",,,,,
+titan_fase_6_momento_34_0,,Você já reparou como fica concentrado quando tá trabalhando?,¿Te has dado cuenta de cómo te concentras cuando trabajas?,,,,,
+titan_fase_6_momento_34_1,,Tipo... cuidando das plantas! Pra referência do jogo!,Tipo... ¡cuidando las plantas! ¡Para referencia del juego!,,,,,
+titan_fase_6_momento_34_2,,"Nossa, que desculpa mais esfarrapada... me pegou desprevenido.","Vaya, qué excusa más raquítica... me tomó desprevenido.",,,,,
+titan_fase_6_momento_34_3,,Às vezes a verdade sai de forma desajeitada mesmo.,A veces la verdad sale de manera torpe.,,,,,
+titan_fase_6_momento_35_0,,Tô pensando num nome especial pro meu jogo.,Estoy pensando en un nombre especial para mi juego.,,,,,
+titan_fase_6_momento_35_1,,"Que tal... Outcity? Sim, haha, parece que gostei mesmo daqui.","Qué tal... Outcity? Sí, jaja, parece que realmente me gustó de aquí.",,,,,
+titan_fase_6_momento_35_2,,"É sobre sair da cidade, mas também sobre encontrar alguém especial.","Se trata de salir de la ciudad, pero también de encontrar a alguien especial.",,,,,
+titan_fase_6_momento_35_3,,Inspiração pode vir dos lugares mais inesperados.,La inspiración puede venir de los lugares más inesperados.,,,,,
+titan_fase_6_momento_36_0,,Sempre achei que era destinado a viver em frente à tela.,Siempre pensé que estaba destinado a vivir frente a la pantalla.,,,,,
+titan_fase_6_momento_36_1,,Mas você me mostrou um mundo aqui fora.,Pero tú me mostraste un mundo allá afuera.,,,,,
+titan_fase_6_momento_36_2,,"Um mundo que inclui você, e isso muda tudo.","Un mundo que te incluye a ti, y eso lo cambia todo.",,,,,
+titan_fase_6_momento_36_3,,As pessoas certas nos fazem ver possibilidades que não víamos.,Las personas correctas nos hacen ver posibilidades que no veíamos.,,,,,
+titan_fase_6_momento_37_0,,"Sei que sou meio esquisito, com meus óculos e analogias...","Sé que soy un poco extraño, con mis gafas y analogías...",,,,,
+titan_fase_6_momento_37_1,,Mas você me aceita do jeito que sou.,Pero tú me aceptas tal como soy.,,,,,
+titan_fase_6_momento_37_2,,E isso é... novo pra mim. Bom. Muito bom.,Y eso es... nuevo para mí. Bueno. Muy bueno.,,,,,
+titan_fase_6_momento_37_3,,Aceitação genuína é um dos maiores presentes que alguém pode dar.,La aceptación genuina es uno de los mayores regalos que alguien puede dar.,,,,,
+titan_fase_6_momento_38_0,,Às vezes imagino como seria ficar aqui permanentemente.,A veces imagino cómo sería quedarme aquí permanentemente.,,,,,
+titan_fase_6_momento_38_1,,"Dividindo uma casa, com setup gamer e horta no quintal.","Compartiendo una casa, con setup gamer y huerto en el patio.",,,,,
+titan_fase_6_momento_38_2,,"Melhor dos dois mundos, né? Tecnologia e natureza.","Lo mejor de ambos mundos, ¿no? Tecnología y naturaleza.",,,,,
+titan_fase_6_momento_38_3,,Equilíbrio é encontrar harmonia entre nossos diferentes lados.,El equilibrio es encontrar armonía entre nuestros diferentes lados.,,,,,
+titan_fase_6_momento_39_0,,"Vim buscar inspiração pro jogo, mas encontrei muito mais.","Vine a buscar inspiración para el juego, pero encontré mucho más.",,,,,
+titan_fase_6_momento_39_1,,Encontrei um motivo pra ser uma versão melhor de mim.,Encontré un motivo para ser una versión mejor de mí.,,,,,
+titan_fase_6_momento_39_2,,"Encontrei você, e isso mudou minha perspectiva sobre tudo.","Te encontré, y eso cambió mi perspectiva sobre todo.",,,,,
+titan_fase_6_momento_39_3,,Conexão verdadeira nos inspira a crescer e melhorar.,La conexión verdadera nos inspira a crecer y mejorar.,,,,,
+titan_fase_6_momento_40_0,,Sabe... eu vim pra cá achando que ia só fazer um jogo.,Sabes... vine aquí pensando que solo haría un juego.,,,,,
+titan_fase_6_momento_40_1,,Mas acabei descobrindo coisas sobre mim que nem sabia que existiam.,Pero terminé descubriendo cosas sobre mí que ni sabía que existían.,,,,,
+titan_fase_6_momento_40_2,,E você... você mudou completamente como eu vejo as coisas.,Y tú... cambiaste completamente cómo veo las cosas.,,,,,
+titan_fase_6_momento_40_3,,Acho que tô começando a sentir algo que vai além de amizade.,Creo que estoy empezando a sentir algo que va más allá de la amistad.,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+text_movimento,Movement,Movimento,Movimiento,Bewegung,Movimento,Mouvement,[kanji2]動き,[kanji2]移动
+text_acoes,Actions,Ações,Acciones,Aktionen,Azioni,Actions,[kanji2]アクション,[kanji2]动作
+text_interface,Interface,Interface,Interfaz,Schnittstelle,Interfaccia,Interface,[kanji2]インターフェース,[kanji2]界面
+text_sistema,System,Sistema,Sistema,System,Sistema,Système,[kanji2]システム,[kanji2]系统
+text_mover_cima,Move Up,Mover para Cima,Mover Arriba,Nach oben bewegen,Muovi in Alto,Déplacer Haut,[kanji2]上,[kanji2]向上移动
+text_mover_baixo,Move Down,Mover para Baixo,Mover Abajo,Nach unten bewegen,Muovi in Basso,Déplacer Bas,[kanji2]下,[kanji2]向下移动
+text_mover_esquerda,Move Left,Mover para Esquerda,Mover Izquierda,Nach links bewegen,Muovi a Sinistra,Déplacer Gauche,[kanji2]左,[kanji2]向左移动
+text_mover_direita,Move Right,Mover para Direita,Mover Derecha,Nach rechts bewegen,Muovi a Destra,Déplacer Droite,[kanji2]右,[kanji2]向右移动
+text_correr,Run,Correr,Correre,Rennen,Correr,Courir,[kanji2]走る,[kanji2]奔跑
+text_interagir,Interact,Interagir,Interactuar,Interagieren,Interagisci,Interagir,[kanji2]インテラクト,[kanji2]互动
+text_atacar,Attack,Atacar,Atacar,Angreifen ,Attacca,Attaquer,[kanji2]攻撃する,[kanji2]攻击
+text_usar_item,Use Item,Usar Item,Usar Objeto,Gegenstand benutzen,Usa Item,Utiliser Objet,[kanji2]使う,[kanji2]使用物品
+text_pular,Jump,Pular,Saltar,Springen,Salta,Sauter,[kanji2]ジャンプ,[kanji2]跳跃
+text_abrir_inventario,Open Inventory,Abrir Inventário,Abrir Inventario,Inventar öffnen,Apri Inventario,Ouvrir Inventaire,[kanji2]インベントリを開ける,[kanji2]打开背包
+text_abrir_mapa,Open Map,Abrir Mapa,Abrir Mapa,Karte öffnen,Apri Mappa,Ouvrir Carte,[kanji2]マップを開ける,[kanji2]打开地图
+text_pausar,Pause,Pausar,Pausar,Pausieren,Pausa,Pause,[kanji2]ポーズ,[kanji2]暂停
+text_menu_rapido,Quick Menu,Menu Rápido,Menú Rápido,Schnellmenü,Menu Veloce,Menu Rapide,[kanji2]メニュー,[kanji2]快捷菜单
+text_chat,Chat,Chat,Chat,Chat,Chat,Chat,[kanji2]チャット,[kanji2]聊天
+text_screenshot,Screenshot,Captura de Tela,Captura de Pantalla,Screenshot,Screenshot,Capture d'Écran,[kanji2]スクリーンショット,[kanji2]截图
+text_fps_toggle,Toggle FPS,Mostrar/Ocultar FPS,Mostrar/Ocultar FPS,FPS umschalten,Mostra/Nascondi FPS,Afficher/Masquer FPS,[kanji2]FPS表示,[kanji2]显示帧数
+text_console,Console,Console,Consola,Konsole,Console,Console,[kanji2]コントローラー,[kanji2]控制台
+text_configurar_teclas,Configure Keys,Configurar Teclas,Configurar Teclas,Tasten konfigurieren,Configura Tasti,Configurer Touches,[kanji2]キー設定,[kanji2]键位设置
+text_nenhuma,None,Nenhuma,Ninguna,Keine,Nessuna,Aucune,[kanji2]ない,[kanji2]无
+text_pressione_tecla,Press a key...,Pressione uma tecla...,Presiona una tecla...,Drücke eine Taste...,Premi un tasto...,Appuyez sur une touche...,[kanji2]キー押してください,[kanji2]请按下按键...
+text_aguardando_tecla,Waiting for input...,Aguardando entrada...,Esperando entrada...,Warte auf Eingabe...,In attesa di input...,En attente d'entrée...,[kanji2]待っている中,[kanji2]等待输入中...
+text_tecla_conflito,Conflict detected!,Conflito detectado!,¡Conflicto detectado!,Konflikt erkannt!,Conflitto rilevato!,Conflit détecté !,[kanji2]エラー,[kanji2]检测到冲突!
+text_keybind_instructions,ENTER: Edit | X: Secondary | DEL: Reset | TAB: Category | CTRL+R: Reset All,ENTER: Editar | X: Secundária | DEL: Reset | TAB: Categoria | CTRL+R: Reset Tudo,ENTER: Editar | X: Secundaria | DEL: Reset | TAB: Categoría | CTRL+R: Reset Todo,ENTER: Bearbeiten | X: Sekundär | ENTF: Zurücksetzen | TAB: Kategorie | STRG+R: Alles zurücksetzen,ENTER: Modificare | X: Secondario | DEL: Resetta | TAB: Categoria | CTRL+R: Resetta Tutto,ENTER : Éditer | X : Secondaire | DEL: Réinitialiser | TAB : Catégorie | CTRL+R : Tout Réinitialiser,[kanji2]ENTER: 変更 | X: 右クリック | DEL: リセット| TAB: カテゴリー | CTRL+R: 全部リセット,[kanji2]ENTER: 编辑 | X: 副按键 | DEL: 重置 | TAB: 分类 | CTRL+R: 重置全部
+text_on,On,Ligado,Activado,An,Attivado,Activé,[kanji2]ON,[kanji2]开启
+text_off,Off,Desligado,Desactivado,Aus,Disattivato,Désactivé,[kanji2]OFF,[kanji2]关闭
+text_conectado,Connected,Conectado,Conectado,Verbunden,Connesso,Connecté,[kanji2]接続しています,[kanji2]已连接
+text_desconectado,Disconnected,Desconectado,Desconectado,Getrennt,Disconnesso,Déconnecté,[kanji2]接続していません,[kanji2]未连接
+text_key_space,SPACE,ESPAÇO,ESPACIO,LEERTASTE,SPAZIO,ESPACE,[kanji2]SPACE,[kanji2]SPACE
+text_key_enter,ENTER,ENTER,ENTER,EINGABE,ENTER,ENTER,[kanji2]ENTER,[kanji2]ENTER
+text_key_escape,ESC,ESC,ESC,ESC,ESC,ESC,[kanji2]ESC,[kanji2]ESC
+text_key_shift,SHIFT,SHIFT,SHIFT,SHIFT,SHIFT,SHIFT,[kanji2]SHIFT,[kanji2]SHIFT
+text_key_ctrl,CTRL,CTRL,CTRL,STRG,CTRL,CTRL,[kanji2]CTRL,[kanji2]CTRL
+text_key_alt,ALT,ALT,ALT,ALT,ALT,ALT,[kanji2]ALT,[kanji2]ALT
+text_key_tab,TAB,TAB,TAB,TAB,TAB,TAB,[kanji2]TAB,[kanji2]TAB
+text_key_backspace,BACKSPACE,BACKSPACE,BACKSPACE,RÜCKLÖSCHTASTE,BACKSPACE,RETOUR ARRIÈRE,[kanji2]BACKSPACE,[kanji2]BACKSPACE
+text_key_delete,DELETE,DELETE,DELETE,ENTF,DELETE,DELETE,[kanji2]DELETE,[kanji2]DELETE
+text_key_insert,INSERT,INSERT,INSERT,EINFÜGEN,INSERT,INSÉRER,[kanji2]INSERT,[kanji2]INSERT
+text_key_home,HOME,HOME,HOME,POS1,HOME,ACCUEIL,[kanji2]HOME,[kanji2]HOME
+text_key_end,END,END,END,ENDE,END,END,[kanji2]END,[kanji2]END
+text_key_pageup,PAGE UP,PAGE UP,PÁG ARRIBA,BILD AUF,PAGE UP,PAGE UP,[kanji2]PAGE UP,[kanji2]PAGE UP
+text_key_pagedown,PAGE DOWN,PAGE DOWN,PÁG ABAJO,BILD AB,PAGE DOWN,PAGE DOWN,[kanji2]PAGE DOWN,[kanji2]PAGE DOWN
+text_profile_salvo,Profile saved,Profile salvo,Perfil guardado,Profil gespeichert,Profilo salvato,Profil sauvegardé,[kanji2]プロフィール保存しました,[kanji2]配置已保存
+text_profile_carregado,Profile loaded,Profile carregado,Perfil cargado,Profil geladen,Profilo caricato,Profil chargé,[kanji2]プロフィールロード,[kanji2]配置已加载
+text_backup_criado,Backup created,Backup criado,Backup creado,Sicherung erstellt,Backup creato,Backup créée,[kanji2]バックアップ取りました,[kanji2]备份已创建
+text_keybinds_salvos,Keybinds saved,Keybinds salvos,Controles guardados,Tastenbelegung gespeichert,Tasti salvati,Touches sauvegardées,[kanji2]キーバインドセーブ,[kanji2]键位已保存
+text_keybinds_carregados,Keybinds loaded,Keybinds carregados,Controles cargados,Tastenbelegung geladen,Tasti caricati,Touches chargées,[kanji2]キーバインドロード,[kanji2]键位已加载
+text_erro_salvar,Error saving,Erro ao salvar,Error al guardar,Fehler beim Speichern,Errore nel salvataggio,Erreur de sauvegarde,[kanji2]セーブエラー,[kanji2]保存时出错
+text_erro_carregar,Error loading,Erro ao carregar,Error al cargar,Fehler beim Laden,Errore nel caricamento,Erreur de chargement,[kanji2]ロードエラー,[kanji2]加载时出错
+text_keybinds_validos,Keybinds are valid,Keybinds estão válidos,Los controles son válidos,Tastenbelegung gültig,Keybinds validi,Keybinds valides,[kanji2]キーバインド変更,[kanji2]键位设置有效
+text_acao_sem_tecla,Action has no keys,Ação não tem teclas,Acción sin teclas,Aktion ohne Taste,Azione senza tasti,Action sans touches,[kanji2]キー設定していません,[kanji2]该动作未绑定按键
+text_tecla_duplicada,Duplicate key,Tecla duplicada,Tecla duplicada,Doppelte Taste,Tasto duplicato,Touche dupliquée,[kanji2]キーが競合しています,[kanji2]按键冲突
+text_instrucoes_detalhadas,Use ARROW KEYS to navigate • ENTER to edit primary key • X to edit secondary key • DELETE to reset individual • TAB/Q to change category • CTRL+R to reset all • ESC to cancel,Use SETAS para navegar • ENTER para editar tecla primária • X para editar tecla secundária • DELETE para resetar individual • TAB/Q para mudar categoria • CTRL+R para resetar tudo • ESC para cancelar,Usa FLECHAS para navegar • ENTER para editar tecla primaria • X para editar tecla secundaria • DELETE para resetear individual • TAB/Q para cambiar categoría • CTRL+R para resetear todo • ESC para cancelar,PFEILTASTEN zum Navigieren • EINGABE zum Bearbeiten • X für sekundäre Taste • ENTF zum Zurücksetzen • TAB/Q für Kategorie • STRG+R für Alles zurücksetzen • ESC zum Abbrechen,Usa FRECCE per navigare • ENTER per modificare tasto primario • X per modificare tasto secondario • DELETE per resettare individualmente • TAB/Q per cambiare categoria • CTRL+R per resettare tutto • ESC per annullare,Utilisez les FLÈCHES pour naviguer • ENTER pour modifier la touche principale • X pour modifier la touche secondaire • DELETE pour réinitialiser individuellement • TAB/Q pour changer de catégorie • CTRL+R pour tout réinitialiser • ESC pour annuler,[kanji2]Use SETAS para navegar • ENTER para editar tecla primária • X para editar tecla secundária • DELETE para resetar individual • TAB/Q para mudar categoria • CTRL+R para resetar tudo • ESC para cancelar,[kanji2]使用方向键导航 • ENTER 编辑主按键 • X 编辑副按键 • DELETE 重置单个 • TAB/Q 切换分类 • CTRL+R 重置全部 • ESC 取消
+text_combate,Combat,Combate,Combate,Kampf,Combattimento,Combat,[kanji2]近接,[kanji2]战斗
+text_construcao,Building,Construção,Construcción,Bauen,Costruzione,Construction,[kanji2]建造,[kanji2]建造
+text_social,Social,Social,Social,Soziales,Sociale,Social,[kanji2]ソーシャル,[kanji2]社交
+text_debug,Debug,Debug,Debug,Debug,Debug,Débogage,[kanji2]デバッグ,[kanji2]调试
+text_bloquear,Block,Bloquear,Bloquear,Blocken,Bloccare,Bloquer,[kanji2]ブロック,[kanji2]格挡
+text_esquivar,Dodge,Esquivar,Esquivar,Ausweichen,Schivare,Esquiver,[kanji2]回避,[kanji2]闪避
+text_recarregar,Reload,Recarregar,Recargar,Nachladen,Ricaricare,Recharger,[kanji2]リロード,[kanji2]装弹
+text_mirar,Aim,Mirar,Apuntar,Zielen,Mirare,Viser,[kanji2]エイム,[kanji2]瞄准
+text_trocar_arma,Switch Weapon,Trocar Arma,Cambiar Arma,Waffe wechseln,Cambia Arma,Changer d'arme,[kanji2]武器切り替え,[kanji2]切换武器
+text_usar_habilidade,Use Skill,Usar Habilidade,Usar Habilidad,Fähigkeit einsetzen,Usa Abilità,Utiliser une capacité,[kanji2]スキル使用,[kanji2]使用技能
+text_abrir_crafting,Open Crafting,Abrir Crafting,Abrir Fabricación,Herstellung öffnen,Apri Crafting,Ouvrir l'atelier,[kanji2]クラフター,[kanji2]打开制作
+text_zoom_in,Zoom In,Zoom +,Zoom +,Heranzoomen,Zoom +,Zoom +,[kanji2]Zoom In,[kanji2]放大
+text_zoom_out,Zoom Out,Zoom -,Zoom -,Herauszoomen,Zoom -,Zoom -,[kanji2]Zoom Out,[kanji2]缩小
+text_camera_livre,Free Camera,Câmera Livre,Cámara Libre,Freie Kamera,Telecamera Libera,Caméra libre,[kanji2]フリーカメラ,[kanji2]自由镜头
+text_configuracao_resetada,Settings reset to default,Configuração resetada para padrão,Configuración restablecida,Einstellungen auf Standard zurückgesetzt,Configurazione ripristinata,Configuration réinitialisée par défaut,[kanji2]設定をデフォルト,[kanji2]设置已重置为默认
+text_perfil_nao_encontrado,Profile not found,Perfil não encontrado,Perfil no encontrado,Profil nicht gefunden,Profilo non trovato,Profil introuvable,[kanji2]プロフィールが不明,[kanji2]未找到用户档案
+text_arquivo_corrompido,Corrupted file,Arquivo corrompido,Archivo corrupto,Datei beschädigt,File corrotto,Fichier corrompu,[kanji2]データ破損してます,[kanji2]文件已损坏
+text_salvamento_automatico,Auto-save enabled,Salvamento automático ativado,Guardado automático activado,Automatisches Speichern aktiviert,Salvataggio automatico attivato,Sauvegarde automatique activée,[kanji2]オートセーブ有効,[kanji2]自动保存已开启
+text_tooltip_primaria,Primary key for this action,Tecla primária para esta ação,Tecla primaria para esta acción,Primäre Taste für diese Aktion,Tasto primario per questa azione,Touche principale pour cette action,[kanji2]ボタン1,[kanji2]该动作的主按键
+text_tooltip_secundaria,Secondary/alternative key,Tecla secundária/alternativa,Tecla secundaria/alternativa,Sekundäre/alternative Taste,Tasto secondario/alternativo,Touche secondaire/alternative,[kanji2]ボタン２,[kanji2]副按键/备用按键
+text_tooltip_categoria,Switch between key categories,Alternar entre categorias,Cambiar entre categorías,Zwischen Tasten-Kategorien wechseln,Alterna tra categorie,Basculer entre catégories,[kanji2]カテゴリー変更,[kanji2]切换按键分类
+text_tooltip_reset,Reset this binding to default,Resetar esta configuração,Resetear esta configuración,Diese Tastenbelegung zurücksetzen,Resetta questa configurazione,Réinitialiser cette configuration,[kanji2]設定をデフォルト,[kanji2]重置此键位
+text_tooltip_reset_all,Reset all bindings to default,Resetar todas as configurações,Resetear todas las configuraciones,Alle Tastenbelegungen zurücksetzen,Resetta tutte le configurazioni,Tout réinitialiser,[kanji2]設定をデフォルト,[kanji2]重置全部键位
+text_modo_edicao,Edit Mode,Modo Edição,Modo Edición,Bearbeitungsmodus,Modalità Modifica,Mode Édition,[kanji2]エディットモード,[kanji2]编辑模式
+text_modo_navegacao,Navigation Mode,Modo Navegação,Modo Navegación,Navigationsmodus,Modalità Navigazione,Mode Navigation,[kanji2]ナビゲーションモード,[kanji2]导航模式
+text_aguarde,Please wait,Aguarde,Por favor espere,Bitte warten,Attendere,Veuillez patienter,[kanji2]お待ちください,[kanji2]请稍候
+text_processando,Processing,Processando,Procesando,Verarbeite...,Elaborazione,Traitement en cours,[kanji2]ロード中,[kanji2]处理中…
+text_concluido,Completed,Concluído,Completado,Abgeschlossen,Completato,Terminé,[kanji2]完了,[kanji2]完成
+text_config_avancadas,Advanced Settings,Configurações Avançadas,Configuraciones Avanzadas,Erweiterte Einstellungen,Impostazioni Avanzate,Paramètres avancés,[kanji2]詳細設定,[kanji2]高级设置
+text_sensibilidade_teclado,Keyboard Sensitivity,Sensibilidade do Teclado,Sensibilidad del Teclado,Tastaturempfindlichkeit,Sensibilità Tastiera,Sensibilité du clavier,[kanji2]キーボード感動,[kanji2]键盘灵敏度
+text_repeticao_tecla,Key Repeat,Repetição de Tecla,Repetición de Tecla,Tastenwiederholung,Ripetizione Tasti,Répétition des touches,[kanji2]キーレピーター,[kanji2]按键重复率
+text_delay_input,Input Delay,Delay de Input,Retraso de Entrada,Eingabeverzögerung,Ritardo Input,Délai de saisie,[kanji2]ディレイ,[kanji2]输入延迟
+text_anti_ghosting,Anti-Ghosting,Anti-Ghosting,Anti-Ghosting,Anti-Ghosting,Anti-Ghosting,Anti-Ghosting,[kanji2]アンチゴースティング,[kanji2]按键防冲突
+text_tab_trocar_categoria,TAB to change category,TAB para trocar categoria,TAB para cambiar categoría,TAB zum Ändern der Kategorie,TAB per cambiare categoria,TAB pour changer de catégorie,[kanji2]TABでカテゴリ変更,[kanji2]TAB 切换分类
+text_pressione_tecla_primaria,Press primary key...,Pressione tecla primária...,Presiona tecla primaria...,Primäre Taste drücken...,Premi tasto primario...,Appuyez sur la touche principale...,[kanji2]ボタン1押してください,[kanji2]请按下主按键...
+text_pressione_tecla_secundaria,Press secondary key...,Pressione tecla secundária...,Presiona tecla secundaria...,Sekundäre Taste drücken...,Premi tasto secondario...,Appuyez sur la touche secondaire...,[kanji2]ボタン２押してください,[kanji2]请按下副按键...
+text_de,of,de,de,von,di,de,[kanji2]の,[kanji2]
+text_instrucoes_keybind_linha1,ENTER: Edit primary ,ENTER: Editar primária ,ENTER: Editar primaria ,EINGABE: Primär bearbeiten,ENTER: Modifica primaria,ENTER: Modifier la principale,[kanji2]ENTERでボタン1変更,[kanji2]ENTER: 编辑主按键
+text_instrucoes_keybind_linha2,DEL: Reset | TAB: Category | CTRL+R: Reset all,DEL: Reset | TAB: Categoria | CTRL+R: Reset tudo,DEL: Reset | TAB: Categoría | CTRL+R: Reset todo,ENTF: Zurücksetzen | TAB: Kategorie | STRG+R: Alles zurücksetzen,DEL: Resetta | TAB: Categoria | CTRL+R: Resetta tutto,DEL: Réinitialiser | TAB: Catégorie | CTRL+R: Tout réinitialiser,[kanji2]DEL: リセット| TAB: カテゴリ| CTRL+R: 全部リセット,[kanji2]DEL: 重置 | TAB: 分类 | CTRL+R: 重置全部
+text_conectado,Connected,Conectado,Conectado,Verbunden,Connesso,Connecté,[kanji2]接続しました,[kanji2]已连接
+text_navegar,Navigate,Navegar,Navegar,Navigieren,Naviga,Naviguer,[kanji2]ナビゲーション,[kanji2]导航
+text_confirmar,Confirm,Confirmar,Confirmar,Bestätigen,Conferma,Confirmer,[kanji2]確認する,[kanji2]确认
+text_voltar,Back [spr_arrow_back],Voltar [spr_arrow_back],Volver [spr_arrow_back],Zurück [spr_arrow_back],Indietro [spr_arrow_back],Retour [spr_arrow_back],[kanji2]戻る [spr_arrow_back],[kanji2]返回 [spr_arrow_back]
+text_categoria,Category,Categoria,Categoría,Kategorie,Categoria,Catégorie,[kanji2]カテゴリー,[kanji2]分类
+text_trocar_categoria,Change category,Trocar categoria,Cambiar categoría,Kategorie wechseln,Cambia categoria,Changer de catégorie,[kanji2]カテゴリー変更,[kanji2]切换分类
+text_resetar_tecla,Reset key,Resetar tecla,Resetear tecla,Taste zurücksetzen,Resetta tasto,Réinitialiser la touche,[kanji2]キーリセット,[kanji2]重置按键
+text_resetar_tudo,Reset all,Resetar tudo,Resetear todo,Alles zurücksetzen,Resetta tutto,Tout réinitialiser,[kanji2]全部リセット,[kanji2]重置全部键位
+text_pressione_tecla_ou_botao,Press a key or button,Pressione uma tecla ou botão,Presiona una tecla o botón,Drücke eine Taste oder einen Knopf,Premi un tasto o pulsante,Appuyez sur une touche ou un bouton,[kanji2]キーかボタンを押してください,[kanji2]请按下按键
+text_pronto,Ready,Pronto,Listo,Bereit,Pronto,Prêt,[kanji2]準備,[kanji2]就绪
+text_esc_ou_b_cancelar,ESC o [spr_gamepad_b] para cancelar,ESC o [spr_gamepad_b] para cancelar,ESC o [spr_gamepad_b] para cancelar,ESC oder [spr_gamepad_b] zum Abbrechen,ESC o [spr_gamepad_b] per annullare,ESC ou [spr_gamepad_b] pour annuler,[kanji2]ESC で [spr_gamepad_b] 止めます,[kanji2]ESC 或[spr_gamepad_b]取消
+text_tecla_ja_usada,Key already used by:,Tecla já está em uso por:,Tecla ya está en uso por:,Taste bereits verwendet von:,Tasto già in uso per:,Touche déjà utilisée par:,[kanji2]すでにキー設定されています,[kanji2]该按键已被占用：
+text_aguardando_tecla,Waiting for input...,Aguardando entrada...,Esperando entrada...,Warte auf Eingabe...,In attesa di input...,En attente d'entrée...,[kanji2]キー未設定,[kanji2]等待输入...
+text_tecla_conflito,Key conflict!,Conflito de tecla!,¡Conflicto de tecla!,Tastenkonflikt!,Conflitto di tasti!,Conflit de touches!,[kanji2]キーが競合,[kanji2]按键冲突!
+text_tab_trocar_categoria,Tab to change category,Tab para trocar categoria,Tab para cambiar categoría,Tab zum Wechseln der Kategorie,TAB per cambiare categoria,Tab pour changer de catégorie,[kanji2]TABでカテゴリー変更,[kanji2]TAB 切换分类
+text_de,of,de,de,von,di,de,[kanji2]の,[kanji2]
+text_instrucoes_keybind_linha1,Enter: Edit • Delete: Reset • Tab: Category,Enter: Editar • Delete: Resetar • Tab: Categoria,Enter: Editar • Delete: Resetear • Tab: Categoría,Eingabe: Bearbeiten • Entf: Zurücksetzen • Tab: Kategorie,Enter: Modifica • Delete: Resetta • Tab: Categoria,Entrée: Éditer • Delete: Réinitialiser • Tab: Catégorie,[kanji2]Enter: エディット • Delete: リセット • Tab: カテゴリー,[kanji2]Enter: 编辑 • Delete: 重置 • Tab: 分类
+text_instrucoes_keybind_linha2,Ctrl+R: Reset All • ESC: Back,Ctrl+R: Resetar Tudo • ESC: Voltar,Ctrl+R: Resetear Todo • ESC: Volver,Strg+R: Alles zurücksetzen • ESC: Zurück,Ctrl+R: Resetta Tutto • ESC: Indietro,Ctrl+R: Tout réinitialiser • ESC: Retour,[kanji2]Ctrl+R: 全部リセット • ESC: 戻る,[kanji2]Ctrl+R: 重置全部 • ESC: 返回
+text_configurar,Configure,Configurar,Configurar,Konfigurieren,Configura,Configurer,[kanji2]設定する,[kanji2]配置
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+text_map_controller_dash,Jump/Dash,Impulso,,,,,,
+text_map_controller_back,Back,Voltar,,,,,,
+text_map_controller_action,Action,Ação,,,,,,
+text_map_controller_move,Move,Mover,,,,,,
+text_map_controller_demolition,Demolition Mode,Modo Demolição,,,,,,
+text_map_controller_inventory,Inventory,Inventário,,,,,,
+text_map_controller_tools,Tools,Ferramentas,,,,,,
+text_map_controller_achievements,Book,Livro,,,,,,
+text_map_controller_pause,Pause,Pausar,,,,,,
+text_map_controller_prevtool,Previous Tool,Ferramenta Anterior,,,,,,
+text_map_controller_nexttool,Next Tool,Próxima ferramenta,,,,,,
