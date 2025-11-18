@@ -33,8 +33,8 @@
 #macro LOC_CELL_DELIM ","
 
 // Character to delimit strings in the sheet
-// Default: "'"
-#macro LOC_STRING_DELIM "'"
+// Default: "\""
+#macro LOC_STRING_DELIM "\""
 
 // Character to delimit the language name and the language code on the sheet (English_en-US)
 // Default: "_"
