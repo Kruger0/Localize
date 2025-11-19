@@ -15,7 +15,7 @@ function __LocalizeAsyncSaveLoad() {
         var _asyncData = _asyncArray[_i];
         if (_asyncData[0] == _asyncLoad.id) {
             if (is_callable(_asyncData[2])) {
-                _asyncData[2](_asyncData[1], _asyncLoad.status);
+                _asyncData[2](_asyncData[1], _asyncLoad.status, _asyncData[3]);
             }
             buffer_delete(_asyncData[1]);
             array_delete(_asyncArray, _i, 1);

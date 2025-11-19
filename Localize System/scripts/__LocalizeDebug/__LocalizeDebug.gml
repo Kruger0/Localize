@@ -44,11 +44,17 @@ function __LocalizeDebug() {
     
     dbg_text("");
     
-    var _fileCount = array_length(_cache.files)
+    var _fileCount = array_length(_cache.files);
+    var _fileSize = 0;
     dbg_text($"Files Loaded ({_fileCount}): ")
     for (var i = 0; i < _fileCount; i++) {
         var _file = _cache.files[i];
-        dbg_text("  -  " + _file.fileName);
+        var _nameStr = _file.fileName;
+        var _sizeStr = $"{_file.size/1024}KB";
+        var _charGap = (30 - string_length(_nameStr)) - string_length(_sizeStr);
+        var _text = $" -> {_nameStr} {string_repeat(" ", _charGap)} {_sizeStr}";
+        _fileSize += _file.size;
+        dbg_text(_text);
     }
     var _files = _cache.files;
     if (array_length(_files) > 0) {

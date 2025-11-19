@@ -18,7 +18,7 @@ function __LocalizeUpdate(fileId) {
     var _filePath = (GM_build_type == "run" ? _cache.savePath : "") + _file.fileName;
     if (file_exists(_filePath)) {
         if (LOC_ASYNC_MODE) {
-            __LocalizeAsyncLoad(_filePath, __LocalizeHandleBuffer);
+            __LocalizeAsyncLoad(_filePath, __LocalizeHandleBuffer, fileId); // TODO keep track of file id
             return 1;
         } else {
             _buffer = buffer_load(_filePath);
@@ -35,7 +35,7 @@ function __LocalizeUpdate(fileId) {
     }
     
     // Parse loaded buffer
-    __LocalizeHandleBuffer(_buffer, true);
+    __LocalizeHandleBuffer(_buffer, true, fileId);
     
     return 1;
 }

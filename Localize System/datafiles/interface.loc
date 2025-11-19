@@ -1,0 +1,10 @@
+Localization Keys,English_en-US,Português_pt-BR,Español_es-ES,Italiano_it-IT,Русский_ru-RU,简体中文_zh-CN,日本語_ja-JP,한국어_ko-KR,Deutsch_de-DE,Français_fr-FR
+text_intro,"Hello, [user_id]! Today is [os_date]","Olá, [user_id]! Hoje é [os_date]","¡Hola, [user_id]! Hoy es [os_date].","Ciao, [user_id]! Oggi è [os_date]","Привет, [user_id]! Сегодня [os_date]",你好，[user_id]！今天是[os_date],こんにちは、[user_id]さん！今日は[os_date]です,"안녕하세요, [user_id]님! 오늘은 [os_date]입니다.","Hallo, [user_id]! Heute ist [os_date]","Bonjour, [user_id] ! Aujourd'hui, nous sommes le [os_date]"
+text_placeholder,,,,,,,,,,
+ui.dateFormat,{1}/{0}/{2},{0}/{1}/{2},,,,,,,,
+lang_check,"""This key has a translatioñlñn""","""Esta chave tem uma tradução""","""Esta clave tiene una traducción""",,"""This key has a translatioñlñn""",,「このキーには翻訳があります」,,"""Dieser Schlüssel hat eine Übersetzung""",
+text_score,Show your score here!,,¡Muestra tu puntuación aquí!,Mostra qui il tuo punteggio!,Покажите свой результат здесь!,在这里显示你的分数！,ここであなたのスコアを見せてください！,여기에 당신의 점수를 보여주세요!,Hier können Sie Ihr Ergebnis anzeigen!,Affichez votre score ici !
+text_key_space,[Space],[Espaço],[Espacio],[Spazio],[Космос],[空间],[空間],[공간],[Raum],[Espace]
+text_debugger,Press [F9] to open the debugger.,Pressione [F9] para abrir o depurador.,,Premere [F9] per aprire il debugger.,"Нажмите [F9], чтобы открыть отладчик.",按 [F9] 打开调试器。,[F9] キーを押してデバッガーを開きます。,[F9]를 눌러 디버거를 엽니다.,"Drücken Sie [F9], um den Debugger zu öffnen.",Appuyez sur [F9] pour ouvrir le débogueur.
+,This key is missing...,,,,,,,,,
+text with - a weird k3y,Use the arrows to cycle trough the languages.,Use as setas para alternar entre os idiomas.,Utilice las flechas para alternar entre los idiomas.,Utilizzare le frecce per scorrere le lingue.,Для переключения между языками используйте стрелки.,使用箭头键切换语言。,矢印を使用して言語を切り替えます。,화살표를 이용해 언어를 전환하세요.,"Verwenden Sie die Pfeile, um durch die Sprachen zu wechseln.",Utilisez les flèches pour parcourir les langues.

@@ -7,7 +7,7 @@
 */
 
 ///@ignore
-function __LocalizeHandleBuffer(buffer, status) {
+function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache = __LocalizeCache();
     var _t = get_timer();
     if !(status) {
@@ -24,7 +24,7 @@ function __LocalizeHandleBuffer(buffer, status) {
         buffer = _decomp;
         buffer_seek(buffer, buffer_seek_start, 0);
     }
-    var _size = buffer_get_size(buffer);
+    _cache.files[fileId].size = buffer_get_size(buffer);
     
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
@@ -94,7 +94,8 @@ function __LocalizeHandleBuffer(buffer, status) {
     _cache.langCodes = array_union(_cache.langCodes, _langCodes);
     _cache.langNames = array_union(_cache.langNames, _langNames);
     _cache.langCount = array_length(_cache.langCodes);
-    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms to load {_size/1024}KB");
+    _cache.files[fileId].loaded = true;
+    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms to load {_cache.files[fileId].size/1024}KB");
     __LocalizeDebug();
     return 1;
 }
