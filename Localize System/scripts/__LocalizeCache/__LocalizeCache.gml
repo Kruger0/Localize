@@ -34,6 +34,7 @@ function __LocalizeCache() {
         timesource  : -1,
         managerId   : -1,
         debugMode   : false,
+        compressed  : LOC_COMPRESS,
     }
     return cache;
 }

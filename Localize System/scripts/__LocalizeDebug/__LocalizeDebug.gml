@@ -37,10 +37,10 @@ function __LocalizeDebug() {
     dbg_text("");
     dbg_text_separator("Files", _align);
     
-    dbg_watch(ref_create(_cache, "fetchAllowed"), "Download is Allowed");
-    dbg_watch(ref_create(_cache, "sandboxed"), "Game is Sandboxed");
-    dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages");
-    //TODO include compression status
+    dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages:");
+    dbg_watch(ref_create(_cache, "fetchAllowed"), "Download is Allowed:");
+    dbg_watch(ref_create(_cache, "sandboxed"), "Game is Sandboxed:");
+    dbg_watch(ref_create(_cache, "compressed"), "Using Compression:");
     
     dbg_text("");
     
@@ -52,7 +52,7 @@ function __LocalizeDebug() {
         var _nameStr = _file.fileName;
         var _sizeStr = $"{_file.size/1024}KB";
         var _charGap = (30 - string_length(_nameStr)) - string_length(_sizeStr);
-        var _text = $" -> {_nameStr} {string_repeat(" ", _charGap)} {_sizeStr}";
+        var _text = $"- {_nameStr} {string_repeat(".", _charGap)} {_sizeStr}";
         _fileSize += _file.size;
         dbg_text(_text);
     }

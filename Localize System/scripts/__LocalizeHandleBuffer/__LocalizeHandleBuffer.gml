@@ -10,8 +10,14 @@
 function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache = __LocalizeCache();
     var _t = get_timer();
+    
+    // Error checking
     if !(status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
+        return 0;
+    }
+    if (buffer_get_size(buffer) == 0) {
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - empty buffer");
         return 0;
     }
     
