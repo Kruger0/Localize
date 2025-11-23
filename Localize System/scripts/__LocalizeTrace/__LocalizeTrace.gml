@@ -11,10 +11,11 @@ function __LocalizeTrace(mode, msg) {
     if (mode <= LOC_TRACE_LEVEL) {
         var _string = "[Localize]" + (mode == LOC_TRACE.CRITICAL ? " ⚠️ " : " ") + msg;
         if (argument_count > 2) {
-            var _args = [];
-            for (var i = 2; i < argument_count; i++) {
-                array_push(_args, argument[i]);
-            }    
+            var _count = argument_count - 2;
+            var _args = array_create(_count);
+            for (var i = 0; i < _count; i++) {
+                _args[i] = argument[i + 2];
+            }
             _string = string_ext(_string, _args);
         }
         show_debug_message(_string);
