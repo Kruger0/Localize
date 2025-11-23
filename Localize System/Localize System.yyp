@@ -49,6 +49,7 @@
     {"id":{"name":"__LocalizeFetchAllowed","path":"scripts/__LocalizeFetchAllowed/__LocalizeFetchAllowed.yy",},},
     {"id":{"name":"__LocalizeHandleBuffer","path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},},
     {"id":{"name":"__LocalizeInit","path":"scripts/__LocalizeInit/__LocalizeInit.yy",},},
+    {"id":{"name":"__LocalizeLangEntry","path":"scripts/__LocalizeLangEntry/__LocalizeLangEntry.yy",},},
     {"id":{"name":"__LocalizeLoadCsv","path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},},
     {"id":{"name":"__LocalizeStepFunction","path":"scripts/__LocalizeStepFunction/__LocalizeStepFunction.yy",},},
     {"id":{"name":"__LocalizeTrace","path":"scripts/__LocalizeTrace/__LocalizeTrace.yy",},},

@@ -71,11 +71,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 var _cacheLang = _cache.locDatabase[$ _langCode];
                 if (is_undefined(_cacheLang)) {
                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}' {_hasCode ? "" : "(Warning: Use full locale format like 'English_en-US' instead of just 'English' for better compatibility)"}");
-                    _cache.locDatabase[$ _langCode] = {
-                        langName: _langName,
-                        langCode: _langCode,
-                        langKeys: {},
-                    };
+                    _cache.locDatabase[$ _langCode] = new __LocalizeLangEntry(_langName, _langCode);
                 }
             }
             

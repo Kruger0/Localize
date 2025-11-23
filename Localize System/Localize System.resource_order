@@ -22,6 +22,7 @@
     {"name":"__LocalizeFetchAllowed","order":11,"path":"scripts/__LocalizeFetchAllowed/__LocalizeFetchAllowed.yy",},
     {"name":"__LocalizeHandleBuffer","order":12,"path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},
     {"name":"__LocalizeInit","order":13,"path":"scripts/__LocalizeInit/__LocalizeInit.yy",},
+    {"name":"__LocalizeLangEntry","order":18,"path":"scripts/__LocalizeLangEntry/__LocalizeLangEntry.yy",},
     {"name":"__LocalizeLoadCsv","order":14,"path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},
     {"name":"__LocalizeStepFunction","order":15,"path":"scripts/__LocalizeStepFunction/__LocalizeStepFunction.yy",},
     {"name":"__LocalizeTrace","order":16,"path":"scripts/__LocalizeTrace/__LocalizeTrace.yy",},
