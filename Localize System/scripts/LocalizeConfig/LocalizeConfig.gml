@@ -16,13 +16,14 @@
 // DEVELOPMENT: Download/Save in IDE, but use local files in Executable (Recommended).
 // PRODUCTION:  Attempt download on both IDE and Executable builds.
 // Default: LOC_UPDATE.DEVELOPMENT
-#macro LOC_UPDATE_MODE LOC_UPDATE.DISABLED
+#macro LOC_UPDATE_MODE LOC_UPDATE.DEVELOPMENT
 
-// If enabled, downloads in the IDE (Development mode) are saved directly to the project's source 'datafiles' folder.
+// If true, downloads in the IDE (Development mode) are saved directly to the project's source 'datafiles' folder.
+// If false, files are saved to the standard local app data folder, but will not update the project source.
 // This allows you to commit updated CSVs to source control (Git/SVN).
 // WARNING: You MUST disable "File System Sandbox" in Game Options > Windows/Mac/Linux for this to work.
 // Default: true
-#macro LOC_FORCE_BUNDLE_AREA true
+#macro LOC_FORCE_BUNDLE_AREA false
 
 // Enables zlib compression for saved files. 
 // This reduces file size and provides basic obfuscation (prevents opening as plain text).
@@ -44,6 +45,10 @@
 // VERBOSE:     All logs (including download progress) will be displayed.
 // Default: LOC_TRACE.VERBOSE
 #macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
+
+// Enables the file download progress to be traced in the verbose mode
+// Default: false
+#macro LOC_DOWNLOAD_LOG_ENABLED false
 
 // Minimum amount of bytes downloaded to trigger a new log message in the console.
 // Prevents the output from being spammed during large downloads.

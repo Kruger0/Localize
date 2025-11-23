@@ -25,7 +25,7 @@ function __LocalizeAsyncHttp() {
         // Downloading file
         if (_status == 1) {
             var _size = async_load[? "sizeDownloaded"];
-            if (_size > 0) {
+            if (LOC_DOWNLOAD_LOG_ENABLED && _size > 0) {
                 if (_size > _file.progress + LOC_DOWNLOAD_LOG_INTERVAL) {
                     _file.progress = _size;
                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloading '{_file.fileName}' - {__LocalizeFormatBytes(_size)}");
@@ -33,13 +33,9 @@ function __LocalizeAsyncHttp() {
             }
             return;
         }
-        
         _file.requestId = -1;
         var _httpStatus = async_load[? "http_status"];
-        var _resultPath = async_load[? "result"];
-        if (is_string(_resultPath)) {
-            _resultPath = string_replace_all(async_load[? "result"], "\\", "/");
-        }
+        var _resultPath = _cache.savePath + _file.fileName;
         if (_httpStatus == 200 && file_exists(_resultPath)) {
             __LocalizeUpdate(_fileId);
             if (LOC_COMPRESS && GM_build_type == "run") {
@@ -57,7 +53,11 @@ function __LocalizeAsyncHttp() {
             }
         } else {
             if (file_exists(_resultPath)) file_delete(_resultPath);
-            __LocalizeTrace(LOC_TRACE.CRITICAL, $"HTTP request failed (Status: {_httpStatus}). Check Sheet URL/Permissions");
+            if (_status < 0) {
+                 __LocalizeTrace(LOC_TRACE.CRITICAL, $"Connection failed for '{_file.fileName}' (Async Status: {_status})");
+            } else {
+                 __LocalizeTrace(LOC_TRACE.CRITICAL, $"HTTP request failed (Status: {_httpStatus}). Check Sheet URL/Permissions");
+            }
         }
     }
 }

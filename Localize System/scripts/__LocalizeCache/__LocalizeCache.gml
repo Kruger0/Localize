@@ -4,9 +4,9 @@ function __LocalizeCache() {
     static cache = undefined;
     if (is_undefined(cache)) {
         
-        var _savePath = game_save_id;
+        var _savePath = "";
         if (GM_build_type == "run") {
-            if (!GM_is_sandboxed) {
+            if (LOC_FORCE_BUNDLE_AREA && !GM_is_sandboxed) {
                 var _projDir = filename_dir(GM_project_filename);
                 if (_projDir != "") {
                     _savePath = _projDir + "/datafiles/";
