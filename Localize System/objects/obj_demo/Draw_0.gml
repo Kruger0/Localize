@@ -17,6 +17,7 @@ Localize("lang_check")+"\n"+
 Localize("text_placeholder")+"\n"+
 Localize("dialog.warrior.2")+"\n"+
 Localize("item.ironSword.name")+"\n"+
+LocalizeFontGetName()+"\n"+
 Localize("text_score", points, Localize("text_key_space"));
 
 draw_text_ext(32, 32, _text, 48, 1300);
