@@ -10,15 +10,16 @@
 function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache = __LocalizeCache();
     var _t = get_timer();
+    var _fileName = _cache.files[fileId].fileName;
     
     // Error checking
     if !(status) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer {buffer} - status '{status}'");
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer from file '{_fileName}' - status '{status}'");
         return 0;
     }
     if (!buffer_exists(buffer)) return 0;
     if (buffer_get_size(buffer) == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer {buffer} is empty and coudl not be read - status '{status}' ");
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer from file '{_fileName}' is empty and could not be read - status '{status}'");
         return 0;
     }
     
@@ -41,75 +42,67 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     
     var _rowCount = array_length(_sheet);
     if (_rowCount == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading .csv as array");
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Parsed .csv of '{_fileName}' is empty");
         return 0;
     }
     
-    //var _headerRow = _sheet[0];
-    //var _colCount = array_length(_headerRow);
-    //var _colToLang = array_create(_colCount, undefined);
+    var _headerRow  = _sheet[0];
+    var _colCount   = array_length(_headerRow);
+    var _colToLang  = array_create(_colCount, undefined);
+    var _langCodes  = [];
+    var _langNames  = [];
+    var _langCount  = 0;
     
-    var _langCodes = [];
-    var _langNames = [];
-    var _langCode = "";
+    // Load language headers
+    for (var i = 1; i < _colCount; i++) {
+        var _cell = _headerRow[i];
+        if (_cell == "") continue;
+        var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
+        var _langName = _langData[0];
+        if (_langName == "") continue;
+        var _langCode = (array_length(_langData) > 1) ? _langData[1] : _langName;
+        var _hasCode = (array_length(_langData) > 1);
+        array_push(_langCodes, _langCode);
+        array_push(_langNames, _langName);
+        _langCount++;
+        _cache.locDatabase ??= {};
+        var _entry = _cache.locDatabase[$ _langCode];
+        if (is_undefined(_entry)) {
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}' {_hasCode ? "" : "(Warning: Use format 'English_en-US' better compatibility)"}");
+            _entry = new __LocalizeLangEntry(_langName, _langCode);
+            _cache.locDatabase[$ _langCode] = _entry;
+        }
+        _colToLang[i] = _entry;
+    }
     
-    
-    // Iterate rows
-    for (var i = 0; i < _rowCount; i++) {
+    // Load text keys
+    for (var i = 1; i < _rowCount; i++) {
         var _line = _sheet[i];
+        if (array_length(_line) < 2) continue;
         var _key = _line[0];
-        if (i > 0 && _key == "") continue;
-        
-        // Iterate cols
-        for (var j = 0; j < array_length(_line); j++) {
+        if (_key == "" || string_ord_at(_key, 1) == 35) continue; // char #
+        for (var j = 1; j < array_length(_line); j++) {
+            var _target = _colToLang[j];
+            if (is_undefined(_target)) continue;
             var _cell = _line[j];
-            
-            // Store language
-            if (i == 0 && j > 0) {
-                var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
-                var _langName = _langData[0];
-                if (_langName == "") continue;
-                var _hasCode = false;
-                if (array_length(_langData) > 1) {
-                    _langCode = _langData[1]; 
-                    _hasCode = true;
-                } else {
-                    _langCode = _langName;
-                }
-                _line[j] = _langCode;
-                array_push(_langCodes, _langCode);
-                array_push(_langNames, _langName);
-                _cache.locDatabase ??= {};
-                var _cacheLang = _cache.locDatabase[$ _langCode];
-                if (is_undefined(_cacheLang)) {
-                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}' {_hasCode ? "" : "(Warning: Use full locale format like 'English_en-US' instead of just 'English' for better compatibility)"}");
-                    _cache.locDatabase[$ _langCode] = new __LocalizeLangEntry(_langName, _langCode);
-                }
-            }
-            
-            // Store translations
-            if (i > 0 && j > 0) {
-                _langCode = _sheet[0][j];
-                if (_langCode == "") continue;
-                
-                // Replace escaped linebreaks for real ones
-                if (LOC_REPLACE_NEWLINE) {
+            if (LOC_REPLACE_NEWLINE) {
+                if (string_pos("\\", _cell) != 0) {
                     _cell = string_replace_all(_cell, "\\n", "\n");
                     _cell = string_replace_all(_cell, "\\r", "\r");
                 }
-                
-                // Add translation to database
-                _cache.locDatabase[$ _langCode].langKeys[$ _key] = _cell;
             }
+            _target.langKeys[$ _key] = _cell;
         }
     }
     
-    // Finish process
-    _cache.langCodes = array_union(_cache.langCodes, _langCodes);
-    _cache.langNames = array_union(_cache.langNames, _langNames);
-    _cache.langCount = array_length(_cache.langCodes);
+    if (_langCount > 0) {
+        _cache.langCodes = array_union(_cache.langCodes, _langCodes);
+        _cache.langNames = array_union(_cache.langNames, _langNames);
+        _cache.langCount = array_length(_cache.langCodes);
+    }
+    
     _cache.files[fileId].loaded = true;
-    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Database updated! Took {(get_timer()-_t)/1000}ms to load {_cache.files[fileId].size/1024}KB");
+    __LocalizeTrace(LOC_TRACE.VERBOSE, $"File {_fileName} loaded into database after {(get_timer()-_t)/1000}ms with {_cache.files[fileId].size/1024}KB");
     __LocalizeDebug();
     return 1;
 }
