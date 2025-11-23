@@ -32,7 +32,6 @@
   "name":"Localize System",
   "resources":[
     {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
-    {"id":{"name":"Localize System","path":"notes/Localize System/Localize System.yy",},},
     {"id":{"name":"__LocalizeManager","path":"objects/__LocalizeManager/__LocalizeManager.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
     {"id":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},
@@ -47,6 +46,7 @@
     {"id":{"name":"__LocalizeDownload","path":"scripts/__LocalizeDownload/__LocalizeDownload.yy",},},
     {"id":{"name":"__LocalizeError","path":"scripts/__LocalizeError/__LocalizeError.yy",},},
     {"id":{"name":"__LocalizeFetchAllowed","path":"scripts/__LocalizeFetchAllowed/__LocalizeFetchAllowed.yy",},},
+    {"id":{"name":"__LocalizeFileEntry","path":"scripts/__LocalizeFileEntry/__LocalizeFileEntry.yy",},},
     {"id":{"name":"__LocalizeHandleBuffer","path":"scripts/__LocalizeHandleBuffer/__LocalizeHandleBuffer.yy",},},
     {"id":{"name":"__LocalizeInit","path":"scripts/__LocalizeInit/__LocalizeInit.yy",},},
     {"id":{"name":"__LocalizeLangEntry","path":"scripts/__LocalizeLangEntry/__LocalizeLangEntry.yy",},},

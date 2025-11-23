@@ -13,37 +13,49 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     
     // Error checking
     if !(status) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - {status}");
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer {buffer} - status '{status}'");
         return 0;
     }
+    if (!buffer_exists(buffer)) return 0;
     if (buffer_get_size(buffer) == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading buffer: {buffer} - empty buffer");
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer {buffer} is empty and coudl not be read - status '{status}' ");
         return 0;
     }
     
     // Check for sheet compression
     buffer_seek(buffer, buffer_seek_start, 0);
-    var _header = buffer_read(buffer, buffer_u16);
-    if (_header == 0x9C78) { // zlib default compression header
-        var _decomp = buffer_decompress(buffer);
-        buffer_delete(buffer);
-        buffer = _decomp;
-        buffer_seek(buffer, buffer_seek_start, 0);
+    if (buffer_get_size(buffer) >= 2) {
+        var _header = buffer_read(buffer, buffer_u16);
+        if (_header == 0x9C78) { // zlib default header
+            var _decomp = buffer_decompress(buffer);
+            buffer_delete(buffer);
+            buffer = _decomp;
+        }
     }
+    buffer_seek(buffer, buffer_seek_start, 0);
     _cache.files[fileId].size = buffer_get_size(buffer);
     
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
     buffer_delete(buffer);
-    if (array_length(_sheet) == 0) {
+    
+    var _rowCount = array_length(_sheet);
+    if (_rowCount == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error loading .csv as array");
         return 0;
     }
+    
+    //var _headerRow = _sheet[0];
+    //var _colCount = array_length(_headerRow);
+    //var _colToLang = array_create(_colCount, undefined);
+    
     var _langCodes = [];
     var _langNames = [];
     var _langCode = "";
+    
+    
     // Iterate rows
-    for (var i = 0; i < array_length(_sheet); i++) {
+    for (var i = 0; i < _rowCount; i++) {
         var _line = _sheet[i];
         var _key = _line[0];
         if (i > 0 && _key == "") continue;

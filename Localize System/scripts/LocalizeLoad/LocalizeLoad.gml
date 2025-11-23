@@ -24,16 +24,7 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     }
     
     // Add file to cache
-    array_push(_cache.files, {
-        fileName,
-        sheetId,
-        sheetPage,
-        requestId : -1,
-        //async : false,
-        //timestamp : get_timer(),
-        size : -1,
-        loaded : false,
-    });
+    array_push(_cache.files, new __LocalizeFileEntry(fileName, sheetId, sheetPage));
     var _fileId = array_length(_cache.files)-1;
     
     // Load file from local storage
