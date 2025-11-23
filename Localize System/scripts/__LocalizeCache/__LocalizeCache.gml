@@ -10,6 +10,7 @@
 function __LocalizeCache() {
     static cache = undefined;
     if (is_undefined(cache)) {
+        
         var _savePath = game_save_id;
         if (GM_build_type == "run") {
             if (!GM_is_sandboxed) {
@@ -20,38 +21,48 @@ function __LocalizeCache() {
             }
         }
         
+        var _osLang = os_get_language();
+        if (_osLang != "") {
+            var _osReg = os_get_region();
+            if (_osReg != "") {
+                _osLang += "-" + _osReg;
+            }
+        }
+        
         cache = {
+            // ======================== Data containers
             locDatabase : undefined,
             locLangData : undefined,
             locLangCode : "",
             locFallData : undefined,
             locFallCode : "",
-            osLangCode  : "",
-        
-            // --- Tag Handling
+            osLangCode  : _osLang,
+            
+            // ======================== Tag Handling
             locTagKeys  : {},
             locTagNames : [],
             locTagCount : 0,
-        
-            // --- Common Variables
+            
+            // ======================== Common Variables
             langCodes   : [],
             langCount   : -1,
             langNames   : [],
-        
-            // --- File Loading
-            files       : [],
-            asyncArray  : [],
+            
+            // ======================== System Settings
             savePath    : _savePath,
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
             compressed  : LOC_COMPRESS,
+            
+            // ======================== File Management
+            files       : [],
+            asyncArray  : [],
             timesource  : -1,
             managerId   : -1,
-        
-            // --- Debugger
+            
+            // ======================== Debugger
             dbgView     : pointer_null,
-            dbgSection  : pointer_null,
             debugMode   : false,
         }
         
