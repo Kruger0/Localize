@@ -17,54 +17,78 @@ function __LocalizeDebug() {
     
     var _isDbgOpen = is_debug_overlay_open();
     var _width = 400;
-    var _height = 450;
-    var _align = 0;
-    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", _isDbgOpen, 128, 128, _width, _height);
-    _cache.dbgSection = dbg_section("Main Section", true);
+    var _height = 550;
+    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 128, 128, _width, _height);
     
-    //==========================================================
+    // ======================== Language Controlls
     
-    dbg_text_separator("Language", _align);
+    dbg_section("Language Controls");
     
-    dbg_drop_down(ref_create(_cache, "locLangCode"), LocalizeGetLangCodes(), "Game Language");
-    dbg_watch(ref_create(_cache, "osLangCode"), "System Language");
-    dbg_watch(ref_create(_cache, "locLangCode"), "Game Language");
-    dbg_watch(ref_create(_cache, "locFallCode"), "Fallback Language");
-    dbg_checkbox(ref_create(_cache, "debugMode"), "Debug Mode");
+    var _codes = _cache.langCodes; 
+    if (array_length(_codes) > 0) {
+        dbg_drop_down(ref_create(_cache, "locLangCode"), _codes, "Game Language");
+    } else {
+        dbg_text("No languages loaded yet.");
+    }
+    dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
+    dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");
+    dbg_checkbox(ref_create(_cache, "debugMode"),   "Debug Mode");
     
-    //==========================================================
+    // ======================== File Statistics
     
     dbg_text("");
-    dbg_text_separator("Files", _align);
+    dbg_section("File Statistics");
     
-    dbg_watch(ref_create(_cache, "langCount"), "Loaded Languages:");
-    dbg_watch(ref_create(_cache, "fetchAllowed"), "Download is Allowed:");
-    dbg_watch(ref_create(_cache, "sandboxed"), "Game is Sandboxed:");
-    dbg_watch(ref_create(_cache, "compressed"), "Using Compression:");
+    dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
+    dbg_watch(ref_create(_cache, "fetchAllowed"),   "Download Allowed:");
+    dbg_watch(ref_create(_cache, "sandboxed"),      "Sandboxed:");
+    dbg_watch(ref_create(_cache, "compressed"),     "Compression:");
     
     dbg_text("");
     
     var _fileCount = array_length(_cache.files);
-    var _fileSize = 0;
-    dbg_text($"Files Loaded ({_fileCount}): ")
+    var _totalSize = 0;
+    var _gapSize = 40;
+    
+    dbg_text($"Files Loaded ({_fileCount}): ");
+    
     for (var i = 0; i < _fileCount; i++) {
         var _file = _cache.files[i];
         var _nameStr = _file.fileName;
-        var _sizeStr = $"{_file.size/1024}KB";
-        var _charGap = (30 - string_length(_nameStr)) - string_length(_sizeStr);
-        var _text = $"- {_nameStr} {string_repeat(".", _charGap)} {_sizeStr}";
-        _fileSize += _file.size;
-        dbg_text(_text);
-    }
-    var _files = _cache.files;
-    if (array_length(_files) > 0) {
-        dbg_text("Path: " + filename_path(_files[0].fileName));
+        var _sizeStr = $"{string_format(_file.size/1024, 0, 2)} KB";
+        var _charGap = max(1, (_gapSize - string_length(_nameStr)) - string_length(_sizeStr));
+        var _text = $"{_nameStr} {string_repeat(".", _charGap)} {_sizeStr}";
+        dbg_text("- " + _text);
+        _totalSize += _file.size;
     }
     
-    //==========================================================
+    if (_fileCount > 0) {
+        dbg_text(""); 
+        var _labelStr = "Total Memory";
+        var _sizeStr  = $"{string_format(_totalSize/1024, 0, 2)} KB";
+        var _charGap = max(1, (_gapSize - string_length(_labelStr)) - string_length(_sizeStr));
+        var _text = $"{_labelStr} {string_repeat(".", _charGap)} {_sizeStr}";
+        dbg_text("  " + _text); 
+        
+        var _rawPath = _cache.savePath;
+        var _wrapPath = "";
+        var _len = string_length(_rawPath);
+        var _charLimit = _gapSize;
+        for (var k = 1; k <= _len; k++) {
+            _wrapPath += string_char_at(_rawPath, k);
+            if (k % _charLimit == 0) _wrapPath += "\n";
+        }
+        dbg_text("");
+        dbg_text($"Save Path:\n{_wrapPath}"); 
+    }
+    
+    // ======================== Actions
     
     dbg_text("");
-    dbg_text_separator("Buttons", _align);
+    dbg_section("Actions");
+    dbg_button("Refresh Debug View", function() {
+        __LocalizeDebug();
+    }, _width);
     
     dbg_button("Update Files Online", function() {
         static _cache = __LocalizeCache();
@@ -73,7 +97,6 @@ function __LocalizeDebug() {
         }
     }, _width);
     
-    //==========================================================
     dbg_button("Update Files Locally", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {

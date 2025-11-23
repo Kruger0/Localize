@@ -102,7 +102,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     }
     
     _cache.files[fileId].loaded = true;
-    __LocalizeTrace(LOC_TRACE.VERBOSE, $"File {_fileName} loaded into database after {(get_timer()-_t)/1000}ms with {_cache.files[fileId].size/1024}KB");
+    __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' loaded into database after {(get_timer()-_t)/1000}ms with {_cache.files[fileId].size/1024}KB");
     __LocalizeDebug();
     return 1;
 }
