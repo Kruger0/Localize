@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_demo","order":3,"path":"fonts/fnt_demo/fnt_demo.yy",},
+    {"name":"fntChinese","order":6,"path":"fonts/fntChinese/fntChinese.yy",},
     {"name":"obj_demo","order":1,"path":"objects/obj_demo/obj_demo.yy",},
     {"name":"__LocalizeAsyncHttp","order":1,"path":"scripts/__LocalizeAsyncHttp/__LocalizeAsyncHttp.yy",},
     {"name":"__LocalizeAsyncLoad","order":2,"path":"scripts/__LocalizeAsyncLoad/__LocalizeAsyncLoad.yy",},

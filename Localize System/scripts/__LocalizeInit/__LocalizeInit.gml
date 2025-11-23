@@ -1,7 +1,12 @@
 // feather ignore all
-
-var _cache = __LocalizeCache();
-if (!_cache.initiated) {
+///@ignore
+function __LocalizeInit() {
+    // Single run script
+    static _init = false;
+    if (_init) return;
+    _init = true;
+    
+    static _cache = __LocalizeCache();
     __LocalizeTrace(-1, $"Running v{__LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {__LOC_DATE}");
     
     // Trace sandbox status
@@ -20,5 +25,6 @@ if (!_cache.initiated) {
     
     // Initialize system debug window
     __LocalizeDebug();
-    _cache.initiated = true;
 }
+
+__LocalizeInit();

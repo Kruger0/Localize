@@ -43,6 +43,7 @@
   "name":"Localize System",
   "resources":[
     {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
+    {"id":{"name":"fntChinese","path":"fonts/fntChinese/fntChinese.yy",},},
     {"id":{"name":"__LocalizeManager","path":"objects/__LocalizeManager/__LocalizeManager.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
     {"id":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},

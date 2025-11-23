@@ -4,7 +4,8 @@
 /// @param {Any} [val] Arguments to replace placeholders ({0}, {1}...) in the text.
 /// @returns {String} The localized string
 function Localize(key) {
-    static _cache  = __LocalizeCache();
+    static _cache = __LocalizeCache();
+    
     if (_cache.debugMode) return key;
     
     // Solve langData
@@ -14,13 +15,20 @@ function Localize(key) {
         if (is_undefined(_langData)) return key;
     }
     
-    // Validate key data
+    // Retrieve String
     var _string = _langData.langKeys[$ key];
-    if (is_undefined(_string)) {
+    
+    // Check if undefined or missing entry
+    if (is_undefined(_string) || _string == "") {
         if (!is_undefined(_cache.locFallData)) {
-            _string = _cache.locFallData.langKeys[$ key];
+            var _fallString = _cache.locFallData.langKeys[$ key];
+            if (!is_undefined(_fallString) && _fallString != "") {
+                _string = _fallString;
+            }
         }
     }
+    
+    // Error Checking
     if (__LocalizeDetectCellError(_string)) return key;
     
     // Handle string templates

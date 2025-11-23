@@ -1,8 +1,8 @@
 // feather ignore all
-/// @desc Returns the font asset index for a specific language, or the current language if none is specified.
+/// @desc Returns the font name for a specific language, or the current language if none is specified.
 /// @param {String} [language] The language code to check.
-/// @returns {Asset.GMFont} The font asset index, or -1 if no font is assigned.
-function LocalizeFontGet(language = undefined) {
+/// @returns {String} The font name defined for that language, or "" if no font is assigned.
+function LocalizeFontGetName(language = undefined) {
     static _cache = __LocalizeCache();
     var _data = undefined;
     if (is_undefined(language)) {
@@ -17,7 +17,7 @@ function LocalizeFontGet(language = undefined) {
         }
     }
     if (!is_undefined(_data)) {
-        return _data.langFontId;
+        return _data.langFontName;
     }
-    return -1;
+    return "";
 }

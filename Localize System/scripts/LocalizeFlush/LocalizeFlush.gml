@@ -24,9 +24,6 @@ function LocalizeFlush(){
         
         // Clear Async
         asyncArray  = []; 
-        
-        // Reset init flag
-        initiated = false;
     }
     __LocalizeTrace(LOC_TRACE.VERBOSE, "System flushed. All data cleared.");
 }

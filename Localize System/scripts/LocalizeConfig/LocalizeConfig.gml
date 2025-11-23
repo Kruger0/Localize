@@ -1,3 +1,4 @@
+// feather ignore all
 /*
   []=============================================[]
   ||        Localization System for GameMaker    ||
@@ -15,7 +16,13 @@
 // DEVELOPMENT: Download/Save in IDE, but use local files in Executable (Recommended).
 // PRODUCTION:  Attempt download on both IDE and Executable builds.
 // Default: LOC_UPDATE.DEVELOPMENT
-#macro LOC_UPDATE_MODE LOC_UPDATE.DEVELOPMENT
+#macro LOC_UPDATE_MODE LOC_UPDATE.DISABLED
+
+// If enabled, downloads in the IDE (Development mode) are saved directly to the project's source 'datafiles' folder.
+// This allows you to commit updated CSVs to source control (Git/SVN).
+// WARNING: You MUST disable "File System Sandbox" in Game Options > Windows/Mac/Linux for this to work.
+// Default: true
+#macro LOC_FORCE_BUNDLE_AREA true
 
 // Enables zlib compression for saved files. 
 // This reduces file size and provides basic obfuscation (prevents opening as plain text).

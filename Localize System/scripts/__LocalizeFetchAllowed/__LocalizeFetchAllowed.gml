@@ -6,7 +6,7 @@ function __LocalizeFetchAllowed(){
     // Checl update configuration
     switch (LOC_UPDATE_MODE) {
         case LOC_UPDATE.DISABLED:
-            return;
+            return false;
         case LOC_UPDATE.DEVELOPMENT:
             _modeAllowed = (GM_build_type == "run");
             break;
@@ -24,22 +24,15 @@ function __LocalizeFetchAllowed(){
         case os_linux:
         case os_android:
         case os_ios:
-        case os_gxgames:
-            return true;
-        default:
-            return false;
+        case os_gxgames: {
+            _platformAllowed = true;
+        } break;
+    }
+    if (!_platformAllowed) return false;
+    
+    if (LOC_FORCE_BUNDLE_AREA && GM_is_sandboxed && GM_build_type == "run") {
+         __LocalizeError($"Cannot write on datafiles!\nPlease disable file system sandbox on current platform\nOr change '{nameof(LOC_FORCE_BUNDLE_AREA)}' to false in '{nameof(LocalizeConfig)}'");
     }
     
-    //var _result = (_modeAllowed && _platformAllowed);
-    
-    //// Check sandboxing
-    //if (_result && GM_is_sandboxed) {
-    //    //if (GM_build_type == "run") {
-    //    //    __LocalizeError($"Cannot write on datafiles!\nPlease disable file system sandbox on desktop\nOr change '{nameof(LOC_UPDATE_MODE)}' to '{nameof(LOC_UPDATE.DISABLED)}'");
-    //    //} else {
-    //    //    __LocalizeTrace(LOC_TRACE.CRITICAL, "Cannot write on datafiles!");
-    //    //    _result = false;
-    //    //}
-    //}
-    //return _result;
+    return true;
 }

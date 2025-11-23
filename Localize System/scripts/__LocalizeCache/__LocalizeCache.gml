@@ -41,7 +41,6 @@ function __LocalizeCache() {
             langNames   : [],
             
             // ======================== System Settings
-            initiated   : false,
             savePath    : _savePath,
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
