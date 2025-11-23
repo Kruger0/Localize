@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeSetLang",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"Setup",
+    "path":"folders/Localize/API/Setup.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -20,7 +20,6 @@ function __LocalizeCache() {
                 }
             }
         }
-        
         var _osLang = os_get_language();
         if (_osLang != "") {
             var _osReg = os_get_region();
@@ -49,6 +48,7 @@ function __LocalizeCache() {
             langNames   : [],
             
             // ======================== System Settings
+            initiated   : false,
             savePath    : _savePath,
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),

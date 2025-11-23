@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeGetLangName",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"Getters",
+    "path":"folders/Localize/API/Getters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

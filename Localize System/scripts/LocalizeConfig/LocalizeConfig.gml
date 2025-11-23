@@ -6,44 +6,65 @@
   []=============================================[]
 */
 
-// Online update enviroment
-// DISABLED:    Use only local sheet files
-// DEVELOPMENT: Download and save the sheet while on IDE, and use only local file on executable (recomended)
-// PRODUCTION:  Download and save the sheet on both IDE and executable builds
-// Default: LOC_UPDATE:DEVELOPMENT
+// ============================================================================
+// SYSTEM BEHAVIOR
+// ============================================================================
+
+// Controls when the system attempts to download new files from Google Sheets.
+// DISABLED:    Use only local sheet files (offline).
+// DEVELOPMENT: Download/Save in IDE, but use local files in Executable (Recommended).
+// PRODUCTION:  Attempt download on both IDE and Executable builds.
+// Default: LOC_UPDATE.DEVELOPMENT
 #macro LOC_UPDATE_MODE LOC_UPDATE.DEVELOPMENT
 
-// Debug trace level
-// DISABLED:    No log will be displayed on the console
-// VERBOSE:     All logs will be displayed on the console
-// CRITICAL:    Only critical logs will be displayed on the console
-// Default: LOC_TRACE.CRITICAL
-#macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
-
-// Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
+// Enables zlib compression for saved files. 
+// This reduces file size and provides basic obfuscation (prevents opening as plain text).
 // Default: false
 #macro LOC_COMPRESS false
 
-// Read files using asynchronous save/load events
+// If true, files are read using the asynchronous Save/Load event.
+// Recommended to prevent game freezes when loading large translation files.
 // Default: true
 #macro LOC_ASYNC_MODE true
 
-// Character to delimit cells in the sheet
+// ============================================================================
+// DEBUGGING & LOGGING
+// ============================================================================
+
+// Controls the verbosity of the console output.
+// DISABLED:    No logs will be displayed.
+// CRITICAL:    Only errors and warnings will be displayed.
+// VERBOSE:     All logs (including download progress) will be displayed.
+// Default: LOC_TRACE.VERBOSE
+#macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
+
+// Minimum amount of bytes downloaded to trigger a new log message in the console.
+// Prevents the output from being spammed during large downloads.
+// Default: 256000 (approx 250 KB)
+#macro LOC_DOWNLOAD_LOG_INTERVAL 256_000
+
+// ============================================================================
+// PARSING & FORMATTING
+// ============================================================================
+
+// Character used to delimit cells in the CSV sheet.
 // Default: ","
 #macro LOC_CELL_DELIM ","
 
-// Character to delimit strings in the sheet
+// Character used to enclose strings in the CSV sheet.
 // Default: "\""
 #macro LOC_STRING_DELIM "\""
 
-// Character to delimit the language name and the language code on the sheet (English_en-US)
+// Character used to separate the Language Name and the Language Code in the header.
+// Example: "English_en-US" uses "_"
 // Default: "_"
 #macro LOC_LANGCODE_DELIM "_"
 
-// If enabled, string escape characters (\n and \r) will be parsed as new line
+// If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
 // Default: true
 #macro LOC_REPLACE_NEWLINE true
 
-// Detect error values (#VALUE!, #ERROR!, #N/A, ...) in the spreadsheet and return the original key instead
+// If enabled, spreadsheet error values (#VALUE!, #ERROR!, #N/A) are detected.
+// The system will return the key ID instead of the error string to avoid UI glitches.
 // Default: true
 #macro LOC_DETECT_CELL_ERROR true

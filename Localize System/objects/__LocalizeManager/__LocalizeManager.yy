@@ -10,8 +10,8 @@
   "name":"__LocalizeManager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Private",
-    "path":"folders/Localize/Private.yy",
+    "name":"Core",
+    "path":"folders/Localize/Private/Core.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -80,11 +80,11 @@ function __LocalizeLoadCsv(buffer) {
                     if (string_pos(_stringDelimiterDouble, _string) != 0) {
                         _string = string_replace_all(_string, _stringDelimiterDouble, LOC_STRING_DELIM); //Replace double quotes with single quotes
                     }
-                    if (_rowArray == undefined) {
+                    if (is_undefined(_rowArray)) {
                         _rowArray = [];
-                        _rootArray[@ array_length(_rootArray)] = _rowArray;
+                        array_push(_rootArray, _rowArray);
                     }
-                    _rowArray[@ array_length(_rowArray)] = _string;
+                    array_push(_rowArray, _string);
                     _stringCell = false;
                     _wordStart = _tell;
                     

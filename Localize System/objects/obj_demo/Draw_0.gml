@@ -1,4 +1,6 @@
 
+draw_circle(300, 300, dsin(current_time/200)*128, false);
+
 draw_set_font(global.font);
 
 //var _langId     = LocalizeGetLangId();

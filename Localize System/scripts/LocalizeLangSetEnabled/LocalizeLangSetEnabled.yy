@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeDownload",
+  "%Name":"LocalizeLangSetEnabled",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeDownload",
+  "name":"LocalizeLangSetEnabled",
   "parent":{
-    "name":"IO",
-    "path":"folders/Localize/Private/IO.yy",
+    "name":"Tools",
+    "path":"folders/Localize/API/Tools.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

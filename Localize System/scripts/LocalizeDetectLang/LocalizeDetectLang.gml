@@ -14,3 +14,4 @@ function LocalizeDetectLang() {
     __LocalizeTrace(LOC_TRACE.VERBOSE, $"System language detected: '{_langCode}'");
     LocalizeSetLang(_langCode);
 }
+

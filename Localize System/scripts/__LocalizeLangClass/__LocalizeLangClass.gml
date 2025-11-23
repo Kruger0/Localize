@@ -7,10 +7,14 @@
 */
 
 ///@ignore
-function __LocalizeLangEntry(langName, langCode) constructor{
+function __LocalizeLangClass(langName, langCode) constructor{
   self.langName     = langName;
   self.langCode     = langCode;
+  
+  // ======================== Data Storage
   self.langKeys     = {};
+  
+  // ======================== Settings
   self.langEnabled  = true;
   self.langFont     = -1;
 }

@@ -55,7 +55,7 @@ function __LocalizeDebug() {
     for (var i = 0; i < _fileCount; i++) {
         var _file = _cache.files[i];
         var _nameStr = _file.fileName;
-        var _sizeStr = $"{string_format(_file.size/1024, 0, 2)} KB";
+        var _sizeStr = __LocalizeFormatBytes(_file.size);
         var _charGap = max(1, (_gapSize - string_length(_nameStr)) - string_length(_sizeStr));
         var _text = $"{_nameStr} {string_repeat(".", _charGap)} {_sizeStr}";
         dbg_text("- " + _text);
@@ -65,7 +65,7 @@ function __LocalizeDebug() {
     if (_fileCount > 0) {
         dbg_text(""); 
         var _labelStr = "Total Memory";
-        var _sizeStr  = $"{string_format(_totalSize/1024, 0, 2)} KB";
+        var _sizeStr  = __LocalizeFormatBytes(_totalSize);
         var _charGap = max(1, (_gapSize - string_length(_labelStr)) - string_length(_sizeStr));
         var _text = $"{_labelStr} {string_repeat(".", _charGap)} {_sizeStr}";
         dbg_text("  " + _text); 

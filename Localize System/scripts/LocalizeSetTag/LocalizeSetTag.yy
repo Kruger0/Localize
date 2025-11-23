@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeSetTag",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"Tools",
+    "path":"folders/Localize/API/Tools.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

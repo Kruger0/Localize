@@ -7,13 +7,18 @@
 */
 
 ///@ignore
-function __LocalizeFileEntry(fileName, sheetId, sheetPage) constructor {
+function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.fileName   = fileName;
     self.sheetId    = sheetId;
     self.sheetPage  = sheetPage;
-    self.requestId  = -1;
-    self.async      = false;
-    self.timestamp  = get_timer();
-    self.size       = -1;
+    
+    // ======================== Status
     self.loaded     = false;
+    self.requestId  = -1;
+    self.size       = -1;
+    self.timestamp  = get_timer();
+    self.async      = false;
+    
+    // ======================== Download
+    self.progress   = 0;
 }

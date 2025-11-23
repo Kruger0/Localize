@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__LocalizeUpdate",
   "parent":{
-    "name":"Private",
-    "path":"folders/Localize/Private.yy",
+    "name":"IO",
+    "path":"folders/Localize/Private/IO.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

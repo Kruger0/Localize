@@ -9,35 +9,39 @@
 ///@desc Set the game language from the language name or language code
 function LocalizeSetLang(language) {
     static _cache = __LocalizeCache();
+    
     if (is_undefined(_cache.locDatabase)) {
         _cache.locLangCode = language;
         return 0;
     }
-    var _langCodes = struct_get_names(_cache.locDatabase);
-    var _langFound = false;
     
-    // Check for full locale entry
-    if (array_contains(_langCodes, language)) {
-        _cache.locLangCode = language;
-        return 1;
-    }
-    
-    // Check for language only entry
-    for (var i = 0; i < array_length(_langCodes); i++) {
-        var _langCode = _langCodes[i];
-        var _language = string_split(_langCode, "-")[0];
-        if (language == _language) {
-            _cache.locLangCode = language;
+    for (var i = 0; i < _cache.langCount; i++) {
+        var _dbCode = _cache.langCodes[i]; // "en-US"
+        var _dbName = _cache.langNames[i]; // "English"
+        
+        // Check long code
+        if (language == _dbCode) {
+            _cache.locLangCode = _dbCode;
             return 1;
         }
+        
+        // Check lang name
+        if (language == _dbName) {
+            _cache.locLangCode = _dbCode;
+            return 1;
+        }
+        
+        // Check short code
+        var _split = string_split(_dbCode, "-");
+        if (array_length(_split) > 0) {
+            if (language == _split[0]) {
+                _cache.locLangCode = _dbCode;
+                return 1;
+            }
+        }
     }
-    // TODO Check for language name
     
-
-    // TODO Check for code index?
-    
-    
-    // No language could be setted
-    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language '{langCode}' does not exists");
+    // Failure
+    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language '{language}' does not exist in database.");
     return 0;
 }

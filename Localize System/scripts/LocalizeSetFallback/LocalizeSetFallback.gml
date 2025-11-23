@@ -11,20 +11,20 @@
 function LocalizeSetFallback(language){
     static _cache = __LocalizeCache();
     
-    // Set by code
+    // Check codes
     if (array_contains(_cache.langCodes, language)) {
         _cache.locFallCode = language;
         return 1;
     }
     
-    // Set by name
-    if (array_contains(_cache.langNames, language)) {
-        var _langCode = _cache.langCodes[array_get_index(_cache.langNames, language)];
-        _cache.locFallCode = _langCode;
+    // Check names
+    var _index = array_get_index(_cache.langNames, language);
+    if (_index != -1) {
+        _cache.locFallCode = _cache.langCodes[_index];
         return 1;
     }
     
-    // Set the raw string.
+    // Raw string
     _cache.locFallCode = language;
     return 0;
 }

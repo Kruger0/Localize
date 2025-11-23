@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__LocalizeConstants",
   "parent":{
-    "name":"Private",
-    "path":"folders/Localize/Private.yy",
+    "name":"Core",
+    "path":"folders/Localize/Private/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
