@@ -23,7 +23,7 @@ function __LocalizeStepFunction() {
         }
         
         // Wait for database to load
-        if (is_undefined(locDatabase)) continue;
+        if (is_undefined(locDatabase)) return;
         
         // Update fallback data
         if (is_undefined(locFallData)) {

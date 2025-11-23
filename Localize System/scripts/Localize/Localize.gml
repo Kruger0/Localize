@@ -9,6 +9,7 @@
 ///@desc Returns the localized text on the language cache from a provided key, and the values to replace in the string template.
 function Localize(key) {
     static _cache  = __LocalizeCache();
+    
     if (_cache.debugMode) return key;
     
     // Solve langData
@@ -18,36 +19,35 @@ function Localize(key) {
         if (is_undefined(_langData)) return key;
     }
     
-    // Check if key entry exists
+    // Validate key data
     var _string = _langData.langKeys[$ key];
-    if (__LocalizeDetectCellError(_string)) return key;
-    
-    // Check for fallback
-    if (_string == "") {
+    if (is_undefined(_string)) {
         if (!is_undefined(_cache.locFallData)) {
             _string = _cache.locFallData.langKeys[$ key];
-            if (_string == "") return key;
-            if (__LocalizeDetectCellError(_string)) return key;
         }
     }
+    if (__LocalizeDetectCellError(_string)) return key;
     
     // Handle string templates
     if (argument_count > 1) {
-        var _args = [];
-        for (var i = 1; i < argument_count; i++) {
-            array_push(_args, argument[i]);
+        var _count = argument_count - 1;
+        var _args = array_create(_count);
+        for (var i = 0; i < _count; i++) {
+            _args[i] = argument[i + 1];
         }
         _string = string_ext(_string, _args);
     }
     
     // Check for tag replacement
-    var _tagStart = string_pos("[", _string);
-    if (_tagStart >= 1) {
-        for (var i = 0; i < _cache.locTagCount; i++) {
-            var _tagName = _cache.locTagNames[i];
-            if (string_pos(_tagName, _string) >= 1) {
-                var _tagValue = _cache.locTagKeys[$ _tagName];
-                _string = string_replace_all(_string, _tagName, _tagValue);
+    if (string_pos("[", _string) != 0) {
+        var _names = _cache.locTagNames;
+        var _count = _cache.locTagCount;
+        var _keys  = _cache.locTagKeys;
+        
+        for (var i = 0; i < _count; i++) {
+            var _tagName = _names[i];
+            if (string_pos(_tagName, _string) != 0) {
+                _string = string_replace_all(_string, _tagName, _keys[$ _tagName]);
             }
         } 
     }
