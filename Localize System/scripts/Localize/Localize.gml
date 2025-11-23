@@ -1,15 +1,10 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@desc Returns the localized text on the language cache from a provided key, and the values to replace in the string template.
+// feather ignore all
+/// @desc Returns the localized string for the given key, applying template arguments and tags.
+/// @param {String} key The key defined in the translation file.
+/// @param {Any} [val] Arguments to replace placeholders ({0}, {1}...) in the text.
+/// @returns {String} The localized string
 function Localize(key) {
     static _cache  = __LocalizeCache();
-    
     if (_cache.debugMode) return key;
     
     // Solve langData

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeGetLangName",
+  "%Name":"LocalizeTagSet",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeGetLangName",
+  "name":"LocalizeTagSet",
   "parent":{
-    "name":"Getters",
-    "path":"folders/Localize/API/Getters.yy",
+    "name":"Tag",
+    "path":"folders/Localize/API/Tag.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

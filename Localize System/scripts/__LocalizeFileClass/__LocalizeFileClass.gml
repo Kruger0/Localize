@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.fileName   = fileName;

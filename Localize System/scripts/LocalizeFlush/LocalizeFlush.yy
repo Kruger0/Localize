@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LocalizeFlush",
   "parent":{
-    "name":"Tools",
-    "path":"folders/Localize/API/Tools.yy",
+    "name":"Setup",
+    "path":"folders/Localize/API/Setup.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

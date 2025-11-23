@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeGetLangCode",
+  "%Name":"LocalizeFallbackSet",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeGetLangCode",
+  "name":"LocalizeFallbackSet",
   "parent":{
-    "name":"Getters",
-    "path":"folders/Localize/API/Getters.yy",
+    "name":"Fallback",
+    "path":"folders/Localize/API/Fallback.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

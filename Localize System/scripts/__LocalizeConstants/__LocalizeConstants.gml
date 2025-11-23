@@ -1,14 +1,15 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
+// feather ignore all
 
-#macro __LOC_VERSION  "2.0.0-beta.4"
-#macro __LOC_DATE     "2025-11-18"
+// ======================== System Info
+#macro __LOC_VERSION        "2.0.0-beta.5"
+#macro __LOC_DATE           "2025-11-23"
 
+// ======================== Internal Keys
+#macro __LOC_CMD_LANGNAME   "LOC_LANGNAME"
+#macro __LOC_CMD_FONTNAME   "LOC_FONTNAME"
+#macro __LOC_CMD_PRODUCTION "LOC_PRODUCTION"
+
+// ======================== Configuration Enums
 enum LOC_TRACE {
     DISABLED,
     CRITICAL,

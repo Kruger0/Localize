@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeFormatBytes(_bytes) {
     if (_bytes < 1024) return $"{round(_bytes)} B";    

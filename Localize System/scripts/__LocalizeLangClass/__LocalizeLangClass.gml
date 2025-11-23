@@ -1,20 +1,16 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
-function __LocalizeLangClass(langName, langCode) constructor{
-  self.langName     = langName;
+function __LocalizeLangClass(langCode) constructor{
   self.langCode     = langCode;
+  self.langName     = langCode;
   
   // ======================== Data Storage
   self.langKeys     = {};
   
   // ======================== Settings
   self.langEnabled  = true;
-  self.langFont     = -1;
+  
+  // ======================== Language Font
+  self.langFontName = "";
+  self.langFontId   = -1
 }

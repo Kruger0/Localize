@@ -20,7 +20,7 @@
 // Enables zlib compression for saved files. 
 // This reduces file size and provides basic obfuscation (prevents opening as plain text).
 // Default: false
-#macro LOC_COMPRESS false
+#macro LOC_COMPRESS true
 
 // If true, files are read using the asynchronous Save/Load event.
 // Recommended to prevent game freezes when loading large translation files.
@@ -54,11 +54,6 @@
 // Character used to enclose strings in the CSV sheet.
 // Default: "\""
 #macro LOC_STRING_DELIM "\""
-
-// Character used to separate the Language Name and the Language Code in the header.
-// Example: "English_en-US" uses "_"
-// Default: "_"
-#macro LOC_LANGCODE_DELIM "_"
 
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
 // Default: true

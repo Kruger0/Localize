@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeAsyncHttp() {
     static _cache   = __LocalizeCache();
@@ -56,6 +49,7 @@ function __LocalizeAsyncHttp() {
                     buffer_save(_comp, _resultPath);
                     buffer_delete(_buffer);
                     buffer_delete(_comp);
+                    
                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloaded and compressed '{_file.fileName}'");
                 }
             } else {
@@ -63,7 +57,7 @@ function __LocalizeAsyncHttp() {
             }
         } else {
             if (file_exists(_resultPath)) file_delete(_resultPath);
-            __LocalizeTrace(LOC_TRACE.CRITICAL, $"HTTP request failed (Status: {_httpStatus}). Check Sheet URL/Permissions.");
+            __LocalizeTrace(LOC_TRACE.CRITICAL, $"HTTP request failed (Status: {_httpStatus}). Check Sheet URL/Permissions");
         }
     }
 }

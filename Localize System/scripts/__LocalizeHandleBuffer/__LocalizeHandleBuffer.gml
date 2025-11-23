@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache = __LocalizeCache();
@@ -24,6 +17,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     }
     
     // Check for sheet compression
+    _cache.files[fileId].size = buffer_get_size(buffer);
     buffer_seek(buffer, buffer_seek_start, 0);
     if (buffer_get_size(buffer) >= 2) {
         var _header = buffer_read(buffer, buffer_u16);
@@ -34,7 +28,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         }
     }
     buffer_seek(buffer, buffer_seek_start, 0);
-    _cache.files[fileId].size = buffer_get_size(buffer);
     
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
@@ -52,29 +45,22 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     var _colCount   = array_length(_headerRow);
     var _colToLang  = array_create(_colCount, undefined);
     var _langCodes  = [];
-    var _langNames  = [];
     var _langCount  = 0;
     
     // Load language headers
     for (var i = 1; i < _colCount; i++) {
-        var _cell = _headerRow[i];
-        if (_cell == "") continue;
-        var _langData = string_split(_cell, LOC_LANGCODE_DELIM);
-        var _langName = _langData[0];
-        if (_langName == "") continue;
-        var _langCode = (array_length(_langData) > 1) ? _langData[1] : _langName;
-        var _hasCode = (array_length(_langData) > 1);
+        var _langCode = _headerRow[i];
+        if (_langCode == "") continue;
         array_push(_langCodes, _langCode);
-        array_push(_langNames, _langName);
         _langCount++;
         _cache.locDatabase ??= {};
-        var _entry = _cache.locDatabase[$ _langCode];
-        if (is_undefined(_entry)) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}' {_hasCode ? "" : "(Warning: Use format 'English_en-US' better compatibility)"}");
-            _entry = new __LocalizeLangClass(_langName, _langCode);
-            _cache.locDatabase[$ _langCode] = _entry;
+        var _langEntry = _cache.locDatabase[$ _langCode];
+        if (is_undefined(_langEntry)) {
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}'");
+            _langEntry = new __LocalizeLangClass(_langCode);
+            _cache.locDatabase[$ _langCode] = _langEntry;
         }
-        _colToLang[i] = _entry;
+        _colToLang[i] = _langEntry;
     }
     
     // Load text keys
@@ -84,23 +70,56 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         var _key = _line[0];
         if (_key == "" || string_ord_at(_key, 1) == 35) continue; // char #
         for (var j = 1; j < array_length(_line); j++) {
-            var _target = _colToLang[j];
-            if (is_undefined(_target)) continue;
+            var _targLang = _colToLang[j];
+            if (is_undefined(_targLang)) continue;
             var _cell = _line[j];
-            if (LOC_REPLACE_NEWLINE) {
-                if (string_pos("\\", _cell) != 0) {
-                    _cell = string_replace_all(_cell, "\\n", "\n");
-                    _cell = string_replace_all(_cell, "\\r", "\r");
-                }
+            
+            // Internal command keys
+            switch (_key) {
+                case __LOC_CMD_LANGNAME: {
+                    if (_cell != "") {
+                        _targLang.langName = _cell;
+                    }
+                } break;
+                case __LOC_CMD_FONTNAME: {
+                    if (_cell != "") {
+                        var _fontId = asset_get_index(_cell);
+                        if (font_exists(_fontId)) {
+                            _targLang.langFontId = _fontId;
+                        } else {
+                            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font asset '{_cell}' does not exists");
+                        }
+                        _targLang.langFontName = _cell;
+                    }
+                } break;
+                case __LOC_CMD_PRODUCTION: {
+                    if (_cell != "") {
+                        var _boolStr = string_trim(_cell);
+                        _targLang.langEnabled = (_boolStr == "true" || _boolStr == "1");
+                    }
+                } break;
+                default: {
+                    if (LOC_REPLACE_NEWLINE) {
+                        if (string_pos("\\", _cell) != 0) {
+                            _cell = string_replace_all(_cell, "\\n", "\n");
+                            _cell = string_replace_all(_cell, "\\r", "\r");
+                        }
+                    }
+                    _targLang.langKeys[$ _key] = _cell;
+                } break;
             }
-            _target.langKeys[$ _key] = _cell;
         }
     }
     
     if (_langCount > 0) {
         _cache.langCodes = array_union(_cache.langCodes, _langCodes);
-        _cache.langNames = array_union(_cache.langNames, _langNames);
         _cache.langCount = array_length(_cache.langCodes);
+        var _langNames = array_create(_cache.langCount);
+        for (var i = 0; i < _cache.langCount; i++) {
+            var _code = _cache.langCodes[i];
+            _langNames[i] = _cache.locDatabase[$ _code].langName;
+        }
+        _cache.langNames = _langNames;
     }
     
     _cache.files[fileId].loaded = true;

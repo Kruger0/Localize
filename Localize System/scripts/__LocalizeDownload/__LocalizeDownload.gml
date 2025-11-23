@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeDownload(fileId){
     static _cache = __LocalizeCache();
@@ -14,7 +7,6 @@ function __LocalizeDownload(fileId){
     // Credits to VINE for coming up with this
     // https://marketplace.gamemaker.io/assets/11499/automatic-google-sheets-downloader
     var _url = $"https://docs.google.com/spreadsheets/d/{_file.sheetId}/export?format=csv&gid={_file.sheetPage}";
-    //var _url = $"https://docs.google.com/spreadsheets/d/{_file.sheetId}/gviz/tq?tqx=out:csv&gid={_file.sheetPage}"
     
     var _isConnected = os_is_network_connected(network_connect_passive);
     if (os_type == os_gxgames || os_browser != browser_not_a_browser) _isConnected = true;

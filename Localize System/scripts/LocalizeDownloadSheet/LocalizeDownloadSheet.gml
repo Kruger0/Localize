@@ -1,4 +1,0 @@
-
-function LocalizeDownloadSheet(sheetId, sheetPage) {
-    
-}

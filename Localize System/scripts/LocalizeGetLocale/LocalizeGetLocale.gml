@@ -1,12 +1,6 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@desc Returns the language code provided by the operation system
+// feather ignore all
+/// @desc Returns the language and region code reported by the user's Operating System.
+/// @returns {String} The detected OS code (e.g. "en-GB").
 function LocalizeGetLocale(){
     static _cache = __LocalizeCache();
     return _cache.osLangCode;

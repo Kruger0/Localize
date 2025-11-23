@@ -5,12 +5,12 @@ LocalizeLoad("dialogues.loc",  "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444", "
 LocalizeLoad("items.loc",      "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444", "1706808784");
 
 // Configure language detection and fallback
-LocalizeSetFallback("en-US");
-LocalizeDetectLang();
+LocalizeFallbackSet("en-US");
+LocalizeLangDetect();
 
 // Define tag replacement
-LocalizeSetTag("[user_id]", environment_get_variable("USERNAME"));
-LocalizeSetTag("[os_date]", Localize("ui.dateFormat", current_day, current_month, current_year));
+LocalizeTagSet("[user_id]", environment_get_variable("USERNAME"));
+LocalizeTagSet("[os_date]", Localize("ui.dateFormat", current_day, current_month, current_year));
 
 points = 0;
 var _font = "NotoSansCJK-Regular.ttc";

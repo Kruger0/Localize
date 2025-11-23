@@ -1,11 +1,4 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
+// feather ignore all
 ///@ignore
 function __LocalizeDebug() {
     static _cache = __LocalizeCache();
@@ -17,8 +10,8 @@ function __LocalizeDebug() {
     
     var _isDbgOpen = is_debug_overlay_open();
     var _width = 400;
-    var _height = 550;
-    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 128, 128, _width, _height);
+    var _height = 600;
+    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 64, 64, _width, _height);
     
     // ======================== Language Controlls
     
@@ -28,7 +21,7 @@ function __LocalizeDebug() {
     if (array_length(_codes) > 0) {
         dbg_drop_down(ref_create(_cache, "locLangCode"), _codes, "Game Language");
     } else {
-        dbg_text("No languages loaded yet.");
+        dbg_text("No languages loaded yet");
     }
     dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
     dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");

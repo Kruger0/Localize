@@ -1,12 +1,6 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@desc Returns an array containing the name of the loaded languages actives in the game
+// feather ignore all
+/// @desc Returns the array of all loaded language Codes (e.g. ["en-US", "pt-BR"]).
+/// @returns {Array<String>} An array of strings representing the ISO language codes.
 function LocalizeGetLangCodes() {
     static _cache = __LocalizeCache();
     return _cache.langCodes;

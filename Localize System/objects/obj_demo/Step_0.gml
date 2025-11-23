@@ -1,5 +1,5 @@
 
-LocalizeSetTag("[os_date]", Localize("ui.dateFormat", current_day, current_month, current_year));
+LocalizeTagSet("[os_date]", Localize("ui.dateFormat", current_day, current_month, current_year));
 
 if (keyboard_check_pressed(vk_space)) {
     points++;
@@ -10,7 +10,7 @@ if (keyboard_check_pressed(vk_f9)) {
 }
 
 if (keyboard_check_pressed(vk_f5)) {
-    LocalizeSetLang("en")
+    LocalizeLangSet("en-US")
 }
 
 var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
