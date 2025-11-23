@@ -12,7 +12,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     var _t = get_timer();
     var _fileName = _cache.files[fileId].fileName;
     
-    show_debug_message($"PRE ERROR CHECK {(get_timer()-_t)/1000}ms")
     // Error checking
     if !(status) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer from file '{_fileName}' - status '{status}'");
@@ -24,7 +23,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         return 0;
     }
     
-    show_debug_message($"PRE COMP {(get_timer()-_t)/1000}ms")
     // Check for sheet compression
     buffer_seek(buffer, buffer_seek_start, 0);
     if (buffer_get_size(buffer) >= 2) {
@@ -38,14 +36,12 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     buffer_seek(buffer, buffer_seek_start, 0);
     _cache.files[fileId].size = buffer_get_size(buffer);
     
-    show_debug_message($"PRE LOAD CSV {(get_timer()-_t)/1000}ms")
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
     
-    show_debug_message($"PRE DELETE {(get_timer()-_t)/1000}ms")
+    show_debug_message($"POST LOAD CSV {(get_timer()-_t)/1000}ms")
     buffer_delete(buffer);
     
-    show_debug_message($"PRE HEADERS {(get_timer()-_t)/1000}ms")
     var _rowCount = array_length(_sheet);
     if (_rowCount == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Parsed .csv of '{_fileName}' is empty");
@@ -81,7 +77,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         _colToLang[i] = _entry;
     }
     
-    show_debug_message($"PRE KEYS {(get_timer()-_t)/1000}ms")
     // Load text keys
     for (var i = 1; i < _rowCount; i++) {
         var _line = _sheet[i];
@@ -102,7 +97,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         }
     }
     
-    show_debug_message($"PRE CACHE {(get_timer()-_t)/1000}ms")
     if (_langCount > 0) {
         _cache.langCodes = array_union(_cache.langCodes, _langCodes);
         _cache.langNames = array_union(_cache.langNames, _langNames);

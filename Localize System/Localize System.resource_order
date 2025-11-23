@@ -8,7 +8,7 @@
     {"name":"Setup","order":32,"path":"folders/Localize/API/Setup.yy",},
     {"name":"Private","order":2,"path":"folders/Localize/Private.yy",},
     {"name":"Core","order":23,"path":"folders/Localize/Private/Core.yy",},
-    {"name":"Data","order":18,"path":"folders/Localize/Private/Data.yy",},
+    {"name":"Classes","order":18,"path":"folders/Localize/Private/Classes.yy",},
     {"name":"Debug","order":19,"path":"folders/Localize/Private/Debug.yy",},
     {"name":"IO","order":22,"path":"folders/Localize/Private/IO.yy",},
     {"name":"Async","order":3,"path":"folders/Localize/Private/IO/Async.yy",},

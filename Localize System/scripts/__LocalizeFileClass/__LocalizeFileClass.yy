@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__LocalizeFileClass",
   "parent":{
-    "name":"Data",
-    "path":"folders/Localize/Private/Data.yy",
+    "name":"Classes",
+    "path":"folders/Localize/Private/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

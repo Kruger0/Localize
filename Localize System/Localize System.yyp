@@ -18,7 +18,7 @@
     {"$GMFolder":"","%Name":"Setup","folderPath":"folders/Localize/API/Setup.yy","name":"Setup","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Private","folderPath":"folders/Localize/Private.yy","name":"Private","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Core","folderPath":"folders/Localize/Private/Core.yy","name":"Core","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Data","folderPath":"folders/Localize/Private/Data.yy","name":"Data","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Classes","folderPath":"folders/Localize/Private/Classes.yy","name":"Classes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Debug","folderPath":"folders/Localize/Private/Debug.yy","name":"Debug","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"IO","folderPath":"folders/Localize/Private/IO.yy","name":"IO","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Async","folderPath":"folders/Localize/Private/IO/Async.yy","name":"Async","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -26,7 +26,9 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"dialogues.loc","CopyToMask":-1,"filePath":"datafiles","name":"dialogues.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"interface.loc","CopyToMask":-1,"filePath":"datafiles","name":"interface.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"items.loc","CopyToMask":-1,"filePath":"datafiles","name":"items.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"localize_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"localize_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"NotoSansCJK-Regular.ttc","CopyToMask":-1,"filePath":"datafiles","name":"NotoSansCJK-Regular.ttc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
