@@ -23,12 +23,12 @@
 // This allows you to commit updated CSVs to source control (Git/SVN).
 // WARNING: You MUST disable "File System Sandbox" in Game Options > Windows/Mac/Linux for this to work.
 // Default: true
-#macro LOC_FORCE_BUNDLE_AREA false
+#macro LOC_FORCE_BUNDLE_AREA true
 
 // Enables zlib compression for saved files. 
 // This reduces file size and provides basic obfuscation (prevents opening as plain text).
 // Default: false
-#macro LOC_COMPRESS true
+#macro LOC_COMPRESS false
 
 // If true, files are read using the asynchronous Save/Load event.
 // Recommended to prevent game freezes when loading large translation files.
