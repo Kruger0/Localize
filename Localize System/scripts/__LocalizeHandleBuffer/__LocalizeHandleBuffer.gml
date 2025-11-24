@@ -68,7 +68,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         var _line = _sheet[i];
         if (array_length(_line) < 2) continue;
         var _key = _line[0];
-        if (_key == "" || string_ord_at(_key, 1) == 35) continue; // char #
+        if (_key == "") continue;
         for (var j = 1; j < array_length(_line); j++) {
             var _targLang = _colToLang[j];
             if (is_undefined(_targLang)) continue;
@@ -95,7 +95,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 case __LOC_CMD_PRODUCTION: {
                     if (_cell != "") {
                         var _boolStr = string_trim(_cell);
-                        _targLang.langEnabled = (_boolStr == "true" || _boolStr == "1");
+                        _targLang.langEnabled = (GM_build_type != "run" && (_boolStr == "true" || _boolStr == "1"));
                     }
                 } break;
                 default: {

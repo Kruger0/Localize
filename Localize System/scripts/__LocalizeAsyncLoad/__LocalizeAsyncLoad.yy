@@ -6,7 +6,7 @@
   "name":"__LocalizeAsyncLoad",
   "parent":{
     "name":"Async",
-    "path":"folders/Localize/Private/IO/Async.yy",
+    "path":"folders/Localize/Private/Async.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

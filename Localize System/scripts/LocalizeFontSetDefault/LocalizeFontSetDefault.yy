@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeAsyncHttp",
+  "%Name":"LocalizeFontSetDefault",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeAsyncHttp",
+  "name":"LocalizeFontSetDefault",
   "parent":{
-    "name":"Async",
-    "path":"folders/Localize/Private/Async.yy",
+    "name":"Font",
+    "path":"folders/Localize/API/Font.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

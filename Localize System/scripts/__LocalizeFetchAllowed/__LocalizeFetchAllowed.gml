@@ -3,7 +3,7 @@
 function __LocalizeFetchAllowed(){
     var _modeAllowed = false;
     
-    // Checl update configuration
+    // Check update configuration
     switch (LOC_UPDATE_MODE) {
         case LOC_UPDATE.DISABLED:
             return false;
@@ -21,10 +21,7 @@ function __LocalizeFetchAllowed(){
     switch (os_type) {
         case os_windows:
         case os_macosx:
-        case os_linux:
-        case os_android:
-        case os_ios:
-        case os_gxgames: {
+        case os_linux: {
             _platformAllowed = true;
         } break;
     }
