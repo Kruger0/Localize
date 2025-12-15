@@ -2,26 +2,31 @@
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache = __LocalizeCache();
-    var _t = get_timer();
     var _fileName = _cache.files[fileId].fileName;
     
-    // Error checking
-    if !(status) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer from file '{_fileName}' - status '{status}'");
-        return 0;
-    }
-    if (!buffer_exists(buffer)) return 0;
-    if (buffer_get_size(buffer) == 0) {
-        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer from file '{_fileName}' is empty and could not be read - status '{status}'");
-        return 0;
-    }
+    var _t = get_timer();
     
-    buffer_seek(buffer, buffer_seek_start, 0);
+    // Error checking
+    if (!buffer_exists(buffer)) {
+        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer from file '{_fileName}' does not exists - status '{status}'");
+        return 0;
+    } else {
+        if !(status) {
+            __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Failed to load buffer from file '{_fileName}' - status '{status}'");
+            buffer_delete(buffer);
+            return 0;
+        }
+        if (buffer_get_size(buffer) == 0) {
+            __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer from file '{_fileName}' is empty and could not be read - status '{status}'");
+            buffer_delete(buffer);
+            return 0;
+        }
+    };
     
     // Load buffer to memory
     var _sheet = __LocalizeLoadCsv(buffer);
-    
     show_debug_message($"POST LOAD CSV {(get_timer()-_t)/1000}ms")
+    
     buffer_delete(buffer);
     
     var _rowCount = array_length(_sheet);
