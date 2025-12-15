@@ -53,7 +53,6 @@ function __LocalizeCache() {
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
-            compressed  : LOC_COMPRESS,
             
             // ======================== File Management
             files       : [],

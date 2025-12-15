@@ -34,20 +34,6 @@ function __LocalizeAsyncHttp() {
                 if (_http == 200) {
                     // Load the downloaded file
                     __LocalizeUpdate(_fileId);
-                    
-                    // If compress enabled, obfuscate file using zlib compression
-                    if (LOC_COMPRESS && GM_build_type == "run") {
-                        var _buffer = buffer_load(_result);
-                        var _comp = buffer_compress(_buffer, 0, buffer_get_size(_buffer));
-                        var _len = buffer_get_size(_comp) + 128
-                        // append hash to buffer
-                        //buffer_resize(_comp,  + 128)
-                        //buffer_seek(_comp, buffer_seek_start, 0
-                        buffer_save(_comp, _result);
-                        buffer_delete(_buffer);
-                        buffer_delete(_comp);
-                        
-                    }
                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Sheet downloaded at '{_result}'");
                 } else {
                     file_delete(_result);

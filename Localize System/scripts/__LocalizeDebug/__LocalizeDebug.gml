@@ -42,7 +42,6 @@ function __LocalizeDebug() {
     dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
     dbg_watch(ref_create(_cache, "fetchAllowed"),   "Download Allowed:");
     dbg_watch(ref_create(_cache, "sandboxed"),      "Sandboxed:");
-    dbg_watch(ref_create(_cache, "compressed"),     "Compression:");
     
     dbg_text("");
     

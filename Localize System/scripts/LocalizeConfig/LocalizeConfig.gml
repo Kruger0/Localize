@@ -20,10 +20,6 @@
 // Default: LOC_TRACE.CRITICAL
 #macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
 
-// Enable or disable using zlib to compress the sheet file. It also obfuscate the text file as without compression it's just plain text
-// Default: false
-#macro LOC_COMPRESS false
-
 // Read files using asynchronous save/load events
 // Default: true
 #macro LOC_ASYNC_MODE true
