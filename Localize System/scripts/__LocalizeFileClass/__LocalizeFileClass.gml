@@ -12,7 +12,7 @@ function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.size       = -1;
     self.timestamp  = get_timer();
     self.async      = false;
-    //self.hash       = md5_file(fileName);
+    self.hash       = undefined
     
     // ======================== Download
     self.progress   = 0;
