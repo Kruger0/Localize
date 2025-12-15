@@ -25,13 +25,7 @@
 // Default: true
 #macro LOC_FORCE_BUNDLE_AREA true
 
-// Enables zlib compression for saved files. 
-// This reduces file size and provides basic obfuscation (prevents opening as plain text).
-// Default: false
-#macro LOC_COMPRESS false
-
-// If true, files are read using the asynchronous Save/Load event.
-// Recommended to prevent game freezes when loading large translation files.
+// Read files using asynchronous save/load events
 // Default: true
 #macro LOC_ASYNC_MODE true
 

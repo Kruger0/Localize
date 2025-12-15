@@ -16,17 +16,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         return 0;
     }
     
-    // Check for sheet compression
-    _cache.files[fileId].size = buffer_get_size(buffer);
-    buffer_seek(buffer, buffer_seek_start, 0);
-    if (buffer_get_size(buffer) >= 2) {
-        var _header = buffer_read(buffer, buffer_u16);
-        if (_header == 0x9C78) { // zlib default header
-            var _decomp = buffer_decompress(buffer);
-            buffer_delete(buffer);
-            buffer = _decomp;
-        }
-    }
     buffer_seek(buffer, buffer_seek_start, 0);
     
     // Load buffer to memory

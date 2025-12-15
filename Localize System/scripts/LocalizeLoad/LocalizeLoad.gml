@@ -7,19 +7,21 @@
 function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     static _cache = __LocalizeCache();
     
-    // Check duplicated files
-    var _len = array_length(_cache.files);
-    for (var i = 0; i < _len; i++) {
+    // Check duplicated file loading
+    var _fileHash = md5_file(fileName);
+    for (var i = 0; i < array_length(_cache.files); i++) {
         var _file = _cache.files[i];
         if (fileName == _file.fileName) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded.");
-            return -1;
-        } 
-        if (!is_undefined(sheetId)) {
-            if (sheetId == _file.sheetId && sheetPage == _file.sheetPage) {
-                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Sheet ID for '{fileName}' is already loaded as '{_file.fileName}'.");
-                return -1;
-            }
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded");
+            return 0;
+        } else
+        if (sheetId == _file.sheetId && sheetPage == _file.sheetPage) {
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded");
+            return 0;
+        } else 
+        if (_fileHash == _file.hash) {
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded");
+            return 0;
         }
     }
     array_push(_cache.files, new __LocalizeFileClass(fileName, sheetId, sheetPage));
