@@ -43,7 +43,6 @@ function __LocalizeStepFunction() {
         if (is_undefined(locLangData) || locLangData.langCode != locLangCode) {
             var _newData = locDatabase[$ locLangCode];
             
-            
             if (is_undefined(_newData)) {
                 var _reqBase = string_split(locLangCode, "-")[0];
                 for (var i = 0; i < langCount; i++) {

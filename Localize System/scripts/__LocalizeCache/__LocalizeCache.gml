@@ -45,7 +45,7 @@ function __LocalizeCache() {
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
-            fontDefault : -1,
+            defaultFont : __LocalizeDefaultFont,
             
             // ======================== File Management
             files       : [],
