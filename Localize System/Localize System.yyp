@@ -19,6 +19,7 @@
     {"$GMFolder":"","%Name":"Language","folderPath":"folders/Localize/API/Language.yy","name":"Language","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Setup","folderPath":"folders/Localize/API/Setup.yy","name":"Setup","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tag","folderPath":"folders/Localize/API/Tag.yy","name":"Tag","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Assets","folderPath":"folders/Localize/Private/Assets.yy","name":"Assets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Private","folderPath":"folders/Localize/Private.yy","name":"Private","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Async","folderPath":"folders/Localize/Private/Async.yy","name":"Async","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Classes","folderPath":"folders/Localize/Private/Classes.yy","name":"Classes","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -42,6 +43,7 @@
   },
   "name":"Localize System",
   "resources":[
+    {"id":{"name":"__LocalizeDefaultFont","path":"fonts/__LocalizeDefaultFont/__LocalizeDefaultFont.yy",},},
     {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
     {"id":{"name":"fntChinese","path":"fonts/fntChinese/fntChinese.yy",},},
     {"id":{"name":"fntDefault","path":"fonts/fntDefault/fntDefault.yy",},},

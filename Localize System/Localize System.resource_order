@@ -9,6 +9,7 @@
     {"name":"Language","order":36,"path":"folders/Localize/API/Language.yy",},
     {"name":"Setup","order":32,"path":"folders/Localize/API/Setup.yy",},
     {"name":"Tag","order":38,"path":"folders/Localize/API/Tag.yy",},
+    {"name":"Assets","order":6,"path":"folders/Localize/Private/Assets.yy",},
     {"name":"Private","order":2,"path":"folders/Localize/Private.yy",},
     {"name":"Async","order":5,"path":"folders/Localize/Private/Async.yy",},
     {"name":"Core","order":4,"path":"folders/Localize/Private/Core.yy",},
