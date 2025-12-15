@@ -16,4 +16,5 @@ function __LocalizeFileEntry(fileName, sheetId, sheetPage) constructor {
     self.timestamp  = get_timer();
     self.size       = -1;
     self.loaded     = false;
+    self.hash       = md5_file(fileName);
 }

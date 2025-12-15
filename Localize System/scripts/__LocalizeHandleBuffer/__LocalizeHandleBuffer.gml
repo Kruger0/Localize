@@ -80,7 +80,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         var _line = _sheet[i];
         if (array_length(_line) < 2) continue;
         var _key = _line[0];
-        if (_key == "" || string_ord_at(_key, 1) == 35) continue; // char #
+        if (_key == "") continue;
         for (var j = 1; j < array_length(_line); j++) {
             var _target = _colToLang[j];
             if (is_undefined(_target)) continue;
