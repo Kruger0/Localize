@@ -13,10 +13,9 @@ LocalizeLangDetect();
 // Define tag replacement
 LocalizeTagSet("user_id", environment_get_variable("USERNAME"));
 LocalizeTagSet("os_date", Localize("ui.dateFormat", current_day, current_month, current_year));
+LocalizeTagSet("sec", current_second);
 global.test = "Voa alto mlk"
 
-
-LocalizeTagSet("sec", current_second);
 
 
 points = 0;

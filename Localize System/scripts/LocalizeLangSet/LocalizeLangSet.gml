@@ -6,9 +6,9 @@ function LocalizeLangSet(language) {
     with (_cache) {
         locLangCode = language;
         if (is_undefined(locDatabase)) return;
-        var _newData = locDatabase[$ locLangCode];
-        if (!is_undefined(_newData)) {
-            __LocalizeLangSet(_newData);
+        var _langData = locDatabase[$ locLangCode];
+        if (!is_undefined(_langData)) {
+            __LocalizeLangSet(_langData);
         }
     }
 }

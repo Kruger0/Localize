@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__LocalizeDownload",
   "parent":{
-    "name":"IO",
-    "path":"folders/Localize/Private/IO.yy",
+    "name":"Data",
+    "path":"folders/Localize/Private/Data.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

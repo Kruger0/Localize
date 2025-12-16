@@ -3,5 +3,12 @@
 /// @param {String} language The language code to request.
 function LocalizeFallbackSet(language){
     static _cache = __LocalizeCache();
-    _cache.locFallCode = language;
+    with (_cache) {
+        locFallCode = language;
+        if (is_undefined(locFallData)) return;
+        var _fallData = locDatabase[$ locFallCode];
+        if (!is_undefined(_fallData)) {
+            __LocalizeFallbackSet(_fallData);
+        }
+    }
 }

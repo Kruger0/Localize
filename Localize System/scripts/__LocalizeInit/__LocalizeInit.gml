@@ -20,7 +20,7 @@ function __LocalizeInit() {
     }
     
     // Starts system internal step function
-    _cache.timesource = time_source_create(time_source_global, 1, time_source_units_frames, __LocalizeStepFunction, [], -1);
+    _cache.timesource = time_source_create(time_source_global, 1, time_source_units_frames, __LocalizeStep, [], -1);
     time_source_start(_cache.timesource);
     
     // Initialize system debug window

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeUpdate",
+  "%Name":"__LocalizeStep",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeUpdate",
+  "name":"__LocalizeStep",
   "parent":{
-    "name":"Data",
-    "path":"folders/Localize/Private/Data.yy",
+    "name":"Core",
+    "path":"folders/Localize/Private/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

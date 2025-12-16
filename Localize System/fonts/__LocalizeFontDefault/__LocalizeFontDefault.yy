@@ -292,8 +292,8 @@
   "maintainGms1Font":false,
   "name":"__LocalizeFontDefault",
   "parent":{
-    "name":"Core",
-    "path":"folders/Localize/Private/Core.yy",
+    "name":"Assets",
+    "path":"folders/Localize/Private/Assets.yy",
   },
   "pointRounding":0,
   "ranges":[

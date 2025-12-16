@@ -3,8 +3,10 @@
 /// @returns {String} The fallback code, or "" if none is set/loaded.
 function LocalizeFallbackGet() {
     static _cache = __LocalizeCache();
-    if (!is_undefined(_cache.locFallData)) {
-        return _cache.locFallData.langCode;
+    with (_cache) {
+        if (!is_undefined(locFallData)) {
+            return locFallData.langCode;
+        }
+        return locFallCode;
     }
-    return _cache.locFallCode;
 }

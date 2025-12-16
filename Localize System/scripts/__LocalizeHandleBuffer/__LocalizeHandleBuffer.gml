@@ -53,6 +53,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     var _langCount  = 0;
     
     // Load language headers
+    var _langLog = [];
     for (var i = 1; i < _colCount; i++) {
         var _langCode = _headerRow[i];
         if (_langCode == "") continue;
@@ -61,11 +62,18 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         _cache.locDatabase ??= {};
         var _langEntry = _cache.locDatabase[$ _langCode];
         if (is_undefined(_langEntry)) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Creating entry for language '{_langCode}'");
             _langEntry = new __LocalizeLangClass(_langCode);
             _cache.locDatabase[$ _langCode] = _langEntry;
+            array_push(_langLog, _langCode);
         }
         _colToLang[i] = _langEntry;
+    }
+    
+    if (array_length(_langLog) > 0) {
+        _langLog = json_stringify(_langLog);
+        _langLog = string_replace_all(_langLog, "\"", "");
+        _langLog = string_replace_all(_langLog, ",", ", ");
+        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded languages: {_langLog}");
     }
     
     // Load text keys
@@ -102,26 +110,23 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                 if (file_exists(_path)) {
                                     var _newFont = font_add(_path, real(_size), false, false, 32, 255);
                                     if (_newFont == -1) {
-                                        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file '{_path}' failed to load");
+                                        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font '{_path}' failed to load");
                                     } else {
                                         _cache.definedFont[$ _font] = _newFont;
                                         _font = _newFont;
                                     }
-                                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded external font '{_path}' at size {_size}");
+                                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font '{_path}' loaded with {_size}px");
                                 } else {
-                                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file '{_path}' is missing");
+                                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font '{_path}' is missing");
                                 }
                             }
                         }
-                        
                         // Check for internal font asset
                         var _fontId = is_string(_font) ? asset_get_index(_font) : _font;
                         if (font_exists(_fontId)) {
                             _font = _fontId;
                         }
                         _targLang.langFont = _font;
-                        //_cache.definedFont[$ _targLang.langCode] = _font;
-                        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language '{_targLang.langCode}' mapped to font '{_font}'");
                     }
                 } break;
                 case __LOC_CMD_PRODUCTION: {

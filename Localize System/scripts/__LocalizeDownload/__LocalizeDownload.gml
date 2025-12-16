@@ -2,7 +2,7 @@
 /// @ignore
 function __LocalizeDownload(fileId){
     static _cache = __LocalizeCache();
-    var _file  = _cache.files[fileId];
+    var _file = _cache.files[fileId];
     
     // Credits to VINE for coming up with this
     // https://marketplace.gamemaker.io/assets/11499/automatic-google-sheets-downloader

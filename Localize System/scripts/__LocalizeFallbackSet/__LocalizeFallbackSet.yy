@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeStepFunction",
+  "%Name":"__LocalizeFallbackSet",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeStepFunction",
+  "name":"__LocalizeFallbackSet",
   "parent":{
     "name":"Core",
     "path":"folders/Localize/Private/Core.yy",

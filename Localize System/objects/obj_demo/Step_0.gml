@@ -15,7 +15,6 @@ if (keyboard_check_pressed(vk_f5)) {
 
 // Language cycle
 var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
-//_change += mouse_check_button_pressed(mb_left)
 
 if (_change != 0) {
     var _index = LocalizeLangGetIndex();

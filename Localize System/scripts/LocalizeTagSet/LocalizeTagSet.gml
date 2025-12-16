@@ -8,13 +8,14 @@ function LocalizeTagSet(tag, value){
         lang.langCache = {};
     }
     
-    if (_cache.locTagKeys[$ tag] == string(value)) {
-        return 0;
-    } else {
-        _cache.locTagKeys[$ tag] = string(value);
-    
-        if (!is_undefined(_cache.locDatabase)) {
-            struct_foreach(_cache.locDatabase, _func);
+    with (_cache) {
+        if (locTagKeys[$ tag] == string(value)) {
+            return 0;
+        } else {
+            locTagKeys[$ tag] = string(value);
+            if (!is_undefined(locDatabase)) {
+                struct_foreach(locDatabase, _func);
+            }
         }
     }
 }

@@ -4,6 +4,8 @@
 /// @returns {Bool} True if the language is loaded and available, false otherwise.
 function LocalizeLangExists(language){
     static _cache = __LocalizeCache();
-    if (is_undefined(_cache.locDatabase)) return false;
-    return variable_struct_exists(_cache.locDatabase, language);
+    with (_cache) {
+        if (is_undefined(locDatabase)) return false;
+        return variable_struct_exists(locDatabase, language);
+    }
 }

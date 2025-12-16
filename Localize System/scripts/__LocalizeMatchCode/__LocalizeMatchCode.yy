@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_demo",
+  "%Name":"__LocalizeMatchCode",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_demo",
+  "name":"__LocalizeMatchCode",
   "parent":{
-    "name":"Demo",
-    "path":"folders/Demo.yy",
+    "name":"Core",
+    "path":"folders/Localize/Private/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
