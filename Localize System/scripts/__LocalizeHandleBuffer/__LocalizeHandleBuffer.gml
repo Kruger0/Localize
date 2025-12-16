@@ -94,7 +94,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                         if (is_string(_font) && (string_pos(".ttf", _font) || string_pos(".otf", _font) || string_pos(".ttc", _font))) {
                             var _params = string_split(_font, ":");
                             var _path   = string_trim(_params[0]);
-                            var _size   = (array_length(_params) > 1) ? _params[1] : real(LOC_DEFAULT_FONT_SIZE);
+                            var _size   = (array_length(_params) > 1) ? _params[1] : string(LOC_DEFAULT_FONT_SIZE);
                             
                             if (variable_struct_exists(_cache.definedFont, _font)) {
                                 _font = _cache.definedFont[$ _font];

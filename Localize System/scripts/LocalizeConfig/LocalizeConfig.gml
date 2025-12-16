@@ -63,8 +63,8 @@
 
 // The default font size used when loading external font files (e.g. "Fonts/myfont.ttf").
 // Only applied if the font string does not specify a size (e.g. "Fonts/myfont.ttf:16").
-// Default: "12"
-#macro LOC_DEFAULT_FONT_SIZE "12"
+// Default: 12
+#macro LOC_DEFAULT_FONT_SIZE 12
 
 #macro LOC_MAX_RECURSION_DEPTH 8
 
