@@ -1,8 +1,8 @@
 // feather ignore all
 
 // ======================== System Info
-#macro __LOC_VERSION        "2.0.0-beta.5"
-#macro __LOC_DATE           "2025-11-23"
+#macro __LOC_VERSION        "2.0.0-beta.8"
+#macro __LOC_DATE           "2025-12-15"
 
 // ======================== Internal Keys
 #macro __LOC_CMD_LANGNAME   "LOC_LANGNAME"

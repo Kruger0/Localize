@@ -45,7 +45,6 @@ function __LocalizeCache() {
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
-            defaultFont : __LocalizeDefaultFont,
             
             // ======================== File Management
             files       : [],
@@ -55,7 +54,12 @@ function __LocalizeCache() {
             
             // ======================== Debugger
             dbgView     : pointer_null,
+            dbgSection  : pointer_null,
             debugMode   : false,
+            
+            defaultFont : __LocalizeDefaultFont,
+            definedFont : {},
+            currentFont : undefined,
         }
         
         if (GM_build_type == "run" && debug_mode) {

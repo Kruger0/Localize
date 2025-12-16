@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"fntChinese",
   "parent":{
-    "name":"Localize System",
-    "path":"Localize System.yyp",
+    "name":"Demo",
+    "path":"folders/Demo.yy",
   },
   "pointRounding":0,
   "ranges":[

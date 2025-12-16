@@ -8,7 +8,6 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     static _cache = __LocalizeCache();
     
     // Check duplicated file loading
-    var _fileHash = md5_file(fileName);
     for (var i = 0; i < array_length(_cache.files); i++) {
         var _file = _cache.files[i];
         if (fileName == _file.fileName) {
@@ -18,11 +17,11 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         if (sheetId == _file.sheetId && sheetPage == _file.sheetPage) {
             __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded (same sheet id)");
             return 0;
-        } else 
-        if (_fileHash == _file.hash) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded (same file hash)");
-            return 0;
         }
+        //if (_fileHash == _file.hash) {
+        //    __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded (same file hash)");
+        //    return 0;
+        //}
     }
     
     // Register file entry

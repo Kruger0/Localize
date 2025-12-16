@@ -22,7 +22,7 @@ function __LocalizeFetchAllowed(){
         case os_windows:
         case os_macosx:
         case os_linux: {
-            _platformAllowed = true;
+            _platformAllowed = (os_browser == browser_not_a_browser);
         } break;
     }
     if (!_platformAllowed) return false;
@@ -30,6 +30,5 @@ function __LocalizeFetchAllowed(){
     if (LOC_FORCE_BUNDLE_AREA && GM_is_sandboxed && GM_build_type == "run") {
          __LocalizeError($"Cannot write on datafiles!\nPlease disable file system sandbox on current platform\nOr change '{nameof(LOC_FORCE_BUNDLE_AREA)}' to false in '{nameof(LocalizeConfig)}'");
     }
-    
     return true;
 }

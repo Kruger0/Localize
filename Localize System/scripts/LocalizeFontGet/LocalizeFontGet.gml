@@ -8,5 +8,5 @@ function LocalizeFontGet() {
         _data = _cache.locFallData;
         if (is_undefined(_data)) return _cache.defaultFont;
     }
-    return _data.langFontId;
+    return _data.langFont;
 }

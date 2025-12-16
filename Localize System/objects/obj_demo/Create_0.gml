@@ -19,5 +19,5 @@ global.font = font_add(_font, 24, false, false, 32, 255);
 if (os_browser != browser_not_a_browser) global.font = fnt_demo
 
 LocalizeFontSet("ja-JP", global.font);
-
-LocalizeFontSetDefault(fntDefault)
+LocalizeFontSet("zh-CN", global.font);
+LocalizeFontSet("ko-KR", global.font);

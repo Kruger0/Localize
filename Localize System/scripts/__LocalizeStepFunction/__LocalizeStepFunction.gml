@@ -42,7 +42,6 @@ function __LocalizeStepFunction() {
         // Update lang & cache
         if (is_undefined(locLangData) || locLangData.langCode != locLangCode) {
             var _newData = locDatabase[$ locLangCode];
-            
             if (is_undefined(_newData)) {
                 var _reqBase = string_split(locLangCode, "-")[0];
                 for (var i = 0; i < langCount; i++) {
@@ -57,16 +56,17 @@ function __LocalizeStepFunction() {
                     }
                 }
             } 
-            if (!is_undefined(_newData)) {
-                locLangData = _newData;
-                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
-                _lastErrorLang = "";
-            } else {
+            if (is_undefined(_newData)) {
                 if (_lastErrorLang != locLangCode) {
                     __LocalizeTrace(LOC_TRACE.CRITICAL, $"Language '{locLangCode}' could not be resolved");
                     _lastErrorLang = locLangCode;
                 }
+            } else {
+                locLangData = _newData;
+                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
+                _lastErrorLang = "";
             }
         }
+        // TODO update lang font
     }
 }

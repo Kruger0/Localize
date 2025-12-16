@@ -24,6 +24,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     };
     
     // Load buffer to memory
+    _cache.files[fileId].size = buffer_get_size(buffer);
     var _sheet = __LocalizeLoadCsv(buffer);
     show_debug_message($"POST LOAD CSV {(get_timer()-_t)/1000}ms")
     
@@ -77,13 +78,21 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 } break;
                 case __LOC_CMD_FONTNAME: {
                     if (_cell != "") {
-                        var _fontId = asset_get_index(_cell);
-                        if (font_exists(_fontId)) {
-                            _targLang.langFontId = _fontId;
-                        } else {
-                            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font asset '{_cell}' does not exists");
+                        var _font = string_trim(_cell);
+                        var _fontId = asset_get_index(_font);
+                        
+                        // Override with custom font
+                        var _pendFont = _cache.pendingFont[$ _targLang.langCode];
+                        if (!is_undefined(_pendFont)) {
+                            _font   = _pendFont;
+                            _fontId = _pendFont;
                         }
-                        _targLang.langFontName = _cell;
+                        if (font_exists(_fontId)) {
+                            _targLang.langFont = _fontId;
+                        } else {
+                            _targLang.langFont = _font;
+                        }
+                        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language '{_targLang.langName}' mapped to font '{_font}'");
                     }
                 } break;
                 case __LOC_CMD_PRODUCTION: {

@@ -1,7 +1,9 @@
 
 draw_circle(300, 300, dsin(current_time/200)*128, false);
 
-draw_set_font(LocalizeFontGet());
+
+var _font = LocalizeFontGet()
+draw_set_font(_font);
 
 //var _langId     = LocalizeGetLangId();
 //var _langCount  = LocalizeGetLangCount();
@@ -17,7 +19,7 @@ Localize("lang_check")+"\n"+
 Localize("text_placeholder")+"\n"+
 Localize("dialog.warrior.2")+"\n"+
 Localize("item.ironSword.name")+"\n"+
-LocalizeFontGetName()+"\n"+
+string(_font)+"\n"+
 Localize("text_score", points, Localize("text_key_space"));
 
 draw_text_ext(32, 32, _text, 48, 1300);
