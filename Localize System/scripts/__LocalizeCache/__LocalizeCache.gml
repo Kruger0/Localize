@@ -22,7 +22,7 @@ function __LocalizeCache() {
         }
         
         cache = {
-            // ======================== Data containers
+            // ======================== Data
             locDatabase : undefined,
             locLangData : undefined,
             locLangCode : "",
@@ -30,21 +30,19 @@ function __LocalizeCache() {
             locFallCode : "",
             osLangCode  : _osLang,
             
-            // ======================== Tag Handling
+            // ======================== Tags
             locTagKeys  : {},
             
-            // ======================== Common Variables
+            // ======================== Languages
             langCodes   : [],
             langCount   : -1,
             langNames   : [],
             
-            // ======================== System Settings
+            // ======================== Files
             savePath    : _savePath,
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
-            
-            // ======================== File Management
             files       : [],
             asyncArray  : [],
             timesource  : -1,
@@ -52,9 +50,10 @@ function __LocalizeCache() {
             
             // ======================== Debugger
             dbgView     : pointer_null,
-            dbgSection  : pointer_null,
+            dbgSections : {},
             debugMode   : false,
             
+            // ======================== Fonts
             defaultFont : __LocalizeDefaultFont,
             definedFont : {},
             currentFont : undefined,
@@ -66,4 +65,3 @@ function __LocalizeCache() {
     }
     return cache;
 }
-

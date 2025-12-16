@@ -3,7 +3,6 @@
 function __LocalizeAsyncHttp() {
     static _cache   = __LocalizeCache();
     
-    // Check for what file are we handling
     var _id     = async_load[? "id"];
     var _fileId = -1;
     var _file   = undefined;
@@ -20,7 +19,6 @@ function __LocalizeAsyncHttp() {
     
     if (_fileId != -1) {
         var _status = async_load[? "status"];
-        // Downloading file
         if (_status == 1) {
             var _size = async_load[? "sizeDownloaded"];
             if (LOC_DOWNLOAD_LOG_ENABLED && _size > 0) {

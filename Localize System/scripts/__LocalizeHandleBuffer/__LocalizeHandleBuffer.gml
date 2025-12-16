@@ -95,14 +95,13 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                             var _params = string_split(_font, ":");
                             var _path   = string_trim(_params[0]);
                             var _size   = (array_length(_params) > 1) ? _params[1] : LOC_DEFAULT_FONT_SIZE;
-                            var _fontKey = _path+"@"+_size;
                             
-                            if (variable_struct_exists(_cache.definedFont, _fontKey)) {
-                                _font = _cache.definedFont[$ _fontKey];
+                            if (variable_struct_exists(_cache.definedFont, _font)) {
+                                _font = _cache.definedFont[$ _font];
                             } else {
                                 if (file_exists(_path)) {
                                     var _newFont = font_add(_path, real(_size), false, false, 32, 255);
-                                    _cache.definedFont[$ _fontKey] = _newFont;
+                                    _cache.definedFont[$ _font] = _newFont;
                                     _font = _newFont;
                                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded external font '{_path}' at size {_size}");
                                 } else {

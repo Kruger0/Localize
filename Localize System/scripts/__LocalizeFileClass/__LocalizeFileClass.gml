@@ -9,7 +9,7 @@ function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.path       = filename_path(fileName);
     self.loaded     = false;
     self.requestId  = -1;
-    self.size       = -1;
+    self.size       = 0;
     self.timestamp  = get_timer();
     self.async      = false;
     self.hash       = undefined

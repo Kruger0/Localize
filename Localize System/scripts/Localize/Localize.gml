@@ -37,7 +37,6 @@ function Localize(key) {
         if (string_pos("{", _stringRaw) > 0) {
             var _stringOut = "";
             var _working   = _stringRaw;
-            var _recursion = 0;
             
             // Simple string parser
             while (string_length(_working) > 0) {
@@ -62,7 +61,7 @@ function Localize(key) {
                     var _val  = string_delete(_token, 1, _colon);
                     switch (_type) {
                         case "key": {
-                             if (_recursion < LOC_MAX_RECURSION) _replacement = Localize(_val);
+                             _replacement = Localize(_val);
                         } break;
                         case "tag": {
                             _replacement = _cache.locTagKeys[$ _val];
@@ -70,7 +69,7 @@ function Localize(key) {
                         case "global": {
                             _replacement = global[$ _val];
                         } break;
-                        case "func:" { // WIP
+                        case "func": { // WIP
                             
                         } break;
                     }

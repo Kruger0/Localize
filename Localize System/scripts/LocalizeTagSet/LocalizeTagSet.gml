@@ -4,8 +4,8 @@
 /// @param {Any} value The value to replace the tag with.
 function LocalizeTagSet(tag, value){
     static _cache = __LocalizeCache();
-    static _func = function(_name, _lang) {
-        _lang.langCache = {};
+    static _func = function(name, lang) {
+        lang.langCache = {};
     }
     _cache.locTagKeys[$ tag] = string(value);
     

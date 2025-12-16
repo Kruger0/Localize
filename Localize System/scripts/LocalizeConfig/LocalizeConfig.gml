@@ -42,7 +42,7 @@
 
 // Enables the file download progress to be traced in the verbose mode
 // Default: false
-#macro LOC_DOWNLOAD_LOG_ENABLED false
+#macro LOC_DOWNLOAD_LOG_ENABLED true
 
 // Minimum amount of bytes downloaded to trigger a new log message in the console.
 // Prevents the output from being spammed during large downloads.
@@ -62,8 +62,6 @@
 #macro LOC_STRING_DELIM "\""
 
 #macro LOC_DEFAULT_FONT_SIZE "12"
-
-#macro LOC_MAX_RECURSION 5
 
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
 // Default: true

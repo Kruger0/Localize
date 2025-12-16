@@ -3,19 +3,19 @@
 function __LocalizeDebug() {
     static _cache = __LocalizeCache();
     if (os_browser != browser_not_a_browser) return 0;
-    
-    if (dbg_view_exists(_cache.dbgView)) {
-        dbg_view_delete(_cache.dbgView);
-    }
-    
+
     var _isDbgOpen = is_debug_overlay_open();
     var _width = 400;
     var _height = 600;
-    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 64, 64, _width, _height);
     
+    if (!dbg_view_exists(_cache.dbgView)) {
+        _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 64, 64, _width, _height);
+    }
+
     // ======================== Language Controlls
     
-    dbg_section("Language Controls");
+    dbg_section_delete(_cache.dbgSections[$ "langCtrl"])
+    _cache.dbgSections[$ "langCtrl"] = dbg_section("Language Controls");
     
     var _codes = _cache.langCodes; 
     if (array_length(_codes) > 0) {
@@ -31,7 +31,8 @@ function __LocalizeDebug() {
     // ======================== File Statistics
     
     dbg_text("");
-    dbg_section("File Statistics");
+    dbg_section_delete(_cache.dbgSections[$ "fileStats"])
+    _cache.dbgSections[$ "fileStats"] = dbg_section("File Statistics");
     
     dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
     dbg_watch(ref_create(_cache, "fetchAllowed"),   "Download Allowed:");
@@ -78,7 +79,9 @@ function __LocalizeDebug() {
     // ======================== Actions
     
     dbg_text("");
-    dbg_section("Actions");
+    dbg_section_delete(_cache.dbgSections[$ "actions"])
+    _cache.dbgSections[$ "actions"] = dbg_section("Actions");
+
     dbg_button("Refresh Debug View", function() {
         __LocalizeDebug();
     }, _width);
@@ -95,6 +98,10 @@ function __LocalizeDebug() {
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i);
         }
+    }, _width);
+    
+    dbg_button("Flush System Data", function() {
+        LocalizeFlush();
     }, _width);
     
     show_debug_overlay(_isDbgOpen);
