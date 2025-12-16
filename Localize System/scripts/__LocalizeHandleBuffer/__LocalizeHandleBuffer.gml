@@ -80,12 +80,10 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                     if (_cell != "") {
                         var _font = string_trim(_cell);
                         var _fontId = asset_get_index(_font);
-                        
-                        // Override with custom font
-                        var _pendFont = _cache.pendingFont[$ _targLang.langCode];
-                        if (!is_undefined(_pendFont)) {
-                            _font   = _pendFont;
-                            _fontId = _pendFont;
+                        var _defineFont = _cache.definedFont[$ _targLang.langCode];
+                        if (!is_undefined(_defineFont)) {
+                            _font   = _defineFont;
+                            _fontId = _defineFont;
                         }
                         if (font_exists(_fontId)) {
                             _targLang.langFont = _fontId;

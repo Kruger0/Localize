@@ -1,4 +1,4 @@
-function LocalizeFontSetDefault(fontId){
+function LocalizeFontSetDefault(font){
     static _cache = __LocalizeCache()
-    _cache.defaultFont = fontId;
+    _cache.defaultFont = font;
 }

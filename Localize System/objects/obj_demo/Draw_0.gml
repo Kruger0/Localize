@@ -6,7 +6,7 @@ var _font = LocalizeFontGet()
 draw_set_font(_font);
 
 //var _langId     = LocalizeGetLangId();
-//var _langCount  = LocalizeGetLangCount();
+//var _langCount  = LocalizeLangGetCount();
 //var _langName   = LocalizeGetLangName();
 //var _langCode   = LocalizeGetLangCode();
 
