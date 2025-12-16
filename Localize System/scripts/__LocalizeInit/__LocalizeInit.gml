@@ -7,7 +7,7 @@ function __LocalizeInit() {
     _init = true;
     
     static _cache = __LocalizeCache();
-    __LocalizeTrace(-1, $"Running v{__LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {__LOC_DATE}");
+    __LocalizeTrace(LOC_TRACE.FORCED, $"Running v{__LOC_VERSION} | Created by Krug | github.com/Kruger0/Localize | {__LOC_DATE}");
     
     // Trace sandbox status
     if (__LocalizeFetchAllowed()) {

@@ -17,7 +17,7 @@ function __LocalizeStepFunction() {
     
     // Wait for database to load
     if (is_undefined(_cache.locDatabase)) return;
-    if (variable_struct_names_count(_cache.locDatabase) == 0) return;
+    if (_cache.langCount <= 0) return;
     
     with (_cache) {
         // Update fallback data
@@ -63,6 +63,7 @@ function __LocalizeStepFunction() {
                 }
             } else {
                 locLangData = _newData;
+                currentFont = _newData.langFont;
                 __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
                 _lastErrorLang = "";
             }

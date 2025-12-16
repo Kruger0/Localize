@@ -25,8 +25,8 @@ function __LocalizeDebug() {
     }
     dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
     dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");
-    dbg_checkbox(ref_create(_cache, "debugMode"),   "Debug Mode");
     dbg_watch(ref_create(_cache, "currentFont"),    "Current Font")
+    dbg_checkbox(ref_create(_cache, "debugMode"),   "Debug Mode");
     
     // ======================== File Statistics
     

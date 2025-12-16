@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LocalizeLangCountGet",
+  "%Name":"LocalizeLangGetCount",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LocalizeLangCountGet",
+  "name":"LocalizeLangGetCount",
   "parent":{
     "name":"Language",
     "path":"folders/Localize/API/Language.yy",

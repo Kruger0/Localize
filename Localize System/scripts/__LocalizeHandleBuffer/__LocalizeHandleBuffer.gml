@@ -77,7 +77,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
         for (var j = 1; j < array_length(_line); j++) {
             var _targLang = _colToLang[j];
             if (is_undefined(_targLang)) continue;
-            var _cell = _line[j];
+            var _cell = string_trim(_line[j]);
             
             // Internal command keys
             switch (_key) {
@@ -88,25 +88,18 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 } break;
                 case __LOC_CMD_FONTNAME: {
                     if (_cell != "") {
-                        var _font = string_trim(_cell);
-                        var _fontId = asset_get_index(_font);
-                        var _defineFont = _cache.definedFont[$ _targLang.langCode];
-                        if (!is_undefined(_defineFont)) {
-                            _font   = _defineFont;
-                            _fontId = _defineFont;
-                        }
-                        if (font_exists(_fontId)) {
-                            _targLang.langFont = _fontId;
-                        } else {
-                            _targLang.langFont = _font;
-                        }
-                        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language '{_targLang.langName}' mapped to font '{_font}'");
+                        var _font = _cache.definedFont[$ _targLang.langCode] ?? _cell;
+                        var _fontId = is_string(_font) ? asset_get_index(_font) : _font;
+                        if (font_exists(_fontId)) _font = _fontId;
+                        _targLang.langFont = _font;
+                        _cache.definedFont[$ _targLang.langCode] ??= _font;
+                        __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language '{_targLang.langCode}' mapped to font '{_font}'");
                     }
                 } break;
                 case __LOC_CMD_PRODUCTION: {
                     if (_cell != "") {
-                        var _boolStr = string_trim(_cell);
-                        _targLang.langEnabled = (GM_build_type != "run" && (_boolStr == "true" || _boolStr == "1"));
+                        var _enabled = string_lower(_cell) == "enabled";
+                        _targLang.langEnabled = (GM_build_type == "exe" || _enabled);
                     }
                 } break;
                 default: {
@@ -124,13 +117,20 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     
     if (_langCount > 0) {
         _cache.langCodes = array_union(_cache.langCodes, _langCodes);
-        _cache.langCount = array_length(_cache.langCodes);
-        var _langNames = array_create(_cache.langCount);
-        for (var i = 0; i < _cache.langCount; i++) {
-            var _code = _cache.langCodes[i];
-            _langNames[i] = _cache.locDatabase[$ _code].langName;
+        var _finalCodes = [];
+        var _finalNames = [];
+        var _totalLen = array_length(_cache.langCodes);
+        for (var i = 0; i < _totalLen; i++) {
+            var _code  = _cache.langCodes[i];
+            var _entry = _cache.locDatabase[$ _code];
+            if (!is_undefined(_entry) && _entry.langEnabled) {
+                array_push(_finalCodes, _code);
+                array_push(_finalNames, _entry.langName);
+            }
         }
-        _cache.langNames = _langNames;
+        _cache.langCodes = _finalCodes;
+        _cache.langNames = _finalNames;
+        _cache.langCount = array_length(_finalCodes);
     }
     
     _cache.files[fileId].loaded = true;
