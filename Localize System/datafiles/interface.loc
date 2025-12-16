@@ -4,7 +4,7 @@ LOC_FONTNAME,fntDefault,fntChinese,fntJapanese,fntKorean,,,,,,
 LOC_PRODUCTION,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 ,,,,,,,,,,
 text_intro,"Hello, [user_id]! Today is [os_date]",你好，[user_id]！今天是[os_date],こんにちは、[user_id]さん！今日は[os_date]です,"안녕하세요, [user_id]님! 오늘은 [os_date]입니다.","Olá, [user_id]! Hoje é [os_date]","¡Hola, [user_id]! Hoy es [os_date]","Ciao, [user_id]! Oggi è [os_date]","Привет, [user_id]! Сегодня [os_date]","Hallo, [user_id]! Heute ist [os_date]","Bonjour, [user_id] ! Aujourd'hui, nous sommes le [os_date]"
-text_placeholder,,,,,,,,,,
+text_placeholder,eee,,,,,,,,,
 ui.dateFormat,{1}/{0}/{2},,,,{0}/{1}/{2},,,,,
 lang_check,"""This key has a translatioñlñn""",,「このキーには翻訳があります」,,"""Esta chave tem uma tradução""","""Esta clave tiene una traducción""",,"""Этот ключ имеет перевод.""","""Dieser Schlüssel hat eine Übersetzung""",
 text_score,Show your score here!!!,在此处显示您的分数！,ここであなたのスコアを見せてください!!!,점수를 여기에 보여주세요!!!,,¡¡¡Muestra tu puntuación aquí!!!,Mostra qui il tuo punteggio!!!,Покажите свой результат здесь!!!,Hier ist dein Ergebnis!!!,Affichez votre score ici !

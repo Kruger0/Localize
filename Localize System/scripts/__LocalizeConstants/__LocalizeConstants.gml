@@ -11,9 +11,10 @@
 
 // ======================== Configuration Enums
 enum LOC_TRACE {
-    DISABLED,
-    CRITICAL,
-    VERBOSE,
+    FORCED      = -1,
+    DISABLED    = 0,
+    CRITICAL    = 1,
+    VERBOSE     = 2,
 }
 
 enum LOC_UPDATE {

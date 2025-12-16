@@ -1,10 +1,11 @@
 // feather ignore all
 ///@ignore
 function __LocalizeHandleBuffer(buffer, status, fileId) {
-    static _cache = __LocalizeCache();
-    var _fileName = _cache.files[fileId].fileName;
-    
-    var _t = get_timer();
+    static _cache   = __LocalizeCache();
+    var _t          = get_timer();
+    var _file       = _cache.files[fileId];
+    var _fileName   = _file.fileName;
+    var _size;
     
     // Error checking
     if (!buffer_exists(buffer)) {
@@ -16,17 +17,26 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
             buffer_delete(buffer);
             return 0;
         }
-        if (buffer_get_size(buffer) == 0) {
+        _size = buffer_get_size(buffer);
+        if (_size == 0) {
             __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Buffer from file '{_fileName}' is empty and could not be read - status '{status}'");
             buffer_delete(buffer);
             return 0;
         }
     };
     
+    // Check buffer hash
+    var _hash = buffer_md5(buffer, 0, _size);
+    if (_file.hash == _hash) {
+        __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' content has not changed. Update skipped.");
+        buffer_delete(buffer);
+        return 1;
+    }
+    _file.hash = _hash;
+    
     // Load buffer to memory
-    _cache.files[fileId].size = buffer_get_size(buffer);
+    _cache.files[fileId].size = _size;
     var _sheet = __LocalizeLoadCsv(buffer);
-    show_debug_message($"POST LOAD CSV {(get_timer()-_t)/1000}ms")
     
     buffer_delete(buffer);
     

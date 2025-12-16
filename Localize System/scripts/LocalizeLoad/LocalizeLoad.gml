@@ -18,10 +18,6 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
             __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded (same sheet id)");
             return 0;
         }
-        //if (_fileHash == _file.hash) {
-        //    __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{fileName}' already loaded (same file hash)");
-        //    return 0;
-        //}
     }
     
     // Register file entry
