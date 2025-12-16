@@ -1,4 +1,3 @@
-// feather ignore all
 /*
   []=============================================[]
   ||        Localization System for GameMaker    ||
@@ -6,10 +5,6 @@
   ||              github.com/Kruger0/Localize    ||
   []=============================================[]
 */
-
-// ============================================================================
-// SYSTEM BEHAVIOR
-// ============================================================================
 
 // Controls when the system attempts to download new files from Google Sheets.
 // DISABLED:    Use only local sheet files (offline).
@@ -29,10 +24,6 @@
 // Default: true
 #macro LOC_ASYNC_MODE true
 
-// ============================================================================
-// DEBUGGING & LOGGING
-// ============================================================================
-
 // Controls the verbosity of the console output.
 // DISABLED:    No logs will be displayed.
 // CRITICAL:    Only errors and warnings will be displayed.
@@ -49,10 +40,6 @@
 // Default: 256000 (approx 250 KB)
 #macro LOC_DOWNLOAD_LOG_INTERVAL 256_000
 
-// ============================================================================
-// PARSING & FORMATTING
-// ============================================================================
-
 // Character used to delimit cells in the CSV sheet.
 // Default: ","
 #macro LOC_CELL_DELIM ","
@@ -62,10 +49,11 @@
 #macro LOC_STRING_DELIM "\""
 
 // The default font size used when loading external font files (e.g. "Fonts/myfont.ttf").
-// Only applied if the font string does not specify a size (e.g. "Fonts/myfont.ttf:16").
 // Default: 12
 #macro LOC_DEFAULT_FONT_SIZE 12
 
+// The maximum depth of recursion allowed when resolving nested keys.
+// Default: 8
 #macro LOC_MAX_RECURSION_DEPTH 8
 
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
