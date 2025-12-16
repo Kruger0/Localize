@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeFallbackGet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeFallbackGet",
+  "parent":{
+    "name":"Fallback",
+    "path":"folders/Localize/API/Fallback.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

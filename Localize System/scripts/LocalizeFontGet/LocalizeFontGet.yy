@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeFontGet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeFontGet",
+  "parent":{
+    "name":"Font",
+    "path":"folders/Localize/API/Font.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

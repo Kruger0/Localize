@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeLangClass",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeLangClass",
+  "parent":{
+    "name":"Classes",
+    "path":"folders/Localize/Private/Classes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

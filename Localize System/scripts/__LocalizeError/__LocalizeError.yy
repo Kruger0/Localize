@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__LocalizeError",
   "parent":{
-    "name":"Private",
-    "path":"folders/Localize/Private.yy",
+    "name":"Debug",
+    "path":"folders/Localize/Private/Debug.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

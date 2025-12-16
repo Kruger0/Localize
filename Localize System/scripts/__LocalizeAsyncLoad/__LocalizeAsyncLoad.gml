@@ -1,12 +1,5 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@ignore
+// feather ignore all
+/// @ignore
 function __LocalizeAsyncLoad(filename, callback, fileId) {
     static _cache = __LocalizeCache();
     var _loadBuffer = buffer_create(1, buffer_grow, 1)

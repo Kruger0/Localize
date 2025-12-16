@@ -1,27 +1,50 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@desc Flush
+// feather ignore all
+/// @desc Completely clears all loaded languages, files, and cached data from memory.
 function LocalizeFlush(){
     static _cache = __LocalizeCache();
+    static _func  = function(name, value) {
+        if (string_pos(":", name)) {
+            if (font_exists(value)) {
+                font_delete(value);
+            }
+        }
+    }
+    
     with (_cache) {
-        locDatabase = undefined;
+        // ======================== Data
+        locDatabase = undefined; 
         locLangData = undefined;
-        locLangCode = "";
         locFallData = undefined;
         locFallCode = "";
-        osLangCode  = "";
+        
+        // ======================== Tags
         locTagKeys  = {};
-        locTagNames = [];
-        locTagCount = 0;
+        
+        // ======================== Languages
         langCodes   = [];
         langCount   = -1;
         langNames   = [];
-        files       = [];
+        
+        // ======================== Fonts
+        struct_foreach(definedFont, _func);
+        defaultFont = __LocalizeFontDefault;
+        currentFont = undefined;
+        recursion   = 0;
+        
+        // ======================== Files
+        asyncArray  = []; 
+        for (var i = 0, n = array_length(files); i < n; i++) {
+            var _file = files[i];
+            with (_file) {
+                loaded     = false;
+                requestId  = -1;
+                size       = 0;
+                timestamp  = get_timer();
+                async      = false;
+                hash       = undefined
+            }
+        }
     }
+    __LocalizeDebug();
+    __LocalizeTrace(LOC_TRACE.VERBOSE, "System flushed");
 }

@@ -1,6 +1,5 @@
-
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeError() {
     var _str = "";
     var _i = 0;

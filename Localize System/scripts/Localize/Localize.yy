@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Localize",
   "parent":{
-    "name":"Public",
-    "path":"folders/Localize/Public.yy",
+    "name":"API",
+    "path":"folders/Localize/API.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,26 +1,18 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@ignore
+// feather ignore all
+/// @ignore
 function __LocalizeCache() {
     static cache = undefined;
     if (is_undefined(cache)) {
         
-        var _savePath = game_save_id;
+        var _savePath = "";
         if (GM_build_type == "run") {
-            if (!GM_is_sandboxed) {
+            if (LOC_FORCE_BUNDLE_AREA && !GM_is_sandboxed) {
                 var _projDir = filename_dir(GM_project_filename);
                 if (_projDir != "") {
                     _savePath = _projDir + "/datafiles/";
                 }
             }
         }
-        
         var _osLang = os_get_language();
         if (_osLang != "") {
             var _osReg = os_get_region();
@@ -30,7 +22,7 @@ function __LocalizeCache() {
         }
         
         cache = {
-            // ======================== Data containers
+            // ======================== Data
             locDatabase : undefined,
             locLangData : undefined,
             locLangCode : "",
@@ -38,31 +30,34 @@ function __LocalizeCache() {
             locFallCode : "",
             osLangCode  : _osLang,
             
-            // ======================== Tag Handling
+            // ======================== Tags
             locTagKeys  : {},
-            locTagNames : [],
-            locTagCount : 0,
             
-            // ======================== Common Variables
+            // ======================== Languages
             langCodes   : [],
             langCount   : -1,
             langNames   : [],
             
-            // ======================== System Settings
+            // ======================== Files
             savePath    : _savePath,
             readPath    : "",
             fetchAllowed: __LocalizeFetchAllowed(),
             sandboxed   : GM_is_sandboxed,
-            
-            // ======================== File Management
             files       : [],
             asyncArray  : [],
             timesource  : -1,
             managerId   : -1,
+            recursion   : 0,
             
             // ======================== Debugger
             dbgView     : pointer_null,
+            dbgSections : {},
             debugMode   : false,
+            
+            // ======================== Fonts
+            defaultFont : __LocalizeFontDefault,
+            definedFont : {},
+            currentFont : undefined,
         }
         
         if (GM_build_type == "run" && debug_mode) {
@@ -71,4 +66,3 @@ function __LocalizeCache() {
     }
     return cache;
 }
-

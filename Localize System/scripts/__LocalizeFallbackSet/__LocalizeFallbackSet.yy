@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeFallbackSet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeFallbackSet",
+  "parent":{
+    "name":"Core",
+    "path":"folders/Localize/Private/Core.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

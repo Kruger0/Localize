@@ -1,12 +1,5 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@ignore
+// feather ignore all
+/// @ignore
 function __LocalizeDetectCellError(str) {
   if (str == "") return true;
   if (is_undefined(str)) return true;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalizeFormatBytes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalizeFormatBytes",
+  "parent":{
+    "name":"Debug",
+    "path":"folders/Localize/Private/Debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

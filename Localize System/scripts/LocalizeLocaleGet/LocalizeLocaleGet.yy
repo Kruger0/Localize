@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeLocaleGet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeLocaleGet",
+  "parent":{
+    "name":"Locale",
+    "path":"folders/Localize/API/Locale.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

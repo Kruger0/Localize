@@ -1,43 +1,38 @@
-/*
-  []=============================================[]
-  ||        Localization System for GameMaker    ||
-  ||                                             ||
-  ||              github.com/Kruger0/Localize    ||
-  []=============================================[]
-*/
-
-///@ignore
+// feather ignore all
+/// @ignore
 function __LocalizeDebug() {
     static _cache = __LocalizeCache();
     if (os_browser != browser_not_a_browser) return 0;
-    
-    if (dbg_view_exists(_cache.dbgView)) {
-        dbg_view_delete(_cache.dbgView);
-    }
-    
+
     var _isDbgOpen = is_debug_overlay_open();
     var _width = 400;
-    var _height = 550;
-    _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 128, 128, _width, _height);
+    var _height = 600;
     
+    if (!dbg_view_exists(_cache.dbgView)) {
+        _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 64, 64, _width, _height);
+    }
+
     // ======================== Language Controlls
     
-    dbg_section("Language Controls");
+    dbg_section_delete(_cache.dbgSections[$ "langCtrl"])
+    _cache.dbgSections[$ "langCtrl"] = dbg_section("Language Controls");
     
     var _codes = _cache.langCodes; 
     if (array_length(_codes) > 0) {
         dbg_drop_down(ref_create(_cache, "locLangCode"), _codes, "Game Language");
     } else {
-        dbg_text("No languages loaded yet.");
+        dbg_text("No languages loaded yet");
     }
     dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
     dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");
+    dbg_watch(ref_create(_cache, "currentFont"),    "Current Font")
     dbg_checkbox(ref_create(_cache, "debugMode"),   "Debug Mode");
     
     // ======================== File Statistics
     
     dbg_text("");
-    dbg_section("File Statistics");
+    dbg_section_delete(_cache.dbgSections[$ "fileStats"])
+    _cache.dbgSections[$ "fileStats"] = dbg_section("File Statistics");
     
     dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
     dbg_watch(ref_create(_cache, "fetchAllowed"),   "Download Allowed:");
@@ -54,7 +49,7 @@ function __LocalizeDebug() {
     for (var i = 0; i < _fileCount; i++) {
         var _file = _cache.files[i];
         var _nameStr = _file.fileName;
-        var _sizeStr = $"{string_format(_file.size/1024, 0, 2)} KB";
+        var _sizeStr = __LocalizeFormatBytes(_file.size);
         var _charGap = max(1, (_gapSize - string_length(_nameStr)) - string_length(_sizeStr));
         var _text = $"{_nameStr} {string_repeat(".", _charGap)} {_sizeStr}";
         dbg_text("- " + _text);
@@ -64,7 +59,7 @@ function __LocalizeDebug() {
     if (_fileCount > 0) {
         dbg_text(""); 
         var _labelStr = "Total Memory";
-        var _sizeStr  = $"{string_format(_totalSize/1024, 0, 2)} KB";
+        var _sizeStr  = __LocalizeFormatBytes(_totalSize);
         var _charGap = max(1, (_gapSize - string_length(_labelStr)) - string_length(_sizeStr));
         var _text = $"{_labelStr} {string_repeat(".", _charGap)} {_sizeStr}";
         dbg_text("  " + _text); 
@@ -84,23 +79,29 @@ function __LocalizeDebug() {
     // ======================== Actions
     
     dbg_text("");
-    dbg_section("Actions");
+    dbg_section_delete(_cache.dbgSections[$ "actions"])
+    _cache.dbgSections[$ "actions"] = dbg_section("Actions");
+
     dbg_button("Refresh Debug View", function() {
         __LocalizeDebug();
     }, _width);
     
-    dbg_button("Update Files Online", function() {
+    dbg_button("Update Online", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeDownload(i);
         }
     }, _width);
     
-    dbg_button("Update Files Locally", function() {
+    dbg_button("Update Locally", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i);
         }
+    }, _width);
+    
+    dbg_button("Flush System Data", function() {
+        LocalizeFlush();
     }, _width);
     
     show_debug_overlay(_isDbgOpen);
