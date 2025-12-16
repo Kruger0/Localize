@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeUpdate(fileId) {
     static _cache = __LocalizeCache();
     var _file = _cache.files[fileId];

@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeAsyncSaveLoad() {
     static _cache   = __LocalizeCache();
     var _asyncArray = _cache.asyncArray;

@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeStepFunction() {
     static _cache = __LocalizeCache();
     static _lastErrorLang = "";
@@ -62,9 +62,7 @@ function __LocalizeStepFunction() {
                     _lastErrorLang = locLangCode;
                 }
             } else {
-                locLangData = _newData;
-                currentFont = _newData.langFont;
-                __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
+                __LocalizeLangSet(_newData);
                 _lastErrorLang = "";
             }
         }

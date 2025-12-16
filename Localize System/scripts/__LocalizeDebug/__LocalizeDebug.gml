@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeDebug() {
     static _cache = __LocalizeCache();
     if (os_browser != browser_not_a_browser) return 0;
@@ -86,14 +86,14 @@ function __LocalizeDebug() {
         __LocalizeDebug();
     }, _width);
     
-    dbg_button("Update Files Online", function() {
+    dbg_button("Update Online", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeDownload(i);
         }
     }, _width);
     
-    dbg_button("Update Files Locally", function() {
+    dbg_button("Update Locally", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i);

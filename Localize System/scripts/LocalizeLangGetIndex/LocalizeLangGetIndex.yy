@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizeLangGetIndex",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizeLangGetIndex",
+  "parent":{
+    "name":"Language",
+    "path":"folders/Localize/API/Language.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

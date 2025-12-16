@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.fileName   = fileName;
     self.sheetId    = sheetId;

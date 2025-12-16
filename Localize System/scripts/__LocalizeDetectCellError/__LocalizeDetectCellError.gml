@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeDetectCellError(str) {
   if (str == "") return true;
   if (is_undefined(str)) return true;

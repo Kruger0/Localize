@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeLangClass(langCode) constructor{
     static _cache = __LocalizeCache();
     self.langCode     = langCode;

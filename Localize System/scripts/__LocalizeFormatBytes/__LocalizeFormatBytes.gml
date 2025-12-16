@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeFormatBytes(_bytes) {
     if (_bytes < 1024) return $"{round(_bytes)} B";
     var _kb = _bytes / 1024;

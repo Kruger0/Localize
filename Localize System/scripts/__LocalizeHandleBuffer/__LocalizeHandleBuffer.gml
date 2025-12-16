@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeHandleBuffer(buffer, status, fileId) {
     static _cache   = __LocalizeCache();
     var _t          = get_timer();

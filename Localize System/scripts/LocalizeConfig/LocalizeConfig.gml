@@ -53,8 +53,8 @@
 #macro LOC_DEFAULT_FONT_SIZE 12
 
 // The maximum depth of recursion allowed when resolving nested keys.
-// Default: 8
-#macro LOC_MAX_RECURSION_DEPTH 8
+// Default: 10
+#macro LOC_MAX_RECURSION_DEPTH 10
 
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
 // Default: true

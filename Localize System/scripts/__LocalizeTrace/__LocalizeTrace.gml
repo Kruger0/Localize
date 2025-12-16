@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeTrace(mode, msg) {
     if (mode <= LOC_TRACE_LEVEL) {
         var _string = "[Localize]" + (mode == LOC_TRACE.CRITICAL ? " \u26A0 " : " ") + msg;

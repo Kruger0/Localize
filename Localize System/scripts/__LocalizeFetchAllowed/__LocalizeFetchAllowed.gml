@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeFetchAllowed(){
     var _modeAllowed = false;
     

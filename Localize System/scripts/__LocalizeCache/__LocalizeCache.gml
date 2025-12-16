@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeCache() {
     static cache = undefined;
     if (is_undefined(cache)) {
@@ -55,7 +55,7 @@ function __LocalizeCache() {
             debugMode   : false,
             
             // ======================== Fonts
-            defaultFont : __LocalizeDefaultFont,
+            defaultFont : __LocalizeFontDefault,
             definedFont : {},
             currentFont : undefined,
         }

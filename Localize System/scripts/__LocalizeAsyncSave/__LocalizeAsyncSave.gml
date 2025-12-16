@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeAsyncSave(filename, callback) {
     static _cache = __LocalizeCache();
     var _loadBuffer = buffer_create(1, buffer_grow, 1)

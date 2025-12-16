@@ -8,8 +8,7 @@ function LocalizeLangSet(language) {
         if (is_undefined(locDatabase)) return;
         var _newData = locDatabase[$ locLangCode];
         if (!is_undefined(_newData)) {
-            locLangData = _newData;
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
+            __LocalizeLangSet(_newData);
         }
     }
 }

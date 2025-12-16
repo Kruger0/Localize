@@ -1,5 +1,5 @@
 // feather ignore all
-///@ignore
+/// @ignore
 function __LocalizeAsyncHttp() {
     static _cache   = __LocalizeCache();
     

@@ -27,7 +27,7 @@ function LocalizeFlush(){
         
         // ======================== Fonts
         struct_foreach(definedFont, _func);
-        defaultFont = __LocalizeDefaultFont;
+        defaultFont = __LocalizeFontDefault;
         currentFont = undefined;
         recursion   = 0;
         
