@@ -8,8 +8,6 @@ function LocalizeTagSet(tag, value){
         _lang.langCache = {};
     }
     _cache.locTagKeys[$ tag] = string(value);
-    _cache.locTagNames = variable_struct_get_names(_cache.locTagKeys);
-    _cache.locTagCount = array_length(_cache.locTagNames);
     
     if (!is_undefined(_cache.locDatabase)) {
         struct_foreach(_cache.locDatabase, _func);

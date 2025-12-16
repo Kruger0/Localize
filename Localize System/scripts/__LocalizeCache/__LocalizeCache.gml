@@ -32,8 +32,6 @@ function __LocalizeCache() {
             
             // ======================== Tag Handling
             locTagKeys  : {},
-            locTagNames : [],
-            locTagCount : 0,
             
             // ======================== Common Variables
             langCodes   : [],

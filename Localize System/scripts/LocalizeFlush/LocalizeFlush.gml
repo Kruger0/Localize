@@ -13,8 +13,6 @@ function LocalizeFlush(){
 
         // Reset tags
         locTagKeys  = {};
-        locTagNames = [];
-        locTagCount = 0;
         
         // Reset Arrays
         langCodes   = [];
@@ -25,6 +23,14 @@ function LocalizeFlush(){
         
         // Clear Async
         asyncArray  = []; 
+        
+        // Reset fonts
+        for (var i = 0, n = array_length(definedFont); i < n; i++) {
+            var _font = defaultFont[i];
+            if (font_exists(_font)) {
+                font_delete(_font)
+            }
+        }
     }
     __LocalizeTrace(LOC_TRACE.VERBOSE, "System flushed. All data cleared.");
 }
