@@ -15,23 +15,79 @@ function Localize(key) {
         if (is_undefined(_langData)) return key;
     }
     
-    // Retrieve String
-    var _string = _langData.langKeys[$ key];
-    
-    // Check if undefined or missing entry
-    if (is_undefined(_string) || _string == "") {
-        if (!is_undefined(_cache.locFallData)) {
-            var _fallString = _cache.locFallData.langKeys[$ key];
-            if (!is_undefined(_fallString) && _fallString != "") {
-                _string = _fallString;
+    // Check for cache
+    var _string = _langData.langCache[$ key];
+    if (is_undefined(_string)) {
+        var _stringRaw = _langData.langKeys[$ key];
+        
+        // Check if undefined or missing entry
+        if (is_undefined(_stringRaw) || _stringRaw == "") {
+            if (!is_undefined(_cache.locFallData)) {
+                var _fallString = _cache.locFallData.langKeys[$ key];
+                if (!is_undefined(_fallString) && _fallString != "") {
+                    _stringRaw = _fallString;
+                }
             }
         }
+        
+        // Error Checking
+        if (__LocalizeDetectCellError(_stringRaw)) return key;
+        
+        // Handle tag and key parsing
+        if (string_pos("{", _stringRaw) > 0) {
+            var _stringOut = "";
+            var _working   = _stringRaw;
+            var _recursion = 0;
+            
+            // Simple string parser
+            while (string_length(_working) > 0) {
+                var _open = string_pos("{", _working);
+                if (_open == 0) {
+                    _stringOut += _working;
+                     break;
+                }
+                _stringOut += string_copy(_working, 1, _open - 1);
+                _working    = string_delete(_working, 1, _open);
+                var _close = string_pos("}", _working);
+                if (_close == 0) {
+                    _stringOut += "{";
+                    continue;
+                }
+                var _token = string_copy(_working, 1, _close - 1);
+                _working   = string_delete(_working, 1, _close);
+                var _colon = string_pos(":", _token);
+                var _replacement = undefined;
+                if (_colon > 0) {
+                    var _type = string_lower(string_copy(_token, 1, _colon - 1));
+                    var _val  = string_delete(_token, 1, _colon);
+                    switch (_type) {
+                        case "key": {
+                             if (_recursion < LOC_MAX_RECURSION) _replacement = Localize(_val);
+                        } break;
+                        case "tag": {
+                            _replacement = _cache.locTagKeys[$ _val];
+                        } break;
+                        case "global": {
+                            _replacement = global[$ _val];
+                        } break;
+                    }
+                }
+                if (!is_undefined(_replacement)) {
+                    _stringOut += _replacement;
+                } else {
+                    _stringOut += "{"+_token+"}";
+                }
+            }
+            _string = _stringOut;
+        } else {
+            _string = _stringRaw;
+        }
+        
+        // Save to cache
+        _langData.langCache[$ key] = _string;
     }
     
-    // Error Checking
-    if (__LocalizeDetectCellError(_string)) return key;
-    
-    // Handle string templates
+    // Handle dynamic arguments
     if (argument_count > 1) {
         var _count = argument_count - 1;
         var _args = array_create(_count);
@@ -39,20 +95,6 @@ function Localize(key) {
             _args[i] = argument[i + 1];
         }
         _string = string_ext(_string, _args);
-    }
-    
-    // Check for tag replacement
-    if (string_pos("[", _string) != 0) {
-        var _names = _cache.locTagNames;
-        var _count = _cache.locTagCount;
-        var _keys  = _cache.locTagKeys;
-        
-        for (var i = 0; i < _count; i++) {
-            var _tagName = _names[i];
-            if (string_pos(_tagName, _string) != 0) {
-                _string = string_replace_all(_string, _tagName, _keys[$ _tagName]);
-            }
-        } 
     }
     return _string;
 }

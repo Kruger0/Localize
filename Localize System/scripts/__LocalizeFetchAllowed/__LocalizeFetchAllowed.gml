@@ -5,14 +5,15 @@ function __LocalizeFetchAllowed(){
     
     // Check update configuration
     switch (LOC_UPDATE_MODE) {
-        case LOC_UPDATE.DISABLED:
+        case LOC_UPDATE.DISABLED: {
             return false;
-        case LOC_UPDATE.DEVELOPMENT:
+        }
+        case LOC_UPDATE.DEVELOPMENT: {
             _modeAllowed = (GM_build_type == "run");
-            break;
-        case LOC_UPDATE.PRODUCTION:
+        } break;
+        case LOC_UPDATE.PRODUCTION: {
             _modeAllowed = true;
-            break;
+        } break;
     }
     if (!_modeAllowed) return false;
     

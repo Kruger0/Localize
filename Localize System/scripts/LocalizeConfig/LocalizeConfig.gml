@@ -61,6 +61,10 @@
 // Default: "\""
 #macro LOC_STRING_DELIM "\""
 
+#macro LOC_DEFAULT_FONT_SIZE "12"
+
+#macro LOC_MAX_RECURSION 5
+
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
 // Default: true
 #macro LOC_REPLACE_NEWLINE true

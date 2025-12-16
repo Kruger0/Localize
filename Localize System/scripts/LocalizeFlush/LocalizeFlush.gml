@@ -21,6 +21,7 @@ function LocalizeFlush(){
         langCount   = -1;
         langNames   = [];
         files       = [];
+        langCache   = {};
         
         // Clear Async
         asyncArray  = []; 

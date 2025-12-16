@@ -7,6 +7,7 @@ function __LocalizeLangClass(langCode) constructor{
     
     // ======================== Data Storage
     self.langKeys     = {};
+    self.langCache    = {};
     
     // ======================== Settings
     self.langEnabled  = true;

@@ -89,10 +89,35 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 case __LOC_CMD_FONTNAME: {
                     if (_cell != "") {
                         var _font = _cache.definedFont[$ _targLang.langCode] ?? _cell;
+                        
+                        // Check for external font file
+                        if (is_string(_font) && (string_pos(".ttf", _font) || string_pos(".otf", _font) || string_pos(".ttc", _font))) {
+                            var _params = string_split(_font, ":");
+                            var _path   = string_trim(_params[0]);
+                            var _size   = (array_length(_params) > 1) ? _params[1] : LOC_DEFAULT_FONT_SIZE;
+                            var _fontKey = _path+"@"+_size;
+                            
+                            if (variable_struct_exists(_cache.definedFont, _fontKey)) {
+                                _font = _cache.definedFont[$ _fontKey];
+                            } else {
+                                if (file_exists(_path)) {
+                                    var _newFont = font_add(_path, real(_size), false, false, 32, 255);
+                                    _cache.definedFont[$ _fontKey] = _newFont;
+                                    _font = _newFont;
+                                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded external font '{_path}' at size {_size}");
+                                } else {
+                                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file missing: '{_path}'");
+                                }
+                            }
+                        }
+                        
+                        // Check for internal font asset
                         var _fontId = is_string(_font) ? asset_get_index(_font) : _font;
-                        if (font_exists(_fontId)) _font = _fontId;
+                        if (font_exists(_fontId)) {
+                            _font = _fontId;
+                        }
                         _targLang.langFont = _font;
-                        _cache.definedFont[$ _targLang.langCode] ??= _font;
+                        //_cache.definedFont[$ _targLang.langCode] = _font;
                         __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language '{_targLang.langCode}' mapped to font '{_font}'");
                     }
                 } break;
