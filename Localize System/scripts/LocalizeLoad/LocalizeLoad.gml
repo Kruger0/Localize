@@ -28,9 +28,9 @@ function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
         __LocalizeDownload(_fileId);
     } else {
         if (is_undefined(sheetId)) {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded local-only file '{fileName}'.");
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded local-only file '{fileName}'");
         } else {
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Online fetch skipped for '{fileName}' (Config or Platform restriction).");
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Online fetch skipped for '{fileName}' (Config or Platform restriction)");
         }
     }
     return _fileId;

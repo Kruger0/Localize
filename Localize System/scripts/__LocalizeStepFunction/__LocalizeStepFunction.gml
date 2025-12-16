@@ -68,6 +68,5 @@ function __LocalizeStepFunction() {
                 _lastErrorLang = "";
             }
         }
-        // TODO update lang font
     }
 }

@@ -47,6 +47,7 @@ function __LocalizeCache() {
             asyncArray  : [],
             timesource  : -1,
             managerId   : -1,
+            recursion   : 0,
             
             // ======================== Debugger
             dbgView     : pointer_null,

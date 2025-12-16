@@ -28,7 +28,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     // Check buffer hash
     var _hash = buffer_md5(buffer, 0, _size);
     if (_file.hash == _hash) {
-        __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' content has not changed. Update skipped.");
+        __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' content has not changed. Update skipped");
         buffer_delete(buffer);
         return 1;
     }
@@ -94,18 +94,22 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                         if (is_string(_font) && (string_pos(".ttf", _font) || string_pos(".otf", _font) || string_pos(".ttc", _font))) {
                             var _params = string_split(_font, ":");
                             var _path   = string_trim(_params[0]);
-                            var _size   = (array_length(_params) > 1) ? _params[1] : LOC_DEFAULT_FONT_SIZE;
+                            var _size   = (array_length(_params) > 1) ? _params[1] : real(LOC_DEFAULT_FONT_SIZE);
                             
                             if (variable_struct_exists(_cache.definedFont, _font)) {
                                 _font = _cache.definedFont[$ _font];
                             } else {
                                 if (file_exists(_path)) {
                                     var _newFont = font_add(_path, real(_size), false, false, 32, 255);
-                                    _cache.definedFont[$ _font] = _newFont;
-                                    _font = _newFont;
+                                    if (_newFont == -1) {
+                                        __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file '{_path}' failed to load");
+                                    } else {
+                                        _cache.definedFont[$ _font] = _newFont;
+                                        _font = _newFont;
+                                    }
                                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Loaded external font '{_path}' at size {_size}");
                                 } else {
-                                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file missing: '{_path}'");
+                                    __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font file '{_path}' is missing");
                                 }
                             }
                         }
@@ -123,7 +127,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                 case __LOC_CMD_PRODUCTION: {
                     if (_cell != "") {
                         var _enabled = string_lower(_cell) == "enabled";
-                        _targLang.langEnabled = (GM_build_type == "exe" || _enabled);
+                        _targLang.langEnabled = (GM_build_type == "run" || _enabled);
                     }
                 } break;
                 default: {

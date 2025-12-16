@@ -29,6 +29,7 @@ function LocalizeFlush(){
         struct_foreach(definedFont, _func);
         defaultFont = __LocalizeDefaultFont;
         currentFont = undefined;
+        recursion   = 0;
         
         // ======================== Files
         asyncArray  = []; 
@@ -45,5 +46,5 @@ function LocalizeFlush(){
         }
     }
     __LocalizeDebug();
-    __LocalizeTrace(LOC_TRACE.VERBOSE, "System flushed.");
+    __LocalizeTrace(LOC_TRACE.VERBOSE, "System flushed");
 }

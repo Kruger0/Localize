@@ -8,7 +8,8 @@ function Localize(key) {
     
     if (_cache.debugMode) return key;
     
-    // Solve langData
+    
+    // Resolve langData
     var _langData = _cache.locLangData;
     if (is_undefined(_langData)) {
         _langData = _cache.locFallData;
@@ -18,6 +19,13 @@ function Localize(key) {
     // Check for cache
     var _string = _langData.langCache[$ key];
     if (is_undefined(_string)) {
+        
+        if (_cache.recursion >= LOC_MAX_RECURSION_DEPTH) {
+            __LocalizeTrace(LOC_TRACE.CRITICAL, $"Reached max recursion depth at key '{key}'. Check for self-referencing keys!");
+            _langData.langCache[$ key] = key;
+            return key;
+        }
+        
         var _stringRaw = _langData.langKeys[$ key];
         
         // Check if undefined or missing entry
@@ -61,7 +69,12 @@ function Localize(key) {
                     var _val  = string_delete(_token, 1, _colon);
                     switch (_type) {
                         case "key": {
-                             _replacement = Localize(_val);
+                            _cache.recursion++;
+                            try {
+                                _replacement = Localize(_val);
+                            } finally {
+                                _cache.recursion--;
+                            }
                         } break;
                         case "tag": {
                             _replacement = _cache.locTagKeys[$ _val];
