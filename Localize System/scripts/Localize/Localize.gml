@@ -82,9 +82,6 @@ function Localize(key) {
                         case "global": {
                             _replacement = global[$ _val];
                         } break;
-                        case "func": { // WIP
-                            
-                        } break;
                     }
                 }
                 if (!is_undefined(_replacement)) {
