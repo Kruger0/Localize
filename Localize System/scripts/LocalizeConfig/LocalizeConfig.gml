@@ -42,7 +42,7 @@
 
 // Enables the file download progress to be traced in the verbose mode
 // Default: false
-#macro LOC_DOWNLOAD_LOG_ENABLED true
+#macro LOC_DOWNLOAD_LOG_ENABLED false
 
 // Minimum amount of bytes downloaded to trigger a new log message in the console.
 // Prevents the output from being spammed during large downloads.
@@ -61,6 +61,9 @@
 // Default: "\""
 #macro LOC_STRING_DELIM "\""
 
+// The default font size used when loading external font files (e.g. "Fonts/myfont.ttf").
+// Only applied if the font string does not specify a size (e.g. "Fonts/myfont.ttf:16").
+// Default: "12"
 #macro LOC_DEFAULT_FONT_SIZE "12"
 
 // If enabled, escaped characters in the text (like \n and \r) will be converted to real newlines.
