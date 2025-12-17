@@ -29,6 +29,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     var _hash = buffer_md5(buffer, 0, _size);
     if (_file.hash == _hash) {
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' content has not changed. Update skipped");
+        __LocalizeSetLastUpdate();
         buffer_delete(buffer);
         return 1;
     }
@@ -168,6 +169,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     
     _cache.files[fileId].loaded = true;
     __LocalizeTrace(LOC_TRACE.VERBOSE, $"File '{_fileName}' loaded into database after {(get_timer()-_t)/1000}ms with {__LocalizeFormatBytes(_cache.files[fileId].size)}");
+    __LocalizeSetLastUpdate();
     __LocalizeDebug();
     return 1;
 }

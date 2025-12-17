@@ -1,7 +1,7 @@
 // feather ignore all
 
 // ======================== System Info
-#macro __LOC_VERSION        "2.0.0-beta.8"
+#macro __LOC_VERSION        "2.0.0-beta.9"
 #macro __LOC_DATE           "2025-12-16"
 
 // ======================== Internal Keys
@@ -22,3 +22,4 @@ enum LOC_UPDATE {
     DEVELOPMENT,
     PRODUCTION,
 }
+

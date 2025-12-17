@@ -32,7 +32,8 @@ function LocalizeFlush(){
         recursion   = 0;
         
         // ======================== Files
-        asyncArray  = []; 
+        asyncArray  = [];
+        lastUpdate  = "Never";
         for (var i = 0, n = array_length(files); i < n; i++) {
             var _file = files[i];
             with (_file) {

@@ -79,9 +79,6 @@ function Localize(key) {
                         case "tag": {
                             _replacement = _cache.locTagKeys[$ _val];
                         } break;
-                        case "global": {
-                            _replacement = global[$ _val];
-                        } break;
                     }
                 }
                 if (!is_undefined(_replacement)) {
