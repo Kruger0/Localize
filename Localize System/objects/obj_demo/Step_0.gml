@@ -1,8 +1,9 @@
-LocalizeTagSet("sec", current_second);
 LocalizeTagSet("os_date", Localize("ui.dateFormat", current_day, current_month, current_year));
 
-if (keyboard_check_pressed(vk_space)) {
-    points++;
+var _pointsDelta = keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
+if (_pointsDelta != 0) {
+    points += _pointsDelta;
+    points = max(0, points);
 }
 
 if (keyboard_check_pressed(vk_f9)) {
@@ -14,13 +15,12 @@ if (keyboard_check_pressed(vk_f5)) {
 }
 
 // Language cycle
-var _change = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
-
-if (_change != 0) {
+var _landDelta = keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
+if (_landDelta != 0) {
     var _index = LocalizeLangGetIndex();
     var _count = LocalizeLangGetCount();
     var _clamp = false;
-    _index += _change;
+    _index += _landDelta;
 
     if (_clamp) {
         _index = clamp(_index, 0, _count);

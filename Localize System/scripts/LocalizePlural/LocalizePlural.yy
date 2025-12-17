@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LocalizePlural",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LocalizePlural",
+  "parent":{
+    "name":"API",
+    "path":"folders/Localize/API.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

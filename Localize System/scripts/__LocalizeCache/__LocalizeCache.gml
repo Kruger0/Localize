@@ -48,6 +48,7 @@ function __LocalizeCache() {
             timesource  : -1,
             managerId   : -1,
             recursion   : 0,
+            lastUpdate  : "Never",
             
             // ======================== Debugger
             dbgView     : pointer_null,

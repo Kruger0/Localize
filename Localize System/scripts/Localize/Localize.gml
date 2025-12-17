@@ -19,7 +19,6 @@ function Localize(key) {
     // Check for cache
     var _string = _langData.langCache[$ key];
     if (is_undefined(_string)) {
-        
         if (_cache.recursion >= LOC_MAX_RECURSION_DEPTH) {
             __LocalizeTrace(LOC_TRACE.CRITICAL, $"Reached max recursion depth at key '{key}'. Check for self-referencing keys!");
             _langData.langCache[$ key] = key;
@@ -78,9 +77,6 @@ function Localize(key) {
                         } break;
                         case "tag": {
                             _replacement = _cache.locTagKeys[$ _val];
-                        } break;
-                        case "global": {
-                            _replacement = global[$ _val];
                         } break;
                     }
                 }

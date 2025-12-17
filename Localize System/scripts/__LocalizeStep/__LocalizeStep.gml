@@ -3,7 +3,6 @@
 function __LocalizeStep() {
     static _cache = __LocalizeCache();
     static _lastErrorLang = "";
-
     with (_cache) {
         // Initiate async manager object
         if !(instance_exists(__LocalizeObjManager)) {
@@ -16,7 +15,6 @@ function __LocalizeStep() {
             }
         }
         
-        // Wait for database to load
         if (is_undefined(locDatabase)) return;
         if (langCount <= 0) return;
         

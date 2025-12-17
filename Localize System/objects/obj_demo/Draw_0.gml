@@ -15,13 +15,10 @@ var _arrowR = _langId == _langCount-1 ? "   " : " >>";
 var _text = $"{_arrowL}{_langName} ({_langCode}){_arrowR}\n"+
 Localize("text_intro")+"\n"+
 Localize("text_debugger")+"\n"+
-Localize("text with - a weird k3y")+"\n"+
 Localize("lang_check")+"\n"+
-Localize("text_placeholder")+"\n"+
-Localize("dialog.warrior.2")+"\n"+
-Localize("item.ironSword.name")+"\n"+
 string(_font)+"\n"+
-Localize("text_score", points, Localize("text_key_space"));
+LocalizePlural("msg_score", points)+"\n"+
+LocalizeOrdinal("msg_position", points);
 
 draw_text_ext(32, 32, _text, 48, 1300);
 
