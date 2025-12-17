@@ -1,4 +1,8 @@
-Language Keys,en,pt,es,zh-CN,ja-JP,ko-KR,ru-RU,it-IT,de-DE,fr-FR
+Language Keys,en,pt,es,zh-CN,ja-JP,ko-KR,ru-RU,de-DE,fr-FR,it-IT
+LOC_LANGNAME,English,Português,Español,简体中文,日本語,한국어,Русский,Deutsch,Français,Italiano
+LOC_FONTNAME,Perfect DOS VGA 437.ttf:24,,,NotoSansCJK-Regular.ttc:24,NotoSansCJK-Regular.ttc:24,NotoSansCJK-Regular.ttc:24,,,,
+LOC_PRODUCTION,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED
+,,,,,,,,,,
 text_intro,"Hello, {tag:user_id}! Today is {tag:os_date}!","Olá, {tag:user_id}! Hoje é {tag:os_date}!","¡Hola, {tag:user_id}! ¡Hoy es {tag:os_date}!",你好，{tag:user_id}！今天是{tag:os_date}！,こんにちは、{tag:user_id}さん！今日は{tag:os_date}です！,"안녕하세요, {tag:user_id}님! 오늘은 {tag:os_date}일입니다!","Привет, {tag:user_id}! Сегодня {tag:os_date}!","Ciao, {tag:user_id}! Oggi è il {tag:os_date}!","Hallo, {tag:user_id}! Heute ist {tag:os_date}!","Bonjour, {tag:user_id} ! Aujourd'hui, c'est le {tag:os_date} !"
 text_placeholder,,,,,,,,,,
 ui.dateFormat,{1}/{0}/{2},{0}/{1}/{2},,,,,,,,
