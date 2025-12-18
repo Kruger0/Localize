@@ -37,8 +37,8 @@
 
 // Minimum amount of bytes downloaded to trigger a new log message in the console.
 // Prevents the output from being spammed during large downloads.
-// Default: 256000 (approx 250 KB)
-#macro LOC_DOWNLOAD_LOG_INTERVAL 256000
+// Default: 262144 (256 KB)
+#macro LOC_DOWNLOAD_LOG_INTERVAL 262144
 
 // Character used to delimit cells in the CSV sheet.
 // Default: ","

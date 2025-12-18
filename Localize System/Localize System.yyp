@@ -31,7 +31,6 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"Blockbench_5.0.4_portable.exe","CopyToMask":-1,"filePath":"datafiles","name":"Blockbench_5.0.4_portable.exe","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"config.loc","CopyToMask":-1,"filePath":"datafiles","name":"config.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"dialogues.loc","CopyToMask":-1,"filePath":"datafiles","name":"dialogues.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"interface.loc","CopyToMask":-1,"filePath":"datafiles","name":"interface.loc","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

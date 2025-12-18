@@ -109,7 +109,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                 _font = _cache.definedFont[$ _font];
                             } else {
                                 if (file_exists(_path)) {
-                                    var _tf = get_timer();
+                                    var _tFont = get_timer();
                                     var _newFont = font_add(_path, real(_size), false, false, 32, 255);
                                     
                                     if (_newFont == -1) {
@@ -118,7 +118,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                         _cache.definedFont[$ _font] = _newFont;
                                         _font = _newFont;
                                     }
-                                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font '{_path}' loaded with {_size}px. Took {(get_timer()-_tf)/1000}ms");
+                                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font '{_path}' loaded as {_size}px. Took {(get_timer()-_tFont)/1000}ms");
                                 } else {
                                     __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font '{_path}' is missing");
                                 }
