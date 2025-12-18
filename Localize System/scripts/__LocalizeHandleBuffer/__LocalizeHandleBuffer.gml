@@ -124,10 +124,11 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                 }
                             }
                         }
-                        // Check for internal font asset
-                        var _fontId = is_string(_font) ? asset_get_index(_font) : _font;
-                        if (font_exists(_fontId)) {
-                            _font = _fontId;
+                        if (is_string(_font)) {
+                            if (asset_get_type(_font) == asset_font) {
+                                var _fontId = asset_get_index(_font);
+                                if (font_exists(_fontId)) _font = _fontId;
+                            }
                         }
                         _targLang.langFont = _font;
                     }
