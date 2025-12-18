@@ -10,7 +10,7 @@ function __LocalizeFileClass(fileName, sheetId, sheetPage) constructor {
     self.loaded     = false;
     self.requestId  = -1;
     self.size       = 0;
-    self.timestamp  = get_timer();
+    self.timestamp  = 0;
     self.async      = false;
     self.hash       = undefined
     

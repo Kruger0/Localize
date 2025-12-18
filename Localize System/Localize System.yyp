@@ -26,8 +26,8 @@
     {"$GMFolder":"","%Name":"Core","folderPath":"folders/Localize/Private/Core.yy","name":"Core","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Data","folderPath":"folders/Localize/Private/Data.yy","name":"Data","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Debug","folderPath":"folders/Localize/Private/Debug.yy","name":"Debug","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Processors","folderPath":"folders/Localize/Private/Processors.yy","name":"Processors","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Parser","folderPath":"folders/Localize/Private/Parser.yy","name":"Parser","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Processors","folderPath":"folders/Localize/Private/Processors.yy","name":"Processors","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.212",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Localize System",
   "resources":[
@@ -73,7 +73,7 @@
     {"id":{"name":"__LocalizeLangClass","path":"scripts/__LocalizeLangClass/__LocalizeLangClass.yy",},},
     {"id":{"name":"__LocalizeLangSet","path":"scripts/__LocalizeLangSet/__LocalizeLangSet.yy",},},
     {"id":{"name":"__LocalizeLoadCsv","path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},},
-    {"id":{"name":"__LocalizeMatchCode","path":"scripts/__LocalizeMatchCode/__LocalizeMatchCode.yy",},},
+    {"id":{"name":"__LocalizeMatchLang","path":"scripts/__LocalizeMatchLang/__LocalizeMatchLang.yy",},},
     {"id":{"name":"__LocalizeOrdinalGet","path":"scripts/__LocalizeOrdinalGet/__LocalizeOrdinalGet.yy",},},
     {"id":{"name":"__LocalizePluralGet","path":"scripts/__LocalizePluralGet/__LocalizePluralGet.yy",},},
     {"id":{"name":"__LocalizeSetLastUpdate","path":"scripts/__LocalizeSetLastUpdate/__LocalizeSetLastUpdate.yy",},},

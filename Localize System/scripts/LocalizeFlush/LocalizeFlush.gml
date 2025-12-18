@@ -2,13 +2,6 @@
 /// @desc Completely clears all loaded languages, files, and cached data from memory.
 function LocalizeFlush(){
     static _cache = __LocalizeCache();
-    static _func  = function(name, value) {
-        if (string_pos(":", name)) {
-            if (font_exists(value)) {
-                font_delete(value);
-            }
-        }
-    }
     
     with (_cache) {
         // ======================== Data
@@ -26,7 +19,16 @@ function LocalizeFlush(){
         langNames   = [];
         
         // ======================== Fonts
-        struct_foreach(definedFont, _func);
+        var _keys = struct_get_names(definedFont);
+        for (var i = 0; i < array_length(_keys); i++) {
+            var _key = _keys[i];
+            var _font = definedFont[$ _key];
+            if (string_pos(":", _key)) {
+                if (font_exists(_font)) {
+                    font_delete(_font);
+                }
+            }
+        }
         defaultFont = __LocalizeFontDefault;
         currentFont = undefined;
         recursion   = 0;
@@ -40,7 +42,7 @@ function LocalizeFlush(){
                 loaded     = false;
                 requestId  = -1;
                 size       = 0;
-                timestamp  = get_timer();
+                timestamp  = 0;
                 async      = false;
                 hash       = undefined
             }

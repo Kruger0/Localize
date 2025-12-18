@@ -14,17 +14,23 @@ function __LocalizeOrdinalGet(langCode, value) {
             return "_other";                                 // th
         } break;
         
+        case "sv": {
+            var _mod10 = _int % 10;
+            var _mod100 = _int % 100;
+            if ((_mod10 == 1 || _mod10 == 2) && (_mod100 != 11 && _mod100 != 12)) {
+                return "_one"; // :a
+            }
+            return "_other";   // :e
+        } break;
+        
         case "fr":
         case "mq":
-        case "ga": {
+        case "ga":
+        case "nl": {
             if (_int == 1) return "_one"; // 1er
             return "_other";              // e
         } break;
         
-        case "it":
-        case "es":
-        case "pt":
-        case "de":
         default: {
             return "_other"; // º
         } break;

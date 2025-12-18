@@ -14,6 +14,7 @@ function __LocalizeDownload(fileId){
     if (_isConnected) {
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloading file '{_file.fileName}'...");
         _file.requestId = http_get_file(_url, _cache.savePath + _file.fileName);
+        _file.timestamp = get_timer();
     } else {
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"No internet internet connection. Using local file '{_file.fileName}'");
     }

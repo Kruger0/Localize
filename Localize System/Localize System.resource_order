@@ -15,8 +15,8 @@
     {"name":"Core","order":5,"path":"folders/Localize/Private/Core.yy",},
     {"name":"Data","order":4,"path":"folders/Localize/Private/Data.yy",},
     {"name":"Debug","order":2,"path":"folders/Localize/Private/Debug.yy",},
-    {"name":"Processors","order":7,"path":"folders/Localize/Private/Processors.yy",},
     {"name":"Parser","order":3,"path":"folders/Localize/Private/Parser.yy",},
+    {"name":"Processors","order":7,"path":"folders/Localize/Private/Processors.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_demo","order":2,"path":"fonts/fnt_demo/fnt_demo.yy",},
