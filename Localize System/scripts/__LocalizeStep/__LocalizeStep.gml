@@ -20,13 +20,13 @@ function __LocalizeStep() {
         
         // Update fallback data
         if (is_undefined(locFallData)) {
-            var _fallData = locDatabase[$ locFallCode] ?? locDatabase[$ __LocalizeMatchCode(locFallCode)];
+            var _fallData = locDatabase[$ locFallCode] ?? locDatabase[$ __LocalizeMatchLang(locFallCode)];
             if (!is_undefined(_fallData)) __LocalizeFallbackSet(_fallData);
         }
         
         // Update lang & cache
         if (is_undefined(locLangData) || locLangData.langCode != locLangCode) {
-            var _langData = locDatabase[$ locLangCode] ?? locDatabase[$ __LocalizeMatchCode(locLangCode)];
+            var _langData = locDatabase[$ locLangCode] ?? locDatabase[$ __LocalizeMatchLang(locLangCode)];
             
             if (!is_undefined(_langData)) {
                 __LocalizeLangSet(_langData);

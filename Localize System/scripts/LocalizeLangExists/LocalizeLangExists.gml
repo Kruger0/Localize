@@ -6,7 +6,7 @@ function LocalizeLangExists(language){
     static _cache = __LocalizeCache();
     with (_cache) {
         if (is_undefined(locDatabase)) return false;
-        language = __LocalizeMatchCode(language);
+        language = __LocalizeMatchLang(language);
         return variable_struct_exists(locDatabase, language);
     }
 }

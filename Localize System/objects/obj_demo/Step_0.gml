@@ -1,4 +1,4 @@
-LocalizeTagSet("os_date", Localize("ui.dateFormat", current_day, current_month, current_year));
+LocalizeTagSet("os_date", Localize("ui_date_format", current_day, current_month, current_year));
 
 var _pointsDelta = keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
 if (_pointsDelta != 0) {

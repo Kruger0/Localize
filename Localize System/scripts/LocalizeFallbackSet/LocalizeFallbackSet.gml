@@ -4,7 +4,7 @@
 function LocalizeFallbackSet(language){
     static _cache = __LocalizeCache();
     with (_cache) {
-        language = __LocalizeMatchCode(language);
+        language = __LocalizeMatchLang(language);
         locFallCode = language;
         if (is_undefined(locFallData)) return;
         var _fallData = locDatabase[$ locFallCode];

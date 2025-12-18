@@ -73,7 +73,7 @@
     {"id":{"name":"__LocalizeLangClass","path":"scripts/__LocalizeLangClass/__LocalizeLangClass.yy",},},
     {"id":{"name":"__LocalizeLangSet","path":"scripts/__LocalizeLangSet/__LocalizeLangSet.yy",},},
     {"id":{"name":"__LocalizeLoadCsv","path":"scripts/__LocalizeLoadCsv/__LocalizeLoadCsv.yy",},},
-    {"id":{"name":"__LocalizeMatchCode","path":"scripts/__LocalizeMatchCode/__LocalizeMatchCode.yy",},},
+    {"id":{"name":"__LocalizeMatchLang","path":"scripts/__LocalizeMatchLang/__LocalizeMatchLang.yy",},},
     {"id":{"name":"__LocalizeOrdinalGet","path":"scripts/__LocalizeOrdinalGet/__LocalizeOrdinalGet.yy",},},
     {"id":{"name":"__LocalizePluralGet","path":"scripts/__LocalizePluralGet/__LocalizePluralGet.yy",},},
     {"id":{"name":"__LocalizeSetLastUpdate","path":"scripts/__LocalizeSetLastUpdate/__LocalizeSetLastUpdate.yy",},},

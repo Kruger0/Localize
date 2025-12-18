@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LocalizeMatchCode",
+  "%Name":"__LocalizeMatchLang",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LocalizeMatchCode",
+  "name":"__LocalizeMatchLang",
   "parent":{
     "name":"Processors",
     "path":"folders/Localize/Private/Processors.yy",

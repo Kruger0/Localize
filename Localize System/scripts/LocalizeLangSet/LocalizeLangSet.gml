@@ -4,7 +4,7 @@
 function LocalizeLangSet(language) {
     static _cache = __LocalizeCache();
     with (_cache) {
-        language = __LocalizeMatchCode(language);
+        language = __LocalizeMatchLang(language);
         locLangCode = language;
         if (is_undefined(locDatabase)) return;
         var _langData = locDatabase[$ locLangCode];
