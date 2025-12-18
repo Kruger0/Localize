@@ -1,4 +1,4 @@
-/// @desc Returns a localized string with correct ordinal sulfix based on CLDR plural rules (st, nd, rd, º)
+/// @desc Returns a localized string with correct ordinal sulfix based on CLDR plural rules (1st, 2nd, 3º...)
 /// @param {String} key   The base key defined in the translation file.
 /// @param {Real}   value The number to rank. Also passed as argument {0}.
 /// @returns {String}

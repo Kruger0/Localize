@@ -67,6 +67,7 @@ function Localize(key) {
                     var _type = string_lower(string_copy(_token, 1, _colon - 1));
                     var _val  = string_delete(_token, 1, _colon);
                     switch (_type) {
+                        case "k":
                         case "key": {
                             _cache.recursion++;
                             try {
@@ -75,6 +76,7 @@ function Localize(key) {
                                 _cache.recursion--;
                             }
                         } break;
+                        case "t":
                         case "tag": {
                             _replacement = _cache.locTagKeys[$ _val];
                         } break;
