@@ -40,7 +40,7 @@ function LocalizeFlush(){
                 loaded     = false;
                 requestId  = -1;
                 size       = 0;
-                timestamp  = get_timer();
+                timestamp  = 0;
                 async      = false;
                 hash       = undefined
             }

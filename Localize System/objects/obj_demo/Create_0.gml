@@ -1,4 +1,4 @@
-//window_set_caption($"Localize System v{__LOC_VERSION}")
+window_set_caption($"Localize System v{__LOC_VERSION}")
 
 // Load files from URL
 LocalizeLoad("interface.loc",   "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444");
@@ -18,3 +18,4 @@ LocalizeTagSet("sec", current_second);
 
 global.test = "Voa alto mlk"
 points = 0;
+

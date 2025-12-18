@@ -2,17 +2,16 @@
 /// @ignore
 function __LocalizeAsyncHttp() {
     static _cache   = __LocalizeCache();
-    
     var _id     = async_load[? "id"];
     var _fileId = -1;
     var _file   = undefined;
     
     var _len = array_length(_cache.files);
     for (var i = 0; i < _len; i++) {
-        var _f = _cache.files[i];
-        if (_f.requestId != -1 && _f.requestId == _id) {
+        var _fileEntry = _cache.files[i];
+        if (_fileEntry.requestId != -1 && _fileEntry.requestId == _id) {
             _fileId = i;
-            _file = _f;
+            _file = _fileEntry;
             break;
         }
     }
@@ -24,7 +23,7 @@ function __LocalizeAsyncHttp() {
             if (LOC_DOWNLOAD_LOG_ENABLED && _size > 0) {
                 if (_size > _file.progress + LOC_DOWNLOAD_LOG_INTERVAL) {
                     _file.progress = _size;
-                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloading '{_file.fileName}' - {__LocalizeFormatBytes(_size)}");
+                    __LocalizeTrace(LOC_TRACE.VERBOSE, $"...Downloading '{_file.fileName}' ({__LocalizeFormatBytes(_size)})");
                 }
             }
             return;
@@ -32,9 +31,10 @@ function __LocalizeAsyncHttp() {
         _file.requestId = -1;
         var _httpStatus = async_load[? "http_status"];
         var _resultPath = _cache.savePath + _file.fileName;
+        var _timeTaken  = (get_timer() - _file.timestamp) / 1000;
         if (_httpStatus == 200 && file_exists(_resultPath)) {
             __LocalizeUpdate(_fileId);
-            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloaded '{_file.fileName}'");
+            __LocalizeTrace(LOC_TRACE.VERBOSE, $"Downloaded '{_file.fileName}' in {_timeTaken}ms");
         } else {
             if (file_exists(_resultPath)) file_delete(_resultPath);
             if (_status < 0) {

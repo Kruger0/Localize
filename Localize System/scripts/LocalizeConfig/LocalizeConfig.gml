@@ -28,17 +28,17 @@
 // DISABLED:    No logs will be displayed.
 // CRITICAL:    Only errors and warnings will be displayed.
 // VERBOSE:     All logs (including download progress) will be displayed.
-// Default: LOC_TRACE.VERBOSE
+// Default: LOC_TRACE.CRITICAL
 #macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
 
 // Enables the file download progress to be traced in the verbose mode
 // Default: false
-#macro LOC_DOWNLOAD_LOG_ENABLED false
+#macro LOC_DOWNLOAD_LOG_ENABLED true
 
 // Minimum amount of bytes downloaded to trigger a new log message in the console.
 // Prevents the output from being spammed during large downloads.
 // Default: 256000 (approx 250 KB)
-#macro LOC_DOWNLOAD_LOG_INTERVAL 256_000
+#macro LOC_DOWNLOAD_LOG_INTERVAL 256000
 
 // Character used to delimit cells in the CSV sheet.
 // Default: ","
