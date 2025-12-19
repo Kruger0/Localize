@@ -1,6 +1,6 @@
 // feather ignore all
 /// @desc Returns the index of the current language in the loaded languages array.
-/// @returns {Real} Index (0 to N-1) or -1 if not found.
+/// @return {Real} Index (0 to N-1) or -1 if not found.
 function LocalizeLangGetIndex() {
     static _cache = __LocalizeCache();
     with (_cache) {

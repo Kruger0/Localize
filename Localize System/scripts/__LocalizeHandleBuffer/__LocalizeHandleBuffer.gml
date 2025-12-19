@@ -38,9 +38,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
     // Load buffer to memory
     _cache.files[fileId].size = _size;
     var _sheet = __LocalizeLoadCsv(buffer);
-    
     buffer_delete(buffer);
-    
     var _rowCount = array_length(_sheet);
     if (_rowCount == 0) {
         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Error: Parsed .csv of '{_fileName}' is empty");
@@ -111,7 +109,6 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                 if (file_exists(_path)) {
                                     var _tFont = get_timer();
                                     var _newFont = font_add(_path, real(_size), false, false, 32, 255);
-                                    
                                     if (_newFont == -1) {
                                         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font '{_path}' failed to load");
                                     } else {

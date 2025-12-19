@@ -1,6 +1,6 @@
 // feather ignore all
 /// @desc Returns the font asset index associated with the current active language.
-/// @returns {Asset.GMFont|String} The font asset index, the font name, or the default font if no font is assigned.
+/// @return {Asset.GMFont|String} The font asset index, the font name, or the default font if no font is assigned.
 function LocalizeFontGet() {
     static _cache = __LocalizeCache();
     with (_cache) {

@@ -86,6 +86,7 @@
     {"id":{"name":"LocalizeFallbackSet","path":"scripts/LocalizeFallbackSet/LocalizeFallbackSet.yy",},},
     {"id":{"name":"LocalizeFlush","path":"scripts/LocalizeFlush/LocalizeFlush.yy",},},
     {"id":{"name":"LocalizeFontGet","path":"scripts/LocalizeFontGet/LocalizeFontGet.yy",},},
+    {"id":{"name":"LocalizeFontGetDefault","path":"scripts/LocalizeFontGetDefault/LocalizeFontGetDefault.yy",},},
     {"id":{"name":"LocalizeFontSet","path":"scripts/LocalizeFontSet/LocalizeFontSet.yy",},},
     {"id":{"name":"LocalizeFontSetDefault","path":"scripts/LocalizeFontSetDefault/LocalizeFontSetDefault.yy",},},
     {"id":{"name":"LocalizeLangDetect","path":"scripts/LocalizeLangDetect/LocalizeLangDetect.yy",},},

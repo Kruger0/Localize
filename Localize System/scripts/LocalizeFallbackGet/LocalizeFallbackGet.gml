@@ -1,6 +1,6 @@
 // feather ignore all
 /// @desc Returns the ISO 639 Code of the current fallback language.
-/// @returns {String} The fallback code, or "" if none is set/loaded.
+/// @return {String} The fallback code, or "" if none is set/loaded.
 function LocalizeFallbackGet() {
     static _cache = __LocalizeCache();
     with (_cache) {
