@@ -19,6 +19,7 @@
     {"name":"Processors","order":7,"path":"folders/Localize/Private/Processors.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"__LocalizeFontDefault","order":2,"path":"fonts/__LocalizeFontDefault/__LocalizeFontDefault.yy",},
     {"name":"fnt_demo","order":2,"path":"fonts/fnt_demo/fnt_demo.yy",},
     {"name":"fntChinese","order":3,"path":"fonts/fntChinese/fntChinese.yy",},
     {"name":"fntDefault","order":4,"path":"fonts/fntDefault/fntDefault.yy",},

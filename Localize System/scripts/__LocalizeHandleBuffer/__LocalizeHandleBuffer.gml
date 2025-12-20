@@ -94,17 +94,16 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                     }
                 } break;
                 case __LOC_CMD_FONTNAME: {
-                    if (_cell != "") {
-                        var _font = _cache.definedFont[$ _targLang.langCode] ?? _cell;
-                        
+                    var _font = _cache.fontDefined[$ _targLang.langCode] ?? _cell;
+                    if (_font != "") {
                         // Check for external font file
                         if (is_string(_font) && (string_pos(".ttf", _font) || string_pos(".otf", _font) || string_pos(".ttc", _font))) {
                             var _params = string_split(_font, ":");
                             var _path   = string_trim(_params[0]);
                             var _size   = (array_length(_params) > 1) ? _params[1] : string(LOC_DEFAULT_FONT_SIZE);
                             
-                            if (variable_struct_exists(_cache.definedFont, _font)) {
-                                _font = _cache.definedFont[$ _font];
+                            if (variable_struct_exists(_cache.fontDefined, _font)) {
+                                _font = _cache.fontDefined[$ _font];
                             } else {
                                 if (file_exists(_path)) {
                                     var _tFont = get_timer();
@@ -112,7 +111,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                                     if (_newFont == -1) {
                                         __LocalizeTrace(LOC_TRACE.CRITICAL, $"Font '{_path}' failed to load");
                                     } else {
-                                        _cache.definedFont[$ _font] = _newFont;
+                                        _cache.fontDefined[$ _font] = _newFont;
                                         _font = _newFont;
                                     }
                                     __LocalizeTrace(LOC_TRACE.VERBOSE, $"Font '{_path}' loaded as {_size}px. Took {(get_timer()-_tFont)/1000}ms");
@@ -131,10 +130,7 @@ function __LocalizeHandleBuffer(buffer, status, fileId) {
                     }
                 } break;
                 case __LOC_CMD_PRODUCTION: {
-                    if (_cell != "") {
-                        var _enabled = string_lower(_cell) == "enabled";
-                        _targLang.langEnabled = (GM_build_type == "run" || _enabled);
-                    }
+                    _targLang.langEnabled = (GM_build_type == "run" || !(string_lower(_cell) == "disabled"));
                 } break;
                 default: {
                     if (LOC_REPLACE_NEWLINE) {

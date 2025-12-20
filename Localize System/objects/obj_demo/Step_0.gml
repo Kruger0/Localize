@@ -28,4 +28,9 @@ if (_landDelta != 0) {
         _index = (_index < 0 ? _count-1 : (_index >= _count ? 0 : _index));
     }
     LocalizeLangSetIndex(_index);
+    
+    var _save = buffer_create(1, buffer_grow, 1)
+    buffer_write(_save, buffer_text, LocalizeLangGet())
+    buffer_save(_save, "save.dat")
+    buffer_delete(_save)
 }

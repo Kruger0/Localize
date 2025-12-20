@@ -3,7 +3,7 @@
 function __LocalizeCache() {
     static cache = undefined;
     if (is_undefined(cache)) {
-        
+        var _t = get_timer()
         var _savePath = "";
         if (GM_build_type == "run") {
             if (LOC_FORCE_BUNDLE_AREA && !GM_is_sandboxed) {
@@ -20,47 +20,48 @@ function __LocalizeCache() {
                 _osLang += "-" + _osReg;
             }
         }
+        var _fontFallback = font_add("localize_font_default.ttc", LOC_DEFAULT_FONT_SIZE, false, false, 32, 128);
         
         cache = {
             // ======================== Data
-            locDatabase : undefined,
-            locLangData : undefined,
-            locLangCode : "",
-            locFallData : undefined,
-            locFallCode : "",
-            osLangCode  : _osLang,
+            locDatabase  : undefined,
+            locLangData  : undefined,
+            locLangCode  : "",
+            locFallData  : undefined,
+            locFallCode  : "",
+            osLangCode   : _osLang,
             
             // ======================== Tags
-            locTagKeys  : {},
+            locTagKeys   : {},
             
             // ======================== Languages
-            langCodes   : [],
-            langCount   : -1,
-            langNames   : [],
+            langCodes     : [],
+            langCount     : -1,
+            langNames     : [],
             
             // ======================== Files
-            savePath    : _savePath,
-            readPath    : "",
-            fetchAllowed: __LocalizeFetchAllowed(),
-            sandboxed   : GM_is_sandboxed,
-            files       : [],
-            asyncArray  : [],
-            timesource  : -1,
-            managerId   : -1,
-            recursion   : 0,
-            lastUpdate  : "Never",
+            savePath     : _savePath,
+            readPath     : "",
+            fetchAllowed : __LocalizeFetchAllowed(),
+            sandboxed    : GM_is_sandboxed,
+            files        : [],
+            asyncArray   : [],
+            timesource   : -1,
+            managerId    : -1,
+            recursion    : 0,
+            lastUpdate   : "Never",
             
             // ======================== Debugger
-            dbgView     : pointer_null,
-            dbgSections : {},
-            debugMode   : false,
+            dbgView      : pointer_null,
+            dbgSections  : {},
+            dbgMode      : false,
             
             // ======================== Fonts
-            defaultFont : __LocalizeFontDefault,
-            definedFont : {},
-            currentFont : undefined,
+            fontFallback : _fontFallback,
+            fontDefault  : _fontFallback,
+            fontDefined  : {},
+            fontCurrent  : undefined,
         }
-        
         if (GM_build_type == "run" && debug_mode) {
             global.__LocalizeCache = cache;
         }

@@ -7,7 +7,7 @@ function LocalizeFontGet() {
         var _data = locLangData;
         if (is_undefined(_data)) {
             _data = locFallData;
-            if (is_undefined(_data)) return defaultFont;
+            if (is_undefined(_data)) return fontDefault;
         }
         return _data.langFont;
     }

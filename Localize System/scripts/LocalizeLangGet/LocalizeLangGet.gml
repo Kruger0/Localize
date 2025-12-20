@@ -7,6 +7,6 @@ function LocalizeLangGet() {
         if (!is_undefined(locLangData)) {
             return locLangData.langCode;
         }
+        return locLangCode;
     }
-    return "";
 }

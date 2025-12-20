@@ -1,6 +1,6 @@
 Language Keys,en,pt,es,zh-CN,ja-JP,ko-KR,ru-RU,de,fr-FR,it-IT
 LOC_LANGNAME,English,Português,Español,简体中文,日本語,한국어,,Deutsch,Français,Italiano
-LOC_FONTNAME,Perfect DOS VGA 437.ttf:24,,,NotoSansCJK-Regular.ttc:24,NotoSansCJK-Regular.ttc:24,NotoSansCJK-Regular.ttc:24,,fntDeutschPlaceholder,,
+,,,,,,,,,,
 LOC_PRODUCTION,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,DISABLED,ENABLED,DISABLED
 ,,,,,,,,,,
 text_intro,"Hello, {tag:user_id}! Today is {t:os_date}!","Olá, {tag:user_id}! Hoje é {t:os_date}!","¡Hola, {tag:user_id}! ¡Hoy es {t:os_date}!",你好，{tag:user_id}！今天是{t:os_date}！,こんにちは、{tag:user_id}さん！今日は{t:os_date}です！,"안녕하세요, {tag:user_id}님! 오늘은 {t:os_date}입니다!","Привет, {tag:user_id}! Сегодня {t:os_date}!","Hallo, {tag:user_id}! Heute ist {t:os_date}!","Bonjour, {tag:user_id} ! Aujourd'hui, c'est le {t:os_date} !","Ciao, {tag:user_id}! Oggi è il {t:os_date}!"

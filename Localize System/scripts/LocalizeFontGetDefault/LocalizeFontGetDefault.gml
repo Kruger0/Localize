@@ -2,5 +2,5 @@
 /// @return {Asset.GMFont} The current default font asset (or string name).
 function LocalizeFontGetDefault(){
     static _cache = __LocalizeCache();
-    return _cache.defaultFont;
+    return _cache.fontDefault;
 }

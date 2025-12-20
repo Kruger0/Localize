@@ -5,7 +5,7 @@
 /// @return {String}         The localized string
 function Localize(key) {
     static _cache = __LocalizeCache();
-    if (_cache.debugMode) return key;
+    if (_cache.dbgMode) return key;
     var _langData = _cache.locLangData;
     if (is_undefined(_langData)) {
         _langData = _cache.locFallData;
