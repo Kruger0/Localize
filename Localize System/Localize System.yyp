@@ -44,9 +44,8 @@
   "name":"Localize System",
   "resources":[
     {"id":{"name":"__LocalizeFontDefault","path":"fonts/__LocalizeFontDefault/__LocalizeFontDefault.yy",},},
-    {"id":{"name":"fnt_demo","path":"fonts/fnt_demo/fnt_demo.yy",},},
-    {"id":{"name":"fntChinese","path":"fonts/fntChinese/fntChinese.yy",},},
-    {"id":{"name":"fntDefault","path":"fonts/fntDefault/fntDefault.yy",},},
+    {"id":{"name":"fnt_demo_0","path":"fonts/fnt_demo_0/fnt_demo_0.yy",},},
+    {"id":{"name":"fnt_demo_1","path":"fonts/fnt_demo_1/fnt_demo_1.yy",},},
     {"id":{"name":"__LocalizeObjManager","path":"objects/__LocalizeObjManager/__LocalizeObjManager.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
     {"id":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},

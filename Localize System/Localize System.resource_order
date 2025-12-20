@@ -20,9 +20,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"__LocalizeFontDefault","order":2,"path":"fonts/__LocalizeFontDefault/__LocalizeFontDefault.yy",},
-    {"name":"fnt_demo","order":2,"path":"fonts/fnt_demo/fnt_demo.yy",},
-    {"name":"fntChinese","order":3,"path":"fonts/fntChinese/fntChinese.yy",},
-    {"name":"fntDefault","order":4,"path":"fonts/fntDefault/fntDefault.yy",},
+    {"name":"fnt_demo_0","order":4,"path":"fonts/fnt_demo_0/fnt_demo_0.yy",},
+    {"name":"fnt_demo_1","order":2,"path":"fonts/fnt_demo_1/fnt_demo_1.yy",},
     {"name":"__LocalizeObjManager","order":1,"path":"objects/__LocalizeObjManager/__LocalizeObjManager.yy",},
     {"name":"obj_demo","order":1,"path":"objects/obj_demo/obj_demo.yy",},
     {"name":"__LocalizeAsyncHttp","order":1,"path":"scripts/__LocalizeAsyncHttp/__LocalizeAsyncHttp.yy",},
