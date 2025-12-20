@@ -1,6 +1,6 @@
 // feather ignore all
 /// @desc Sets the target language. 
-/// @param {String} language The language code to request (e.g. "en-US" or "fr").
+/// @param {String} language The language code to request. Accepts full lang code ("en-US"), base lang code ("en") or language name if defined ("English").
 function LocalizeLangSet(language) {
     static _cache = __LocalizeCache();
     with (_cache) {

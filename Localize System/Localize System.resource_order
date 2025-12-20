@@ -19,6 +19,7 @@
     {"name":"Processors","order":7,"path":"folders/Localize/Private/Processors.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"__LocalizeFontDefault","order":2,"path":"fonts/__LocalizeFontDefault/__LocalizeFontDefault.yy",},
     {"name":"fnt_demo","order":2,"path":"fonts/fnt_demo/fnt_demo.yy",},
     {"name":"fntChinese","order":3,"path":"fonts/fntChinese/fntChinese.yy",},
     {"name":"fntDefault","order":4,"path":"fonts/fntDefault/fntDefault.yy",},
@@ -47,7 +48,8 @@
     {"name":"LocalizeFallbackGet","order":1,"path":"scripts/LocalizeFallbackGet/LocalizeFallbackGet.yy",},
     {"name":"LocalizeFlush","order":2,"path":"scripts/LocalizeFlush/LocalizeFlush.yy",},
     {"name":"LocalizeFontGet","order":1,"path":"scripts/LocalizeFontGet/LocalizeFontGet.yy",},
-    {"name":"LocalizeFontSetDefault","order":3,"path":"scripts/LocalizeFontSetDefault/LocalizeFontSetDefault.yy",},
+    {"name":"LocalizeFontGetDefault","order":3,"path":"scripts/LocalizeFontGetDefault/LocalizeFontGetDefault.yy",},
+    {"name":"LocalizeFontSetDefault","order":2,"path":"scripts/LocalizeFontSetDefault/LocalizeFontSetDefault.yy",},
     {"name":"LocalizeLangDetect","order":3,"path":"scripts/LocalizeLangDetect/LocalizeLangDetect.yy",},
     {"name":"LocalizeLangGet","order":2,"path":"scripts/LocalizeLangGet/LocalizeLangGet.yy",},
     {"name":"LocalizeLangGetCodes","order":6,"path":"scripts/LocalizeLangGetCodes/LocalizeLangGetCodes.yy",},

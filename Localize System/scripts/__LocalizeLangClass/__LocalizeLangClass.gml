@@ -13,5 +13,5 @@ function __LocalizeLangClass(langCode) constructor{
     self.langEnabled  = true;
     
     // ======================== Language Font
-    self.langFont     = _cache.defaultFont;
+    self.langFont     = _cache.fontDefault;
 }

@@ -3,7 +3,7 @@
 /// @param {String} fileName The path to the local .csv file.
 /// @param {String} [sheetId] The Google Sheet ID for online fetching.
 /// @param {String} [sheetPage] The specific sheet page GID. Defaults to "0"
-/// @returns {Real} The internal file ID on success, or -1 on failure/duplicate.
+/// @return {Real} The internal file ID on success, or -1 on failure/duplicate.
 function LocalizeLoad(fileName, sheetId = undefined, sheetPage = "0"){
     static _cache = __LocalizeCache();
     

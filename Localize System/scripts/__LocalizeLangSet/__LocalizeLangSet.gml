@@ -5,7 +5,7 @@ function __LocalizeLangSet(langData){
     with (_cache) {
         locLangData = langData;
         locLangCode = langData.langCode;
-        currentFont = langData.langFont;
+        fontCurrent = langData.langFont;
         __LocalizeTrace(LOC_TRACE.VERBOSE, $"Language set to '{locLangCode}'");
     }
 }

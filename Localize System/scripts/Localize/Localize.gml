@@ -1,15 +1,11 @@
 // feather ignore all
 /// @desc Returns the localized string for the given key, applying template arguments and tags.
-/// @param {String} key The key defined in the translation file.
-/// @param {Any} [val] Arguments to replace placeholders ({0}, {1}...) in the text.
-/// @returns {String} The localized string
+/// @param {String} key      The key defined in the translation file.
+/// @param {Any}    [...] Arguments to replace placeholders ({0}, {1}...) in the text.
+/// @return {String}         The localized string
 function Localize(key) {
     static _cache = __LocalizeCache();
-    
-    if (_cache.debugMode) return key;
-    
-    
-    // Resolve langData
+    if (_cache.dbgMode) return key;
     var _langData = _cache.locLangData;
     if (is_undefined(_langData)) {
         _langData = _cache.locFallData;
@@ -37,7 +33,6 @@ function Localize(key) {
             }
         }
         
-        // Error Checking
         if (__LocalizeDetectCellError(_stringRaw)) return key;
         
         // Handle tag and key parsing

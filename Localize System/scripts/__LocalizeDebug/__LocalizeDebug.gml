@@ -4,17 +4,29 @@ function __LocalizeDebug() {
     static _cache = __LocalizeCache();
     if (os_browser != browser_not_a_browser) return 0;
 
-    var _isDbgOpen = is_debug_overlay_open();
-    var _width = 400;
-    var _height = 600;
+    var _isDbgOpen  = is_debug_overlay_open();
+    var _viewWidth  = 350;
+    var _viewHeight = 600;
+    var _btnWidth   = _viewWidth-24;
     
     if (!dbg_view_exists(_cache.dbgView)) {
-        _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", true, 64, 64, _width, _height);
+        _cache.dbgView = dbg_view($"Localize System v{__LOC_VERSION}", false, 256, 32, _viewWidth, _viewHeight);
     }
-
+    
+    // ======================== Links
+    dbg_section_delete(_cache.dbgSections[$ "links"]);
+    _cache.dbgSections[$ "links"] = dbg_section("Links", false);
+    dbg_button("GitHub Page", function() {
+        url_open("https://github.com/Kruger0/Localize");
+    }, _btnWidth/2);
+    dbg_same_line();
+    dbg_button("Last Release", function() {
+        url_open("https://github.com/Kruger0/Localize/releases");
+    }, _btnWidth/2);
+    
     // ======================== Language Controlls
     
-    dbg_section_delete(_cache.dbgSections[$ "langCtrl"])
+    dbg_section_delete(_cache.dbgSections[$ "langCtrl"]);
     _cache.dbgSections[$ "langCtrl"] = dbg_section("Language Controls");
     
     var _codes = _cache.langCodes; 
@@ -25,13 +37,13 @@ function __LocalizeDebug() {
     }
     dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
     dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");
-    dbg_watch(ref_create(_cache, "currentFont"),    "Current Font")
-    dbg_checkbox(ref_create(_cache, "debugMode"),   "Debug Mode");
+    dbg_watch(ref_create(_cache, "fontCurrent"),    "Current Font")
+    dbg_checkbox(ref_create(_cache, "dbgMode"),   "Debug Mode");
     
     // ======================== File Statistics
     
     dbg_text("");
-    dbg_section_delete(_cache.dbgSections[$ "fileStats"])
+    dbg_section_delete(_cache.dbgSections[$ "fileStats"]);
     _cache.dbgSections[$ "fileStats"] = dbg_section("File Statistics");
     
     dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
@@ -80,30 +92,30 @@ function __LocalizeDebug() {
     // ======================== Actions
     
     dbg_text("");
-    dbg_section_delete(_cache.dbgSections[$ "actions"])
+    dbg_section_delete(_cache.dbgSections[$ "actions"]);
     _cache.dbgSections[$ "actions"] = dbg_section("Actions");
-
-    dbg_button("Refresh Debug View", function() {
-        __LocalizeDebug();
-    }, _width);
     
     dbg_button("Update Online", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeDownload(i);
         }
-    }, _width);
-    
+    }, _btnWidth/2);
+    dbg_same_line();
     dbg_button("Update Locally", function() {
         static _cache = __LocalizeCache();
         for (var i = 0; i < array_length(_cache.files); i++) {
             __LocalizeUpdate(i);
         }
-    }, _width);
+    }, _btnWidth/2);
     
+    dbg_button("Refresh Debug View", function() {
+        __LocalizeDebug();
+    }, _btnWidth/2);
+    dbg_same_line();
     dbg_button("Flush System Data", function() {
         LocalizeFlush();
-    }, _width);
+    }, _btnWidth/2);
     
     show_debug_overlay(_isDbgOpen);
 }

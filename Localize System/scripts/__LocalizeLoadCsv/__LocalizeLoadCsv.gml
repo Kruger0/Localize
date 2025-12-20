@@ -1,12 +1,12 @@
 // feather ignore all
-// @jujuadams 2023-01-02
-// Modified snap_from_csv
-
-/// @desc Decodes an CSV string and outputs a 2D array
-/// @return 2D array that represents the contents of the CSV string
-/// @param buffer Buffer to read data from
 /// @ignore
 function __LocalizeLoadCsv(buffer) {
+    // @jujuadams 2023-01-02
+    // Modified snap_from_csv
+    
+    // desc Decodes an CSV string and outputs a 2D array
+    // return 2D array that represents the contents of the CSV string
+    // param buffer Buffer to read data from
     buffer_seek(buffer, buffer_seek_start, 0);
     var _size = buffer_get_size(buffer);
     buffer_resize(buffer, buffer_get_size(buffer)+1);
