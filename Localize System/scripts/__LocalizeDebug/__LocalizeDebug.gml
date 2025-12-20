@@ -6,7 +6,7 @@ function __LocalizeDebug() {
 
     var _isDbgOpen  = is_debug_overlay_open();
     var _viewWidth  = 400;
-    var _viewHeight = 700;
+    var _viewHeight = 600;
     var _btnWidth   = _viewWidth-24;
     
     if (!dbg_view_exists(_cache.dbgView)) {
@@ -24,7 +24,7 @@ function __LocalizeDebug() {
         url_open("https://github.com/Kruger0/Localize/releases");
     }, _btnWidth/2);
     
-    // ======================== Language Controlls
+    // ======================== Language Controls
     
     dbg_text("");
     dbg_section_delete(_cache.dbgSections[$ "langCtrl"]);
@@ -41,7 +41,7 @@ function __LocalizeDebug() {
     dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Locale");
     dbg_checkbox(ref_create(_cache, "dbgMode"),     "Debug Mode");
     
-    // ======================== Font Into
+    // ======================== Font Info
     
     dbg_text("");
     dbg_section_delete(_cache.dbgSections[$ "fontInfo"]);
