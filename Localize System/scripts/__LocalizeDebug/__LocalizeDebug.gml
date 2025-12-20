@@ -5,8 +5,8 @@ function __LocalizeDebug() {
     if (os_browser != browser_not_a_browser) return 0;
 
     var _isDbgOpen  = is_debug_overlay_open();
-    var _viewWidth  = 350;
-    var _viewHeight = 600;
+    var _viewWidth  = 400;
+    var _viewHeight = 700;
     var _btnWidth   = _viewWidth-24;
     
     if (!dbg_view_exists(_cache.dbgView)) {
@@ -26,19 +26,30 @@ function __LocalizeDebug() {
     
     // ======================== Language Controlls
     
+    dbg_text("");
     dbg_section_delete(_cache.dbgSections[$ "langCtrl"]);
     _cache.dbgSections[$ "langCtrl"] = dbg_section("Language Controls");
     
     var _codes = _cache.langCodes; 
     if (array_length(_codes) > 0) {
-        dbg_drop_down(ref_create(_cache, "locLangCode"), _codes, "Game Language");
+        dbg_drop_down(ref_create(_cache, "locLangCode"), _codes, "Active Locale");
     } else {
         dbg_text("No languages loaded yet");
     }
-    dbg_watch(ref_create(_cache, "osLangCode"),     "System Language");
-    dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Language");
-    dbg_watch(ref_create(_cache, "fontCurrent"),    "Current Font")
-    dbg_checkbox(ref_create(_cache, "dbgMode"),   "Debug Mode");
+    dbg_watch(ref_create(_cache, "locLangName"),    "Active Language");
+    dbg_watch(ref_create(_cache, "osLangCode"),     "OS Locale");
+    dbg_watch(ref_create(_cache, "locFallCode"),    "Fallback Locale");
+    dbg_checkbox(ref_create(_cache, "dbgMode"),     "Debug Mode");
+    
+    // ======================== Font Into
+    
+    dbg_text("");
+    dbg_section_delete(_cache.dbgSections[$ "fontInfo"]);
+    _cache.dbgSections[$ "fontInfo"] = dbg_section("Font Information");
+    
+    dbg_watch(ref_create(_cache, "fontCurrIndex"),  "Font Index");
+    dbg_watch(ref_create(_cache, "fontCurrName"),   "Font Family");
+    dbg_watch(ref_create(_cache, "fontCurrAsset"),  "Font Asset");
     
     // ======================== File Statistics
     
@@ -46,8 +57,8 @@ function __LocalizeDebug() {
     dbg_section_delete(_cache.dbgSections[$ "fileStats"]);
     _cache.dbgSections[$ "fileStats"] = dbg_section("File Statistics");
     
-    dbg_watch(ref_create(_cache, "langCount"),      "Loaded Languages:");
-    dbg_watch(ref_create(_cache, "fetchAllowed"),   "Download Allowed:");
+    dbg_watch(ref_create(_cache, "langCount"),      "Total Languages:");
+    dbg_watch(ref_create(_cache, "fetchAllowed"),   "Online Fetch:");
     dbg_watch(ref_create(_cache, "sandboxed"),      "Sandboxed:");
     dbg_watch(ref_create(_cache, "lastUpdate"),     "Last Update:");
     
@@ -55,7 +66,7 @@ function __LocalizeDebug() {
     
     var _fileCount = array_length(_cache.files);
     var _totalSize = 0;
-    var _gapSize = 40;
+    var _gapSize = 48;
     
     dbg_text($"Files Loaded ({_fileCount}): ");
     
@@ -108,7 +119,6 @@ function __LocalizeDebug() {
             __LocalizeUpdate(i);
         }
     }, _btnWidth/2);
-    
     dbg_button("Refresh Debug View", function() {
         __LocalizeDebug();
     }, _btnWidth/2);

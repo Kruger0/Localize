@@ -49,8 +49,8 @@
 #macro LOC_STRING_DELIM "\""
 
 // The default font size used when loading external font files (e.g. "Fonts/myfont.ttf").
-// Default: 12
-#macro LOC_DEFAULT_FONT_SIZE 12
+// Default: 24
+#macro LOC_DEFAULT_FONT_SIZE 24
 
 // The maximum depth of recursion allowed when resolving nested keys.
 // Default: 10

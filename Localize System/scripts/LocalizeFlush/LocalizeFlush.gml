@@ -29,9 +29,11 @@ function LocalizeFlush(){
                 }
             }
         }
-        fontDefault = fontFallback;
-        fontCurrent = undefined;
-        recursion   = 0;
+        fontDefault     = fontFallback;
+        fontCurrIndex   = undefined;
+        fontCurrName    = font_get_fontname(fontFallback);
+        fontCurrAsset   = font_get_name(fontFallback);
+        recursion       = 0;
         
         // ======================== Files
         asyncArray  = [];
