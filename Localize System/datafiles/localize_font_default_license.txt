@@ -1,4 +1,8 @@
-This software is "WenQuanYi Micro Hei", Copyright (c) 2007-2010 WenQuanYi Project Board.
+LICENSE FOR: localize_font_default.ttc
+ORIGINAL SOFTWARE: WenQuanYi Micro Hei
+
+This software ("localize_font_default.ttc") is a copy of "WenQuanYi Micro Hei",
+Copyright (c) 2007-2010 WenQuanYi Project Board.
 Based on "Droid Sans Fallback", Copyright (C) 2008 The Android Open Source Project.
 Licensed under the Apache License, Version 2.0.
 

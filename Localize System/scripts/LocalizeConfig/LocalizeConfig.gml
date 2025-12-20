@@ -29,7 +29,7 @@
 // CRITICAL:    Only errors and warnings will be displayed.
 // VERBOSE:     All logs (including download progress) will be displayed.
 // Default: LOC_TRACE.CRITICAL
-#macro LOC_TRACE_LEVEL LOC_TRACE.VERBOSE
+#macro LOC_TRACE_LEVEL LOC_TRACE.CRITICAL
 
 // Enables the file download progress to be traced in the verbose mode
 // Default: false

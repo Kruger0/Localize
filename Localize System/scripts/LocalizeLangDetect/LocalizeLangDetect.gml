@@ -1,5 +1,5 @@
 // feather ignore all
-/// @desc Automatically detects the system OS language and queues it as the target language.
+/// @desc Automatically detects the system OS language and sets it as the target language.
 /// @return {String} The detected OS language code (e.g. "en-US") or the fallback code (e.g. "en").
 function LocalizeLangDetect() {
     static _cache = __LocalizeCache();
