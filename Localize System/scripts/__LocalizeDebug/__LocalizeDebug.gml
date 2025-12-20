@@ -18,11 +18,15 @@ function __LocalizeDebug() {
     _cache.dbgSections[$ "links"] = dbg_section("Links", false);
     dbg_button("GitHub Page", function() {
         url_open("https://github.com/Kruger0/Localize");
-    }, _btnWidth/2);
+    }, _btnWidth/3);
     dbg_same_line();
     dbg_button("Last Release", function() {
         url_open("https://github.com/Kruger0/Localize/releases");
-    }, _btnWidth/2);
+    }, _btnWidth/3);
+    dbg_same_line();
+    dbg_button("Report Bug", function() {
+        url_open("https://forms.gle/m4DexWjGiry5YsUL6");
+    }, _btnWidth/3);
     
     // ======================== Language Controls
     

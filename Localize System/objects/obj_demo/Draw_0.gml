@@ -1,11 +1,8 @@
 
-//draw_circle(300, 300, dsin(current_time/200)*128, false);
-
 var _font = LocalizeFontGet()
 if (!is_string(_font)) {
     draw_set_font(_font);
 }
-
 
 var _langId     = LocalizeLangGetIndex();
 var _langCount  = LocalizeLangGetCount();
@@ -24,5 +21,4 @@ LocalizePlural("msg_score", points)+"\n"+
 LocalizeOrdinal("msg_position", points);
 
 draw_text_ext(32, 32, _text, 48, 1300);
-
 draw_set_font(-1);

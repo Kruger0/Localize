@@ -1,8 +1,8 @@
 // feather ignore all
 /// @desc Returns the localized string for the given key, applying template arguments and tags.
-/// @param {String} key      The key defined in the translation file.
+/// @param {String} key   The key defined in the translation file.
 /// @param {Any}    [...] Arguments to replace placeholders ({0}, {1}...) in the text.
-/// @return {String}         The localized string
+/// @return {String}      The localized string
 function Localize(key) {
     static _cache = __LocalizeCache();
     if (_cache.dbgMode) return key;
