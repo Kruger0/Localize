@@ -21,14 +21,14 @@ Localize is a comprehensive localization system made for GameMaker, implemented 
    text_intro | This is an intro! | Isso é uma intro! | Esta és una introducion!
    
 2. Copy the unique sheet ID from the URL (and optinally the page ID) and use it on the `LocalizeLoad()` function. 
-   ```gml
+   ```js
    // File Loading Example
    // Full Sheet URL:  https://docs.google.com/spreadsheets/d/19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444/edit?gid=0#gid=1628623745"
    //                                                Sheet ID|--------------------------------------------|       Page Id|----------|
    LocalizeLoad("localize.loc", "19aCOc_sRAfk9Blbrb1Cjhe-P4mjyxayPbw8vBlCm444", "1628623745");
    ```
 3. Define a language to be used from your localization file. Either using `LocalizeFallbackSet()` or `LocalizeLangSet()`. If you want to get the current language of the user system, the function `LocalizeLangDetect()` can also be used
-   ```gml
+   ```js
    // Setup Example
    LocalizeFallbackSet("en-US");
 
@@ -41,7 +41,7 @@ Localize is a comprehensive localization system made for GameMaker, implemented 
 
    ```
 4. Use the system by calling ```Localize()``` as a string and the localized text will be returned.
-   ```gml
+   ```js
    // Any Draw or Step Event
    draw_text(x, y, Localize("text_intro"));
    ```
@@ -51,7 +51,7 @@ Note that for the language change to appear in real time, the ```Localize()``` f
 
 ### String Formatting
 The system supports advanced string parsing features directly in your translation files:
-```gml
+```js
 // Arguments: "You have {0} gold and {1} items."
 Localize("msg_stats", 500, 2); // "You have 500 gold and 2 items"
 
@@ -67,7 +67,7 @@ Localize("msg_user_greetings");
 
 ### Automatic Font Resolution
 Fonts are handled automatically via the **LOC_FONTNAME** row in your sheet file, on at runtime using `LocalizeFontSet()`, and will be solved either as an IDE font asset; an external file font; or just as a string, allowing custom font systems compatibility like Scribble
-```gml
+```js
 var _font = LocalizeFontGet();
 if (!is_string(_font)) {
    draw_set_font(_font);
