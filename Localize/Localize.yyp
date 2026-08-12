@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"Localize System",
+  "%Name":"Localize",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -39,9 +39,9 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2026.0.0.16",
   },
-  "name":"Localize System",
+  "name":"Localize",
   "resources":[
     {"id":{"name":"__LocalizeFontDefault","path":"fonts/__LocalizeFontDefault/__LocalizeFontDefault.yy",},},
     {"id":{"name":"fnt_demo_0","path":"fonts/fnt_demo_0/fnt_demo_0.yy",},},

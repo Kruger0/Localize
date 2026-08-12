@@ -1,0 +1,26 @@
+Language Keys,en-US,pt-BR,es,zh-CN,ja-JP,ko-KR,ru-RU,de,fr-FR,it-IT
+LOC_LANGNAME,English,Português,Español,简体中文,日本語,한국어,,Deutsch,Français,Italiano
+LOC_FONTNAME,,fnt_demo_1,fnt_demo_0,,,,,,fnt_demo_1,fnt_scribble
+LOC_PRODUCTION,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,ENABLED,DISABLED,ENABLED,ENABLED
+,,,,,,,,,,
+text_intro,"Hello, {tag:user_id}! Today is {t:os_date}!","Olá, {tag:user_id}! Hoje é {t:os_date}!","¡Hola, {tag:user_id}! ¡Hoy es {t:os_date}!",你好，{tag:user_id}！今天是{t:os_date}！,こんにちは、{tag:user_id}さん！今日は{t:os_date}です！,"안녕하세요, {tag:user_id}님! 오늘은 {t:os_date}입니다!","Привет, {tag:user_id}! Сегодня {t:os_date}!","Hallo, {tag:user_id}! Heute ist {t:os_date}!","Bonjour, {tag:user_id} ! Aujourd'hui, c'est le {t:os_date} !","Ciao, {tag:user_id}! Oggi è {t:os_date}!"
+text_placeholder,,,,,,,,,,
+ui_date_format,{1}/{0}/{2},{0}/{1}/{2},,,,,,,,
+text_debugger,Press [F9] to open the debugger.,Pressione [F9] para abrir o depurador.,,按 [F9] 打开调试器。,デバッガーを開くには[F9]キーを押してください。,[F9] 키를 눌러 디버거를 엽니다.,"Нажмите [F9], чтобы открыть отладчик.","Drücken Sie [F9], um den Debugger zu öffnen.",Appuyez sur [F9] pour ouvrir le débogueur.,Premi [F9] per aprire il debugger.
+,This key is missing...,Esta chave está faltando...,Falta esta llave...,这把钥匙不见了……,この鍵が見つかりません...,이 키가 없습니다...,Этот ключ отсутствует...,Dieser Schlüssel fehlt...,Cette clé est manquante...,Questa chiave è mancante...
+ui_controls,Use the arrows to cycle trough the languages.,Use as setas para alternar entre os idiomas.,Utilice las flechas para alternar entre los idiomas.,使用箭头键切换语言。,矢印を使って言語を切り替えてください。,화살표를 사용하여 언어를 순환하며 선택하세요.,Используйте стрелки для переключения между языками.,"Verwenden Sie die Pfeile, um durch die Sprachen zu wechseln.",Utilisez les flèches pour parcourir les langues.,Utilizza le frecce per scorrere le lingue.
+msg_npc_greetings,Hey! Have you talked to the {k:npc_01_name} already?,Ei! Você já falou com o {k:npc_01_name}?,¡Hola! ¿Ya has hablado con el {k:npc_01_name}?,嘿！你已经和{k:npc_01_name}交谈过了吗？,ねえ！もう{k:npc_01_name}と話した？,이봐! {k:npc_01_name} 님과 이미 대화해 봤어?,Привет! Ты уже разговаривал с {k:npc_01_name}?,Hey! Hast du schon mit dem {k:npc_01_name} gesprochen?,Salut ! As-tu déjà parlé à {k:npc_01_name} ?,Ehi! Hai già parlato con {k:npc_01_name}?
+npc_01_name,Sir Andrew,Senhor André,Señor Andrés,安德鲁爵士,アンドリュー卿,앤드류 경,Сэр Эндрю,Sir Andrew,Sir Andrew,Sir Andrew
+text_current_font,Current font: {0},Fonte atual: {0},,,,,,,,
+msg_score_zero,You have no points,Voce não tem pontos,,,,,,,,
+msg_score_one,You have {0} point!,Voce tem {0} ponto!,,,,,,,,
+msg_score_two,You have {0} points!,,,,,,,,,
+msg_score_few,You have {0} points!,,,,,,,,,
+msg_score_many,You have {0} points!,,,,,,,,,
+msg_score_other,You have {0} points!,Você tem {0} pontos!,,,,,,,,
+,,,,,,,,,,
+msg_position_zero,Unranked,Sem posição,,,,,,,,
+msg_position_one,1st place,,,,,,,,,
+msg_position_two,2nd place,,,,,,,,,
+msg_position_few,3rd place,,,,,,,,,
+msg_position_other,{0}th place,{0}º lugar,,,,,,,,
