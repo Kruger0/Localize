@@ -1,5 +1,5 @@
 
-var _font = LocalizeFontGet()
+var _font = LocalizeFontGet();
 if (!is_string(_font)) {
     draw_set_font(_font);
 }
